@@ -1,0 +1,72 @@
+---
+settings:
+  name: GenAI
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  release_notes_autogen:
+    release_notes_repo: workload-relnotes
+  langs: pt-br,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: Documentos do GenAI
+    url: "/index.html"
+  - title: Notas de lançamento
+    entries:
+    - title: O que há de novo
+      url: "/whats-new.html"
+  - title: Comece agora
+    entries:
+    - title: Saiba mais sobre o Workload Factory para GenAI
+      url: "/ai-workloads-overview.html"
+    - title: Início rápido
+      url: "/quick-start.html"
+    - title: Requisitos do GenAI
+      url: "/requirements.html"
+    - title: Identifique fontes de dados para sua base de conhecimento
+      url: "/identify-data-sources.html"
+    - title: Implantar a infraestrutura da base de conhecimento
+      url: "/deploy-infrastructure.html"
+    - title: Use o aplicativo de exemplo de chatbot externo
+      url: "/example-chatbot-application.html"
+    - title: Componentes para o motor NetApp GenAI
+      url: "/genai-engine-instance.html"
+  - title: Use o GenAI para construir bases de conhecimento
+    entries:
+    - title: Crie uma base de conhecimento
+      url: "/create-knowledgebase.html"
+    - title: Teste uma base de conhecimento
+      url: "/test-knowledgebase.html"
+    - title: Ative a autenticação
+      url: "/activate-authentication.html"
+    - title: Publique uma base de conhecimento
+      url: "/publish-knowledgebase.html"
+    - title: Crie um aplicativo de IA baseado em RAG
+      url: "/create-application.html"
+    - title: O que você pode fazer a seguir
+      url: "/whats-next.html"
+  - title: Administrar o GenAI
+    entries:
+    - title: Gerenciar a infraestrutura do GenAI
+      url: "/manage-infrastructure.html"
+    - title: Gerenciar bases de conhecimento
+      url: "/manage-knowledgebase.html"
+    - title: Gerenciar fontes de dados
+      url: "/manage-data-source.html"
+  - title: Conhecimento e apoio
+    entries:
+    - title: Registre-se para obter suporte
+      url: "/support-registration.html"
+    - title: Solução de problemas
+      url: "/troubleshooting.html"
+    - title: Obtenha ajuda
+      url: "/get-help.html"
+  - title: Avisos legais
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP Workload Factory for AWS
+  repo: workload-family

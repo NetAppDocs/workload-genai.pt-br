@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: ai-workloads-overview.html 
+keywords: overview, concepts, features, use case, workloads, AI, Bedrock, knowledge base, chatbot 
+summary: A fábrica de carga de trabalho para o GenAI permite que você integre o Amazon FSX para sistemas de arquivos NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI. 
+---
+= Saiba mais sobre o Workload Factory para GenAI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+A fábrica de carga de trabalho para o GenAI permite que você integre o Amazon FSX para sistemas de arquivos NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI.
+
+A fábrica de cargas de trabalho para o GenAI permite que você use fontes de dados empresariais no Amazon FSX for NetApp ONTAP com aplicativos de IA generativos. Utilizando a estrutura de geração de aumento de recuperação (RAG), você pode conetar rapidamente fontes de dados aos modelos Foundation disponíveis via Amazon bedrock para desenvolver aplicativos geradores de IA, como assistentes virtuais, chatbots de Q&A, sumarização de documentos, criação de conteúdo, etc.
+
+O uso de IA generativa com seus dados organizacionais permite que você aproveite seu próprio conhecimento e experiência, e não confie apenas na inteligência do modelo com base em dados públicos nos quais os modelos foram treinados. O uso do RAG para personalizar os modelos garante respostas precisas e relevantes a perguntas específicas da organização, aumentando a produtividade e a eficiência para os usuários de seus aplicativos usando IA generativa.
+
+Desenvolver um aplicativo GenAI que é adaptado aos dados da sua organização permite que você aproveite seu próprio conhecimento e experiência. Essa capacidade de personalização garante respostas precisas e relevantes a perguntas específicas da organização, aumentando a satisfação e a produtividade de todos os seus usuários.
+
+
+
+== Benefícios de usar o GenAI para criar aplicativos de IA generativos
+
+O Workload Factory for GenAI simplifica o processo de implantação da infraestrutura necessária para criar aplicativos de IA generativos usando o Retrieval Augmented Generation (RAG). Especificamente, o GenAI oferece os seguintes benefícios:
+
+* Sem a necessidade de um conhecimento profundo da infraestrutura de dados, base e modelos de linguagem, os administradores e desenvolvedores DE TI podem acelerar o desenvolvimento de aplicações utilizando a automação fornecida pelo GenAI. Os administradores e desenvolvedores de dados podem criar bases de conhecimento empresariais de forma fácil e rápida que incorporam dados não estruturados da sua organização para serem usados por aplicativos de IA generativos.
+* Melhore a segurança preservando as permissões do usuário em arquivos incorporados nas bases de conhecimento para garantir que a segurança e a privacidade dos dados sejam mantidas. Um aplicativo, como um chatbot, pode ser desenvolvido para fornecer apenas aos usuários autenticados respostas com base nos dados aos quais os usuários têm acesso.
+* Mantenha seus dados empresariais privados e seguros na conta de cliente da AWS, onde seus dados organizacionais nunca serão expostos externamente.
+* Acelere o desenvolvimento de aplicativos do GenAI, como um chatbot de perguntas e respostas usando frameworks de código aberto, como o LangChain, utilizando a API do GenAI para provisionar e gerenciar bases de conhecimento, conversar com uma base de conhecimento e armazenar e recuperar o histórico de bate-papo.
+* Melhore a proteção e a disponibilidade de dados com a implantação da infraestrutura generativa de dados de AI nos sistemas de arquivos FSX para NetApp ONTAP e aproveite os recursos do ONTAP, como alta disponibilidade, snapshots para proteção e recuperação de dados locais, SnapMirror para recuperação de desastres e SnapVault para fazer backup da sua infraestrutura de dados.
+* Reduza os custos gerais de storage para uma infraestrutura de dados generativa de AI aproveitando os recursos de eficiência de dados da ONTAP, como deduplicação, compressão e compactação de dados, disposição em camadas e thin Provisioning.
+
+
+
+
+== Como o GenAI funciona
+
+O GenAI usa os dados privados da sua organização para complementar a inteligência do modelo (com base nos dados em que foi treinado) para fornecer respostas personalizadas às perguntas feitas pelos seus usuários em sua organização. Primeiro, você implanta a infraestrutura necessária para uma estrutura RAG e, em seguida, cria uma base de conhecimento usando as fontes de dados e os modelos de base da sua organização disponíveis via Amazon bedrock e, em seguida, coneta um aplicativo (como um chatbot de perguntas e respostas) à base de conhecimento.
+
+image:diagram-chatbot-processing.png["Um diagrama mostrando os principais componentes do GenAI, sua função e como ele funciona."]
+
+
+
+== Como o Workload Factory for GenAI ajuda a criar aplicativos de IA generativos
+
+O GenAI ajuda a criar aplicativos de IA generativos usando o RAG das seguintes maneiras:
+
+* Implanta a infraestrutura necessária para a estrutura de geração aumentada de recuperação (RAG) para trabalhar com fontes de dados no FSX para sistemas de arquivos ONTAP e Amazon bedrock. A infraestrutura inclui a instância do NetApp GenAI Engine para gerenciamento de dados, um banco de dados vetorial incorporado (LanceDB) e armazenamento no sistema de arquivos FSX for ONTAP para o banco de dados vetorial.
+* Ajuda a conetar as fontes de dados a incorporações e modelos de linguagem disponíveis via Amazon bedrock para incorporar fontes de dados e recuperar as respostas para consultas de usuários. As fontes de dados, juntamente com os modelos e sua configuração, são apresentadas como bases de conhecimento do FSX for ONTAP.
+* Ingere dados de origem na base de conhecimento para incorporar arquivos de origem em compartilhamentos SMB e exportações de NFS nos sistemas de arquivos FSX for ONTAP, juntamente com o armazenamento de permissões de arquivos para arquivos em compartilhamentos SMB.
+* Cria automaticamente perguntas iniciais de conversação com base no conteúdo nas bases de conhecimento.
+* Fornece um simulador de bate-papo para os administradores de dados testar o bate-papo com as bases de conhecimento.
+
+
+
+
+== Custo
+
+Não há nenhum custo para usar o recurso GenAI do Workload Factory.
+
+No entanto, você precisará pagar pelos recursos da AWS que implantar para oferecer suporte à infraestrutura de IA generativa. Por exemplo, você pagará a AWS pelo serviço de IA da Amazon bedrock, pelo sistema de arquivos FSX for ONTAP e pela capacidade de armazenamento e pela instância do GenAI Engine EC2.
+
+
+
+== Licenciamento
+
+Nenhuma licença especial é necessária da NetApp para usar os recursos de IA da fábrica de cargas de trabalho.

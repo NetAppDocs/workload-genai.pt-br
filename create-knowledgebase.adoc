@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: create-knowledgebase.html 
+keywords: ai, chatbot, creating, knowledge base 
+summary: Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você integrará em sua base de conhecimento a partir de seus datastores FSX for ONTAP, você estará pronto para criar a base de conhecimento usando o Workload Factory. Como parte desta etapa, você também definirá as caraterísticas da IA e criará entradas de conversa. 
+---
+= Crie uma base de conhecimento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você integrará em sua base de conhecimento a partir de seus datastores FSX for ONTAP, você estará pronto para criar a base de conhecimento usando o Workload Factory. Como parte dessa etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.
+
+Uma base de conhecimento pode ser usada sem integrar fontes de dados da sua organização. Neste caso, um aplicativo integrado à base de conhecimento só fornecerá resultados de informações publicamente disponíveis na internet. Isso é conhecido como integração _public mode_.
+
+Na maioria dos casos, você vai querer integrar fontes de dados da sua organização na base de conhecimento. Isso é conhecido como integração _Enterprise mode_ porque fornece conhecimento da sua empresa.
+
+
+
+== Crie e configure a base de conhecimento
+
+A base de conhecimento define caraterísticas como os modelos de IA bedrock e o formato de incorporação que você deseja usar para criar sua base de conhecimento.
+
+.Passos
+. Inicie sessão no Workload Factory.
+. No bloco cargas de trabalho de IA, selecione *Deploy & Manage*.
+. Na guia bases de conhecimento, selecione *Adicionar base de conhecimento*.
+. Na página Definir base de conhecimento, configure as definições da base de conhecimento:
++
+.. *Nome*: Insira o nome que deseja usar para a base de conhecimento.
+.. *Descrição*: Insira uma descrição detalhada para a base de conhecimento.
+.. *Modelo de incorporação*: O modelo de incorporação define como seus dados serão convertidos em elementos vetoriais para a base de conhecimento. O Workload Factory é compatível com os seguintes modelos:
++
+*** Titãs incorporações G1 - texto
+*** Texto de incorporação Titan v2
+*** Incorporações multimodais Titan G1
++
+Observe que você já deve ter habilitado o modelo de incorporação da Amazon bedrock.
+
++
+https://aws.amazon.com/bedrock/titan/["Saiba mais sobre o Amazon Titan"^]
+
+
+
+.. *Modelo de bate-papo*: Escolha entre os modelos de bate-papo Claude que estão integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.
++
+Saiba mais sobre os modelos disponíveis para ajudar a fazer a sua seleção: https://aws.amazon.com/bedrock/claude/["Claude de antrópico em Amazon bedrock"^]
+
+.. *Entradas de conversação*: Escolha se você deseja fornecer até quatro prompts iniciais de conversação que são exibidos para usuários que interagem com um chatbot que usa essa base de conhecimento. Recomendamos que ative esta definição.
++
+Se você ativar os iniciantes de conversação, "modo automático" é selecionado por padrão. O "modo manual" só pode ser ativado depois de adicionar fontes de dados à sua base de conhecimento. link:manage-knowledgebase.html["Saiba como modificar as configurações da base de conhecimento"].
+
+.. *FSX for ONTAP file system*: Quando você define uma nova base de conhecimento, o Workload Factory cria um novo volume do Amazon FSX for NetApp ONTAP para armazená-lo. Escolher o nome do sistema de arquivos e o SVM (também chamado de VM de storage) existentes no local em que o novo volume será criado.
+.. *Política de instantâneos*: Escolha uma política de instantâneos na lista de políticas existentes definidas no inventário de armazenamento de fábrica de carga de trabalho. Os instantâneos recorrentes da base de conhecimento serão criados automaticamente a uma frequência com base na política de instantâneos selecionada.
++
+Se a política de snapshot que você precisa não existir, você pode https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["criar uma política de snapshot"] na VM de armazenamento que contém o volume.
+
+
+
+. Selecione *criar base de conhecimento* para adicionar a base de conhecimento ao GenAI.
++
+Um indicador de progresso é exibido enquanto a base de conhecimento é criada.
+
++
+Depois que a base de conhecimento é criada, você tem a opção de adicionar uma fonte de dados à sua nova base de conhecimento ou terminar o processo sem adicionar uma fonte de dados. Recomendamos que você selecione *Adicionar fonte de dados* e adicione uma ou mais fontes de dados agora.
+
+
+
+
+
+== Adicione fontes de dados à base de conhecimento
+
+Você pode adicionar uma ou mais fontes de dados para preencher a base de conhecimento com os dados da sua organização.
+
+.Sobre esta tarefa
+O número máximo de fontes de dados suportadas é 10.
+
+.Passos
+. Depois de selecionar *Adicionar fonte de dados*, a página *Selecionar um sistema de arquivos* será exibida.
+. * Selecione um sistema de arquivos*: Selecione o sistema de arquivos FSX for ONTAP onde seus arquivos de origem de dados residem e selecione *Next*.
+. *Selecione um volume*: Selecione o volume no qual os arquivos de origem de dados residem e selecione *Next*.
++
+Ao selecionar arquivos armazenados usando o protocolo SMB, você precisará inserir as informações do ative Directory, que incluem o domínio, o endereço IP, o nome de usuário e a senha.
+
+. *Selecione uma fonte de dados*: Selecione a localização da fonte de dados com base no local onde você salvou os arquivos. Este pode ser um volume inteiro, ou apenas uma pasta específica ou subpasta no volume, e selecione *Next*.
+. *Definir parâmetros de IA*: Na seção *Estratégia de Chunking*, defina como o mecanismo GenAI divide o conteúdo da fonte de dados em blocos quando a fonte de dados é integrada a uma base de conhecimento. Você pode escolher uma das seguintes estratégias:
++
+** * Agrupamento de frases múltiplas*: Organiza informações de sua fonte de dados em blocos definidos por sentença. Você pode escolher quantas frases compõem cada pedaço (até 100).
+** * Agrupamento baseado em sobreposição*: Organiza informações de sua fonte de dados em blocos definidos por carateres que podem sobrepor blocos vizinhos. Você pode escolher o tamanho de cada pedaço em carateres, e quanto cada pedaço se sobrepõe com pedaços adjacentes. Você pode configurar um tamanho de bloco entre 50 e 3000 carateres e uma porcentagem de sobreposição entre 1 e 99%.
++
+
+NOTE: Escolher uma alta porcentagem de sobreposição pode aumentar significativamente os requisitos de armazenamento com apenas pequenas melhorias na precisão de recuperação.
+
+
+
+. Na seção *reconhecimento de permissão*, que está disponível somente quando a fonte de dados selecionada estiver em um volume que usa o protocolo SMB, você pode ativar ou desativar a seleção:
++
+** *Habilitado*: Os usuários do chatbot que acessam essa base de conhecimento só receberão respostas a consultas de fontes de dados às quais têm acesso.
+** *Disabled*: Os usuários do chatbot receberão respostas usando conteúdo de todas as fontes de dados integradas.
+
+
+. Selecione *Add* para adicionar esta fonte de dados à sua base de conhecimento.
+
+
+.Resultado
+A fonte de dados começa a ser incorporada na sua base de conhecimento. O status muda de "incorporação" para "incorporada" quando a fonte de dados está completamente incorporada.
+
+Depois de adicionar uma única fonte de dados à base de conhecimento, você pode testá-la localmente na janela do simulador do chatbot e fazer as alterações necessárias antes de tornar o chatbot disponível para seus usuários. Você também pode seguir os mesmos passos para adicionar fontes de dados adicionais à base de conhecimento.

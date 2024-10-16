@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: activate-authentication.html 
+keywords: ai, chatbot, publishing, knowledge base 
+summary: Ative a autenticação para uma base de conhecimento para que a validação de token e ACLs sejam necessárias ao integrar a base de conhecimento com um aplicativo de chatbot. 
+---
+= Ative a autenticação externa para uma base de conhecimento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ative a autenticação para uma base de conhecimento para que a validação de token e ACLs sejam necessárias ao usar os endpoints da API para integrar uma base de conhecimento com um aplicativo de chatbot. Ao ativar a autenticação, você configura as configurações de um Token Web JSON que será usado para solicitações de API para uma base de conhecimento de clientes de chatbot.
+
+.Passos
+. Na página de inventário das bases de conhecimento, selecione a base de conhecimento para a qual pretende ativar a autenticação.
+. Selecione image:icon-action.png["o botão de opção"] e selecione *Gerenciar base de conhecimento*.
+. Selecione o menu *ações* e selecione *Gerenciar configurações de autenticação*.
+. Configurar autenticação:
++
+.. Selecione *Ativar definições de autenticação*.
+.. Forneça as informações necessárias. Exemplos são fornecidos, mas você deve obter os valores para esses campos do seu provedor de autenticação:
++
+*** *Algoritmos*: O algoritmo de assinatura que o provedor de autenticação usa.
+*** *Audience* (Opcional): Uma string contendo o destinatário pretendido do token (às vezes uma URL).
+*** *Emissor*: Uma string que identifica o provedor que emitiu o token.
++
+Por exemplo, o Amazon Cognito usa strings de emissor com o seguinte formato:
+
++
+[listing]
+----
+https://cognito-idp-<region>.amazonaws.com/<UserPoolID>
+----
++
+ `<region>`Onde está a região da AWS que contém o pool de usuários `<UserPoolID>` e é o ID do pool de usuários. Você pode recuperar seu ID do pool de usuários usando o seguinte comando:
+
++
+[listing]
+----
+aws cognito-idp list-user-pools --max-results=60 --output=table
+----
+*** * JWKS URI*: A cadeia de carateres URI que fornece chaves públicas necessárias para verificar assinaturas deste token.
++
+Por exemplo, o Amazon Cognito usa strings URI JWKS com o seguinte formato:
+
++
+[listing]
+----
+https://cognito-idp.<region>.amazonaws.com/<userPoolId>/.well-known/jwks.json
+----
++
+ `<region>`Onde está a região da AWS que contém o pool de usuários `<UserPoolID>` e é o ID do pool de usuários. Você pode recuperar seu ID do pool de usuários usando o seguinte comando:
+
++
+[listing]
+----
+aws cognito-idp list-user-pools --max-results=60 --output=table
+----
+
+
+
+
+. Selecione *Guardar*.
+
+
+.Resultado
+A autenticação para a base de conhecimento está ativa e você pode usar endpoints de API para interagir com a base de conhecimento e integrar a base de conhecimento com um aplicativo de chatbot.

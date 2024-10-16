@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+summary: Saiba o que há de novo com a funcionalidade de cargas de trabalho de IA do Workload Factory. 
+---
+= O que há de novo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Saiba o que há de novo com o recurso generativo de cargas de trabalho de IA do Workload Factory.
+
+
+
+== 29 de setembro de 2024
+
+
+
+=== Suporte a snapshot e restauração para volumes da base de conhecimento
+
+Agora, você pode proteger seus dados generativos de workloads de AI usando uma cópia pontual de uma base de conhecimento. Isso permite que você proteja seus dados contra perda acidental ou alterações de teste nas configurações da base de conhecimento. Você pode restaurar a versão anterior do volume da base de conhecimento a qualquer momento.
+
+https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#take-a-snapshot-of-a-knowledge-base-volume["Tire um instantâneo de um volume da base de conhecimento"]
+
+https://review.docs.netapp.com/us-en/workload-genai_29-sept-24-release/manage-knowledgebase.html#restore-a-snapshot-of-a-knowledge-base-volume["Restaurar um snapshot de um volume da base de conhecimento"]
+
+
+
+=== Pausar digitalizações programadas
+
+Agora você pode pausar digitalizações de origem de dados agendadas. Por padrão, workloads de AI generativo varre cada fonte de dados diariamente para ingerir novos dados em cada base de conhecimento. Se você não quiser que as alterações mais recentes sejam ingeridas (durante o teste ou durante a restauração de um instantâneo, por exemplo), você pode pausar as verificações agendadas e retomá-las a qualquer momento.
+
+https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html["Gerenciar bases de conhecimento"]
+
+
+
+=== Volumes de proteção de dados agora compatíveis com bases de conhecimento
+
+Ao selecionar um volume da base de conhecimento, agora você pode escolher um volume de proteção de dados que faça parte de uma relação de replicação do NetApp SnapMirror. Isso permite armazenar bases de conhecimento em volumes que já estão protegidos pela replicação do SnapMirror.
+
+https://docs.netapp.com/us-en/workload-genai/identify-data-sources.html["Identifique as fontes de dados a serem integradas em sua base de conhecimento"]
+
+
+
+== 1 de setembro de 2024
+
+
+
+=== Estratégias adicionais de divisão
+
+Agora, as cargas de trabalho generativas de IA oferecem suporte a volumes de várias frases e conjuntos baseados em sobreposição para fontes de dados.
+
+
+
+=== Volume dedicado para cada base de conhecimento
+
+Agora, cria um volume dedicado do Amazon FSX for NetApp ONTAP para cada nova base de conhecimento, permitindo políticas de snapshot individuais para cada base de conhecimento e proteção aprimorada contra falhas e envenenamento de dados.
+
+
+
+== 4 de agosto de 2024
+
+
+
+=== Integração do Amazon CloudWatch Logs
+
+As cargas de trabalho generativas de IA agora estão integradas ao Amazon CloudWatch Logs, permitindo que você monitore arquivos de log de cargas de trabalho generativas de IA.
+
+
+
+=== Exemplo de aplicativo chatbot
+
+O aplicativo de exemplo do GenAI de fábrica de carga de trabalho da NetApp permite testar a autenticação e a recuperação da sua base de conhecimento publicada da NetApp Workload Factory, interagindo diretamente com ela em um aplicativo de chatbot baseado na web.
+
+
+
+== 7 de julho de 2024
+
+
+
+=== Lançamento inicial da fábrica de cargas de trabalho para o GenAI
+
+A versão inicial inclui a capacidade de desenvolver uma base de conhecimento que é personalizada incorporando os dados da sua organização. A base de conhecimento pode ser acessada por um aplicativo de chatbot para seus usuários. Essa capacidade garante respostas precisas e relevantes a perguntas específicas da organização, aumentando a satisfação e a produtividade de todos os seus usuários.

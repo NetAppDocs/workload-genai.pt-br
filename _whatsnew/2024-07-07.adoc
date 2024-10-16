@@ -1,0 +1,9 @@
+= Lançamento inicial da fábrica de cargas de trabalho para o GenAI
+:allow-uri-read: 
+
+
+
+
+=== Lançamento inicial da fábrica de cargas de trabalho para o GenAI
+
+A versão inicial inclui a capacidade de desenvolver uma base de conhecimento que é personalizada incorporando os dados da sua organização. A base de conhecimento pode ser acessada por um aplicativo de chatbot para seus usuários. Essa capacidade garante respostas precisas e relevantes a perguntas específicas da organização, aumentando a satisfação e a produtividade de todos os seus usuários.

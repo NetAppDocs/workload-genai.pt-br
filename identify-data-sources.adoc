@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: identify-data-sources.html 
+keywords: data sources, chatbot, documents, knowledge base 
+summary: 'Identifique ou crie os documentos (fontes de dados) que residem no seu sistema de arquivos do FSX for ONTAP que você integrará em sua base de conhecimento. Essas fontes de dados permitem que a base de conhecimento forneça respostas precisas e personalizadas para consultas de usuários com base em dados relevantes para sua organização.' 
+---
+= Identifique as fontes de dados a serem integradas em sua base de conhecimento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Identifique ou crie os documentos (fontes de dados) que residem no seu sistema de arquivos do FSX for ONTAP que você integrará em sua base de conhecimento. Essas fontes de dados permitem que a base de conhecimento forneça respostas precisas e personalizadas para consultas de usuários com base em dados relevantes para sua organização.
+
+
+
+== Número máximo de fontes de dados
+
+O número máximo de fontes de dados suportadas é 10.
+
+
+
+== Localização das fontes de dados
+
+As fontes de dados podem ser armazenadas em um único volume ou em uma pasta dentro de um volume, em um compartilhamento SMB ou exportação NFS em um sistema de arquivos do Amazon FSX for NetApp ONTAP. As fontes de dados também podem ser armazenadas no Amazon FSX for NetApp ONTAP volumes que estão em uma relação de proteção de dados da NetApp SnapMirror.
+
+Não é possível selecionar documentos individuais dentro de um volume ou pasta, portanto, você deve garantir que cada volume ou pasta que contém fontes de dados não contenha documentos estranhos que não devem ser integrados à sua base de conhecimento.
+
+Você pode adicionar várias fontes de dados a cada base de conhecimento, mas todas elas precisam residir nos sistemas de arquivos do FSX for ONTAP que estão acessíveis a partir da sua conta da AWS.
+
+O tamanho máximo de arquivo para cada fonte de dados é de 50 MB.
+
+
+
+== Protocolos compatíveis
+
+A base de conhecimento dá suporte a dados de volumes que usam protocolos NFS ou SMB/CIFS. Ao selecionar arquivos armazenados usando o protocolo SMB, você precisará inserir as informações do ative Directory para que a base de conhecimento possa acessar os arquivos nesses volumes. Isso inclui o domínio do ative Directory, o endereço IP, o nome de usuário e a senha.
+
+Ao armazenar sua fonte de dados em um compartilhamento (arquivo ou diretório) acessado pelo SMB, os dados só podem ser acessados por usuários ou grupos de chatbot que têm permissões para acessar esse compartilhamento. Quando esta "capacidade de reconhecimento de permissões" está ativada, o sistema de IA compara o e-mail do utilizador em auth0 com os utilizadores autorizados a visualizar ou utilizar os ficheiros na partilha SMB. O chatbot fornecerá respostas com base nas permissões do usuário para os arquivos incorporados.
+
+Por exemplo, se você integrou arquivos 10 (fontes de dados) em sua base de conhecimento, e 2 dos arquivos são arquivos de recursos humanos que contêm informações restritas, apenas usuários de chatbot autenticados para acessar esses arquivos 2 receberão respostas do chatbot que incluem dados desses arquivos.
+
+
+
+== Formatos de arquivo de origem de dados suportados
+
+Os seguintes formatos de arquivo de origem de dados são atualmente suportados.
+
+[cols="2*"]
+|===
+| Formato do ficheiro | Extensão 
+
+
+| Arquivo de valores separados por vírgula | .csv 
+
+
+| Markdown | .md 
+
+
+| Microsoft Word | .doc ou .docx 
+
+
+| Texto simples | .txt 
+
+
+| Formato de documento portátil | .pdf 
+|===

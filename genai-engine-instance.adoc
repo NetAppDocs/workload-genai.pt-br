@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: genai-engine-instance.html 
+keywords: genai engine, instance, ec2, role, iam role, permissions, security group, inbound, outbound, private endpoints 
+summary: Ao implantar a infraestrutura do GenAI, o Workload Factory cria uma instância do EC2 para o mecanismo GenAI. Ele também cria uma função do IAM, grupo de segurança e endpoints privados para essa instância. Você pode querer entender mais detalhes sobre esses componentes criados pelo Workload Factory no seu ambiente AWS. 
+---
+= Componentes para o motor NetApp GenAI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ao implantar a infraestrutura do GenAI, o Workload Factory cria uma instância do EC2 para o mecanismo GenAI. Ele também cria uma função do IAM, grupo de segurança e endpoints privados para essa instância. Você pode querer entender mais detalhes sobre esses componentes criados pelo Workload Factory no seu ambiente AWS.
+
+Tipo de instância EC2:: m5.large
+Função do IAM:: A instância do mecanismo GenAI precisa de permissões para enviar partes de dados para o modelo de incorporação na Amazon bedrock e para se comunicar com o back-end do Serviço de IA da NetApp. A função do IAM inclui as seguintes permissões:
++
+--
+[source, json]
+----
+"ssm:Describe*",
+"ssm:Get*",
+"ssm:List*",
+"ssm:PutInventory",
+"ssm:PutComplianceItems",
+"ssm:PutConfigurePackageResult",
+"ssm:SendCommand",
+"ssm:UpdateAssociationStatus",
+"ssm:UpdateInstanceAssociationStatus",
+"ssm:UpdateInstanceInformation",
+"ssmmessages:*",
+"ec2messages:GetMessages"
+----
+--
+Grupo de segurança:: As regras de saída estão abertas a todo o tráfego, enquanto as regras de entrada são completamente fechadas.
+Endpoints privados:: Se a VPC de destino ainda não os tiver, o Workload Factory criará endpoints privados para a instância do GenAI Engine EC2 para que ela possa se comunicar com os seguintes serviços da AWS:
++
+--
+* Amazon bedrock
+* Amazon EC2
+* Amazon Elastic Container Registry (ECR)
+* Amazon S3
+* AWS Systems Manager (SSM)
+
+
+--
+

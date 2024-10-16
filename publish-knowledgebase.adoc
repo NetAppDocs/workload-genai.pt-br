@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: publish-knowledgebase.html 
+keywords: ai, chatbot, publishing, knowledge base 
+summary: Depois de criar e testar sua base de conhecimento localmente, você pode publicar a base de conhecimento para que ela possa ser integrada ao aplicativo chatbot que permitirá que seus usuários consultem a base de conhecimento. 
+---
+= Publique uma base de conhecimento e visualize o endpoint exclusivo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Depois de criar e testar sua base de conhecimento localmente, você pode publicar a base de conhecimento para que ela possa ser integrada a um aplicativo de chatbot que permitirá que seus usuários consultem a base de conhecimento.
+
+.Sobre esta tarefa
+Publicar a base de conhecimento permite que você a use em aplicativos de bate-papo. A ação publicar aciona a API Workload Factory para gerar e publicar endpoints exclusivos. Após a publicação, a base de conhecimento torna-se acessível para aplicativos de bate-papo e os endpoints da API estão prontos para integração.
+
+Cada base de conhecimento que você publica tem endpoints exclusivos.
+
+.Passos
+. Na página de inventário bases de conhecimento, selecione a base de conhecimento que deseja publicar.
+. Selecione image:icon-action.png["o botão de opção"] e selecione *Gerenciar base de conhecimento*.
++
+Esta página exibe o status publicado, o status de incorporação das fontes de dados, o modo de incorporação e a lista de todas as fontes de dados incorporadas.
+
+. Selecione o menu *ações* e selecione *publicar*.
++
+A Workload Factory publica a base de conhecimento. Na página de detalhes da base de conhecimento, o status muda de *unpublished* para *published.*
+
++
+Agora você pode obter detalhes sobre o endpoint exclusivo para a base de conhecimento.
+
+. Ao lado do status publicado, selecione *Exibir*.
++
+Os detalhes sobre como acessar a base de conhecimento usando a API Workload Factory são exibidos.
+
+. Na caixa de diálogo *Exibir informações publicadas*, copie os endpoints da API que você pode usar para integrar a base de conhecimento a um aplicativo.
++
+Para saber mais sobre os endpoints da API, vá para o https://console.workloads.netapp.com/api-doc["Documentação do API"^] e selecione *AI > Externo*.
+
++
+Antes de poder usar esses endpoints, você precisa obter um token de usuário do seu provedor de autenticação.
+
+
+
+.Resultado
+Agora você tem uma base de conhecimento publicada e o endpoint exclusivo que você pode usar para integrar a base de conhecimento com um aplicativo de chatbot.

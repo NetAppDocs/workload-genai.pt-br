@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: example-chatbot-application.html 
+keywords: ai, example, sample, chatbot, app, application, local 
+summary: Você pode instalar e executar um aplicativo de chatbot de exemplo para testar suas bases de conhecimento e aprender como usar a API Workload Factory para criar seu próprio aplicativo de IA generativo. 
+---
+= Use o aplicativo de exemplo de chatbot externo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Depois de configurar, ativar e publicar uma base de conhecimento, os desenvolvedores de aplicativos externos podem configurar e executar o aplicativo de chatbot de exemplo de código aberto fornecido pelo NetApp para interagir com sua base de conhecimento e aprender a usar a API de fábrica de carga de trabalho para criar seus próprios aplicativos de IA generativos.
+
+.Passos
+. link:create-knowledgebase.html["Crie uma base de conhecimento"].
+. link:activate-authentication.html["Ative a autenticação"] para a base de conhecimento que você criou.
++
+Isso permite que a base de conhecimento autentique solicitações de API e torna necessária a validação de token e ACLs ao usar os endpoints da API.
+
++
+
+NOTE: Os aplicativos de bate-papo externos que se integram a essa base de conhecimento precisarão usar o mesmo provedor de autenticação (emissor) que você configura nas configurações de autenticação da base de conhecimento.
+
+. link:publish-knowledgebase.html["Publique a base de conhecimento"] Para habilitar o acesso à API para aplicativos externos.
++
+Depois que uma base de conhecimento é publicada, os endpoints da API são acessíveis externamente e você pode integrar a base de conhecimento com um aplicativo de chat externo (como o exemplo de aplicativo chatbot).
+
+. Faça o download do pacote de aplicativos chatbot de exemplo https://github.com/NetApp/FSx-ONTAP-samples-scripts/tree/main/AI/GenAI-ChatBot-application-sample["GitHub"^] do .
+. Instale e execute o aplicativo chatbot seguindo as instruções no arquivo README incluído no pacote.
+. Navegue até para http://localhost:9091["http://localhost:9091"] para iniciar sessão na aplicação.
++
+O exemplo de aplicativo chatbot é exibido.
+
+
+
+
+
+== Saiba mais
+
+https://console.workloads.netapp.com/api-doc["Documentação da API de fábrica da carga de trabalho"]

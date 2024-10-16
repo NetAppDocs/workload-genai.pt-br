@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: manage-infrastructure.html 
+keywords: ai, chatbot, creating, knowledge base 
+summary: Você pode ver detalhes sobre a infraestrutura do GenAI RAG implantada ou remover a infraestrutura do chatbot se não precisar mais dela. 
+---
+= Gerenciar a infraestrutura do GenAI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode ver detalhes sobre a infraestrutura do GenAI RAG implantada ou remover a infraestrutura do chatbot se não precisar mais dela.
+
+
+
+== Veja informações sobre a infraestrutura
+
+Você pode ver informações sobre a infraestrutura do chatbot.
+
+.Passos
+. No menu de navegação, selecione *AI*.
+. Selecione a guia *infra-estrutura*.
+. Veja informações sobre a infraestrutura, que inclui detalhes sobre os seguintes componentes:
++
+** Definições AWS
+** Configurações de infraestrutura
+** O mecanismo AI
+** O banco de dados vetorial
+
+
+
+
+
+
+== Remova a infraestrutura
+
+Se você não precisar mais da infraestrutura de chatbot que implantou para um ou mais chatbots, poderá removê-la do Workload Factory.
+
+
+NOTE: Todos os chatbots que foram implantados nessa infraestrutura serão desativados e todo o histórico de chat será excluído.
+
+Essa operação remove apenas os links para a infraestrutura de IA do Workload Factory - ela não remove todos os componentes da AWS. Você precisará excluir manualmente os seguintes componentes de infraestrutura da AWS:
+
+* A instância da VM
+* Endpoints privados
+* O volume no sistema de arquivos FSX for ONTAP que contém os bancos de dados AI
+* A função do IAM
+* A política
+* O grupo de segurança
+
+
+.Passos
+. No menu de navegação, selecione *AI*.
+. Selecione a guia *infra-estrutura*.
+. Selecione image:icon-action.png["o botão de opção"] e selecione *Remover a infraestrutura do chatbot*.
+. Confirme se deseja excluir a infraestrutura e selecione *Remover*.
+
+
+.Resultado
+Os componentes da infraestrutura do chatbot são removidos do Workload Factory.

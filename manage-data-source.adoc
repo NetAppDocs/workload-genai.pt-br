@@ -1,0 +1,77 @@
+---
+sidebar: sidebar 
+permalink: manage-data-source.html 
+keywords: ai, chatbot, creating, knowledge base, data source 
+summary: Depois de criar uma base de conhecimento usando fontes de dados no seu sistema de arquivos FSX for ONTAP, você pode visualizar os detalhes da fonte de dados, atualizar ou alterar o conteúdo da fonte de dados, editar configurações da fonte de dados ou excluir a fonte de dados. 
+---
+= Gerenciar fontes de dados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Depois de criar uma base de conhecimento usando fontes de dados no seu sistema de arquivos FSX for ONTAP, você pode visualizar os detalhes da fonte de dados, atualizar ou alterar o conteúdo da fonte de dados, editar configurações da fonte de dados ou excluir a fonte de dados.
+
+
+
+== Exibir informações sobre uma fonte de dados
+
+Você pode exibir informações sobre o conteúdo de uma fonte de dados e pode visualizar seu status de incorporação com a base de conhecimento. Como uma fonte de dados faz parte de uma base de conhecimento, você precisará abrir a base de conhecimento primeiro para poder visualizar os detalhes da fonte de dados.
+
+.Passos
+. No menu de navegação, selecione *AI*.
+. Selecione a base de conhecimento onde reside a fonte de dados e, em seguida, image:icon-action.png["o botão de opção"]selecione e selecione *Gerenciar base de conhecimento*.
++
+A parte inferior da página lista as fontes de dados que fazem parte desta base de conhecimento.
+
+. Expanda cada linha selecionando o image:button-down-caret.png["o botão de seta para baixo"] para exibir informações detalhadas sobre cada fonte de dados, como o sistema de arquivos FSX for ONTAP, o volume e o caminho onde reside a fonte de dados.
++
+Ele também lista as informações de incorporação e se essa fonte de dados está atualmente incorporada na base de conhecimento.
+
+
+
+
+
+== Editar as definições da fonte de dados
+
+Você pode editar informações sobre uma fonte de dados integrada em uma base de conhecimento. A maioria das informações é corrigida depois que você adicionou uma fonte de dados a uma base de conhecimento, mas você pode fazer alterações na definição e configuração de agrupamento e no reconhecimento de permissões (ao usar o protocolo SMB no volume de origem de dados).
+
+.Passos
+. Na página de inventário das bases de conhecimento, selecione a base de conhecimento onde reside a fonte de dados e, em seguida, image:icon-action.png["o botão de opção"]selecione e selecione *Gerenciar base de conhecimento*.
++
+A parte inferior da página lista as fontes de dados que fazem parte desta base de conhecimento.
+
+. Na linha da fonte de dados que você deseja editar, image:icon-action.png["o botão de opção"]selecione e selecione *Editar fonte de dados*.
+. Na página Editar fonte de dados, image:button-down-caret.png["o botão de seta para baixo"] selecione para expandir a linha para definição de bloco.
+. Atualize as configurações para a estratégia e configuração de agrupamento, e reconhecimento de permissões (para volumes SMB) e selecione *Salvar*.
+
+
+.Resultado
+As configurações da fonte de dados são atualizadas e o sistema de AI sincroniza a fonte de dados de modo que ela seja reindexada à base de conhecimento.
+
+
+
+== Atualize o conteúdo de uma fonte de dados existente
+
+Você pode alterar o conteúdo de uma fonte de dados a qualquer momento para adicionar ou atualizar seus dados organizacionais. Se essa fonte de dados estiver sendo usada ativamente em uma base de conhecimento, você deve sincronizar a fonte de dados para que ela seja reindexada à base de conhecimento. A sincronização é incremental, portanto, o Amazon bedrock só processa os objetos no volume do FSX for ONTAP que foram adicionados, modificados ou excluídos desde a última sincronização.
+
+As fontes de dados são sincronizadas automaticamente com a base de conhecimento uma vez por dia, para que quaisquer alterações na fonte de dados sejam refletidas no chatbot. Se você fizer alterações em uma fonte de dados e quiser sincronizar os dados imediatamente, poderá link:manage-knowledgebase.html#synchronize-your-data-sources-with-a-knowledge-base["execute uma sincronização sob demanda"].
+
+
+
+== Eliminar uma fonte de dados
+
+Se você não precisar mais de uma fonte de dados para fazer parte da sua base de conhecimento, você pode excluí-la.
+
+.Passos
+. Na página de inventário da base de conhecimento, selecione a base de conhecimento onde reside a fonte de dados e, em seguida, image:icon-action.png["o botão de opção"]selecione e selecione *Gerenciar base de conhecimento*.
++
+A parte inferior da página lista as fontes de dados que fazem parte desta base de conhecimento.
+
+. Na linha da fonte de dados que você deseja excluir, image:icon-action.png["o botão de opção"]selecione e selecione *Excluir fonte de dados*.
+. Na caixa de diálogo Excluir fonte de dados, confirme se deseja excluí-la e selecione *Confirm*.
+
+
+.Resultado
+A fonte de dados é removida da base de conhecimento e o sistema de IA remove as informações indexadas sobre essa fonte de dados da base de conhecimento. Qualquer informação dessa fonte de dados não estará mais disponível para chatbots que estejam usando a base de conhecimento.
