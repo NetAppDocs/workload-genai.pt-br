@@ -13,9 +13,22 @@ summary: Depois de implantar a infraestrutura de IA e identificar as fontes de d
 [role="lead"]
 Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você integrará em sua base de conhecimento a partir de seus datastores FSX for ONTAP, você estará pronto para criar a base de conhecimento usando o Workload Factory. Como parte dessa etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.
 
-Uma base de conhecimento pode ser usada sem integrar fontes de dados da sua organização. Neste caso, um aplicativo integrado à base de conhecimento só fornecerá resultados de informações publicamente disponíveis na internet. Isso é conhecido como integração _public mode_.
+.Sobre esta tarefa
+As bases de conhecimento têm duas modalidades de integração de dados - _public mode_ e _Enterprise mode_.
 
-Na maioria dos casos, você vai querer integrar fontes de dados da sua organização na base de conhecimento. Isso é conhecido como integração _Enterprise mode_ porque fornece conhecimento da sua empresa.
+Modo público:: Uma base de conhecimento pode ser usada sem integrar fontes de dados da sua organização. Neste caso, um aplicativo integrado à base de conhecimento só fornecerá resultados de informações publicamente disponíveis na internet. Isso é conhecido como integração _public mode_.
+Modo empresarial:: Na maioria dos casos, você vai querer integrar fontes de dados da sua organização na base de conhecimento. Isso é conhecido como integração _Enterprise mode_ porque fornece conhecimento da sua empresa.
++
+--
+As fontes de dados da sua organização podem conter informações de identidade privada (PII). Para proteger essas informações confidenciais, você pode habilitar _data guardrails_ ao criar e configurar bases de conhecimento. Corrimões de dados, alimentados pela classificação BlueXP , identificam e mascara PII, tornando-os inacessíveis e irrecuperáveis.
+
+link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^].
+
+
+NOTE: Os corrimões de dados podem ser ativados ou desativados a qualquer momento. Se você alternar a ativação dos corrimões de dados, o Workload Factory verifica toda a base de conhecimento do zero, o que incorre em um custo.
+
+--
+
 
 
 
@@ -47,6 +60,21 @@ https://aws.amazon.com/bedrock/titan/["Saiba mais sobre o Amazon Titan"^]
 .. *Modelo de bate-papo*: Escolha entre os modelos de bate-papo Claude que estão integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.
 +
 Saiba mais sobre os modelos disponíveis para ajudar a fazer a sua seleção: https://aws.amazon.com/bedrock/claude/["Claude de antrópico em Amazon bedrock"^]
+
+.. * Guardrails de dados*: Escolha se você deseja ativar ou desativar os guardrails de dados. link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre os corrimões de dados, alimentados pela classificação BlueXP "^].
++
+Os pré-requisitos a seguir devem estar completos para habilitar os corrimões de dados.
+
++
+*** É necessária uma conta de serviço para comunicar com a classificação BlueXP . Você deve ter a função _administrador da organização_ na sua conta de locação do BlueXP  para a criação de conta de serviço. Um membro que tenha a função de administrador da Organização pode concluir todas as ações no BlueXP . link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["Saiba como adicionar uma função a um membro no BlueXP "^]
+*** Você precisará fazer o seguinte, conforme descrito em link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["Documentação de classificação BlueXP"^]:
++
+.... Crie um conetor BlueXP
+.... Certifique-se de que seu ambiente atenda aos pré-requisitos
+.... Implantar a classificação BlueXP
+
+
+
 
 .. *Entradas de conversação*: Escolha se você deseja fornecer até quatro prompts iniciais de conversação que são exibidos para usuários que interagem com um chatbot que usa essa base de conhecimento. Recomendamos que ative esta definição.
 +

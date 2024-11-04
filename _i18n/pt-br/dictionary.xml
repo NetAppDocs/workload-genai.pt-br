@@ -399,7 +399,6 @@
   <block id="6c81c0a68409ceeffca1a2438dbb831c" category="paragraph">Cada vez que você adicionar, modificar ou remover fontes de dados da base de conhecimento, você deve sincronizar a fonte de dados para que ela seja reindexada à base de conhecimento. A sincronização é incremental, portanto, o Amazon bedrock só processa os objetos no volume do FSX for ONTAP que foram adicionados, modificados ou excluídos desde a última sincronização.</block>
   <block id="d21368803fa621b044a871188810b1ac" category="list-text">Na página de inventário das bases de conhecimento, selecione a base de conhecimento que pretende atualizar.</block>
   <block id="6461d5a78cc7b9cc40e5443635d9112e" category="list-text">Selecione o menu *ações* e selecione *Editar base de conhecimento*.</block>
-  <block id="f39b1e8c1922f03eae35d54aa3cc70e1" category="list-text">Na página Editar base de conhecimento, você pode alterar o nome da base de conhecimento, a descrição, o modelo de incorporação, o modelo de chat, se os iniciantes de conversação são criados automaticamente ou manualmente e a política de snapshot usada para o volume que contém a base de conhecimento.</block>
   <block id="e57d913eed051be6b0b9406295913487" category="paragraph">Se você usar o modo Manual para iniciantes de conversação, você também pode alterar os iniciantes de conversação aqui.</block>
   <block id="1302ca167379db1ebc02d198eb7518a3" category="list-text">Selecione *Salvar* depois de fazer suas alterações.</block>
   <block id="af467f026dd1b56c8564e770bf39737f" category="section-title">Proteja uma base de conhecimento com snapshots</block>
@@ -644,4 +643,28 @@
   <block id="acbf2b120f060c765cc5fbfef7779840" category="sidebar">Identifique fontes de dados para sua base de conhecimento</block>
   <block id="3bd082f2a7c2961a682116b6ed9f43fc" category="sidebar">Use o GenAI para construir bases de conhecimento</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e apoio</block>
+  <block id="17e908b1a02b6ec45f4e125877322d0f" category="doc">Mascarar informações pessoais identificáveis com guardrails de dados</block>
+  <block id="0f21cd7bd10e747bca7894a609acc04b" category="paragraph">A carga de trabalho generativa de IA apresenta o recurso de guardrails de dados, alimentado pela classificação BlueXP . O recurso de guardrails de dados identifica e mascara informações pessoais identificáveis (PII) ajudando você a manter a conformidade e fortalecer a segurança de seus dados organizacionais confidenciais.</block>
+  <block id="8137174f639d391921dfeb8ca6d792d1" category="paragraph"><block ref="8137174f639d391921dfeb8ca6d792d1" category="inline-link-macro-rx"></block></block>
+  <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link-macro">Saiba mais sobre a classificação BlueXP</block>
+  <block id="384713a8a1d5a2dd365da2851c50ad93" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block></block>
+  <block id="ee538d8e0203b8c3e9bdb95ebee1162c" category="paragraph">As bases de conhecimento têm duas modalidades de integração de dados - _public mode_ e _Enterprise mode_.</block>
+  <block id="3b3458714be1e5c3f76dd200e4227588" category="list-text">Modo público</block>
+  <block id="ab6bcff4b8fb91fe0c83c8ef83da1c6e" category="list-text">Modo empresarial</block>
+  <block id="e168133413009827e06cf1b52bf82d2e" category="paragraph">As fontes de dados da sua organização podem conter informações de identidade privada (PII). Para proteger essas informações confidenciais, você pode habilitar _data guardrails_ ao criar e configurar bases de conhecimento. Corrimões de dados, alimentados pela classificação BlueXP , identificam e mascara PII, tornando-os inacessíveis e irrecuperáveis.</block>
+  <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>.</block>
+  <block id="cf24c0f0066b07e51df4da735abd84e5" category="admonition">Os corrimões de dados podem ser ativados ou desativados a qualquer momento. Se você alternar a ativação dos corrimões de dados, o Workload Factory verifica toda a base de conhecimento do zero, o que incorre em um custo.</block>
+  <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">Saiba mais sobre os corrimões de dados, alimentados pela classificação BlueXP </block>
+  <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">* Guardrails de dados*: Escolha se você deseja ativar ou desativar os guardrails de dados. <block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>.</block>
+  <block id="5d78af30e91e495d74cbd3cac7a282db" category="paragraph">Os pré-requisitos a seguir devem estar completos para habilitar os corrimões de dados.</block>
+  <block id="069e9a4c876c108cc9f27ee13170ed16" category="inline-link-macro">Saiba como adicionar uma função a um membro no BlueXP </block>
+  <block id="f271e30d6a375057fa3075f037ab44e5" category="list-text">É necessária uma conta de serviço para comunicar com a classificação BlueXP . Você deve ter a função _administrador da organização_ na sua conta de locação do BlueXP  para a criação de conta de serviço. Um membro que tenha a função de administrador da Organização pode concluir todas as ações no BlueXP . <block ref="9ba9a2df720ef49e9efc4ba4af6ca608" category="inline-link-macro-rx"></block></block>
+  <block id="44b34442167c9611792529867ee76d90" category="inline-link-macro">Documentação de classificação BlueXP</block>
+  <block id="bc2f4df95fcf66983b127abe7caa7a0a" category="list-text">Você precisará fazer o seguinte, conforme descrito em <block ref="0e478e925fb96541eb2f7d657ca01cb8" category="inline-link-macro-rx"></block>:</block>
+  <block id="a5085066220b6bc77291e8a3ba481c5a" category="list-text">Crie um conetor BlueXP</block>
+  <block id="3e3c8a56035df76e06772f4505dc58c7" category="list-text">Certifique-se de que seu ambiente atenda aos pré-requisitos</block>
+  <block id="0ce4d42838344488f607ff306088fae9" category="list-text">Implantar a classificação BlueXP</block>
+  <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">Na página Editar base de conhecimento, você pode alterar o nome da base de conhecimento, a descrição, o modelo de incorporação, o modelo de chat, a habilitação dos guardrails de dados, escolher se os iniciantes de conversação são criados automaticamente ou manualmente e a política de snapshot usada para o volume que contém a base de conhecimento.</block>
+  <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">Cada varredura da base de conhecimento, que inclui incorporação, custos. Se os guardrails de dados estiverem ativados após a criação de uma base de conhecimento, a base de conhecimento será digitalizada novamente e incorrerá em custos.</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 de novembro de 2024</block>
 </blocks>
