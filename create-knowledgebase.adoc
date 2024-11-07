@@ -67,6 +67,7 @@ Os pré-requisitos a seguir devem estar completos para habilitar os corrimões d
 
 +
 *** É necessária uma conta de serviço para comunicar com a classificação BlueXP . Você deve ter a função _administrador da organização_ na sua conta de locação do BlueXP  para a criação de conta de serviço. Um membro que tenha a função de administrador da Organização pode concluir todas as ações no BlueXP . link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["Saiba como adicionar uma função a um membro no BlueXP "^]
+*** O mecanismo de IA deve ter acesso ao link:https://console.bluexp.netapp.com/["Consola BlueXP"^]
 *** Você precisará fazer o seguinte, conforme descrito em link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["Documentação de classificação BlueXP"^]:
 +
 .... Crie um conetor BlueXP

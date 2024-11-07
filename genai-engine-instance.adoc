@@ -42,6 +42,8 @@ Endpoints privados:: Se a VPC de destino ainda não os tiver, o Workload Factory
 * Amazon Elastic Container Registry (ECR)
 * Amazon S3
 * AWS Systems Manager (SSM)
+* Amazon FSX para NetApp ONTAP
+* Amazon CloudWatch
 
 
 --

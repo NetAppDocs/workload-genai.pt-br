@@ -667,4 +667,8 @@
   <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">Na página Editar base de conhecimento, você pode alterar o nome da base de conhecimento, a descrição, o modelo de incorporação, o modelo de chat, a habilitação dos guardrails de dados, escolher se os iniciantes de conversação são criados automaticamente ou manualmente e a política de snapshot usada para o volume que contém a base de conhecimento.</block>
   <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">Cada varredura da base de conhecimento, que inclui incorporação, custos. Se os guardrails de dados estiverem ativados após a criação de uma base de conhecimento, a base de conhecimento será digitalizada novamente e incorrerá em custos.</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 de novembro de 2024</block>
+  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">Consola BlueXP</block>
+  <block id="402ae08ce46f82670c0313312e504ad7" category="list-text">O mecanismo de IA deve ter acesso ao <block ref="046fd603b18837f482287e5ec741e5ed" category="inline-link-macro-rx"></block></block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX para NetApp ONTAP</block>
+  <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
 </blocks>
