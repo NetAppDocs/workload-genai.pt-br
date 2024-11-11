@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: example-chatbot-application.html 
 keywords: ai, example, sample, chatbot, app, application, local 
-summary: Você pode instalar e executar um aplicativo de chatbot de exemplo para testar suas bases de conhecimento e aprender como usar a API Workload Factory para criar seu próprio aplicativo de IA generativo. 
+summary: Você pode instalar e executar um aplicativo de chatbot de exemplo para testar suas bases de conhecimento e aprender como usar a API de fábrica de carga de trabalho para criar seu próprio aplicativo de IA generativo. 
 ---
 = Use o aplicativo de exemplo de chatbot externo
 :allow-uri-read: 
@@ -39,4 +39,4 @@ O exemplo de aplicativo chatbot é exibido.
 
 == Saiba mais
 
-https://console.workloads.netapp.com/api-doc["Documentação da API de fábrica da carga de trabalho"]
+https://console.workloads.netapp.com/api-doc["Documentação da API de fábrica do workload"]

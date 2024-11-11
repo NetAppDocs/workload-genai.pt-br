@@ -13,17 +13,26 @@ summary: Comece a criar uma base de conhecimento usando os dados da sua organiza
 [role="lead"]
 Comece a criar uma base de conhecimento usando os dados da sua organização que existem nos sistemas de arquivos do Amazon FSX para NetApp ONTAP. Um aplicativo como um chatbot acessará essa base de conhecimento para fornecer respostas focadas na organização aos usuários finais.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] link:requirements.html["Configure seu ambiente para atender aos requisitos do GenAI"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] Faça login na fábrica da carga de trabalho
+Você precisará https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configure uma conta com a fábrica de carga de trabalho"^] fazer login usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Configure seu ambiente para atender aos requisitos do GenAI
 [role="quick-margin-para"]
 Você precisará de credenciais da AWS para implantar a infraestrutura da AWS, um sistema de arquivos FSX for ONTAP implantado e descoberto, a lista de fontes de dados que você deseja integrar na sua base de conhecimento, acesso ao serviço de AI da Amazon bedrock e muito mais.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] link:identify-data-sources.html["Identifique o sistema de arquivos FSX for ONTAP que contém as fontes de dados"]
+link:requirements.html["Saiba mais sobre os requisitos do GenAI"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] Identifique o sistema de arquivos FSX for ONTAP que contém as fontes de dados
 [role="quick-margin-para"]
 As fontes de dados que você integrará em sua base de conhecimento podem estar localizadas em um único sistema de arquivos FSX for ONTAP ou em vários sistemas de arquivos FSX for ONTAP. Esses sistemas podem estar em VPCs diferentes, mas devem ser acessíveis dentro da mesma rede.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] link:deploy-infrastructure.html["Implantar a infraestrutura da base de conhecimento"]
+link:identify-data-sources.html["Saiba como identificar fontes de dados"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatro"] Implantar a infraestrutura da base de conhecimento
 [role="quick-margin-para"]
 Inicie o assistente de implantação de infraestrutura para implantar a infraestrutura da base de dados de conhecimento em seu ambiente AWS. Esse processo implanta uma instância do EC2 para o mecanismo do NetApp GenAI e um volume em um sistema de arquivos FSX for ONTAP para conter os bancos de dados do NetApp AI Engine. O volume é usado para armazenar o banco de dados de vetor usado pela base de conhecimento.
+
+link:deploy-infrastructure.html["Saiba como implantar a infraestrutura da base de conhecimento"^].
 
 .O que vem a seguir
 Agora você pode criar uma base de conhecimento para fornecer respostas focadas na organização aos usuários finais.

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: create-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
-summary: Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você integrará em sua base de conhecimento a partir de seus datastores FSX for ONTAP, você estará pronto para criar a base de conhecimento usando o Workload Factory. Como parte desta etapa, você também definirá as caraterísticas da IA e criará entradas de conversa. 
+summary: Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas em sua base de conhecimento a partir dos datastores do FSX for ONTAP, você estará pronto para criar a base de conhecimento usando a fábrica de cargas de trabalho. Como parte desta etapa, você também definirá as caraterísticas da IA e criará entradas de conversa. 
 ---
 = Crie uma base de conhecimento
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Depois de implantar a infraestrutura de IA e identificar as fontes de d
 
 
 [role="lead"]
-Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você integrará em sua base de conhecimento a partir de seus datastores FSX for ONTAP, você estará pronto para criar a base de conhecimento usando o Workload Factory. Como parte dessa etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.
+Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas em sua base de conhecimento a partir dos datastores do FSX for ONTAP, você estará pronto para criar a base de conhecimento usando a fábrica de cargas de trabalho. Como parte dessa etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.
 
 .Sobre esta tarefa
 As bases de conhecimento têm duas modalidades de integração de dados - _public mode_ e _Enterprise mode_.
@@ -37,14 +37,14 @@ NOTE: Os corrimões de dados podem ser ativados ou desativados a qualquer moment
 A base de conhecimento define caraterísticas como os modelos de IA bedrock e o formato de incorporação que você deseja usar para criar sua base de conhecimento.
 
 .Passos
-. Inicie sessão no Workload Factory.
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
 . No bloco cargas de trabalho de IA, selecione *Deploy & Manage*.
 . Na guia bases de conhecimento, selecione *Adicionar base de conhecimento*.
 . Na página Definir base de conhecimento, configure as definições da base de conhecimento:
 +
 .. *Nome*: Insira o nome que deseja usar para a base de conhecimento.
 .. *Descrição*: Insira uma descrição detalhada para a base de conhecimento.
-.. *Modelo de incorporação*: O modelo de incorporação define como seus dados serão convertidos em elementos vetoriais para a base de conhecimento. O Workload Factory é compatível com os seguintes modelos:
+.. *Modelo de incorporação*: O modelo de incorporação define como seus dados serão convertidos em elementos vetoriais para a base de conhecimento. O Workload de fábrica é compatível com os seguintes modelos:
 +
 *** Titãs incorporações G1 - texto
 *** Texto de incorporação Titan v2
@@ -81,8 +81,8 @@ Os pré-requisitos a seguir devem estar completos para habilitar os corrimões d
 +
 Se você ativar os iniciantes de conversação, "modo automático" é selecionado por padrão. O "modo manual" só pode ser ativado depois de adicionar fontes de dados à sua base de conhecimento. link:manage-knowledgebase.html["Saiba como modificar as configurações da base de conhecimento"].
 
-.. *FSX for ONTAP file system*: Quando você define uma nova base de conhecimento, o Workload Factory cria um novo volume do Amazon FSX for NetApp ONTAP para armazená-lo. Escolher o nome do sistema de arquivos e o SVM (também chamado de VM de storage) existentes no local em que o novo volume será criado.
-.. *Política de instantâneos*: Escolha uma política de instantâneos na lista de políticas existentes definidas no inventário de armazenamento de fábrica de carga de trabalho. Os instantâneos recorrentes da base de conhecimento serão criados automaticamente a uma frequência com base na política de instantâneos selecionada.
+.. *FSX for ONTAP file system*: Quando você define uma nova base de conhecimento, a fábrica de carga de trabalho cria um novo volume do Amazon FSX for NetApp ONTAP para armazená-lo. Escolher o nome do sistema de arquivos e o SVM (também chamado de VM de storage) existentes no local em que o novo volume será criado.
+.. *Política de snapshot*: Escolha uma política de snapshot na lista de políticas existentes definidas no inventário de armazenamento de carga de trabalho de fábrica. Os instantâneos recorrentes da base de conhecimento serão criados automaticamente a uma frequência com base na política de instantâneos selecionada.
 +
 Se a política de snapshot que você precisa não existir, você pode https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["criar uma política de snapshot"] na VM de armazenamento que contém o volume.
 

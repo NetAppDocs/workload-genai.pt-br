@@ -56,7 +56,7 @@ Você precisará inserir suas credenciais AWS e selecionar o sistema de arquivos
 Certifique-se de que o seu ambiente se encontra link:requirements.html["os requisitos"] antes de iniciar este procedimento.
 
 .Passos
-. Inicie sessão no Workload Factory.
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
 . No bloco cargas de trabalho de IA, selecione *Deploy & Manage*.
 . Revise o diagrama de infraestrutura e selecione *Next*.
 . Preencha os itens na seção *AWS settings*:
@@ -78,7 +78,7 @@ A implantação do GenAI deve estar em uma região da AWS que tenha o Amazon bed
 
 
 .Resultado
-O Workload Factory começa a implantar a infraestrutura do chatbot. Este processo pode demorar até 10 minutos.
+A fábrica de carga de trabalho começa a implantar a infraestrutura do chatbot. Este processo pode demorar até 10 minutos.
 
 Durante o processo de implantação, os seguintes itens são configurados:
 

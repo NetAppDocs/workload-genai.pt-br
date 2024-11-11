@@ -18,7 +18,7 @@ Você testa sua base de conhecimento para garantir que ela funcione como você e
 
 Você pode testar uma base de conhecimento conversando com suas fontes de dados incorporadas no simulador de chatbot. Observe que nenhuma interação ou insights são capturados no banco de dados de vetores GenAI ao testar a base de conhecimento localmente.
 
-Você realizará a maioria dos testes no Workload Factory antes de implantar a base de conhecimento em um aplicativo para seus usuários. Se você precisar fazer alterações na sua fonte de dados ou na operação do chatbot, você vai querer fazê-lo agora antes de publicar sua base de conhecimento.
+Você executará a maioria dos testes na fábrica de carga de trabalho antes de implantar a base de conhecimento em um aplicativo para seus usuários. Se você precisar fazer alterações na sua fonte de dados ou na operação do chatbot, você vai querer fazê-lo agora antes de publicar sua base de conhecimento.
 
 Algumas das tarefas que você vai querer executar para testar seu chatbot são:
 

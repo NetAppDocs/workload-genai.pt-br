@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: troubleshooting.html 
 keywords: support registration, register for support, support, nss account, add nss account, 
-summary: Antes de poder abrir um caso de suporte com o suporte técnico da NetApp, você precisa adicionar uma conta do site de suporte da NetApp à fábrica de carga de trabalho e, em seguida, Registrar-se para obter suporte. 
+summary: Antes de poder abrir um caso de suporte com o suporte técnico da NetApp, você precisa adicionar uma conta do site de suporte da NetApp à fábrica de carga de trabalho e, em seguida, Registrar-se para suporte. 
 ---
 = Solução de problemas
 :allow-uri-read: 
@@ -24,15 +24,15 @@ Se você tiver um desses problemas, use as etapas na coluna solução alternativ
 | Área | Problema | Causa | Solução alternativa 
 
 
-| Implantação | A implantação falha porque o volume já existe. | O Workload Factory for GenAI precisa criar um novo volume durante o processo de implantação, mas já existe um volume usando o nome especificado. | Especifique um nome exclusivo a ser usado para o novo volume e tente implantar novamente. 
+| Implantação | A implantação falha porque o volume já existe. | A fábrica de carga de trabalho do GenAI precisa criar um novo volume durante o processo de implantação, mas já existe um volume usando o nome especificado. | Especifique um nome exclusivo a ser usado para o novo volume e tente implantar novamente. 
 
 
-| Implantação | A implantação falha porque o Workload Factory para GenAI não consegue montar o volume. | Uma ou mais portas de entrada necessárias para o FSX for NetApp ONTAP são fechadas ou filtradas.  a| 
+| Implantação | A implantação falha porque a fábrica de carga de trabalho do GenAI não consegue montar o volume. | Uma ou mais portas de entrada necessárias para o FSX for NetApp ONTAP são fechadas ou filtradas.  a| 
 Abra as portas listadas em https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/reference-security-groups-fsx.html#inbound-rules["Regras do grupo de segurança para o FSX for ONTAP"^].
 
 
 
-| Manutenção | A instância do Docker de back-end usada pelo Workload Factory para o GenAI não foi iniciada. | O volume foi excluído e a instância EC2 foi reiniciada.  a| 
+| Manutenção | A instância do Docker de back-end usada pela fábrica de carga de trabalho para o GenAI falhou ao iniciar. | O volume foi excluído e a instância EC2 foi reiniciada.  a| 
 Use as seguintes etapas de recuperação:
 
 .Passos
@@ -68,5 +68,5 @@ volumes:
 
 
 
-| Manutenção | A instância do Docker de back-end usada pelo Workload Factory para o GenAI não foi iniciada. | O volume raiz foi excluído. | Crie um volume com um nome e um caminho e reinicie a instância do Docker de back-end do Amazon EC2. 
+| Manutenção | A instância do Docker de back-end usada pela fábrica de carga de trabalho para o GenAI falhou ao iniciar. | O volume raiz foi excluído. | Crie um volume com um nome e um caminho e reinicie a instância do Docker de back-end do Amazon EC2. 
 |===

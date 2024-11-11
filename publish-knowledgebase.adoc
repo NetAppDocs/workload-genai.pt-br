@@ -14,11 +14,12 @@ summary: Depois de criar e testar sua base de conhecimento localmente, você pod
 Depois de criar e testar sua base de conhecimento localmente, você pode publicar a base de conhecimento para que ela possa ser integrada a um aplicativo de chatbot que permitirá que seus usuários consultem a base de conhecimento.
 
 .Sobre esta tarefa
-Publicar a base de conhecimento permite que você a use em aplicativos de bate-papo. A ação publicar aciona a API Workload Factory para gerar e publicar endpoints exclusivos. Após a publicação, a base de conhecimento torna-se acessível para aplicativos de bate-papo e os endpoints da API estão prontos para integração.
+Publicar a base de conhecimento permite que você a use em aplicativos de bate-papo. A ação publicar aciona a API de fábrica da carga de trabalho para gerar e publicar endpoints exclusivos. Após a publicação, a base de conhecimento torna-se acessível para aplicativos de bate-papo e os endpoints da API estão prontos para integração.
 
 Cada base de conhecimento que você publica tem endpoints exclusivos.
 
 .Passos
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
 . Na página de inventário bases de conhecimento, selecione a base de conhecimento que deseja publicar.
 . Selecione image:icon-action.png["o botão de opção"] e selecione *Gerenciar base de conhecimento*.
 +
@@ -26,14 +27,14 @@ Esta página exibe o status publicado, o status de incorporação das fontes de 
 
 . Selecione o menu *ações* e selecione *publicar*.
 +
-A Workload Factory publica a base de conhecimento. Na página de detalhes da base de conhecimento, o status muda de *unpublished* para *published.*
+A fábrica de carga de trabalho publica a base de conhecimento. Na página de detalhes da base de conhecimento, o status muda de *unpublished* para *published.*
 
 +
 Agora você pode obter detalhes sobre o endpoint exclusivo para a base de conhecimento.
 
 . Ao lado do status publicado, selecione *Exibir*.
 +
-Os detalhes sobre como acessar a base de conhecimento usando a API Workload Factory são exibidos.
+Detalhes sobre como acessar a base de conhecimento usando a API de fábrica da carga de trabalho são exibidos.
 
 . Na caixa de diálogo *Exibir informações publicadas*, copie os endpoints da API que você pode usar para integrar a base de conhecimento a um aplicativo.
 +

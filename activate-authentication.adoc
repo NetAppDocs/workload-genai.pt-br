@@ -14,6 +14,7 @@ summary: Ative a autenticação para uma base de conhecimento para que a valida�
 Ative a autenticação para uma base de conhecimento para que a validação de token e ACLs sejam necessárias ao usar os endpoints da API para integrar uma base de conhecimento com um aplicativo de chatbot. Ao ativar a autenticação, você configura as configurações de um Token Web JSON que será usado para solicitações de API para uma base de conhecimento de clientes de chatbot.
 
 .Passos
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
 . Na página de inventário das bases de conhecimento, selecione a base de conhecimento para a qual pretende ativar a autenticação.
 . Selecione image:icon-action.png["o botão de opção"] e selecione *Gerenciar base de conhecimento*.
 . Selecione o menu *ações* e selecione *Gerenciar configurações de autenticação*.

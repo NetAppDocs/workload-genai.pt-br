@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: requirements.html 
 keywords: ai, chatbot, prerequisites, bedrock, fsx for ontap, prerequisites, requirements 
-summary: Certifique-se de que o Workload Factory e a AWS estejam configurados corretamente antes de criar sua base de conhecimento. Isso inclui ter suas credenciais de login da AWS, um sistema de arquivos FSX for ONTAP implantado que contém as fontes de dados que você deseja integrar em sua base de conhecimento, acesso ao serviço de IA da Amazon bedrock e muito mais. 
+summary: Certifique-se de que a fábrica da carga de trabalho e a AWS estejam configuradas corretamente antes de criar sua base de conhecimento. Isso inclui ter suas credenciais de login da AWS, um sistema de arquivos FSX for ONTAP implantado que contém as fontes de dados que você deseja integrar em sua base de conhecimento, acesso ao serviço de IA da Amazon bedrock e muito mais. 
 ---
 = Requisitos do GenAI
 :allow-uri-read: 
@@ -11,15 +11,10 @@ summary: Certifique-se de que o Workload Factory e a AWS estejam configurados co
 
 
 [role="lead"]
-Certifique-se de que o Workload Factory e a AWS estejam configurados corretamente antes de criar sua base de conhecimento. Isso inclui ter suas credenciais de login da AWS, um sistema de arquivos FSX for ONTAP implantado que contém as fontes de dados que você deseja integrar em sua base de conhecimento, acesso ao serviço de IA da Amazon bedrock e muito mais.
+Certifique-se de que a fábrica da carga de trabalho e a AWS estejam configuradas corretamente antes de criar sua base de conhecimento. Isso inclui ter suas credenciais de login da AWS, um sistema de arquivos FSX for ONTAP implantado que contém as fontes de dados que você deseja integrar em sua base de conhecimento, acesso ao serviço de IA da Amazon bedrock e muito mais.
 
-Login e conta de fábrica da carga de trabalho:: Você precisará fazer login no Workload Factory e criar uma conta.
-+
---
-https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Saiba mais sobre como fazer login e criar uma conta"^]
-
---
-Credenciais e permissões da AWS:: Você precisa adicionar credenciais da AWS ao Workload Factory com permissões Automate, o que significa que você usará o Workload Factory no modo _Automate_ para o GenAI.
+Login e conta de fábrica da carga de trabalho:: Você precisará https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configure uma conta com a fábrica de carga de trabalho"^] fazer login usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+Credenciais e permissões da AWS:: Você precisa adicionar credenciais da AWS à fábrica de cargas de trabalho com permissões Automate, o que significa que você usará a fábrica de cargas de trabalho no modo _Automate_ para o GenAI.
 +
 --
 As permissões do modo _Basic_ e do modo _Read_ não são suportadas neste momento.
@@ -28,13 +23,13 @@ Ao configurar suas credenciais, selecionar permissões como mostrado abaixo forn
 
 image:screenshot-ai-permissions.png["Uma captura de tela mostrando a configuração de permissões para o gerenciamento completo dos recursos de IA."]
 
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Saiba como adicionar credenciais da AWS ao Workload Factory"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Saiba como adicionar credenciais da AWS à fábrica de cargas de trabalho"^]
 
 --
 Amazon bedrock:: O Amazon bedrock permite que você use modelos de base e fornece os recursos para criar aplicativos de IA generativos.
 +
 --
-Antes de começar a usar o Workload Factory para GenAI, você deve configurar o Amazon bedrock. Sua implantação do GenAI deve estar em uma região da AWS que tenha o Amazon bedrock habilitado.
+Antes de começar a usar a fábrica de carga de trabalho para o GenAI, você deve configurar o Amazon bedrock. Sua implantação do GenAI deve estar em uma região da AWS que tenha o Amazon bedrock habilitado.
 
 * https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html["Documentação da AWS: Configurar o Amazon bedrock"^]
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["Documentação da AWS: Regiões e modelos compatíveis para bases de conhecimento da Amazon bedrock"^]

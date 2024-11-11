@@ -20,7 +20,8 @@ Você pode ver detalhes sobre a infraestrutura do GenAI RAG implantada ou remove
 Você pode ver informações sobre a infraestrutura do chatbot.
 
 .Passos
-. No menu de navegação, selecione *AI*.
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. No menu de navegação de fábrica da carga de trabalho, selecione *AI*.
 . Selecione a guia *infra-estrutura*.
 . Veja informações sobre a infraestrutura, que inclui detalhes sobre os seguintes componentes:
 +
@@ -36,12 +37,12 @@ Você pode ver informações sobre a infraestrutura do chatbot.
 
 == Remova a infraestrutura
 
-Se você não precisar mais da infraestrutura de chatbot que implantou para um ou mais chatbots, poderá removê-la do Workload Factory.
+Se você não precisar mais da infraestrutura de chatbot implantada para um ou mais chatbots, poderá removê-la da fábrica de cargas de trabalho.
 
 
 NOTE: Todos os chatbots que foram implantados nessa infraestrutura serão desativados e todo o histórico de chat será excluído.
 
-Essa operação remove apenas os links para a infraestrutura de IA do Workload Factory - ela não remove todos os componentes da AWS. Você precisará excluir manualmente os seguintes componentes de infraestrutura da AWS:
+Essa operação só remove os links para a infraestrutura de IA da fábrica de carga de trabalho - ela não remove todos os componentes da AWS. Você precisará excluir manualmente os seguintes componentes de infraestrutura da AWS:
 
 * A instância da VM
 * Endpoints privados
@@ -52,11 +53,12 @@ Essa operação remove apenas os links para a infraestrutura de IA do Workload F
 
 
 .Passos
-. No menu de navegação, selecione *AI*.
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. No menu de navegação de fábrica da carga de trabalho, selecione *AI*.
 . Selecione a guia *infra-estrutura*.
 . Selecione image:icon-action.png["o botão de opção"] e selecione *Remover a infraestrutura do chatbot*.
 . Confirme se deseja excluir a infraestrutura e selecione *Remover*.
 
 
 .Resultado
-Os componentes da infraestrutura do chatbot são removidos do Workload Factory.
+Os componentes da infraestrutura do chatbot são removidos da fábrica de cargas de trabalho.

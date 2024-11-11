@@ -13,12 +13,10 @@
   <block id="751157f855d8f0597671b65bc8ea1301" category="list-text">*Habilitado*: Os usuários do chatbot que acessam essa base de conhecimento só receberão respostas a consultas de fontes de dados às quais têm acesso.</block>
   <block id="9969ec0e7476736a130c54f32700611e" category="list-text">*Disabled*: Os usuários do chatbot receberão respostas usando conteúdo de todas as fontes de dados integradas.</block>
   <block id="65f706122d6156fd52b6cb2ff2214944" category="list-text">Selecione *Add* para adicionar esta fonte de dados à sua base de conhecimento.</block>
-  <block id="9ba97d99706e208a6fec2439db710d74" category="doc">Lançamento inicial da fábrica de cargas de trabalho para o GenAI</block>
   <block id="3d2b63396c87b28180a4d9d0ba951b0d" category="paragraph">A versão inicial inclui a capacidade de desenvolver uma base de conhecimento que é personalizada incorporando os dados da sua organização. A base de conhecimento pode ser acessada por um aplicativo de chatbot para seus usuários. Essa capacidade garante respostas precisas e relevantes a perguntas específicas da organização, aumentando a satisfação e a produtividade de todos os seus usuários.</block>
   <block id="ec7827c2237ae7b863c9ba93b519cbc1" category="doc">Integração do Amazon CloudWatch Logs</block>
   <block id="64c1dd8cb5f86710c3293cc9807760fb" category="paragraph">As cargas de trabalho generativas de IA agora estão integradas ao Amazon CloudWatch Logs, permitindo que você monitore arquivos de log de cargas de trabalho generativas de IA.</block>
   <block id="e2c3c3f9d43a7b053dbca2a0234078b7" category="section-title">Exemplo de aplicativo chatbot</block>
-  <block id="75a337f9fd41608c507045c7429174be" category="paragraph">O aplicativo de exemplo do GenAI de fábrica de carga de trabalho da NetApp permite testar a autenticação e a recuperação da sua base de conhecimento publicada da NetApp Workload Factory, interagindo diretamente com ela em um aplicativo de chatbot baseado na web.</block>
   <block id="8fa53177b9fd9cdb460f43ba4be39618" category="doc">Estratégias adicionais de divisão</block>
   <block id="a0a464c97ca1835adf3bddc803b001cd" category="paragraph">Agora, as cargas de trabalho generativas de IA oferecem suporte a volumes de várias frases e conjuntos baseados em sobreposição para fontes de dados.</block>
   <block id="4cb92325ae7034576f6dff7fe48e3254" category="section-title">Volume dedicado para cada base de conhecimento</block>
@@ -58,13 +56,9 @@
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">Selecione *Guardar*.</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Resultado</block>
   <block id="d71d72ee7bc5c79bade09f02715592c3" category="paragraph">A autenticação para a base de conhecimento está ativa e você pode usar endpoints de API para interagir com a base de conhecimento e integrar a base de conhecimento com um aplicativo de chatbot.</block>
-  <block id="8cf73916af9c9e607f9cebacfe1b1ac5" category="summary">A fábrica de carga de trabalho para o GenAI permite que você integre o Amazon FSX para sistemas de arquivos NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI.</block>
-  <block id="66b1224405cf6ac792013dbc191eba66" category="doc">Saiba mais sobre o Workload Factory para GenAI</block>
-  <block id="25762e4e39bc220e130cc0d26e2d4ca6" category="paragraph">A fábrica de cargas de trabalho para o GenAI permite que você use fontes de dados empresariais no Amazon FSX for NetApp ONTAP com aplicativos de IA generativos. Utilizando a estrutura de geração de aumento de recuperação (RAG), você pode conetar rapidamente fontes de dados aos modelos Foundation disponíveis via Amazon bedrock para desenvolver aplicativos geradores de IA, como assistentes virtuais, chatbots de Q&amp;A, sumarização de documentos, criação de conteúdo, etc.</block>
   <block id="32ec6ea7e1f597681bb91bb109a9ef11" category="paragraph">O uso de IA generativa com seus dados organizacionais permite que você aproveite seu próprio conhecimento e experiência, e não confie apenas na inteligência do modelo com base em dados públicos nos quais os modelos foram treinados. O uso do RAG para personalizar os modelos garante respostas precisas e relevantes a perguntas específicas da organização, aumentando a produtividade e a eficiência para os usuários de seus aplicativos usando IA generativa.</block>
   <block id="7d5046622b6681e334f44ff69fe84455" category="paragraph">Desenvolver um aplicativo GenAI que é adaptado aos dados da sua organização permite que você aproveite seu próprio conhecimento e experiência. Essa capacidade de personalização garante respostas precisas e relevantes a perguntas específicas da organização, aumentando a satisfação e a produtividade de todos os seus usuários.</block>
   <block id="abcb7e2975df8496b30470d76f8b1d33" category="section-title">Benefícios de usar o GenAI para criar aplicativos de IA generativos</block>
-  <block id="a8d9b71fb9e841a43685f89746970117" category="paragraph">O Workload Factory for GenAI simplifica o processo de implantação da infraestrutura necessária para criar aplicativos de IA generativos usando o Retrieval Augmented Generation (RAG). Especificamente, o GenAI oferece os seguintes benefícios:</block>
   <block id="e3fa845bdb32966ee960e79fc4cb6cf2" category="list-text">Sem a necessidade de um conhecimento profundo da infraestrutura de dados, base e modelos de linguagem, os administradores e desenvolvedores DE TI podem acelerar o desenvolvimento de aplicações utilizando a automação fornecida pelo GenAI. Os administradores e desenvolvedores de dados podem criar bases de conhecimento empresariais de forma fácil e rápida que incorporam dados não estruturados da sua organização para serem usados por aplicativos de IA generativos.</block>
   <block id="ce8128205284c384b430769caeb26741" category="list-text">Melhore a segurança preservando as permissões do usuário em arquivos incorporados nas bases de conhecimento para garantir que a segurança e a privacidade dos dados sejam mantidas. Um aplicativo, como um chatbot, pode ser desenvolvido para fornecer apenas aos usuários autenticados respostas com base nos dados aos quais os usuários têm acesso.</block>
   <block id="3bc3038379ac11eb60388be943b76d65" category="list-text">Mantenha seus dados empresariais privados e seguros na conta de cliente da AWS, onde seus dados organizacionais nunca serão expostos externamente.</block>
@@ -75,7 +69,6 @@
   <block id="69fc349b2f7bd62d0e7765c8cc066234" category="paragraph">O GenAI usa os dados privados da sua organização para complementar a inteligência do modelo (com base nos dados em que foi treinado) para fornecer respostas personalizadas às perguntas feitas pelos seus usuários em sua organização. Primeiro, você implanta a infraestrutura necessária para uma estrutura RAG e, em seguida, cria uma base de conhecimento usando as fontes de dados e os modelos de base da sua organização disponíveis via Amazon bedrock e, em seguida, coneta um aplicativo (como um chatbot de perguntas e respostas) à base de conhecimento.</block>
   <block id="d70bac99beb52d5e093b391d08e80174" category="inline-image-macro">Um diagrama mostrando os principais componentes do GenAI, sua função e como ele funciona.</block>
   <block id="ce3b45a4624ee79213529a063f3abb8c" category="paragraph"><block ref="ce3b45a4624ee79213529a063f3abb8c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e564ccbddd9f191b216a23125a5efb1f" category="section-title">Como o Workload Factory for GenAI ajuda a criar aplicativos de IA generativos</block>
   <block id="ade2c068f72325046c5312c72ad3b430" category="paragraph">O GenAI ajuda a criar aplicativos de IA generativos usando o RAG das seguintes maneiras:</block>
   <block id="fda814900dea98d0023eb0ecf6f36448" category="list-text">Implanta a infraestrutura necessária para a estrutura de geração aumentada de recuperação (RAG) para trabalhar com fontes de dados no FSX para sistemas de arquivos ONTAP e Amazon bedrock. A infraestrutura inclui a instância do NetApp GenAI Engine para gerenciamento de dados, um banco de dados vetorial incorporado (LanceDB) e armazenamento no sistema de arquivos FSX for ONTAP para o banco de dados vetorial.</block>
   <block id="cc56ccbbe7a4a4f1d99e1d08267a272b" category="list-text">Ajuda a conetar as fontes de dados a incorporações e modelos de linguagem disponíveis via Amazon bedrock para incorporar fontes de dados e recuperar as respostas para consultas de usuários. As fontes de dados, juntamente com os modelos e sua configuração, são apresentadas como bases de conhecimento do FSX for ONTAP.</block>
@@ -83,28 +76,22 @@
   <block id="80a4d47d289b6794b7af32bf0403d817" category="list-text">Cria automaticamente perguntas iniciais de conversação com base no conteúdo nas bases de conhecimento.</block>
   <block id="d115eba24b3d1be73af7f0952b82dc13" category="list-text">Fornece um simulador de bate-papo para os administradores de dados testar o bate-papo com as bases de conhecimento.</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Custo</block>
-  <block id="3163a16fc98aa29c5fea8b61c62bb459" category="paragraph">Não há nenhum custo para usar o recurso GenAI do Workload Factory.</block>
   <block id="ca4fec9e2b2e873ba73dde822ed0fd02" category="paragraph">No entanto, você precisará pagar pelos recursos da AWS que implantar para oferecer suporte à infraestrutura de IA generativa. Por exemplo, você pagará a AWS pelo serviço de IA da Amazon bedrock, pelo sistema de arquivos FSX for ONTAP e pela capacidade de armazenamento e pela instância do GenAI Engine EC2.</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">Licenciamento</block>
-  <block id="0ea77fd2fdca0ee14d426a023ea715ad" category="paragraph">Nenhuma licença especial é necessária da NetApp para usar os recursos de IA da fábrica de cargas de trabalho.</block>
   <block id="a46c34e822b00eb49125943300225ec1" category="summary">Depois de criar sua base de conhecimento e testar seu chatbot, você estará pronto para configurar o aplicativo que permitirá que seus usuários consultem o chatbot.</block>
   <block id="53b343f4a880bcff3b258324a35744ff" category="doc">Crie um aplicativo de IA baseado em RAG</block>
   <block id="3034501b6830f6e24b0e219fa3565ffb" category="inline-link">Saiba como criar um aplicativo de IA baseado em RAG no FSX for ONTAP</block>
   <block id="cddb505028d2d2c7026aad1d17c19a05" category="paragraph"><block ref="cddb505028d2d2c7026aad1d17c19a05" category="inline-link-rx"></block></block>
-  <block id="1bb31e213d9a78b11c5c2c214bcffc0d" category="summary">Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você integrará em sua base de conhecimento a partir de seus datastores FSX for ONTAP, você estará pronto para criar a base de conhecimento usando o Workload Factory. Como parte desta etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.</block>
   <block id="0da805b7cc0727848a84e995ab36cd76" category="doc">Crie uma base de conhecimento</block>
-  <block id="f5319b0c82a4988a803605055631adad" category="paragraph">Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você integrará em sua base de conhecimento a partir de seus datastores FSX for ONTAP, você estará pronto para criar a base de conhecimento usando o Workload Factory. Como parte dessa etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.</block>
   <block id="ede259c54718066f429204cb187335ac" category="paragraph">Uma base de conhecimento pode ser usada sem integrar fontes de dados da sua organização. Neste caso, um aplicativo integrado à base de conhecimento só fornecerá resultados de informações publicamente disponíveis na internet. Isso é conhecido como integração _public mode_.</block>
   <block id="9c5cf370721bfae38201d8aeb52e4022" category="paragraph">Na maioria dos casos, você vai querer integrar fontes de dados da sua organização na base de conhecimento. Isso é conhecido como integração _Enterprise mode_ porque fornece conhecimento da sua empresa.</block>
   <block id="3bd4cddbc7a98f5c9632a455eca8c27e" category="section-title">Crie e configure a base de conhecimento</block>
   <block id="646df03c5fddafc8e9c4ed5aa7036edf" category="paragraph">A base de conhecimento define caraterísticas como os modelos de IA bedrock e o formato de incorporação que você deseja usar para criar sua base de conhecimento.</block>
-  <block id="d34fab7936dd110b003945d679bb4133" category="list-text">Inicie sessão no Workload Factory.</block>
   <block id="4d7ea1af041cca43906c5e490c0c1820" category="list-text">No bloco cargas de trabalho de IA, selecione *Deploy &amp; Manage*.</block>
   <block id="5b20d7e96740200c428376cbb5e7fdb4" category="list-text">Na guia bases de conhecimento, selecione *Adicionar base de conhecimento*.</block>
   <block id="a97438cf1c94fe51248083c86ce591c5" category="list-text">Na página Definir base de conhecimento, configure as definições da base de conhecimento:</block>
   <block id="53bdd4ba55043d3b20fafbaeddced95e" category="list-text">*Nome*: Insira o nome que deseja usar para a base de conhecimento.</block>
   <block id="867a64928002194654eea40509536879" category="list-text">*Descrição*: Insira uma descrição detalhada para a base de conhecimento.</block>
-  <block id="c37e3f948924097538b621ebbdc79afa" category="list-text">*Modelo de incorporação*: O modelo de incorporação define como seus dados serão convertidos em elementos vetoriais para a base de conhecimento. O Workload Factory é compatível com os seguintes modelos:</block>
   <block id="0edab7909500c21f42341384982d7dab" category="list-text">Titãs incorporações G1 - texto</block>
   <block id="b1cf79f6f67a2d7230894fc720b494b6" category="list-text">Texto de incorporação Titan v2</block>
   <block id="eca4d29f6a2ef2328233a8dd5b28dd89" category="list-text">Incorporações multimodais Titan G1</block>
@@ -117,8 +104,6 @@
   <block id="bb75c182eff66bee3c76899d41fc8e8f" category="list-text">*Entradas de conversação*: Escolha se você deseja fornecer até quatro prompts iniciais de conversação que são exibidos para usuários que interagem com um chatbot que usa essa base de conhecimento. Recomendamos que ative esta definição.</block>
   <block id="fd6f710773f79577a44d128bb3df27cc" category="inline-link-macro">Saiba como modificar as configurações da base de conhecimento</block>
   <block id="b651dafbe972dff3ef00c60a522c2c08" category="paragraph">Se você ativar os iniciantes de conversação, "modo automático" é selecionado por padrão. O "modo manual" só pode ser ativado depois de adicionar fontes de dados à sua base de conhecimento. <block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>.</block>
-  <block id="ce08e73f7c40cf7e58d6371a757d23c6" category="list-text">*FSX for ONTAP file system*: Quando você define uma nova base de conhecimento, o Workload Factory cria um novo volume do Amazon FSX for NetApp ONTAP para armazená-lo. Escolher o nome do sistema de arquivos e o SVM (também chamado de VM de storage) existentes no local em que o novo volume será criado.</block>
-  <block id="c880ade9c6e1657038a733388834bf6d" category="list-text">*Política de instantâneos*: Escolha uma política de instantâneos na lista de políticas existentes definidas no inventário de armazenamento de fábrica de carga de trabalho. Os instantâneos recorrentes da base de conhecimento serão criados automaticamente a uma frequência com base na política de instantâneos selecionada.</block>
   <block id="ced63c567878ed01730fce043c8ade96" category="inline-link">criar uma política de snapshot</block>
   <block id="ad36efe6c620944e32785812d09accd6" category="paragraph">Se a política de snapshot que você precisa não existir, você pode<block ref="7546e5b5141e2979fa53ccc7106931ca" category="inline-link-rx"></block> na VM de armazenamento que contém o volume.</block>
   <block id="7311e81ffb665c2ec2a4c996ce693887" category="list-text">Selecione *criar base de conhecimento* para adicionar a base de conhecimento ao GenAI.</block>
@@ -166,7 +151,6 @@
   <block id="3869544f6aa6ccd1570caed7671ca0d6" category="list-text">*Tags*: Insira quaisquer pares de chave/valor de tag que você deseja aplicar a todos os recursos da AWS que fazem parte dessa implantação.</block>
   <block id="f445edd51fe9e6a1af8ffd9c30e87f40" category="list-text">*Par de chaves*: Selecione um par de chaves que permita que você se conete com segurança à instância do mecanismo NetApp GenAI.</block>
   <block id="6449a99be42d938ed27187e040028634" category="list-text">Selecione *Deploy* para iniciar a implantação.</block>
-  <block id="601674fba29f7ecc4a5620e6933241f6" category="paragraph">O Workload Factory começa a implantar a infraestrutura do chatbot. Este processo pode demorar até 10 minutos.</block>
   <block id="64dea11099d626528fa052576a740de2" category="paragraph">Durante o processo de implantação, os seguintes itens são configurados:</block>
   <block id="8f3d503d34aa6fe6a66b841b0bdd2996" category="list-text">A rede é configurada juntamente com os endpoints privados.</block>
   <block id="fc4ab898b1959c931605be5dfe62a71d" category="list-text">A função do IAM, o perfil da instância e o grupo de segurança são criados.</block>
@@ -174,9 +158,7 @@
   <block id="c83d7c23906c063b64dd22d30483cb24" category="list-text">O Amazon bedrock está configurado para enviar logs para o Amazon CloudWatch Logs, usando um grupo de log com o prefixo<block ref="26245dda4fa653114e9a41956171489d" prefix=" " category="inline-code"></block>.</block>
   <block id="6fbe5ae14d71eb3abafcfce8f7fe977a" category="inline-link">ID da conta BlueXP </block>
   <block id="af270465b477b731bafe1e4859956cc4" category="list-text">O mecanismo GenAI está configurado para enviar logs para o Amazon CloudWatch Logs, usando um grupo de log com o nome<block ref="267ed14c989ee7da1da6b5683a1ba205" prefix=" " category="inline-code"></block>, onde<block ref="44014fe9a7dd0d34b59279b9206b84b3" prefix=" " category="inline-code"></block> é o<block ref="bffdd6286177ca86f99ccefe410268a2" category="inline-link-rx"></block> para o usuário atual.</block>
-  <block id="9f6d7e16caf2363ed289cf415c43d68e" category="summary">Você pode instalar e executar um aplicativo de chatbot de exemplo para testar suas bases de conhecimento e aprender como usar a API Workload Factory para criar seu próprio aplicativo de IA generativo.</block>
   <block id="ce8f8573f53c4f625df29c794cd7d82a" category="doc">Use o aplicativo de exemplo de chatbot externo</block>
-  <block id="15abf1d561eb7f7ddb0e28f6c4562a8c" category="paragraph">Depois de configurar, ativar e publicar uma base de conhecimento, os desenvolvedores de aplicativos externos podem configurar e executar o aplicativo de chatbot de exemplo de código aberto fornecido pelo NetApp para interagir com sua base de conhecimento e aprender a usar a API de fábrica de carga de trabalho para criar seus próprios aplicativos de IA generativos.</block>
   <block id="39f8e13a71ec862a906b446df493f119" category="list-text"><block ref="34b37227349aa26ad88498e81a1ea1af" category="inline-link-macro-rx"></block>.</block>
   <block id="b032727d9e00be7e59aefec94a0972c2" category="inline-link-macro">Ative a autenticação</block>
   <block id="804d039033ead5360f1a1a7d2c362f11" category="list-text"><block ref="30b5e2b0cf5de93d45c874ca5c8c6a31" category="inline-link-macro-rx"></block> para a base de conhecimento que você criou.</block>
@@ -192,9 +174,6 @@
   <block id="4fc1d0607a3fe50db5ef612a2c4a178e" category="list-text">Navegue até para<block ref="0e14f9ffc1d2673bd92f13a4ac79e32e" category="inline-link-rx"></block> para iniciar sessão na aplicação.</block>
   <block id="5f62c285aea87618ed1381c43c7ae2cf" category="paragraph">O exemplo de aplicativo chatbot é exibido.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="section-title">Saiba mais</block>
-  <block id="862b02acae8afc7a8e5ed9bf4c7cb18e" category="inline-link">Documentação da API de fábrica da carga de trabalho</block>
-  <block id="39d0fcde59bc31b066cd026cdc9718f8" category="paragraph"><block ref="39d0fcde59bc31b066cd026cdc9718f8" category="inline-link-rx"></block></block>
-  <block id="6b39fa3582a5336c28b4c324f016a9a8" category="summary">Ao implantar a infraestrutura do GenAI, o Workload Factory cria uma instância do EC2 para o mecanismo GenAI. Ele também cria uma função do IAM, grupo de segurança e endpoints privados para essa instância. Você pode querer entender mais detalhes sobre esses componentes criados pelo Workload Factory no seu ambiente AWS.</block>
   <block id="44f33186e2b6baa4a697e5604c0a3863" category="doc">Componentes para o motor NetApp GenAI</block>
   <block id="b7afd5ecab3ac597cbe300dd5827c445" category="list-text">Tipo de instância EC2</block>
   <block id="b592e89ca5722aab8bf77ae181e9fc0d" category="list-text">m5.large</block>
@@ -203,13 +182,11 @@
   <block id="338578acf7e0dc54ebcd8c3592f0b022" category="list-text">Grupo de segurança</block>
   <block id="36d8c0d0c9711e8ac7a5bbcbe9b96008" category="list-text">As regras de saída estão abertas a todo o tráfego, enquanto as regras de entrada são completamente fechadas.</block>
   <block id="1f171bab0b26254e4c58e536973c5c09" category="list-text">Endpoints privados</block>
-  <block id="a91a3edb7605f2bbdd24de35ed37881d" category="list-text">Se a VPC de destino ainda não os tiver, o Workload Factory criará endpoints privados para a instância do GenAI Engine EC2 para que ela possa se comunicar com os seguintes serviços da AWS:</block>
   <block id="34048930da0f8b448828d6774b139b17" category="list-text">Amazon bedrock</block>
   <block id="c421d122321bec48d6b30858f4e7b515" category="list-text">Amazon EC2</block>
   <block id="719ffca696aa714ef090fce0aca97bd2" category="list-text">Amazon Elastic Container Registry (ECR)</block>
   <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
   <block id="0072b242011f459b57b0768dceac82f8" category="list-text">AWS Systems Manager (SSM)</block>
-  <block id="243f4102d24e538f61072e19e53b373f" category="summary">O NetApp fornece suporte para a fábrica de cargas de trabalho de várias maneiras. Amplas opções gratuitas de suporte autônomo estão disponíveis 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. O seu registo de suporte inclui suporte técnico remoto através de Bilheteira na Web.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Obtenha ajuda</block>
   <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">A NetApp fornece suporte para a fábrica de workloads e seus serviços de nuvem de várias maneiras. Amplas opções gratuitas de suporte autônomo estão disponíveis 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. O seu registo de suporte inclui suporte técnico remoto através de Bilheteira na Web.</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">Obtenha suporte para o FSX for ONTAP</block>
@@ -341,7 +318,6 @@
   <block id="a184e20ed5e6a5b8da09e0b40c163e0c" category="doc">Gerenciar fontes de dados</block>
   <block id="185887c3ad19744e76bc5a84165858d0" category="section-title">Exibir informações sobre uma fonte de dados</block>
   <block id="f6060e0bb20c0eff7193a80ac27e3036" category="paragraph">Você pode exibir informações sobre o conteúdo de uma fonte de dados e pode visualizar seu status de incorporação com a base de conhecimento. Como uma fonte de dados faz parte de uma base de conhecimento, você precisará abrir a base de conhecimento primeiro para poder visualizar os detalhes da fonte de dados.</block>
-  <block id="ecabe73468b675c56c4b048aef061655" category="list-text">No menu de navegação, selecione *AI*.</block>
   <block id="2fb136b28c086b6b7bfc783f6e18f23b" category="list-text">Selecione a base de conhecimento onde reside a fonte de dados e, em seguida, <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Gerenciar base de conhecimento*.</block>
   <block id="b5d487e1e7e0dc1f35f129a112481d93" category="paragraph">A parte inferior da página lista as fontes de dados que fazem parte desta base de conhecimento.</block>
   <block id="8a68fc9773461f136961ee1d6821c3c8" category="inline-image-macro">o botão de seta para baixo</block>
@@ -375,9 +351,7 @@
   <block id="ae83c68afab83f983d4cf40bb5e9197e" category="list-text">O mecanismo AI</block>
   <block id="6d8dc0b510e717cbe34e53d7fc1097e5" category="list-text">O banco de dados vetorial</block>
   <block id="2a118f240daca7e8bd0c3e4bc54a8d77" category="section-title">Remova a infraestrutura</block>
-  <block id="a7bf703b71095ade4e9a5a2efbfb0833" category="paragraph">Se você não precisar mais da infraestrutura de chatbot que implantou para um ou mais chatbots, poderá removê-la do Workload Factory.</block>
   <block id="6e78a0ad87ae28b7e51a08104ee52c34" category="admonition">Todos os chatbots que foram implantados nessa infraestrutura serão desativados e todo o histórico de chat será excluído.</block>
-  <block id="ce3d14602fb1bff239cdf7ed290f87fa" category="paragraph">Essa operação remove apenas os links para a infraestrutura de IA do Workload Factory - ela não remove todos os componentes da AWS. Você precisará excluir manualmente os seguintes componentes de infraestrutura da AWS:</block>
   <block id="6e6644acd18eb2b3e0fc07c09241130d" category="list-text">A instância da VM</block>
   <block id="32c7279612357f171a31f3fd0988e591" category="list-text">O volume no sistema de arquivos FSX for ONTAP que contém os bancos de dados AI</block>
   <block id="eebf0e8baab6b2923da827cd56e070ef" category="list-text">A função do IAM</block>
@@ -385,7 +359,6 @@
   <block id="4e591f9db53b0a865ccc72ad006f4f61" category="list-text">O grupo de segurança</block>
   <block id="3765f8c52656be300af4ab9e0aff8ffd" category="list-text">Selecione <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> e selecione *Remover a infraestrutura do chatbot*.</block>
   <block id="3df7e2c5a6249307f8e5f6af05d6ed2f" category="list-text">Confirme se deseja excluir a infraestrutura e selecione *Remover*.</block>
-  <block id="f8633718706ae1721e0497e512234ee9" category="paragraph">Os componentes da infraestrutura do chatbot são removidos do Workload Factory.</block>
   <block id="ed85cf4792c18c3cdb4179c827cbd42e" category="summary">Depois de criar uma base de conhecimento, você pode visualizar os detalhes da base de conhecimento, modificar a base de conhecimento, integrar fontes de dados adicionais ou excluir a base de conhecimento.</block>
   <block id="26de2eeb556bbb31af9129a3b43b690f" category="section-title">Exibir informações sobre uma base de conhecimento</block>
   <block id="013f1ff7ab3949235da9d5491af2c3c0" category="paragraph">Você pode exibir informações sobre as configurações de uma base de conhecimento e a fonte de dados integrada.</block>
@@ -449,23 +422,18 @@
   <block id="bd5de107e9031f0c3a6ac09d2366a7be" category="list-text">Selecione o menu *ações* e selecione *Unpublish*.</block>
   <block id="10b42a1e79dbd5f79dd793c2655522b8" category="paragraph">A base de conhecimento está desativada e não é mais acessível por um aplicativo de chatbot.</block>
   <block id="cc0a404c41a82c6be9de0d64f06fcd89" category="section-title">Excluir uma base de conhecimento</block>
-  <block id="88f99918375bbf8120b251d975b7e03e" category="paragraph">Se você não precisar mais de uma base de conhecimento, você pode excluí-la. Quando você exclui uma base de conhecimento, ela é removida do Workload Factory e o volume que contém a base de conhecimento é excluído. Quaisquer aplicativos ou chatbots que estejam usando a base de conhecimento deixarão de funcionar. Excluir uma base de conhecimento não é reversível.</block>
   <block id="fd33fe22719aed031c8ea822ba866360" category="paragraph">Ao excluir uma base de conhecimento, você também deve desassociar a base de conhecimento de quaisquer agentes a que está associada para excluir totalmente todos os recursos associados à base de conhecimento.</block>
   <block id="26d469c182333c4c1e4800ddcd6d2a61" category="list-text">Na página de inventário das bases de conhecimento, selecione a base de conhecimento que pretende eliminar.</block>
   <block id="0e0f1b27ca798d3b3b8154b411215d9a" category="list-text">Selecione o menu *ações* e selecione *Excluir base de conhecimento*.</block>
   <block id="74091f3303c946e291c1c1702ba6d39a" category="list-text">Na caixa de diálogo Excluir base de conhecimento, confirme se deseja excluí-la e selecione *Excluir*.</block>
-  <block id="fa20235938197ed878f7da8159917a1d" category="paragraph">A base de conhecimento é removida do Workload Factory e seu volume associado é excluído.</block>
   <block id="8bbd4e338e42c1350d453ca5c82eb3b3" category="summary">Depois de criar e testar sua base de conhecimento localmente, você pode publicar a base de conhecimento para que ela possa ser integrada ao aplicativo chatbot que permitirá que seus usuários consultem a base de conhecimento.</block>
   <block id="70de8e73e84df845f91376c6c0d1188e" category="doc">Publique uma base de conhecimento e visualize o endpoint exclusivo</block>
   <block id="12676fc9338d312de3a6cbb584fa3284" category="paragraph">Depois de criar e testar sua base de conhecimento localmente, você pode publicar a base de conhecimento para que ela possa ser integrada a um aplicativo de chatbot que permitirá que seus usuários consultem a base de conhecimento.</block>
-  <block id="63c0b4117f24258cf088fd810fcdbd9f" category="paragraph">Publicar a base de conhecimento permite que você a use em aplicativos de bate-papo. A ação publicar aciona a API Workload Factory para gerar e publicar endpoints exclusivos. Após a publicação, a base de conhecimento torna-se acessível para aplicativos de bate-papo e os endpoints da API estão prontos para integração.</block>
   <block id="079d0a527f117f9fde217668d7359a20" category="paragraph">Cada base de conhecimento que você publica tem endpoints exclusivos.</block>
   <block id="958a8f384aa34f23244386f38ed3aeab" category="list-text">Na página de inventário bases de conhecimento, selecione a base de conhecimento que deseja publicar.</block>
   <block id="850b9475ef66eeb78335c085f71bae31" category="list-text">Selecione o menu *ações* e selecione *publicar*.</block>
-  <block id="19761722f9e779bd2a70fef96c24a1bc" category="paragraph">A Workload Factory publica a base de conhecimento. Na página de detalhes da base de conhecimento, o status muda de *unpublished* para *published.*</block>
   <block id="5e92f6a356303934a45930f0e541c6b1" category="paragraph">Agora você pode obter detalhes sobre o endpoint exclusivo para a base de conhecimento.</block>
   <block id="004faa273ca0b2383f0f12b8850c493b" category="list-text">Ao lado do status publicado, selecione *Exibir*.</block>
-  <block id="b3ec171bb9a8cc7c009e2caf4d945535" category="paragraph">Os detalhes sobre como acessar a base de conhecimento usando a API Workload Factory são exibidos.</block>
   <block id="9de2775e528dfff9dd9666885c222272" category="list-text">Na caixa de diálogo *Exibir informações publicadas*, copie os endpoints da API que você pode usar para integrar a base de conhecimento a um aplicativo.</block>
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link">Documentação do API</block>
   <block id="2cb94eb0648b9f93f300ea0aff833f95" category="paragraph">Para saber mais sobre os endpoints da API, vá para o<block ref="c0a9aa55ed57e2e15b2d20baa6a6e023" category="inline-link-rx"></block> e selecione *AI &gt; Externo*.</block>
@@ -474,35 +442,21 @@
   <block id="a0acd37c2eea374fd571fd7e5710e3ab" category="summary">Comece a criar uma base de conhecimento usando os dados da sua organização que existem nos sistemas de arquivos do Amazon FSX para NetApp ONTAP. Um aplicativo como um chatbot acessará essa base de conhecimento para fornecer respostas focadas na organização aos usuários finais.</block>
   <block id="35f6f80cfc19636641dd85bbae19edee" category="doc">Início rápido para GenAI</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Um</block>
-  <block id="e16edd708081c06a9c8bdef1486a94b4" category="inline-link-macro">Configure seu ambiente para atender aos requisitos do GenAI</block>
-  <block id="0b0e916064e065ab12e1db6735832ef0" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="d4a51aa0811f51e3206f49b62f46f1ef" category="inline-link-macro-rx"></block></block>
   <block id="f48c3e82e3f3b9cc782fe1277e362ec5" category="paragraph">Você precisará de credenciais da AWS para implantar a infraestrutura da AWS, um sistema de arquivos FSX for ONTAP implantado e descoberto, a lista de fontes de dados que você deseja integrar na sua base de conhecimento, acesso ao serviço de AI da Amazon bedrock e muito mais.</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Dois</block>
-  <block id="36ec882c51ea2d7689f78bed44b7fdaa" category="inline-link-macro">Identifique o sistema de arquivos FSX for ONTAP que contém as fontes de dados</block>
-  <block id="cc9cd1c7d0a54d3fe49ca467804963fb" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="7206191241f03719b7415c03564b4c6e" category="inline-link-macro-rx"></block></block>
   <block id="10986db05c15b94a4d13e32858a6e26e" category="paragraph">As fontes de dados que você integrará em sua base de conhecimento podem estar localizadas em um único sistema de arquivos FSX for ONTAP ou em vários sistemas de arquivos FSX for ONTAP. Esses sistemas podem estar em VPCs diferentes, mas devem ser acessíveis dentro da mesma rede.</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Três</block>
   <block id="ad6f5ec13ed51e48bce763e25a9c69ce" category="inline-link-macro">Implantar a infraestrutura da base de conhecimento</block>
-  <block id="0f5790ffea3f79b1400e1156cea75fc9" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> <block ref="28cdbd6802c54419558c857e614a9714" category="inline-link-macro-rx"></block></block>
   <block id="41c27d3fbdf0cdc6aab23df489fe4c94" category="paragraph">Inicie o assistente de implantação de infraestrutura para implantar a infraestrutura da base de dados de conhecimento em seu ambiente AWS. Esse processo implanta uma instância do EC2 para o mecanismo do NetApp GenAI e um volume em um sistema de arquivos FSX for ONTAP para conter os bancos de dados do NetApp AI Engine. O volume é usado para armazenar o banco de dados de vetor usado pela base de conhecimento.</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">O que vem a seguir</block>
   <block id="8d126cd06a65751189e95006c972e173" category="paragraph">Agora você pode criar uma base de conhecimento para fornecer respostas focadas na organização aos usuários finais.</block>
-  <block id="edeb3214a40db0eb77e92c619eab6024" category="summary">Certifique-se de que o Workload Factory e a AWS estejam configurados corretamente antes de criar sua base de conhecimento. Isso inclui ter suas credenciais de login da AWS, um sistema de arquivos FSX for ONTAP implantado que contém as fontes de dados que você deseja integrar em sua base de conhecimento, acesso ao serviço de IA da Amazon bedrock e muito mais.</block>
   <block id="43b842fd441ce1ce92d22fb0ca25a507" category="doc">Requisitos do GenAI</block>
-  <block id="55df1ea48b09b075b4b7dd39f32b38ee" category="list-text">Login e conta de fábrica da carga de trabalho</block>
-  <block id="47530f4f079f33bd59ebd8d6ce22e965" category="list-text">Você precisará fazer login no Workload Factory e criar uma conta.</block>
-  <block id="a50b567095c55be6c1dc401e0ba4bace" category="inline-link">Saiba mais sobre como fazer login e criar uma conta</block>
-  <block id="d22e0c982de7a0a1a4146a3cac481010" category="paragraph"><block ref="d22e0c982de7a0a1a4146a3cac481010" category="inline-link-rx"></block></block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="list-text">Credenciais e permissões da AWS</block>
-  <block id="f734c92825c03ba8094b0c90b14ef227" category="list-text">Você precisa adicionar credenciais da AWS ao Workload Factory com permissões Automate, o que significa que você usará o Workload Factory no modo _Automate_ para o GenAI.</block>
   <block id="b9696d94476cf594b0d0a85c749985c8" category="paragraph">As permissões do modo _Basic_ e do modo _Read_ não são suportadas neste momento.</block>
   <block id="6acb98cae81ff4c3d668ee23eaf475ea" category="paragraph">Ao configurar suas credenciais, selecionar permissões como mostrado abaixo fornece acesso total para gerenciar os sistemas de arquivos FSX for ONTAP e implantar e gerenciar a instância do GenAI EC2 e outros recursos da AWS necessários para sua base de conhecimento e chatbot.</block>
   <block id="90971299f3c483d8dff23334303ec501" category="inline-image-macro">Uma captura de tela mostrando a configuração de permissões para o gerenciamento completo dos recursos de IA.</block>
   <block id="b0508f9b3b98a787c9ffda5b7aec828c" category="paragraph"><block ref="b0508f9b3b98a787c9ffda5b7aec828c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b6358992bb0152c2af9f3e2e315ef468" category="inline-link">Saiba como adicionar credenciais da AWS ao Workload Factory</block>
-  <block id="83106366073f0e7e6a64705516568b5d" category="paragraph"><block ref="83106366073f0e7e6a64705516568b5d" category="inline-link-rx"></block></block>
   <block id="75925d950c87a7dc75f300f3d330e728" category="list-text">O Amazon bedrock permite que você use modelos de base e fornece os recursos para criar aplicativos de IA generativos.</block>
-  <block id="4e49292dbc43678ea9590aff823f5b35" category="paragraph">Antes de começar a usar o Workload Factory para GenAI, você deve configurar o Amazon bedrock. Sua implantação do GenAI deve estar em uma região da AWS que tenha o Amazon bedrock habilitado.</block>
   <block id="42100945533643a01574ce6867f93337" category="inline-link">Documentação da AWS: Configurar o Amazon bedrock</block>
   <block id="c28dc65deb038c89921c82f97349e6b0" category="list-text"><block ref="c28dc65deb038c89921c82f97349e6b0" category="inline-link-rx"></block></block>
   <block id="997f616bd916b52cb9a1afa3d8f39ef7" category="inline-link">Documentação da AWS: Regiões e modelos compatíveis para bases de conhecimento da Amazon bedrock</block>
@@ -528,7 +482,6 @@
   <block id="9125326205d647d39ee0ac50c18a9a14" category="list-text">Você precisará saber as informações do par de chaves que permitem que você se conete com segurança à instância do mecanismo de IA do NetApp.</block>
   <block id="d5858b81edfda50f75f7994c971764f0" category="inline-link">Saiba como implantar e gerenciar os sistemas de arquivos do FSX for ONTAP</block>
   <block id="7d57ea8255b8142e76fbb442ea9a782f" category="paragraph"><block ref="7d57ea8255b8142e76fbb442ea9a782f" category="inline-link-rx"></block></block>
-  <block id="b334128403ed60ff931947907046e1f0" category="summary">Antes de poder abrir um caso de suporte com o suporte técnico da NetApp, você precisa adicionar uma conta do site de suporte da NetApp à fábrica de carga de trabalho e, em seguida, Registrar-se para obter suporte.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">Registre-se para obter suporte</block>
   <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">O Registro de suporte é necessário para receber suporte técnico específico para a Workload Factory e suas soluções e serviços de armazenamento. Você deve se Registrar para obter suporte a partir do console BlueXP , que é um console baseado na Web separado do Workload Factory.</block>
   <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">O Registro para suporte não ativa o suporte do NetApp para um serviço de arquivos de provedor de nuvem. Para obter suporte técnico relacionado a um serviço de arquivo do provedor de nuvem, sua infraestrutura ou qualquer solução usando o serviço, consulte "obter ajuda" na documentação do Workload Factory para esse produto.</block>
@@ -574,7 +527,6 @@
   <block id="a83574dd6db90afd60d3d6c11674872b" category="doc">Teste uma base de conhecimento</block>
   <block id="7690c373e8d8bb7bb7781f53763e1ddd" category="paragraph">Você testa sua base de conhecimento para garantir que ela funcione como você espera e pode personalizar os iniciantes de conversação que você deseja estar disponível por padrão para os usuários de chatbot dessa base de conhecimento. O simulador de chatbot é executado contra todas as fontes de dados que foram incorporadas na base de conhecimento.</block>
   <block id="ef065131e9d1b1c76fc889fc9eb98a3f" category="paragraph">Você pode testar uma base de conhecimento conversando com suas fontes de dados incorporadas no simulador de chatbot. Observe que nenhuma interação ou insights são capturados no banco de dados de vetores GenAI ao testar a base de conhecimento localmente.</block>
-  <block id="6ea2edc8e481e05029a9c17c0d118a4c" category="paragraph">Você realizará a maioria dos testes no Workload Factory antes de implantar a base de conhecimento em um aplicativo para seus usuários. Se você precisar fazer alterações na sua fonte de dados ou na operação do chatbot, você vai querer fazê-lo agora antes de publicar sua base de conhecimento.</block>
   <block id="3af56fb9119d8dcdfe73d41be9e9c264" category="paragraph">Algumas das tarefas que você vai querer executar para testar seu chatbot são:</block>
   <block id="087dddee34d7ec6ae45e7a1eceb74f0e" category="list-text">Insira um grande número de perguntas relevantes para sua organização para garantir que as respostas sejam as esperadas.</block>
   <block id="dbc108f6f2e9d63d6e85d41c9d797122" category="list-text">Personalize os iniciantes de conversação que você deseja estar disponível por padrão para seus usuários no aplicativo chatbot.</block>
@@ -594,14 +546,11 @@
   <block id="7aebfa1e2291377e040de92d7f7f335f" category="cell">Solução alternativa</block>
   <block id="ea355214fd4bc7c57f471bd92918879b" category="cell">Implantação</block>
   <block id="c7ffd0cab67a601554ae934436d644d8" category="cell">A implantação falha porque o volume já existe.</block>
-  <block id="5c985f7bd2795d6a69cd256e7fd02755" category="cell">O Workload Factory for GenAI precisa criar um novo volume durante o processo de implantação, mas já existe um volume usando o nome especificado.</block>
   <block id="c116d59189f49ad24327d9067ef9806e" category="cell">Especifique um nome exclusivo a ser usado para o novo volume e tente implantar novamente.</block>
-  <block id="429a792784eb6767e4ecfd3b82f1ae2d" category="cell">A implantação falha porque o Workload Factory para GenAI não consegue montar o volume.</block>
   <block id="8f3392d21c1e23f002f42fd0394d7c80" category="cell">Uma ou mais portas de entrada necessárias para o FSX for NetApp ONTAP são fechadas ou filtradas.</block>
   <block id="e87d6ed459b274ad7c388e0797013c9f" category="inline-link">Regras do grupo de segurança para o FSX for ONTAP</block>
   <block id="5503cb2b17f74a27a0085d8499cd3f60" category="paragraph">Abra as portas listadas em<block ref="127df24588c6526408fa1a708579050d" category="inline-link-rx"></block>.</block>
   <block id="10d0de28911c5f66463b9c8783f8148a" category="cell">Manutenção</block>
-  <block id="dbb45a1dccce77b67592b5925f4e79c4" category="cell">A instância do Docker de back-end usada pelo Workload Factory para o GenAI não foi iniciada.</block>
   <block id="f1e0872518e98f8295b8550491f79850" category="cell">O volume foi excluído e a instância EC2 foi reiniciada.</block>
   <block id="35df13c892646e1e41e065276ead0cee" category="paragraph">Use as seguintes etapas de recuperação:</block>
   <block id="33aefd97376313139230d90d11725c7c" category="list-text">Crie um novo volume no FSX for NetApp ONTAP. Por exemplo, o nome do volume pode ser<block ref="74cd6292d49a50a17339880eaf71909f" prefix=" " category="inline-code"></block> e o caminho do volume pode ser<block ref="e7251dd12f14500e110af37fd268f48d" prefix=" " category="inline-code"></block>.</block>
@@ -612,9 +561,7 @@
   <block id="9cbd2c5c5175ed32f13a8e1e7a8198dd" category="list-text"><block ref="078831e29f354e83fac6da3db6ed6b7b" prefix=" " category="inline-code"></block>Na secção , altere o caminho do dispositivo para o novo caminho do volume. Por exemplo:</block>
   <block id="e9813bd2289d9835204f02be0a5d2df6" category="cell">O volume raiz foi excluído.</block>
   <block id="358ede72c2c3d3e77baf3ed35b4039f6" category="cell">Crie um volume com um nome e um caminho e reinicie a instância do Docker de back-end do Amazon EC2.</block>
-  <block id="11408eb169fbb608ff150e7669c76840" category="summary">Saiba o que há de novo com a funcionalidade de cargas de trabalho de IA do Workload Factory.</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">O que há de novo</block>
-  <block id="798b17d8de1952262296a846e0def34f" category="paragraph">Saiba o que há de novo com o recurso generativo de cargas de trabalho de IA do Workload Factory.</block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">29 de setembro de 2024</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">1 de setembro de 2024</block>
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">4 de agosto de 2024</block>
@@ -627,10 +574,7 @@
   <block id="73dd64805069b754a14fd7cd8049faf8" category="list-text">Gerencie suas configurações da base de conhecimento, incluindo o modelo de bate-papo e os iniciantes de conversa.</block>
   <block id="54f4a017dfd5170587a554f471d25fb9" category="list-text">Despublique uma base de conhecimento ou republique-a depois de fazer alterações.</block>
   <block id="ff39f3beaa5058a5d7eadc6c71e847e4" category="list-text">Faça backup e proteja os dados importantes no seu sistema de arquivos FSX for ONTAP para garantir que seus dados da base de conhecimento e outros componentes de infraestrutura estejam sempre disponíveis.</block>
-  <block id="e7581e4ae4d96b238a63b95760365ab6" category="inline-link">Fábrica de carga de trabalho para documentação do Amazon FSX for NetApp ONTAP</block>
-  <block id="739e9505cf489ae6de839a15d67ad290" category="paragraph">Para obter informações sobre como gerenciar seu sistema de arquivos FSX for ONTAP, acesse<block ref="80490e4643319ea0ed1c5bef7c007699" category="inline-link-rx"></block> para ver os recursos de backup e proteção que você pode usar.</block>
   <block id="1995377d356d639f1a2e87a282280beb" category="sidebar">Integre dados de seus sistemas de arquivos FSX for ONTAP com suas plataformas MLOps e modelos de base GenAI para criar chatbots funcionais usando dados organizacionais.</block>
-  <block id="b476e068fefaba1a08ae0f2a7f965d59" category="sidebar">Fábrica de carga de trabalho para documentação do GenAI</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Comece agora</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">Início rápido</block>
   <block id="3c26a99b89e3c7e6133ab9da9015f277" category="sidebar">Construa uma base de conhecimento</block>
@@ -671,4 +615,76 @@
   <block id="402ae08ce46f82670c0313312e504ad7" category="list-text">O mecanismo de IA deve ter acesso ao <block ref="046fd603b18837f482287e5ec741e5ed" category="inline-link-macro-rx"></block></block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX para NetApp ONTAP</block>
   <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
+  <block id="1ee7c829860de53ba4857ad78b7aadef" category="doc">Lançamento inicial da fábrica de carga de trabalho para o GenAI</block>
+  <block id="082d99c5d452c4b44edd8ec50926da9a" category="paragraph">O aplicativo de amostra GenAI de fábrica de carga de trabalho da NetApp permite testar a autenticação e a recuperação da sua base de conhecimento de fábrica de carga de trabalho da NetApp publicada interagindo diretamente com ela em um aplicativo de chatbot baseado na Web.</block>
+  <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">experiências de console</block>
+  <block id="eb788a90862825cc147ed3f85612a8cc" category="list-text">Efetue login na fábrica da carga de trabalho usando um dos <block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>.</block>
+  <block id="ba069bdc38a1ce5022a1e6d8b69882b8" category="summary">A fábrica de carga de trabalho do GenAI permite que você integre o Amazon FSX para sistemas de arquivos NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI.</block>
+  <block id="8746750042cf20aa9acdb3cd89b6448b" category="doc">Saiba mais sobre a fábrica de cargas de trabalho para o GenAI</block>
+  <block id="ac1e1d326a41d16c68d8f5d08e1dbfe0" category="section-title">O que é a fábrica de carga de trabalho para o GenAI?</block>
+  <block id="40a89d6e158f3dbec860ab6d35794644" category="paragraph">A fábrica de carga de trabalho para o GenAI permite que você use fontes de dados empresariais no Amazon FSX for NetApp ONTAP com aplicativos de IA generativos. Utilizando a estrutura de geração de aumento de recuperação (RAG), você pode conetar rapidamente fontes de dados aos modelos Foundation disponíveis via Amazon bedrock para desenvolver aplicativos geradores de IA, como assistentes virtuais, chatbots de Q&amp;A, sumarização de documentos, criação de conteúdo, etc.</block>
+  <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">visão geral de fábrica do workload</block>
+  <block id="41dde101808f5228034390c3766fcad7" category="paragraph">Para obter mais informações sobre a fábrica da carga de trabalho, consulte o<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>.</block>
+  <block id="4a7de00a0cde12ad329c366ef21a723d" category="paragraph">A fábrica de cargas de trabalho para o GenAI simplifica o processo de implantação da infraestrutura necessária para criar aplicativos de IA generativos usando o Retrieval Augmented Generation (RAG). Especificamente, o GenAI oferece os seguintes benefícios:</block>
+  <block id="c7fb8bbb17373e98570b6e60b217343a" category="section-title">Como a fábrica de carga de trabalho do GenAI ajuda a criar aplicativos de IA generativos</block>
+  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">Ferramentas para usar o workload de fábrica</block>
+  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">Você pode usar a fábrica do workload do BlueXP  com as seguintes ferramentas:</block>
+  <block id="becd2c66a018e594b787abb509da2fcb" category="list-text">*Console de fábrica do Workload*: O console de fábrica do Workload fornece uma interface visual que oferece uma visão holística de seus aplicativos e projetos.</block>
+  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  console*: O console BlueXP  oferece uma experiência de interface híbrida para que você possa usar a carga de trabalho BlueXP  de fábrica junto com outros serviços BlueXP .</block>
+  <block id="3994718f6fdd9c0fd3f50884c4c05615" category="list-text">*API REST*: As APIs REST de fábrica de carga de trabalho permitem implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS.</block>
+  <block id="870c2713113a9cc14410aec5475c932f" category="list-text">*CloudFormation*: O código do AWS CloudFormation permite que você execute as ações definidas no console de fábrica de carga de trabalho para modelar, provisionar e gerenciar recursos da AWS e de terceiros a partir da pilha do CloudFormation em sua conta da AWS.</block>
+  <block id="531a2642b7c023ef8b4ec401d5c39c4b" category="list-text">*Fornecedor de fábrica de carga de trabalho do Terraform BlueXP *: O Terraform permite criar e gerenciar fluxos de trabalho de infraestrutura gerados no console de fábrica de carga de trabalho.</block>
+  <block id="eb2d717e4f7003bece96a54d9bfcab8c" category="paragraph">Não há custo para usar a funcionalidade GenAI de fábrica de workloads.</block>
+  <block id="fe25da415465509a9a69d606dab870c0" category="paragraph">Nenhuma licença especial é necessária da NetApp para usar os recursos de AI da fábrica de workloads.</block>
+  <block id="f6a347d6bbcc84735a944fdcd256092f" category="summary">Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas em sua base de conhecimento a partir dos datastores do FSX for ONTAP, você estará pronto para criar a base de conhecimento usando a fábrica de cargas de trabalho. Como parte desta etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.</block>
+  <block id="fa4638b85786436e91a0ed014ba9da00" category="paragraph">Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas em sua base de conhecimento a partir dos datastores do FSX for ONTAP, você estará pronto para criar a base de conhecimento usando a fábrica de cargas de trabalho. Como parte dessa etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.</block>
+  <block id="aa4c92c8522aa5136d6fa172d6893485" category="list-text">*Modelo de incorporação*: O modelo de incorporação define como seus dados serão convertidos em elementos vetoriais para a base de conhecimento. O Workload de fábrica é compatível com os seguintes modelos:</block>
+  <block id="525553d3b883b9c41607e7357ee094ad" category="list-text">*FSX for ONTAP file system*: Quando você define uma nova base de conhecimento, a fábrica de carga de trabalho cria um novo volume do Amazon FSX for NetApp ONTAP para armazená-lo. Escolher o nome do sistema de arquivos e o SVM (também chamado de VM de storage) existentes no local em que o novo volume será criado.</block>
+  <block id="e44ba744b83f512e7b5959cb21fc6b7f" category="list-text">*Política de snapshot*: Escolha uma política de snapshot na lista de políticas existentes definidas no inventário de armazenamento de carga de trabalho de fábrica. Os instantâneos recorrentes da base de conhecimento serão criados automaticamente a uma frequência com base na política de instantâneos selecionada.</block>
+  <block id="705eb4c2111768712c707614edb7516b" category="paragraph">A fábrica de carga de trabalho começa a implantar a infraestrutura do chatbot. Este processo pode demorar até 10 minutos.</block>
+  <block id="5962cbafe4a82be941ee73f4b77fcb7c" category="summary">Você pode instalar e executar um aplicativo de chatbot de exemplo para testar suas bases de conhecimento e aprender como usar a API de fábrica de carga de trabalho para criar seu próprio aplicativo de IA generativo.</block>
+  <block id="643a5a7772f51784a29b88cfdcf6b092" category="paragraph">Depois de configurar, ativar e publicar uma base de conhecimento, os desenvolvedores de aplicativos externos podem configurar e executar o aplicativo de chatbot de exemplo de código aberto fornecido pelo NetApp para interagir com sua base de conhecimento e aprender a usar a API de fábrica de carga de trabalho para criar seus próprios aplicativos de IA generativos.</block>
+  <block id="9a2d31075859ef5fbc409c301f367bc9" category="inline-link">Documentação da API de fábrica do workload</block>
+  <block id="9a4b097906b50bfdbef4c168dad3349b" category="paragraph"><block ref="9a4b097906b50bfdbef4c168dad3349b" category="inline-link-rx"></block></block>
+  <block id="557f283cc11851a5c05db183af9af3c5" category="summary">Ao implantar a infraestrutura do GenAI, a fábrica de carga de trabalho cria uma instância do EC2 para o mecanismo GenAI. Ele também cria uma função do IAM, grupo de segurança e endpoints privados para essa instância. Você pode querer entender mais detalhes sobre esses componentes que a fábrica de workloads cria no seu ambiente AWS.</block>
+  <block id="ef369cb7624d410c7ba52a28543206d0" category="list-text">Se a VPC de destino ainda não os tiver, a fábrica de carga de trabalho criará endpoints privados para a instância do GenAI Engine EC2 para que ela possa se comunicar com os seguintes serviços da AWS:</block>
+  <block id="894106a56db6962222de989043e29e02" category="summary">O NetApp fornece suporte para a fábrica de workloads de várias maneiras. Amplas opções gratuitas de suporte autônomo estão disponíveis 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. O seu registo de suporte inclui suporte técnico remoto através de Bilheteira na Web.</block>
+  <block id="e703cd6c7dd517a92f3648a2a1305e15" category="list-text">No menu de navegação de fábrica da carga de trabalho, selecione *AI*.</block>
+  <block id="02c24f1607a88a7b66de312463a92ee0" category="paragraph">Se você não precisar mais da infraestrutura de chatbot implantada para um ou mais chatbots, poderá removê-la da fábrica de cargas de trabalho.</block>
+  <block id="e156182d12afe45e03e8d3deb27ba670" category="paragraph">Essa operação só remove os links para a infraestrutura de IA da fábrica de carga de trabalho - ela não remove todos os componentes da AWS. Você precisará excluir manualmente os seguintes componentes de infraestrutura da AWS:</block>
+  <block id="62daa906a9333be93a5e975044f666a1" category="paragraph">Os componentes da infraestrutura do chatbot são removidos da fábrica de cargas de trabalho.</block>
+  <block id="86dbd1b84518abb5c7347546b8844b7e" category="paragraph">Se você não precisar mais de uma base de conhecimento, você pode excluí-la. Quando você exclui uma base de conhecimento, ela é removida da fábrica da carga de trabalho e o volume que contém a base de conhecimento é excluído. Quaisquer aplicativos ou chatbots que estejam usando a base de conhecimento deixarão de funcionar. Excluir uma base de conhecimento não é reversível.</block>
+  <block id="22f6a017871820df71fb38c6218efc2f" category="paragraph">A base de conhecimento é removida da fábrica da carga de trabalho e seu volume associado é excluído.</block>
+  <block id="ba858f055e02600e40851bb1fac4f97f" category="paragraph">Publicar a base de conhecimento permite que você a use em aplicativos de bate-papo. A ação publicar aciona a API de fábrica da carga de trabalho para gerar e publicar endpoints exclusivos. Após a publicação, a base de conhecimento torna-se acessível para aplicativos de bate-papo e os endpoints da API estão prontos para integração.</block>
+  <block id="621cd8cc7cde6376c8933ec4142532b7" category="paragraph">A fábrica de carga de trabalho publica a base de conhecimento. Na página de detalhes da base de conhecimento, o status muda de *unpublished* para *published.*</block>
+  <block id="836f67391daf57190bd0d7acca174b88" category="paragraph">Detalhes sobre como acessar a base de conhecimento usando a API de fábrica da carga de trabalho são exibidos.</block>
+  <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Faça login na fábrica da carga de trabalho</block>
+  <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">configure uma conta com a fábrica de carga de trabalho</block>
+  <block id="113933a0a6b3eb57d22f707e6384bd49" category="paragraph">Você precisará<block ref="5eb9de2715b74ed434f03d8a9fef9b70" category="inline-link-rx"></block> fazer login usando um dos<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>.</block>
+  <block id="7c42a251218f29f59dd7dbf0987115c8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Configure seu ambiente para atender aos requisitos do GenAI</block>
+  <block id="fca2fd00582f9c7c4a5a7f66db5c76d7" category="inline-link-macro">Saiba mais sobre os requisitos do GenAI</block>
+  <block id="0efa8e5eec015c7557fa0d66656108d5" category="paragraph"><block ref="048bf8a63d18514c61565bf7fbdd1a56" category="inline-link-macro-rx"></block>.</block>
+  <block id="13a3df270bbff43d6e9a3cda00e93bf6" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Identifique o sistema de arquivos FSX for ONTAP que contém as fontes de dados</block>
+  <block id="21d5bccbbe925613c0af5324543c58b1" category="inline-link-macro">Saiba como identificar fontes de dados</block>
+  <block id="70d15316e3e767964ed59c8ffa7502da" category="paragraph"><block ref="7388636e3703309ce48a47f5a2c06fbc" category="inline-link-macro-rx"></block>.</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Quatro</block>
+  <block id="67544fe024b8f9a36d65dad6756df3ae" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Implantar a infraestrutura da base de conhecimento</block>
+  <block id="20ec4ab4fcf35b65157df141218adeb4" category="inline-link-macro">Saiba como implantar a infraestrutura da base de conhecimento</block>
+  <block id="821dd0baa6265d27edc6fde0f7f8a2a7" category="paragraph"><block ref="cf103609479325827138f1030380ee71" category="inline-link-macro-rx"></block>.</block>
+  <block id="7da236f1583acd597958e11defdd0aed" category="summary">Certifique-se de que a fábrica da carga de trabalho e a AWS estejam configuradas corretamente antes de criar sua base de conhecimento. Isso inclui ter suas credenciais de login da AWS, um sistema de arquivos FSX for ONTAP implantado que contém as fontes de dados que você deseja integrar em sua base de conhecimento, acesso ao serviço de IA da Amazon bedrock e muito mais.</block>
+  <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">Login e conta de fábrica da carga de trabalho</block>
+  <block id="c3c0f7069bfe59c5a67dd6f1fd5d2301" category="list-text">Você precisa adicionar credenciais da AWS à fábrica de cargas de trabalho com permissões Automate, o que significa que você usará a fábrica de cargas de trabalho no modo _Automate_ para o GenAI.</block>
+  <block id="5145374f219e1c177ab5588a5344aa6e" category="inline-link">Saiba como adicionar credenciais da AWS à fábrica de cargas de trabalho</block>
+  <block id="ced1a4827b1ea3c1da0273c3d73fdd46" category="paragraph"><block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
+  <block id="e75accc1948bab24f6bde8f2716d9465" category="paragraph">Antes de começar a usar a fábrica de carga de trabalho para o GenAI, você deve configurar o Amazon bedrock. Sua implantação do GenAI deve estar em uma região da AWS que tenha o Amazon bedrock habilitado.</block>
+  <block id="056634bec4a153903ebb9b769277f4d7" category="summary">Antes de poder abrir um caso de suporte com o suporte técnico da NetApp, você precisa adicionar uma conta do site de suporte da NetApp à fábrica de carga de trabalho e, em seguida, Registrar-se para suporte.</block>
+  <block id="3616889860b75d784463bb497e34e82f" category="paragraph">Você executará a maioria dos testes na fábrica de carga de trabalho antes de implantar a base de conhecimento em um aplicativo para seus usuários. Se você precisar fazer alterações na sua fonte de dados ou na operação do chatbot, você vai querer fazê-lo agora antes de publicar sua base de conhecimento.</block>
+  <block id="448a7638f78d8e27c82dc4eb9cfffaa5" category="cell">A fábrica de carga de trabalho do GenAI precisa criar um novo volume durante o processo de implantação, mas já existe um volume usando o nome especificado.</block>
+  <block id="9db9426b923f79f37245bd6e27517b75" category="cell">A implantação falha porque a fábrica de carga de trabalho do GenAI não consegue montar o volume.</block>
+  <block id="3b93973bf09251ccbc76e14631d727e0" category="cell">A instância do Docker de back-end usada pela fábrica de carga de trabalho para o GenAI falhou ao iniciar.</block>
+  <block id="1862818cbcef0536011835283968bd91" category="summary">Saiba o que há de novo com a funcionalidade de workloads de IA da fábrica de workloads.</block>
+  <block id="34734891f639d2ae1ecbbaab22157fe2" category="paragraph">Saiba o que há de novo com a capacidade generativa de cargas de trabalho de IA da fábrica de cargas de trabalho.</block>
+  <block id="81ff996ef963d9805259d4a6c9bafac8" category="inline-link">Fábrica de carga de trabalho para documentação do Amazon FSX for NetApp ONTAP</block>
+  <block id="07e2e5eecff8fe1dbb4712055f0055f1" category="paragraph">Para obter informações sobre como gerenciar seu sistema de arquivos FSX for ONTAP, acesse<block ref="3845b9852e43f2af9ae621ea5bb328c1" category="inline-link-rx"></block> para ver os recursos de backup e proteção que você pode usar.</block>
+  <block id="ae734fb1e6d4e05106a10b963ef2ee25" category="sidebar">Fábrica de carga de trabalho para documentação do GenAI</block>
 </blocks>

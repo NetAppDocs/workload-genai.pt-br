@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: Saiba o que há de novo com a funcionalidade de cargas de trabalho de IA do Workload Factory. 
+summary: Saiba o que há de novo com a funcionalidade de workloads de IA da fábrica de workloads. 
 ---
 = O que há de novo
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Saiba o que há de novo com a funcionalidade de cargas de trabalho de I
 
 
 [role="lead"]
-Saiba o que há de novo com o recurso generativo de cargas de trabalho de IA do Workload Factory.
+Saiba o que há de novo com a capacidade generativa de cargas de trabalho de IA da fábrica de cargas de trabalho.
 
 
 
@@ -87,7 +87,7 @@ As cargas de trabalho generativas de IA agora estão integradas ao Amazon CloudW
 
 === Exemplo de aplicativo chatbot
 
-O aplicativo de exemplo do GenAI de fábrica de carga de trabalho da NetApp permite testar a autenticação e a recuperação da sua base de conhecimento publicada da NetApp Workload Factory, interagindo diretamente com ela em um aplicativo de chatbot baseado na web.
+O aplicativo de amostra GenAI de fábrica de carga de trabalho da NetApp permite testar a autenticação e a recuperação da sua base de conhecimento de fábrica de carga de trabalho da NetApp publicada interagindo diretamente com ela em um aplicativo de chatbot baseado na Web.
 
 
 
@@ -95,6 +95,6 @@ O aplicativo de exemplo do GenAI de fábrica de carga de trabalho da NetApp perm
 
 
 
-=== Lançamento inicial da fábrica de cargas de trabalho para o GenAI
+=== Lançamento inicial da fábrica de carga de trabalho para o GenAI
 
 A versão inicial inclui a capacidade de desenvolver uma base de conhecimento que é personalizada incorporando os dados da sua organização. A base de conhecimento pode ser acessada por um aplicativo de chatbot para seus usuários. Essa capacidade garante respostas precisas e relevantes a perguntas específicas da organização, aumentando a satisfação e a produtividade de todos os seus usuários.
