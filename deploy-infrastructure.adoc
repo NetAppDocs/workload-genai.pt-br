@@ -50,7 +50,7 @@ image:diagram-chatbot-infrastructure.png["Um diagrama dos componentes do chatbot
 
 == Implantar a infraestrutura do GenAI
 
-Você precisará inserir suas credenciais AWS e selecionar o sistema de arquivos FSX for ONTAP para implantar a infraestrutura de geração de aumento de recuperação (RAG).
+Você precisará inserir suas credenciais da AWS e selecionar o sistema de arquivos FSX for ONTAP para implantar a infraestrutura de geração de recuperação aumentada (RAG).
 
 .Antes de começar
 Certifique-se de que o seu ambiente se encontra link:requirements.html["os requisitos"] antes de iniciar este procedimento.
@@ -75,6 +75,10 @@ A implantação do GenAI deve estar em uma região da AWS que tenha o Amazon bed
 
 
 . Selecione *Deploy* para iniciar a implantação.
++
+
+NOTE: Se a implantação falhar com um erro de credenciais, você poderá obter mais detalhes de erro selecionando os hiperlinks dentro da mensagem de erro. Você pode ver uma lista de permissões ausentes ou bloqueadas, bem como uma lista de permissões que a carga de trabalho do GenAI precisa para que ela possa implantar a infraestrutura do GenAI.
+
 
 
 .Resultado

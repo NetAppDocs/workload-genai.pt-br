@@ -124,6 +124,34 @@ Esta opção está ativada por predefinição para garantir que uma verificaçã
 
 
 
+=== Clonar uma base de conhecimento
+
+Você pode criar uma nova base de conhecimento a partir de um snapshot da base de conhecimento. Isso é útil se a base de conhecimento original estiver corrompida ou perdida.
+
+.Passos
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Na página de inventário bases de conhecimento, selecione a base de conhecimento que deseja restaurar.
+. Selecione image:icon-action.png["o botão de opção"] e selecione *Gerenciar base de conhecimento*.
++
+Esta página exibe o status publicado, o status de incorporação das fontes de dados, o modo de incorporação, a lista de todas as fontes de dados incorporadas e muito mais.
+
+. Selecione o menu *ações* e selecione *Snapshot > Clone base de conhecimento*.
++
+A caixa de diálogo clone é exibida.
+
+. Opcionalmente, desmarque a opção *Pausa em execução e verificações agendadas após clonar o instantâneo* se quiser que as verificações de origem de dados agendadas e atualmente em execução continuem após o instantâneo ser clonado.
++
+Esta opção está ativada por predefinição para garantir que uma verificação não aconteça enquanto a base de conhecimento estiver num estado parcialmente restaurado ou que uma verificação não atualize uma base de conhecimento recentemente restaurada com dados mais antigos.
+
+. Selecione o instantâneo que deseja clonar na lista.
+. Selecione *continuar*.
+. Insira um nome para a nova base de conhecimento.
+. Escolha um SVM de sistema de arquivos e nome de volume para a nova base de conhecimento.
+. Selecione *Clone*.
+
+
+
+
 == Adicione fontes de dados adicionais a uma base de conhecimento
 
 Você pode incorporar fontes de dados adicionais em sua base de conhecimento para preenchê-la com dados adicionais da organização.

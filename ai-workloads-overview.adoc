@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: ai-workloads-overview.html 
 keywords: overview, concepts, features, use case, workloads, AI, Bedrock, knowledge base, chatbot 
-summary: A fábrica de carga de trabalho do GenAI permite que você integre o Amazon FSX para sistemas de arquivos NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI. 
+summary: A fábrica de carga de trabalho do BlueXP  para o GenAI permite que você integre os sistemas de arquivos do Amazon FSX para NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI. 
 ---
-= Saiba mais sobre a fábrica de cargas de trabalho para o GenAI
+= Saiba mais sobre a fábrica de cargas de trabalho da BlueXP  para o GenAI
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -15,9 +15,9 @@ A fábrica de carga de trabalho do GenAI permite que você integre o Amazon FSX 
 
 
 
-== O que é a fábrica de carga de trabalho para o GenAI?
+== O que é a fábrica de carga de trabalho da BlueXP  para o GenAI?
 
-A fábrica de carga de trabalho para o GenAI permite que você use fontes de dados empresariais no Amazon FSX for NetApp ONTAP com aplicativos de IA generativos. Utilizando a estrutura de geração de aumento de recuperação (RAG), você pode conetar rapidamente fontes de dados aos modelos Foundation disponíveis via Amazon bedrock para desenvolver aplicativos geradores de IA, como assistentes virtuais, chatbots de Q&A, sumarização de documentos, criação de conteúdo, etc.
+A fábrica de carga de trabalho do BlueXP  para o GenAI permite que você use fontes de dados empresariais no Amazon FSX for NetApp ONTAP com aplicativos de IA generativos. Utilizando a estrutura de geração de aumento de recuperação (RAG), você pode conetar rapidamente fontes de dados aos modelos Foundation disponíveis via Amazon bedrock para desenvolver aplicativos geradores de IA, como assistentes virtuais, chatbots de Q&A, sumarização de documentos, criação de conteúdo, etc.
 
 O uso de IA generativa com seus dados organizacionais permite que você aproveite seu próprio conhecimento e experiência, e não confie apenas na inteligência do modelo com base em dados públicos nos quais os modelos foram treinados. O uso do RAG para personalizar os modelos garante respostas precisas e relevantes a perguntas específicas da organização, aumentando a produtividade e a eficiência para os usuários de seus aplicativos usando IA generativa.
 
@@ -29,7 +29,7 @@ Para obter mais informações sobre a fábrica da carga de trabalho, consulte o 
 
 == Benefícios de usar o GenAI para criar aplicativos de IA generativos
 
-A fábrica de cargas de trabalho para o GenAI simplifica o processo de implantação da infraestrutura necessária para criar aplicativos de IA generativos usando o Retrieval Augmented Generation (RAG). Especificamente, o GenAI oferece os seguintes benefícios:
+A fábrica de cargas de trabalho da BlueXP  para o GenAI simplifica o processo de implantação da infraestrutura necessária para criar aplicativos de IA generativos usando a geração aumentada de recuperação (RAG). Especificamente, o GenAI oferece os seguintes benefícios:
 
 * Sem a necessidade de um conhecimento profundo da infraestrutura de dados, base e modelos de linguagem, os administradores e desenvolvedores DE TI podem acelerar o desenvolvimento de aplicações utilizando a automação fornecida pelo GenAI. Os administradores e desenvolvedores de dados podem criar bases de conhecimento empresariais de forma fácil e rápida que incorporam dados não estruturados da sua organização para serem usados por aplicativos de IA generativos.
 * Melhore a segurança preservando as permissões do usuário em arquivos incorporados nas bases de conhecimento para garantir que a segurança e a privacidade dos dados sejam mantidas. Um aplicativo, como um chatbot, pode ser desenvolvido para fornecer apenas aos usuários autenticados respostas com base nos dados aos quais os usuários têm acesso.
@@ -49,7 +49,7 @@ image:diagram-chatbot-processing.png["Um diagrama mostrando os principais compon
 
 
 
-== Como a fábrica de carga de trabalho do GenAI ajuda a criar aplicativos de IA generativos
+== Como a fábrica de carga de trabalho do BlueXP  para o GenAI ajuda a criar aplicativos de IA generativos
 
 O GenAI ajuda a criar aplicativos de IA generativos usando o RAG das seguintes maneiras:
 
