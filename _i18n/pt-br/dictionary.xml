@@ -36,7 +36,6 @@
   <block id="7d7b61e2696184ef2f1a673b4b505c10" category="inline-link">Identifique as fontes de dados a serem integradas em sua base de conhecimento</block>
   <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
   <block id="f1af0b71f33a2e37e9e17b100f3c0b1e" category="summary">Ative a autenticação para uma base de conhecimento para que a validação de token e ACLs sejam necessárias ao integrar a base de conhecimento com um aplicativo de chatbot.</block>
-  <block id="970a6e4ed60b5e3eb0f25c2ab67433fe" category="doc">Ative a autenticação externa para uma base de conhecimento</block>
   <block id="566673c66dc53f65f0662ca186b4ff33" category="paragraph">Ative a autenticação para uma base de conhecimento para que a validação de token e ACLs sejam necessárias ao usar os endpoints da API para integrar uma base de conhecimento com um aplicativo de chatbot. Ao ativar a autenticação, você configura as configurações de um Token Web JSON que será usado para solicitações de API para uma base de conhecimento de clientes de chatbot.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Passos</block>
   <block id="da1fd32e4f4851fbf4922d1c55e8fcc0" category="list-text">Na página de inventário das bases de conhecimento, selecione a base de conhecimento para a qual pretende ativar a autenticação.</block>
@@ -418,7 +417,6 @@
   <block id="0e0f1b27ca798d3b3b8154b411215d9a" category="list-text">Selecione o menu *ações* e selecione *Excluir base de conhecimento*.</block>
   <block id="74091f3303c946e291c1c1702ba6d39a" category="list-text">Na caixa de diálogo Excluir base de conhecimento, confirme se deseja excluí-la e selecione *Excluir*.</block>
   <block id="8bbd4e338e42c1350d453ca5c82eb3b3" category="summary">Depois de criar e testar sua base de conhecimento localmente, você pode publicar a base de conhecimento para que ela possa ser integrada ao aplicativo chatbot que permitirá que seus usuários consultem a base de conhecimento.</block>
-  <block id="70de8e73e84df845f91376c6c0d1188e" category="doc">Publique uma base de conhecimento e visualize o endpoint exclusivo</block>
   <block id="12676fc9338d312de3a6cbb584fa3284" category="paragraph">Depois de criar e testar sua base de conhecimento localmente, você pode publicar a base de conhecimento para que ela possa ser integrada a um aplicativo de chatbot que permitirá que seus usuários consultem a base de conhecimento.</block>
   <block id="079d0a527f117f9fde217668d7359a20" category="paragraph">Cada base de conhecimento que você publica tem endpoints exclusivos.</block>
   <block id="958a8f384aa34f23244386f38ed3aeab" category="list-text">Na página de inventário bases de conhecimento, selecione a base de conhecimento que deseja publicar.</block>
@@ -550,7 +548,6 @@
   <block id="9cbd2c5c5175ed32f13a8e1e7a8198dd" category="list-text"><block ref="078831e29f354e83fac6da3db6ed6b7b" prefix=" " category="inline-code"></block>Na secção , altere o caminho do dispositivo para o novo caminho do volume. Por exemplo:</block>
   <block id="e9813bd2289d9835204f02be0a5d2df6" category="cell">O volume raiz foi excluído.</block>
   <block id="358ede72c2c3d3e77baf3ed35b4039f6" category="cell">Crie um volume com um nome e um caminho e reinicie a instância do Docker de back-end do Amazon EC2.</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">O que há de novo</block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">29 de setembro de 2024</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">1 de setembro de 2024</block>
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">4 de agosto de 2024</block>
@@ -600,8 +597,6 @@
   <block id="b91895758c5a35a75fd3e87dc1fa0741" category="list-text">Na página Editar base de conhecimento, você pode alterar o nome da base de conhecimento, a descrição, o modelo de incorporação, o modelo de chat, a habilitação dos guardrails de dados, escolher se os iniciantes de conversação são criados automaticamente ou manualmente e a política de snapshot usada para o volume que contém a base de conhecimento.</block>
   <block id="fde00ba8f64d2c57d64a163698fd6f03" category="admonition">Cada varredura da base de conhecimento, que inclui incorporação, custos. Se os guardrails de dados estiverem ativados após a criação de uma base de conhecimento, a base de conhecimento será digitalizada novamente e incorrerá em custos.</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 de novembro de 2024</block>
-  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">Consola BlueXP</block>
-  <block id="402ae08ce46f82670c0313312e504ad7" category="list-text">O mecanismo de IA deve ter acesso ao <block ref="046fd603b18837f482287e5ec741e5ed" category="inline-link-macro-rx"></block></block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX para NetApp ONTAP</block>
   <block id="4b88d56bd65ef92611ac63064c38369f" category="list-text">Amazon CloudWatch</block>
   <block id="1ee7c829860de53ba4857ad78b7aadef" category="doc">Lançamento inicial da fábrica de carga de trabalho para o GenAI</block>
@@ -745,4 +740,20 @@
   <block id="849293736c770408f68a35f4fcdf9592" category="cell">Selecione o botão *Rebuild*. A fábrica de workloads do BlueXP  para o GenAI reconstrói a infraestrutura e exibe o progresso da reconstrução. Quando concluído, suas bases de conhecimento são reconetadas à infraestrutura reconstruída e a lista de bases de conhecimento é exibida.</block>
   <block id="d1955ee5035af265f471c1debd693717" category="cell">A instância do Docker de back-end usada pela fábrica de carga de trabalho do BlueXP  para o GenAI não foi iniciada.</block>
   <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">01 de dezembro de 2024</block>
+  <block id="e8293cb4f1909d8329e31cefdfb4dba4" category="doc">Ative a autenticação externa para uma base de conhecimento do GenAI</block>
+  <block id="b05735c6e4c6d503ad9f93af6e740fa9" category="doc">Crie um aplicativo GenAI baseado em RAG</block>
+  <block id="16cb0b733a26e9afa11f388e6d83aec1" category="doc">Crie uma base de conhecimento do GenAI</block>
+  <block id="79cee61f29eb5a0e2dd156871eb70a40" category="list-text">O mecanismo de IA deve ter acesso ao endpoint da API do BlueXP : https://api.BlueXP .NetApp.com.</block>
+  <block id="e63e0ed616c63ed724e592b04e608826" category="doc">Use o aplicativo de chatbot de exemplo externo GenAI</block>
+  <block id="52f26f0fff3bae61240c4b3a43f3624d" category="doc">Obtenha ajuda com a fábrica de workloads da BlueXP  para o GenAI</block>
+  <block id="e1cdd82a2918ba1a2c0ff51770aad51e" category="doc">Identifique as fontes de dados a serem integradas na sua base de conhecimento do GenAI</block>
+  <block id="fe1e8231ce0909884a561100cafd30a8" category="doc">Fábrica de carga de trabalho da BlueXP  para avisos legais da GenAI</block>
+  <block id="dd3ed9192bf4d0d55741ed48bf8a6695" category="doc">Gerenciar fontes de dados do GenAI</block>
+  <block id="10f8936c8a58bcff3825995f8d31ea40" category="doc">Gerenciar bases de conhecimento do GenAI</block>
+  <block id="335c0c9583885e1f231604b7fa10819a" category="doc">Publique uma base de conhecimento do GenAI e visualize o endpoint exclusivo</block>
+  <block id="97641902b7a17c72d34451f4f1417531" category="doc">Registre-se para obter suporte para a fábrica de workloads da BlueXP  para o GenAI</block>
+  <block id="d9965afe654edc6d99fd1a5080f10f27" category="doc">Teste uma base de conhecimento do GenAI</block>
+  <block id="69065fcb8a054a77edd3d2da74b89c6e" category="doc">Solução de problemas do GenAI</block>
+  <block id="1e7bcc0dba826f450b3684e2a2c6f04e" category="doc">Novidades na fábrica de workloads da BlueXP  para a GenAI</block>
+  <block id="988a487756dcb4e1605a4e07dc7dbd42" category="doc">O que você pode fazer a seguir com o GenAI</block>
 </blocks>

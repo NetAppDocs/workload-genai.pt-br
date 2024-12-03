@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: Saiba o que há de novo com a funcionalidade de workloads de IA da fábrica de workloads. 
 ---
-= O que há de novo
+= Novidades na fábrica de workloads da BlueXP  para a GenAI
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

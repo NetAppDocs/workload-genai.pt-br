@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Avisos legais
+= Fábrica de carga de trabalho da BlueXP  para avisos legais da GenAI
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

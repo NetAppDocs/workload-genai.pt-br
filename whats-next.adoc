@@ -4,7 +4,7 @@ permalink: whats-next.html
 keywords: what you can do, knowledge base 
 summary: Agora que você criou uma base de conhecimento usando seus dados empresariais e implantou-os para seus usuários, você pode gerenciar a base de conhecimento, as fontes de dados e a infraestrutura RAG, incluindo os sistemas de arquivos FSX for ONTAP. 
 ---
-= O que você pode fazer a seguir
+= O que você pode fazer a seguir com o GenAI
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

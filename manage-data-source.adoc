@@ -4,7 +4,7 @@ permalink: manage-data-source.html
 keywords: ai, chatbot, creating, knowledge base, data source 
 summary: Depois de criar uma base de conhecimento usando fontes de dados no seu sistema de arquivos FSX for ONTAP, você pode visualizar os detalhes da fonte de dados, atualizar ou alterar o conteúdo da fonte de dados, editar configurações da fonte de dados ou excluir a fonte de dados. 
 ---
-= Gerenciar fontes de dados
+= Gerenciar fontes de dados do GenAI
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
