@@ -89,6 +89,11 @@ Você pode salvar o estado de uma base de conhecimento tirando um instantâneo m
 Esta página exibe o status publicado, o status de incorporação das fontes de dados, o modo de incorporação, a lista de todas as fontes de dados incorporadas e muito mais.
 
 . Selecione o menu *ações* e selecione *Snapshot > Create new snapshot*.
+. Opcionalmente, selecione *Definir nome do instantâneo* e insira um nome personalizado para o instantâneo.
++
+Definir um nome personalizado pode ajudá-lo a determinar melhor o conteúdo de um snapshot se você precisar restaurá-lo no futuro.
+
+. Selecione *criar*.
 +
 Um instantâneo da base de conhecimento é criado.
 

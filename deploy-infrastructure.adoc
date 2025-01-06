@@ -70,8 +70,17 @@ A implantação do GenAI deve estar em uma região da AWS que tenha o Amazon bed
 
 . Preencha os itens na seção *Configurações de infra-estrutura*:
 +
-.. *Tags*: Insira quaisquer pares de chave/valor de tag que você deseja aplicar a todos os recursos da AWS que fazem parte dessa implantação.
+.. *Tags*: Insira quaisquer pares de chave/valor de tag que você deseja aplicar a todos os recursos da AWS que fazem parte dessa implantação. Essas tags são visíveis no Console de Gerenciamento da AWS e na área de informações de infraestrutura na fábrica de carga de trabalho e podem ajudá-lo a acompanhar os recursos de fábrica da carga de trabalho.
+
+
+. Preencha a seção *conetividade*:
++
 .. *Par de chaves*: Selecione um par de chaves que permita que você se conete com segurança à instância do mecanismo NetApp GenAI.
+
+
+. Complete a seção *AI Engine*:
++
+.. *Nome da instância*: Opcionalmente, selecione *Definir nome da instância* e insira um nome personalizado para a instância do mecanismo de IA. O nome da instância aparece no Console de Gerenciamento da AWS e na área de informações da infraestrutura na fábrica da carga de trabalho e pode ajudá-lo a acompanhar os recursos de fábrica da carga de trabalho.
 
 
 . Selecione *Deploy* para iniciar a implantação.

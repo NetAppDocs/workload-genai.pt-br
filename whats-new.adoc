@@ -15,6 +15,34 @@ Saiba o que há de novo com a capacidade generativa de cargas de trabalho de IA 
 
 
 
+== 05 de janeiro de 2025
+
+
+
+=== Nome do instantâneo personalizado
+
+Agora você pode fornecer um nome de instantâneo para um instantâneo ad-hoc.
+
+link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#protect-a-knowledge-base-with-snapshots["Proteja uma base de conhecimento com snapshots"]
+
+
+
+=== Nome de instância personalizado do mecanismo de AI
+
+Agora você pode dar um nome personalizado à instância do mecanismo de AI durante a implantação.
+
+link:https://docs.netapp.com/us-en/workload-genai/deploy-infrastructure.html["Implantar a infraestrutura do GenAI"]
+
+
+
+=== Reconstruir a infraestrutura do GenAI corrompida ou ausente
+
+Se a instância do seu mecanismo de AI ficar corrompida ou for excluída, você pode deixar que a carga de trabalho reconstrua-a de fábrica para você. A fábrica de carga de trabalho reanexa automaticamente suas bases de conhecimento à infraestrutura após a conclusão da reconstrução, para que elas estejam prontas para uso.
+
+link:https://docs.netapp.com/us-en/workload-genai/troubleshooting.html["Solução de problemas"]
+
+
+
 == 01 de dezembro de 2024
 
 
@@ -45,11 +73,7 @@ A carga de trabalho generativa de IA apresenta o recurso de guardrails de dados,
 
 link:https://docs.netapp.com/us-en/workload-genai/create-knowledgebase.html#create-and-configure-the-knowledge-base["Crie uma base de conhecimento"]
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^]
-
-
-
-== 29 de setembro de 2024
+link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^] 29 de setembro de 2024
 
 
 

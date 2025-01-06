@@ -25,7 +25,10 @@ As fontes de dados da sua organização podem conter informações de identidade
 link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^].
 
 
-NOTE: Os corrimões de dados podem ser ativados ou desativados a qualquer momento. Se você alternar a ativação dos corrimões de dados, o Workload Factory verifica toda a base de conhecimento do zero, o que incorre em um custo.
+NOTE: A fábrica de carga de trabalho do BlueXP  para o GenAI não mascara informações pessoais confidenciais (SPii). link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["tipos de dados pessoais sensíveis"^]Consulte para obter mais informações sobre este tipo de dados.
+
+
+NOTE: Os corrimões de dados podem ser ativados ou desativados a qualquer momento. Se você alternar a habilitação dos corrimões de dados, a fábrica de carga de trabalho verifica toda a base de conhecimento do zero, o que incorre em um custo.
 
 --
 

@@ -108,6 +108,25 @@ Abra as seguintes portas de entrada:
 | Manutenção | O mecanismo de IA falha ao iniciar e você vê o erro "erro de instância do mecanismo de IA" na página *bases de conhecimento*. | A instância do mecanismo de IA foi corrompida ou não existe. | Selecione o botão *Rebuild*. A fábrica de workloads do BlueXP  para o GenAI reconstrói a infraestrutura e exibe o progresso da reconstrução. Quando concluído, suas bases de conhecimento são reconetadas à infraestrutura reconstruída e a lista de bases de conhecimento é exibida. 
 
 
+| Manutenção | O mecanismo de IA falha ao iniciar, e você vê o erro "a instância do mecanismo GenAI está parada" na página *bases de conhecimento*. | A instância do mecanismo de IA não está em execução. | Use o Console de Gerenciamento da AWS ou a CLI da AWS para iniciar a instância do mecanismo de IA. 
+
+
+| Manutenção | O mecanismo de IA não arranca e vê o erro "o servidor do motor GenAI não está a responder" na página *bases de dados de conhecimento*. | A instância do mecanismo de IA não está respondendo.  a| 
+Use as seguintes etapas de recuperação:
+
+.Passos
+. Modifique o grupo de segurança da instância do mecanismo GenAI para habilitar o acesso SSH à instância do mecanismo GenAI.
+. Faça login na instância usando SSH.
+. Execute o seguinte comando:
++
+[source, console]
+----
+docker-compose up
+----
+
+
+
+
 | Manutenção | A instância do Docker de back-end usada pela fábrica de carga de trabalho do BlueXP  para o GenAI não foi iniciada. | O volume foi excluído e a instância EC2 foi reiniciada.  a| 
 Use as seguintes etapas de recuperação:
 
