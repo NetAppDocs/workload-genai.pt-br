@@ -65,4 +65,16 @@ Os seguintes formatos de arquivo de origem de dados são atualmente suportados.
 
 
 | Formato de documento portátil | .pdf 
+
+
+| JPEG | .jpg or.jpeg 
+
+
+| Gráficos de rede portáteis | .png 
+
+
+| Formato de intercâmbio de gráficos | .gif 
+
+
+| Imagem WebP | .webp 
 |===

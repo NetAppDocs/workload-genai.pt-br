@@ -37,6 +37,7 @@ A fábrica de cargas de trabalho da BlueXP  para o GenAI simplifica o processo 
 * Acelere o desenvolvimento de aplicativos do GenAI, como um chatbot de perguntas e respostas usando frameworks de código aberto, como o LangChain, utilizando a API do GenAI para provisionar e gerenciar bases de conhecimento, conversar com uma base de conhecimento e armazenar e recuperar o histórico de bate-papo.
 * Melhore a proteção e a disponibilidade de dados com a implantação da infraestrutura generativa de dados de AI nos sistemas de arquivos FSX para NetApp ONTAP e aproveite os recursos do ONTAP, como alta disponibilidade, snapshots para proteção e recuperação de dados locais, SnapMirror para recuperação de desastres e SnapVault para fazer backup da sua infraestrutura de dados.
 * Reduza os custos gerais de storage para uma infraestrutura de dados generativa de AI aproveitando os recursos de eficiência de dados da ONTAP, como deduplicação, compressão e compactação de dados, disposição em camadas e thin Provisioning.
+* Obtenha resultados de alta qualidade a partir dos seus dados com os recursos de pesquisa híbrida e classificação fornecidos pelo GenAI. A busca híbrida combinada com a reclassificação melhoram significativamente a relevância dos resultados da pesquisa. Esses recursos estão disponíveis por meio da Amazon AWS e dependem da região.
 
 
 
@@ -80,6 +81,8 @@ Você pode usar a fábrica do workload do BlueXP  com as seguintes ferramentas:
 Não há custo para usar a funcionalidade GenAI de fábrica de workloads.
 
 No entanto, você precisará pagar pelos recursos da AWS que implantar para oferecer suporte à infraestrutura de IA generativa. Por exemplo, você pagará a AWS pelo serviço de IA da Amazon bedrock, pelo sistema de arquivos FSX for ONTAP e pela capacidade de armazenamento e pela instância do GenAI Engine EC2.
+
+Algumas operações multimodais, como a digitalização de imagens para informações de texto, podem usar mais recursos e, portanto, incorrer em um custo mais alto. Algumas operações de configuração, como alterar as configurações de uma base de conhecimento, podem fazer com que as fontes de dados sejam digitalizadas novamente, e as verificações de origem de dados também podem incorrer em um custo mais alto.
 
 
 

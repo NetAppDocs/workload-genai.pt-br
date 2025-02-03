@@ -35,6 +35,8 @@ Antes de começar a usar a fábrica de carga de trabalho do BlueXP  para o GenA
 * https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-supported.html["Documentação da AWS: Regiões e modelos compatíveis para bases de conhecimento da Amazon bedrock"^]
 
 
+O GenAI reclassifica os resultados da pesquisa por padrão para melhorar a relevância do resultado. Para obter os melhores resultados, certifique-se de que a configuração do modelo de base do Amazon bedrock inclua acesso a um modelo de reclassificação, como cohere Rerank ou Amazon Rerank, se disponível em sua região.
+
 --
 Modelo de incorporação:: Você deve habilitar o modelo de incorporação que você planeja usar antes de criar sua base de conhecimento. Os seguintes modelos de incorporação são suportados:
 +
