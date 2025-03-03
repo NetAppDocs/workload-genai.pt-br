@@ -52,7 +52,16 @@ Os seguintes formatos de arquivo de origem de dados são atualmente suportados.
 | Formato do ficheiro | Extensão 
 
 
+| Apache Parquet | .parquet 
+
+
 | Arquivo de valores separados por vírgula | .csv 
+
+
+| Formato de intercâmbio de gráficos | .gif 
+
+
+| JPEG | .jpg or.jpeg 
 
 
 | Markdown | .md 
@@ -67,13 +76,7 @@ Os seguintes formatos de arquivo de origem de dados são atualmente suportados.
 | Formato de documento portátil | .pdf 
 
 
-| JPEG | .jpg or.jpeg 
-
-
 | Gráficos de rede portáteis | .png 
-
-
-| Formato de intercâmbio de gráficos | .gif 
 
 
 | Imagem WebP | .webp 
