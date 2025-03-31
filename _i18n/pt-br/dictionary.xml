@@ -95,9 +95,7 @@
   <block id="b6306206c9c2b9f0903b5bfc5872066e" category="paragraph">Observe que você já deve ter habilitado o modelo de incorporação da Amazon bedrock.</block>
   <block id="6034693f6588a087cd6872b5c42ea4d6" category="inline-link">Saiba mais sobre o Amazon Titan</block>
   <block id="558b7a3f6f7e506377040f9194ff098b" category="paragraph"><block ref="558b7a3f6f7e506377040f9194ff098b" category="inline-link-rx"></block></block>
-  <block id="eedd3619a786f9c1261bba5f49d4f821" category="list-text">*Modelo de bate-papo*: Escolha entre os modelos de bate-papo Claude que estão integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.</block>
   <block id="d6444760a98aae63c256572c582cbe80" category="inline-link">Claude de antrópico em Amazon bedrock</block>
-  <block id="c6a0e7101f0906d1498552ff723709e5" category="paragraph">Saiba mais sobre os modelos disponíveis para ajudar a fazer a sua seleção:<block ref="56cf03ef03ec9048e7282cdb73fcf2fd" category="inline-link-rx"></block></block>
   <block id="bb75c182eff66bee3c76899d41fc8e8f" category="list-text">*Entradas de conversação*: Escolha se você deseja fornecer até quatro prompts iniciais de conversação que são exibidos para usuários que interagem com um chatbot que usa essa base de conhecimento. Recomendamos que ative esta definição.</block>
   <block id="fd6f710773f79577a44d128bb3df27cc" category="inline-link-macro">Saiba como modificar as configurações da base de conhecimento</block>
   <block id="b651dafbe972dff3ef00c60a522c2c08" category="paragraph">Se você ativar os iniciantes de conversação, "modo automático" é selecionado por padrão. O "modo manual" só pode ser ativado depois de adicionar fontes de dados à sua base de conhecimento. <block ref="787b3d64d417e723feebaf5fa5dbfeee" category="inline-link-macro-rx"></block>.</block>
@@ -264,7 +262,6 @@
   <block id="4a2c59aee6db61ec236539acdbc3b3e8" category="paragraph">Os seguintes formatos de arquivo de origem de dados são atualmente suportados.</block>
   <block id="1bd7f72decec9fb5b51a58447b152d38" category="cell">Formato do ficheiro</block>
   <block id="63e4e92bb7d207ca577b11c07f827279" category="cell">Extensão</block>
-  <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">Arquivo de valores separados por vírgula</block>
   <block id="01b1b6ebeb388697cca6712b58439069" category="cell">.csv</block>
   <block id="2182a74bab7188d959e795d9301e87ff" category="cell">Markdown</block>
   <block id="dadf0304a901246ee7f588e5276f1761" category="cell">.md</block>
@@ -421,7 +418,6 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Um</block>
   <block id="f48c3e82e3f3b9cc782fe1277e362ec5" category="paragraph">Você precisará de credenciais da AWS para implantar a infraestrutura da AWS, um sistema de arquivos FSX for ONTAP implantado e descoberto, a lista de fontes de dados que você deseja integrar na sua base de conhecimento, acesso ao serviço de AI da Amazon bedrock e muito mais.</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Dois</block>
-  <block id="10986db05c15b94a4d13e32858a6e26e" category="paragraph">As fontes de dados que você integrará em sua base de conhecimento podem estar localizadas em um único sistema de arquivos FSX for ONTAP ou em vários sistemas de arquivos FSX for ONTAP. Esses sistemas podem estar em VPCs diferentes, mas devem ser acessíveis dentro da mesma rede.</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Três</block>
   <block id="ad6f5ec13ed51e48bce763e25a9c69ce" category="inline-link-macro">Implantar a infraestrutura da base de conhecimento</block>
   <block id="41c27d3fbdf0cdc6aab23df489fe4c94" category="paragraph">Inicie o assistente de implantação de infraestrutura para implantar a infraestrutura da base de dados de conhecimento em seu ambiente AWS. Esse processo implanta uma instância do EC2 para o mecanismo do NetApp GenAI e um volume em um sistema de arquivos FSX for ONTAP para conter os bancos de dados do NetApp AI Engine. O volume é usado para armazenar o banco de dados de vetor usado pela base de conhecimento.</block>
@@ -568,7 +564,6 @@
   <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>.</block>
   <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">Saiba mais sobre os corrimões de dados, alimentados pela classificação BlueXP </block>
   <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">* Guardrails de dados*: Escolha se você deseja ativar ou desativar os guardrails de dados. <block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>.</block>
-  <block id="5d78af30e91e495d74cbd3cac7a282db" category="paragraph">Os pré-requisitos a seguir devem estar completos para habilitar os corrimões de dados.</block>
   <block id="069e9a4c876c108cc9f27ee13170ed16" category="inline-link-macro">Saiba como adicionar uma função a um membro no BlueXP </block>
   <block id="f271e30d6a375057fa3075f037ab44e5" category="list-text">É necessária uma conta de serviço para comunicar com a classificação BlueXP . Você deve ter a função _administrador da organização_ na sua conta de locação do BlueXP  para a criação de conta de serviço. Um membro que tenha a função de administrador da Organização pode concluir todas as ações no BlueXP . <block ref="9ba9a2df720ef49e9efc4ba4af6ca608" category="inline-link-macro-rx"></block></block>
   <block id="44b34442167c9611792529867ee76d90" category="inline-link-macro">Documentação de classificação BlueXP</block>
@@ -724,7 +719,6 @@
   <block id="e8293cb4f1909d8329e31cefdfb4dba4" category="doc">Ative a autenticação externa para uma base de conhecimento do GenAI</block>
   <block id="b05735c6e4c6d503ad9f93af6e740fa9" category="doc">Crie um aplicativo GenAI baseado em RAG</block>
   <block id="16cb0b733a26e9afa11f388e6d83aec1" category="doc">Crie uma base de conhecimento do GenAI</block>
-  <block id="79cee61f29eb5a0e2dd156871eb70a40" category="list-text">O mecanismo de IA deve ter acesso ao endpoint da API do BlueXP : https://api.BlueXP .NetApp.com.</block>
   <block id="e63e0ed616c63ed724e592b04e608826" category="doc">Use o aplicativo de chatbot de exemplo externo GenAI</block>
   <block id="52f26f0fff3bae61240c4b3a43f3624d" category="doc">Obtenha ajuda com a fábrica de workloads da BlueXP  para o GenAI</block>
   <block id="e1cdd82a2918ba1a2c0ff51770aad51e" category="doc">Identifique as fontes de dados a serem integradas na sua base de conhecimento do GenAI</block>
@@ -843,7 +837,6 @@
   <block id="820ddf0d1fd0a9cf5aaea49d2b400838" category="list-text">O GenAI agora pode ingerir arquivos Apache Parquet a partir de fontes de dados.</block>
   <block id="ce2ed264c43f0733c7c1ccbd1b06fdab" category="list-text">O GenAI agora suporta a introdução de arquivos DOCX do Microsoft Word que incluem imagens.</block>
   <block id="9e64c0f3360c80d2707e71b213c5fc58" category="paragraph"><block ref="9e64c0f3360c80d2707e71b213c5fc58" category="inline-link-macro-rx"></block></block>
-  <block id="bf971e4f3cc5d92890a57f57611a0107" category="cell">Apache Parquet</block>
   <block id="2041784b912a2b2e72827a5e9c656f5f" category="cell">.parquet</block>
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">Você pode redimensionar e renomear a janela do simulador do chatbot e copiar perguntas e respostas para a área de transferência.</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">Você pode ver as fontes usadas para produzir a resposta expandindo a lista *fontes* sob a resposta. Isso fornece uma lista de arquivos usados para gerar a resposta. Você pode exibir e copiar os blocos de dados usados de cada arquivo e caminho de volume para cada arquivo passando o Mouse sobre o nome do arquivo.</block>
@@ -854,4 +847,30 @@
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP  blogs</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinars na nuvem</block>
   <block id="8accc316c27ade20e4acbe4aa6c6742b" category="sidebar">Desbloquear o GenAI com seus dados</block>
+  <block id="f3a4976ab2464242211263cea7e247f9" category="paragraph">Esta versão do GenAI introduz suporte ao formato de arquivo JSON e JSONP ao criar<block ref="cc8f0c0e5a5cef9b33f236a0a9c19ca0" prefix=" " category="inline-code"></block> arquivos de fontes de dados. Arquivos JSON com objetos aninhados são suportados, com suporte limitado para arrays aninhados.</block>
+  <block id="0a8f6f086d5f30a416a61fd3606f1025" category="section-title">Suporte de internacionalização para o aplicativo de amostra de chatbot externo</block>
+  <block id="a2f4023c744ab1521036ee54ec2e15ba" category="paragraph">Agora você pode facilmente alterar a interface do usuário do aplicativo de chatbot externo de amostra do GenAI para um idioma ou localidade diferente.</block>
+  <block id="5b8a8facbec8623a03d7cae8b62bfeb7" category="inline-link-macro">Aplicação de chatbot de amostra externa GenAI</block>
+  <block id="4d79fade08f1e8c2d92bbdf0e3237924" category="paragraph"><block ref="4d79fade08f1e8c2d92bbdf0e3237924" category="inline-link-macro-rx"></block></block>
+  <block id="26ea891fa4f63d071728537d886e0f6c" category="section-title">Suporte para o modelo de bate-papo Anthropologic Claude Sonnet 3,7</block>
+  <block id="4c58515c1bd9657f223b7731d306475c" category="paragraph">O GenAI agora inclui suporte para o modelo de bate-papo Anthropologic Claude 3,7 Sonnet. Os recursos beta do Claude 3,7 Sonnet permitem até 128K tokens de saída por solicitação e suportam novas ações de uso do computador. Claude 3,7 Sonnet modo de pensamento estendido será suportado em um futuro lançamento do GenAI.</block>
+  <block id="fe72cb2aff5f7bf6138e806921c5d3d6" category="paragraph"><block ref="fe72cb2aff5f7bf6138e806921c5d3d6" category="inline-link-macro-rx"></block></block>
+  <block id="40bd8fe426c37e97f38be2c5a2728752" category="section-title">Suporte para adicionar fontes de dados de compartilhamentos genéricos NFS/SMB</block>
+  <block id="1813c42a79840f7d495281cf050a30dc" category="paragraph">Usando a API de fábrica de carga de trabalho, agora você pode adicionar uma fonte de dados de um compartilhamento genérico NFSv3, NFSv4 ou SMB. Quando você adiciona uma fonte de dados de um compartilhamento NFS ou SMB, o volume da base de conhecimento permanece em um volume do Amazon FSX for NetApp ONTAP. A IU da Web de fábrica da carga de trabalho suportará esse recurso em uma versão futura.</block>
+  <block id="fbc7eedf5c13a549330a0c3f52777db8" category="section-title">Suporte a peering VPC</block>
+  <block id="52bc46202bc9013e258f32f66b8bf88a" category="inline-link-macro">Nuvens privadas virtuais (VPCs)</block>
+  <block id="93dbde0ee04c36dce05b96f3551f8606" category="paragraph">Agora você pode implantar a infraestrutura do GenAI em toda a <block ref="f008838004ac43a2c4a5b39672df7daf" category="inline-link-macro-rx"></block>região e usar a mesma conta da AWS. Você pode implantar o mecanismo de AI em uma VPC e, em seguida, criar uma base de conhecimento em uma VPC com peered e selecionar sistemas de arquivos do Amazon FSX for NetApp ONTAP que residem em uma VPC com peered.</block>
+  <block id="b36fca5a6a45d6da3c01e23792f8a153" category="list-text">*Modelo de bate-papo*: Escolha entre os modelos de bate-papo Anthroic Claude ou Amazon Nova que estão integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.</block>
+  <block id="7b64cb38404993f8db85b46fa460e3f1" category="paragraph">Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de dados.</block>
+  <block id="b687386681bc74afd9f1f05a81484454" category="inline-link-macro">Endpoint da API do BlueXP </block>
+  <block id="52840142bc9ae1cec5ab47f43451b7f2" category="list-text">O mecanismo de IA deve ter acesso ao <block ref="0d55c5152a345809ffefdd3a1a629e2a" category="inline-link-macro-rx"></block>.</block>
+  <block id="b3e25fad7a8f45ec59f40a0eaf7b74ea" category="admonition">O recurso de guardrails de dados não é suportado ao inserir arquivos de dados estruturados, como CSV, JSON, JSONP ou Parquet.</block>
+  <block id="71e83c676c8b3aea9726262e97dd0c14" category="cell">Apache Parquetfootnote:disclaimer[o recurso de guardrails de dados não é suportado ao inserir arquivos de dados estruturados.]</block>
+  <block id="230703a919b034364b970a5ee5c5ab76" category="cell">Valores separados por vírgulas filefootnote:disclaimer[]</block>
+  <block id="33555d9ae9e8936cbd995ec23836ef0a" category="cell">JSON e JSONPnote:aviso de isenção de responsabilidade[]</block>
+  <block id="cc8f0c0e5a5cef9b33f236a0a9c19ca0" category="cell">.json</block>
+  <block id="ff9da638fe97b0c6f7deb173e8ea9623" category="paragraph">As fontes de dados que você integrará em sua base de conhecimento podem estar localizadas em um único sistema de arquivos FSX for ONTAP ou em vários sistemas de arquivos FSX for ONTAP. Se esses sistemas estiverem em VPCs diferentes, eles devem usar uma das duas configurações a seguir:</block>
+  <block id="6c654e9590c6b2b6a77fcf4553b9fc79" category="list-text">Acessível dentro da mesma rede</block>
+  <block id="277e6e0f8a7c91992d2766d798ab5915" category="list-text">Os VPCs devem ser peered e usando a mesma região e conta da AWS que o mecanismo de IA</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">30 de março de 2025</block>
 </blocks>

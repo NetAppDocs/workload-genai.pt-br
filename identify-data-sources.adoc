@@ -52,16 +52,19 @@ Os seguintes formatos de arquivo de origem de dados são atualmente suportados.
 | Formato do ficheiro | Extensão 
 
 
-| Apache Parquet | .parquet 
+| Apache Parquetfootnote:disclaimer[o recurso de guardrails de dados não é suportado ao inserir arquivos de dados estruturados.] | .parquet 
 
 
-| Arquivo de valores separados por vírgula | .csv 
+| Valores separados por vírgulas filefootnote:disclaimer[] | .csv 
 
 
 | Formato de intercâmbio de gráficos | .gif 
 
 
 | JPEG | .jpg or.jpeg 
+
+
+| JSON e JSONPnote:aviso de isenção de responsabilidade[] | .json 
 
 
 | Markdown | .md 

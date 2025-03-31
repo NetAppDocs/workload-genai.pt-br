@@ -60,17 +60,22 @@ https://aws.amazon.com/bedrock/titan/["Saiba mais sobre o Amazon Titan"^]
 
 
 
-.. *Modelo de bate-papo*: Escolha entre os modelos de bate-papo Claude que estão integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.
+.. *Modelo de bate-papo*: Escolha entre os modelos de bate-papo Anthroic Claude ou Amazon Nova que estão integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.
 +
-Saiba mais sobre os modelos disponíveis para ajudar a fazer a sua seleção: https://aws.amazon.com/bedrock/claude/["Claude de antrópico em Amazon bedrock"^]
+Saiba mais sobre como usar esses modelos com o Amazon bedrock:
+
++
+*** https://aws.amazon.com/bedrock/claude/["Claude de antrópico em Amazon bedrock"^]
+*** https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["Introdução ao Amazon Nova no console Amazon bedrock"^]
+
 
 .. * Guardrails de dados*: Escolha se você deseja ativar ou desativar os guardrails de dados. link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre os corrimões de dados, alimentados pela classificação BlueXP "^].
 +
-Os pré-requisitos a seguir devem estar completos para habilitar os corrimões de dados.
+Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de dados.
 
 +
 *** É necessária uma conta de serviço para comunicar com a classificação BlueXP . Você deve ter a função _administrador da organização_ na sua conta de locação do BlueXP  para a criação de conta de serviço. Um membro que tenha a função de administrador da Organização pode concluir todas as ações no BlueXP . link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["Saiba como adicionar uma função a um membro no BlueXP "^]
-*** O mecanismo de IA deve ter acesso ao endpoint da API do BlueXP : https://api.BlueXP .NetApp.com.
+*** O mecanismo de IA deve ter acesso ao link:https://api.bluexp.netapp.com["Endpoint da API do BlueXP "^].
 *** Você precisará fazer o seguinte, conforme descrito em link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["Documentação de classificação BlueXP"^]:
 +
 .... Crie um conetor BlueXP
@@ -80,6 +85,13 @@ Os pré-requisitos a seguir devem estar completos para habilitar os corrimões d
 
 
 
+
+
++
+
+NOTE: O recurso de guardrails de dados não é suportado ao inserir arquivos de dados estruturados, como CSV, JSON, JSONP ou Parquet.
+
++
 .. *Entradas de conversação*: Escolha se você deseja fornecer até quatro prompts iniciais de conversação que são exibidos para usuários que interagem com um chatbot que usa essa base de conhecimento. Recomendamos que ative esta definição.
 +
 Se você ativar os iniciantes de conversação, "modo automático" é selecionado por padrão. O "modo manual" só pode ser ativado depois de adicionar fontes de dados à sua base de conhecimento. link:manage-knowledgebase.html["Saiba como modificar as configurações da base de conhecimento"].
