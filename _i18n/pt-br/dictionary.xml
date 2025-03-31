@@ -873,4 +873,6 @@
   <block id="6c654e9590c6b2b6a77fcf4553b9fc79" category="list-text">Acessível dentro da mesma rede</block>
   <block id="277e6e0f8a7c91992d2766d798ab5915" category="list-text">Os VPCs devem ser peered e usando a mesma região e conta da AWS que o mecanismo de IA</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">30 de março de 2025</block>
+  <block id="0fcf305133bffed241e3ea17efbba5fc" category="inline-link-macro">Use a API de fábrica da carga de trabalho</block>
+  <block id="a6efc6ca3aa5af2c7a8cad1239df17c0" category="paragraph"><block ref="a6efc6ca3aa5af2c7a8cad1239df17c0" category="inline-link-macro-rx"></block></block>
 </blocks>
