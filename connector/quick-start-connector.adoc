@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: connector/quick-start-connector.html 
+keywords: quick start, connector, chatbot 
+summary: Comece a criar um conetor usando os dados da sua organização que existem nos sistemas de arquivos do Amazon FSX para NetApp ONTAP. 
+---
+= Início rápido para conetores GenAI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Comece a criar um conetor NetApp ONTAP para o Amazon Q usando os dados da sua organização que existem nos sistemas de arquivos do Amazon FSX para NetApp ONTAP. Depois de criar um conetor, os usuários finais podem acessar o assistente do Amazon Q Business para respostas focadas na organização para suas perguntas.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] Faça login na fábrica da carga de trabalho
+[role="quick-margin-para"]
+Você precisará https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configure uma conta com a fábrica de carga de trabalho"^] fazer login usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Configure seu ambiente para atender aos requisitos do GenAI
+[role="quick-margin-para"]
+Você precisará de credenciais da AWS para implantar a infraestrutura da AWS, um sistema de arquivos FSX for ONTAP implantado e descoberto, a lista de fontes de dados que você deseja integrar no seu conetor, acesso ao aplicativo Amazon Q Business e muito mais.
+
+[role="quick-margin-para"]
+link:requirements-connector.html["Saiba mais sobre os requisitos do GenAI"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] Identifique o sistema de arquivos FSX for ONTAP que contém as fontes de dados
+[role="quick-margin-para"]
+As fontes de dados que você integrará em seu conetor podem estar localizadas em um único sistema de arquivos FSX for ONTAP ou em vários sistemas de arquivos FSX for ONTAP. Se esses sistemas estiverem em VPCs diferentes, eles devem estar acessíveis dentro da mesma rede ou os VPCs devem ser direcionados e usando a mesma região e conta da AWS que o mecanismo de IA.
+
+[role="quick-margin-para"]
+link:identify-data-sources-connector.html["Saiba como identificar fontes de dados"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatro"] Implantar a infraestrutura do GenAI
+[role="quick-margin-para"]
+Inicie o assistente de implantação de infraestrutura para implantar a infraestrutura do GenAI em seu ambiente AWS. Esse processo implanta uma instância do EC2 para o mecanismo do NetApp GenAI e um volume em um sistema de arquivos FSX for ONTAP para conter os bancos de dados do NetApp AI Engine. O volume é utilizado para armazenar informações sobre o conetor.
+
+[role="quick-margin-para"]
+link:deploy-infrastructure.html["Saiba como implantar a infraestrutura do GenAI"^].
+
+.O que vem a seguir
+Agora você pode criar um conetor para o Amazon Q Business para fornecer respostas focadas na organização aos usuários finais.

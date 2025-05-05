@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: test-knowledgebase.html 
+permalink: knowledge-base/test-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: Depois de criar a base de conhecimento, você poderá testá-la localmente usando o simulador de chatbot e fazer as alterações necessárias antes de tornar a base de conhecimento disponível para seus usuários através de um aplicativo de chatbot. 
 ---
 = Teste uma base de conhecimento do GenAI
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

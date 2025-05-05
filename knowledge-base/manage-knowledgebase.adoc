@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: manage-knowledgebase.html 
+permalink: knowledge-base/manage-knowledgebase.html 
 keywords: ai, chatbot, managing, knowledge base 
 summary: Depois de criar uma base de conhecimento, você pode visualizar os detalhes da base de conhecimento, modificar a base de conhecimento, integrar fontes de dados adicionais ou excluir a base de conhecimento. 
 ---
 = Gerenciar bases de conhecimento do GenAI
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -237,6 +237,22 @@ Você verá uma mensagem informando que suas fontes de dados estão sendo digita
 
 .Resultado
 A base de conhecimento é sincronizada com as fontes de dados anexadas e qualquer chatbot ativo começará a usar as informações mais recentes de suas fontes de dados.
+
+
+
+=== Pausar ou retomar uma sincronização agendada
+
+Se pretender pausar ou retomar a próxima sincronização (digitalização) das fontes de dados, pode fazê-lo a qualquer momento. Talvez seja necessário pausar a próxima sincronização agendada se você fizer alterações em uma fonte de dados e não quiser que a sincronização aconteça durante a janela de mudança.
+
+.Passos
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. No separador bases de conhecimento e conetores, selecione a base de conhecimento para a qual pretende colocar em pausa ou retomar exames.
+. Selecione image:icon-action.png["o botão de opção"] e selecione *Gerenciar base de conhecimento*.
+. Selecione o menu *ações* e selecione *Digitalizar > Pausar digitalização agendada* ou *Digitalizar > Retomar digitalização agendada*.
++
+Você verá uma mensagem informando que a próxima digitalização agendada foi pausada ou retomada.
+
+
 
 
 

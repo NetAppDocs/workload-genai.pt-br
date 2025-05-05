@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: manage-infrastructure.html 
+permalink: general/manage-infrastructure.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: Você pode ver detalhes sobre a infraestrutura do GenAI RAG implantada ou remover a infraestrutura do chatbot se não precisar mais dela. 
 ---
 = Gerenciar a infraestrutura do GenAI
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -42,7 +42,7 @@ Se você não precisar mais da infraestrutura de chatbot implantada para um ou m
 
 NOTE: Todos os chatbots que foram implantados nessa infraestrutura serão desativados e todo o histórico de chat será excluído.
 
-Essa operação só remove os links para a infraestrutura de IA da fábrica de carga de trabalho - ela não remove todos os componentes da AWS. Você precisará excluir manualmente os seguintes componentes de infraestrutura da AWS:
+Essa operação remove apenas os links para a infraestrutura de IA da fábrica de workloads; ela não remove todos os componentes da AWS. Você precisará excluir manualmente os seguintes componentes de infraestrutura da AWS:
 
 * A instância da VM
 * Endpoints privados

@@ -1,17 +1,19 @@
 ---
 sidebar: sidebar 
-permalink: create-knowledgebase.html 
+permalink: knowledge-base/create-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
 summary: Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas em sua base de conhecimento a partir dos datastores do FSX for ONTAP, você estará pronto para criar a base de conhecimento usando a fábrica de cargas de trabalho. Como parte desta etapa, você também definirá as caraterísticas da IA e criará entradas de conversa. 
 ---
 = Crie uma base de conhecimento do GenAI
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
 Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas em sua base de conhecimento a partir dos datastores do FSX for ONTAP, você estará pronto para criar a base de conhecimento usando a fábrica de cargas de trabalho. Como parte dessa etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.
+
+Certifique-se de que seu ambiente atenda link:requirements-knowledge-base.html["requisitos"]às bases de conhecimento para antes de prosseguir.
 
 .Sobre esta tarefa
 As bases de conhecimento têm duas modalidades de integração de dados - _public mode_ e _Enterprise mode_.
@@ -20,7 +22,7 @@ Modo público:: Uma base de conhecimento pode ser usada sem integrar fontes de d
 Modo empresarial:: Na maioria dos casos, você vai querer integrar fontes de dados da sua organização na base de conhecimento. Isso é conhecido como integração _Enterprise mode_ porque fornece conhecimento da sua empresa.
 +
 --
-As fontes de dados da sua organização podem conter informações de identidade privada (PII). Para proteger essas informações confidenciais, você pode habilitar _data guardrails_ ao criar e configurar bases de conhecimento. Corrimões de dados, alimentados pela classificação BlueXP , identificam e mascara PII, tornando-os inacessíveis e irrecuperáveis.
+As fontes de dados da sua organização podem conter informações de identificação pessoal (PII). Para proteger essas informações confidenciais, você pode habilitar _data guardrails_ ao criar e configurar bases de conhecimento. Corrimões de dados, alimentados pela classificação BlueXP , identificam e mascara PII, tornando-os inacessíveis e irrecuperáveis.
 
 link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^].
 
@@ -42,7 +44,7 @@ A base de conhecimento define caraterísticas como os modelos de IA bedrock e o 
 .Passos
 . Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
 . No bloco cargas de trabalho de IA, selecione *Deploy & Manage*.
-. Na guia bases de conhecimento, selecione *Adicionar base de conhecimento*.
+. Na guia bases de conhecimento e conetores, selecione o menu suspenso *criar novo* e escolha *base de conhecimento NetApp GenAI para bedrock*.
 . Na página Definir base de conhecimento, configure as definições da base de conhecimento:
 +
 .. *Nome*: Insira o nome que deseja usar para a base de conhecimento.
@@ -52,6 +54,8 @@ A base de conhecimento define caraterísticas como os modelos de IA bedrock e o 
 *** Titãs incorporações G1 - texto
 *** Texto de incorporação Titan v2
 *** Incorporações multimodais Titan G1
+*** Incorpore o inglês
+*** Incorpore multilíngue
 +
 Observe que você já deve ter habilitado o modelo de incorporação da Amazon bedrock.
 
@@ -60,15 +64,7 @@ https://aws.amazon.com/bedrock/titan/["Saiba mais sobre o Amazon Titan"^]
 
 
 
-.. *Modelo de bate-papo*: Escolha entre os modelos de bate-papo Anthroic Claude ou Amazon Nova que estão integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.
-+
-Saiba mais sobre como usar esses modelos com o Amazon bedrock:
-
-+
-*** https://aws.amazon.com/bedrock/claude/["Claude de antrópico em Amazon bedrock"^]
-*** https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html["Introdução ao Amazon Nova no console Amazon bedrock"^]
-
-
+.. *Modelo de bate-papo*: Escolha entre vários modelos de bate-papo integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.
 .. * Guardrails de dados*: Escolha se você deseja ativar ou desativar os guardrails de dados. link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre os corrimões de dados, alimentados pela classificação BlueXP "^].
 +
 Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de dados.

@@ -8,7 +8,7 @@
 
 Agora você pode fornecer um nome de instantâneo para um instantâneo ad-hoc.
 
-link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#protect-a-knowledge-base-with-snapshots["Proteja uma base de conhecimento com snapshots"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/manage-knowledgebase.html#protect-a-knowledge-base-with-snapshots["Proteja uma base de conhecimento com snapshots"]
 
 
 
@@ -16,7 +16,7 @@ link:https://docs.netapp.com/us-en/workload-genai/manage-knowledgebase.html#prot
 
 Agora você pode dar um nome personalizado à instância do mecanismo de AI durante a implantação.
 
-link:https://docs.netapp.com/us-en/workload-genai/deploy-infrastructure.html["Implantar a infraestrutura do GenAI"]
+link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/deploy-infrastructure.html["Implantar a infraestrutura do GenAI"]
 
 
 
@@ -24,4 +24,4 @@ link:https://docs.netapp.com/us-en/workload-genai/deploy-infrastructure.html["Im
 
 Se a instância do seu mecanismo de AI ficar corrompida ou for excluída, você pode deixar que a carga de trabalho reconstrua-a de fábrica para você. A fábrica de carga de trabalho reanexa automaticamente suas bases de conhecimento à infraestrutura após a conclusão da reconstrução, para que elas estejam prontas para uso.
 
-link:https://docs.netapp.com/us-en/workload-genai/troubleshooting.html["Solução de problemas"]
+link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["Solução de problemas"]

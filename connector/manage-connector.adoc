@@ -1,0 +1,175 @@
+---
+sidebar: sidebar 
+permalink: connector/manage-connector.html 
+keywords: ai, chatbot, managing, knowledge base 
+summary: Depois de criar uma base de conhecimento, você pode visualizar os detalhes da base de conhecimento, modificar a base de conhecimento, integrar fontes de dados adicionais ou excluir a base de conhecimento. 
+---
+= Gerencie os conetores do Amazon Q Business
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de criar um conetor para o Amazon Q Business, você pode exibir os detalhes do conetor, modificar o conetor, integrar fontes de dados adicionais ou excluir o conetor.
+
+
+
+== Exibir informações sobre um conetor
+
+Pode visualizar informações sobre as definições de um conetor e as fontes de dados integradas.
+
+.Passos
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. No menu de navegação de fábrica da carga de trabalho, selecione *AI*.
+. Selecione o conetor que pretende visualizar.
+. Para ver os detalhes do conetor, image:icon-action.png["o botão de opção"]selecione e selecione *Manage Connector*.
++
+Esta página exibe o status publicado, o status de incorporação das fontes de dados, o modo de incorporação, a lista de todas as fontes de dados incorporadas e muito mais.
+
++
+O menu *ações* permite gerenciar o conetor se você quiser fazer alterações.
+
+
+
+
+
+== Edite um conetor
+
+Pode atualizar um conetor alterando algumas definições ou pode adicionar ou remover fontes de dados.
+
+Sempre que você adicionar, modificar ou remover fontes de dados do conetor, o GenAI precisa enviar as informações de origem de dados para o Amazon Q Business para que elas sejam reindexadas. A sincronização é incremental, então o Amazon Q Business processa apenas os objetos no volume do FSX for ONTAP que foram adicionados, modificados ou excluídos desde a última sincronização.
+
+.Passos
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Na página de inventário bases de conhecimento e conetores, selecione o conetor que pretende atualizar.
+. Selecione image:icon-action.png["o botão de opção"] e selecione *Manage Connector*.
++
+Esta página exibe o status publicado, o status de incorporação das fontes de dados, o modo de incorporação, a lista de todas as fontes de dados incorporadas e muito mais.
+
+. Selecione o menu *ações* e selecione *Editar conetor*.
+. Na página Editar conetor, você pode alterar o nome do conetor, a descrição, o modelo de incorporação, a habilitação dos corrimões de dados e a política de snapshot usada para o volume que contém o conetor.
++
+
+NOTE: Toda varredura de fonte de dados, que inclui incorporação, incorre em um custo. Se você ativar os corrimões de dados depois que um conetor foi criado, a fonte de dados será digitalizada novamente e incorrerá em custos.
+
+. Selecione *Salvar* depois de fazer alterações.
+
+
+
+
+== Adicione fontes de dados adicionais a um conetor
+
+Você pode incorporar fontes de dados adicionais no seu conetor para preenchê-lo com dados adicionais da organização.
+
+.Passos
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. A partir da página de inventário bases de dados e conetores de conhecimento, selecione o conetor onde pretende adicionar a fonte de dados.
+. Selecione image:icon-action.png["o botão de opção"] e selecione *Adicionar fonte de dados*.
+. * Selecione um sistema de arquivos*: Selecione o sistema de arquivos FSX for ONTAP onde seus arquivos de origem de dados residem e selecione *Next*.
+. *Selecione um volume*: Selecione o volume no qual os arquivos de origem de dados residem e selecione *Next*.
++
+Ao selecionar arquivos armazenados usando o protocolo SMB, você precisará inserir as informações do ative Directory, que incluem o domínio, o endereço IP, o nome de usuário e a senha.
+
+. *Selecione uma fonte de dados*: Selecione a localização da fonte de dados com base no local onde você salvou os arquivos. Este pode ser um volume inteiro, ou apenas uma pasta específica ou subpasta no volume, e selecione *Next*.
+. * Configurações*: Configure como a fonte de dados ingere informações de seus arquivos e quais arquivos ela inclui em varreduras:
++
+** *Definir fonte de dados*: Na seção *Estratégia de Chunking*, defina como o mecanismo GenAI divide o conteúdo da fonte de dados em blocos quando a fonte de dados é integrada a uma base de conhecimento. Você pode escolher uma das seguintes estratégias:
++
+*** * Agrupamento de frases múltiplas*: Organiza informações de sua fonte de dados em blocos definidos por sentença. Você pode escolher quantas frases compõem cada pedaço (até 100).
+*** * Agrupamento baseado em sobreposição*: Organiza informações de sua fonte de dados em blocos definidos por carateres que podem sobrepor blocos vizinhos. Você pode escolher o tamanho de cada pedaço em carateres, e quanto cada pedaço se sobrepõe com pedaços adjacentes. Você pode configurar um tamanho de bloco entre 50 e 3000 carateres e uma porcentagem de sobreposição entre 1 e 99%.
++
+
+NOTE: Escolher uma alta porcentagem de sobreposição pode aumentar significativamente os requisitos de armazenamento com apenas pequenas melhorias na precisão de recuperação.
+
+
+
+** * Filtragem de arquivos*: Configure quais arquivos estão incluídos nas digitalizações:
++
+*** Na seção *suporte a tipos de arquivo*, escolha incluir todos os tipos de arquivos ou selecionar tipos de arquivo individuais para inclusão nas verificações de origem de dados.
++
+Se você incluir imagens ou arquivos PDF, a fábrica de carga de trabalho do BlueXP  para o GenAI analisa o texto nas imagens (incluindo imagens em documentos PDF), e isso incorre em um custo mais alto.
+
++
+Ao incluir dados de texto de imagens, o GenAI não consegue mascarar informações de identificação pessoal (PII) da imagem à medida que os dados de texto digitalizados são enviados do seu ambiente para a AWS. No entanto, uma vez que os dados são armazenados, todas as PII são mascaradas no banco de dados do GenAI.
+
++
+
+NOTE: Sua escolha de incluir arquivos de imagem em digitalizações está relacionada ao modelo de bate-papo da base de conhecimento. Se você incluir arquivos de imagem em digitalizações, o modelo de bate-papo deve suportar imagens. Se os tipos de arquivo de imagem estiverem selecionados aqui, você não poderá alternar a base de conhecimento para um modelo de chat que não suporte arquivos de imagem.
+
+*** Na seção *filtro de tempo de modificação de arquivo*, escolha ativar ou desativar a inclusão de arquivos com base em seu tempo de modificação. Se ativar a filtragem de hora de modificação, selecione um intervalo de datas na lista.
++
+
+NOTE: Se você incluir arquivos com base em um intervalo de datas de modificação, assim que o intervalo de datas não for satisfeito (os arquivos não foram modificados dentro do intervalo de datas especificado), os arquivos serão excluídos da verificação periódica e a fonte de dados não incluirá esses arquivos.
+
+
+
+
+
+. Na seção *reconhecimento de permissão*, que está disponível somente quando a fonte de dados selecionada estiver em um volume que usa o protocolo SMB, você pode ativar ou desativar respostas com reconhecimento de permissão:
++
+** *Habilitado*: Os usuários do chatbot que acessam essa base de conhecimento só receberão respostas a consultas de fontes de dados às quais têm acesso.
+** *Disabled*: Os usuários do chatbot receberão respostas usando conteúdo de todas as fontes de dados integradas.
+
+
+. Selecione *Add* para adicionar esta fonte de dados à sua base de conhecimento.
+
+
+.Resultado
+A fonte de dados está integrada ao seu conetor.
+
+
+
+== Sincronize as fontes de dados com um conetor
+
+As fontes de dados são sincronizadas automaticamente com o conetor associado uma vez por dia, de modo que quaisquer alterações na fonte de dados sejam refletidas no Amazon Q Business. Se você fizer alterações em qualquer uma de suas fontes de dados e quiser sincronizar (digitalizar) os dados imediatamente, poderá executar uma sincronização sob demanda.
+
+A sincronização é incremental, portanto, o Amazon Q Business só processa os objetos em suas fontes de dados que foram adicionados, modificados ou excluídos desde a última sincronização.
+
+.Passos
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. No separador bases de conhecimento e conetores, selecione o conetor que pretende sincronizar.
+. Selecione image:icon-action.png["o botão de opção"] e selecione *Manage Connector*.
+. Selecione o menu *ações* e selecione *Digitalizar agora*.
++
+Você verá uma mensagem informando que suas fontes de dados estão sendo digitalizadas e uma mensagem final quando a digitalização estiver concluída.
+
+
+
+.Resultado
+O conetor é sincronizado com as fontes de dados anexadas e o Amazon Q Business começará a usar as informações mais recentes de suas fontes de dados.
+
+
+
+=== Pausar ou retomar uma sincronização agendada
+
+Se pretender pausar ou retomar a próxima sincronização (digitalização) das fontes de dados, pode fazê-lo a qualquer momento. Talvez seja necessário pausar a próxima sincronização agendada se você fizer alterações em uma fonte de dados e não quiser que a sincronização aconteça durante a janela de mudança.
+
+.Passos
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Na página de inventário do conetor, selecione o conetor para o qual deseja pausar ou retomar exames.
+. Selecione image:icon-action.png["o botão de opção"] e selecione *Manage Connector*.
+. Selecione o menu *ações* e selecione *Digitalizar > Pausar digitalização agendada* ou *Digitalizar > Retomar digitalização agendada*.
++
+Você verá uma mensagem informando que a próxima digitalização agendada foi pausada ou retomada.
+
+
+
+
+
+== Eliminar um conetor
+
+Se você não precisar mais de um conetor, você pode excluí-lo. Quando você exclui um conetor, ele é removido da fábrica da carga de trabalho e o volume que contém o conetor é excluído. Eliminar um conetor não é reversível.
+
+Ao excluir um conetor, você também deve desassociar o conetor de qualquer agente ao qual está associado para excluir totalmente todos os recursos associados ao conetor.
+
+.Passos
+. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Na página de inventário bases de conhecimento e conetores, selecione o conetor que pretende eliminar.
+. Selecione image:icon-action.png["o botão de opção"] e selecione *Manage Connector*.
+. Selecione o menu *ações* e selecione *Excluir conetor*.
+. Na caixa de diálogo Excluir conetor, confirme se deseja excluí-lo e selecione *Excluir*.
+
+
+.Resultado
+O conetor é removido da fábrica da carga de trabalho e seu volume associado é excluído.

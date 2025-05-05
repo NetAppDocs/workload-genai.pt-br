@@ -1,0 +1,36 @@
+= 
+:allow-uri-read: 
+
+
+. * Selecione um sistema de arquivos*: Selecione o sistema de arquivos FSX for ONTAP onde seus arquivos de origem de dados residem e selecione *Next*.
+. *Selecione um volume*: Selecione o volume no qual os arquivos de origem de dados residem e selecione *Next*.
++
+Ao selecionar arquivos armazenados usando o protocolo SMB, você precisará inserir as informações do ative Directory, que incluem o domínio, o endereço IP, o nome de usuário e a senha.
+
+. *Selecione uma fonte de dados*: Selecione a localização da fonte de dados com base no local onde você salvou os arquivos. Este pode ser um volume inteiro, ou apenas uma pasta específica ou subpasta no volume, e selecione *Next*.
+. * Configurações*: Configure como a fonte de dados ingere informações de seus arquivos e quais arquivos ela inclui em varreduras:
++
+** * Filtragem de arquivos*: Configure quais arquivos estão incluídos nas digitalizações:
++
+*** Na seção *suporte a tipos de arquivo*, escolha incluir todos os tipos de arquivos ou selecionar tipos de arquivo individuais para inclusão nas verificações de origem de dados.
+*** Na seção *filtro de tempo de modificação de arquivo*, escolha ativar ou desativar a inclusão de arquivos com base em seu tempo de modificação. Se ativar a filtragem de hora de modificação, selecione um intervalo de datas na lista.
++
+
+NOTE: Se você incluir arquivos com base em um intervalo de datas de modificação, assim que o intervalo de datas não for satisfeito (os arquivos não foram modificados dentro do intervalo de datas especificado), os arquivos serão excluídos da verificação periódica e a fonte de dados não incluirá esses arquivos.
+
+
+
+
+
+. Na seção *reconhecimento de permissão*, que está disponível somente quando a fonte de dados selecionada estiver em um volume que usa o protocolo SMB, você pode ativar ou desativar respostas com reconhecimento de permissão:
++
+** *Enabled*: Os usuários do chatbot que acessarem este conetor receberão apenas respostas a consultas de fontes de dados às quais tenham acesso.
+** *Disabled*: Os usuários do chatbot receberão respostas usando conteúdo de todas as fontes de dados integradas.
++
+
+NOTE: As permissões de grupo do ative Directory não são suportadas para fontes de dados do Amazon Q Business Connector.
+
+
+
+. Selecione *Adicionar* para adicionar essa fonte de dados ao Amazon Q Business Connector.
+

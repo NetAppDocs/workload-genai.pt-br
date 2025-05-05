@@ -1,13 +1,13 @@
 ---
 sidebar: sidebar 
-permalink: genai-engine-instance.html 
+permalink: general/genai-engine-instance.html 
 keywords: genai engine, instance, ec2, role, iam role, permissions, security group, inbound, outbound, private endpoints 
 summary: Ao implantar a infraestrutura do GenAI, a fábrica de carga de trabalho cria uma instância do EC2 para o mecanismo GenAI. Ele também cria uma função do IAM, grupo de segurança e endpoints privados para essa instância. Você pode querer entender mais detalhes sobre esses componentes que a fábrica de workloads cria no seu ambiente AWS. 
 ---
-= Componentes para o motor NetApp GenAI
+= Componentes do motor NetApp GenAI
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -87,7 +87,7 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai: :<ai-engine-id>:kbId": "*"
         }
       },
       "Action": "fsx:DeleteVolume",
@@ -100,7 +100,20 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d": "*"
+          "aws:ResourceTag/netapp:wlmai: :<ai-engine-id>:qConnectorId": "*"
+        }
+      },
+      "Action": "fsx:DeleteVolume",
+      "Resource": [
+        "arn:aws:fsx:*:*:volume/*/*",
+        "arn:aws:fsx:*:*:backup/*"
+      ],
+      "Effect": "Allow"
+    },
+    {
+      "Condition": {
+        "StringLike": {
+          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -110,7 +123,17 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai:8529f2ac-b443-4224-9abe-f42dc418ab8d:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>:kbId": "*"
+        }
+      },
+      "Action": "fsx:UntagResource",
+      "Resource": "arn:aws:fsx:*:*:volume/*/*",
+      "Effect": "Allow"
+    },
+    {
+      "Condition": {
+        "StringLike": {
+          "aws:ResourceTag/netapp:wlmai:<ai-engine-id>:qConnectorId": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -135,6 +158,22 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
         "ec2messages:DeleteMessage",
         "ec2messages:FailMessage",
         "ec2messages:SendReply"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "qbusiness:ListWebExperiences",
+        "qbusiness:GetApplication",
+        "qbusiness:CreateDataSource",
+        "qbusiness:DeleteDataSource",
+        "qbusiness:ListIndices",
+        "qbusiness:StartDataSourceSyncJob",
+        "qbusiness:StopDataSourceSyncJob",
+        "qbusiness:ListDataSourceSyncJobs",
+        "qbusiness:BatchPutDocument",
+        "qbusiness:BatchDeleteDocument"
       ],
       "Resource": "*",
       "Effect": "Allow"

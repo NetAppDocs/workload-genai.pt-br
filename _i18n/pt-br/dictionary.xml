@@ -22,17 +22,13 @@
   <block id="4936442e55cb8f837f9616ca6aaf1e92" category="doc">Suporte a snapshot e restauração para volumes da base de conhecimento</block>
   <block id="1ae13d57da1c55ee537cb9dc63916d03" category="paragraph">Agora, você pode proteger seus dados generativos de workloads de AI usando uma cópia pontual de uma base de conhecimento. Isso permite que você proteja seus dados contra perda acidental ou alterações de teste nas configurações da base de conhecimento. Você pode restaurar a versão anterior do volume da base de conhecimento a qualquer momento.</block>
   <block id="4dfbf3ac57687ef65479f0135589593f" category="inline-link">Tire um instantâneo de um volume da base de conhecimento</block>
-  <block id="f8016d0e0375ce671e71803692cf105c" category="paragraph"><block ref="f8016d0e0375ce671e71803692cf105c" category="inline-link-rx"></block></block>
   <block id="3d1e45266a0a6784e668353081a13cd0" category="inline-link">Restaurar um snapshot de um volume da base de conhecimento</block>
-  <block id="340b5c4d996cad6cf6d27d13faf94e89" category="paragraph"><block ref="340b5c4d996cad6cf6d27d13faf94e89" category="inline-link-rx"></block></block>
   <block id="073751c61467c5e36c6cc197d92a75c4" category="section-title">Pausar digitalizações programadas</block>
   <block id="6c31cb11ffc4d11a5aed0e968bb5f8c9" category="paragraph">Agora você pode pausar digitalizações de origem de dados agendadas. Por padrão, workloads de AI generativo varre cada fonte de dados diariamente para ingerir novos dados em cada base de conhecimento. Se você não quiser que as alterações mais recentes sejam ingeridas (durante o teste ou durante a restauração de um instantâneo, por exemplo), você pode pausar as verificações agendadas e retomá-las a qualquer momento.</block>
   <block id="67f0dcee920749eead316e2518099abb" category="inline-link">Gerenciar bases de conhecimento</block>
-  <block id="f951fa0f2608d186cd1f0bd8889ac232" category="paragraph"><block ref="f951fa0f2608d186cd1f0bd8889ac232" category="inline-link-rx"></block></block>
   <block id="9813be0bded00d4a8f5457f2e27277fa" category="section-title">Volumes de proteção de dados agora compatíveis com bases de conhecimento</block>
   <block id="f20c02f54f20ee06aed661b133ba0fc3" category="paragraph">Ao selecionar um volume da base de conhecimento, agora você pode escolher um volume de proteção de dados que faça parte de uma relação de replicação do NetApp SnapMirror. Isso permite armazenar bases de conhecimento em volumes que já estão protegidos pela replicação do SnapMirror.</block>
   <block id="7d7b61e2696184ef2f1a673b4b505c10" category="inline-link">Identifique as fontes de dados a serem integradas em sua base de conhecimento</block>
-  <block id="8afd34c2a29e7b6286f3ed0bf9e20c22" category="paragraph"><block ref="8afd34c2a29e7b6286f3ed0bf9e20c22" category="inline-link-rx"></block></block>
   <block id="f1af0b71f33a2e37e9e17b100f3c0b1e" category="summary">Ative a autenticação para uma base de conhecimento para que a validação de token e ACLs sejam necessárias ao integrar a base de conhecimento com um aplicativo de chatbot.</block>
   <block id="566673c66dc53f65f0662ca186b4ff33" category="paragraph">Ative a autenticação para uma base de conhecimento para que a validação de token e ACLs sejam necessárias ao usar os endpoints da API para integrar uma base de conhecimento com um aplicativo de chatbot. Ao ativar a autenticação, você configura as configurações de um Token Web JSON que será usado para solicitações de API para uma base de conhecimento de clientes de chatbot.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Passos</block>
@@ -59,21 +55,12 @@
   <block id="e3fa845bdb32966ee960e79fc4cb6cf2" category="list-text">Sem a necessidade de um conhecimento profundo da infraestrutura de dados, base e modelos de linguagem, os administradores e desenvolvedores DE TI podem acelerar o desenvolvimento de aplicações utilizando a automação fornecida pelo GenAI. Os administradores e desenvolvedores de dados podem criar bases de conhecimento empresariais de forma fácil e rápida que incorporam dados não estruturados da sua organização para serem usados por aplicativos de IA generativos.</block>
   <block id="ce8128205284c384b430769caeb26741" category="list-text">Melhore a segurança preservando as permissões do usuário em arquivos incorporados nas bases de conhecimento para garantir que a segurança e a privacidade dos dados sejam mantidas. Um aplicativo, como um chatbot, pode ser desenvolvido para fornecer apenas aos usuários autenticados respostas com base nos dados aos quais os usuários têm acesso.</block>
   <block id="3bc3038379ac11eb60388be943b76d65" category="list-text">Mantenha seus dados empresariais privados e seguros na conta de cliente da AWS, onde seus dados organizacionais nunca serão expostos externamente.</block>
-  <block id="2858795dda2f40fc08938e45130e6015" category="list-text">Acelere o desenvolvimento de aplicativos do GenAI, como um chatbot de perguntas e respostas usando frameworks de código aberto, como o LangChain, utilizando a API do GenAI para provisionar e gerenciar bases de conhecimento, conversar com uma base de conhecimento e armazenar e recuperar o histórico de bate-papo.</block>
   <block id="d7aa8c04a5852ad32f4df4ebc355d79b" category="list-text">Melhore a proteção e a disponibilidade de dados com a implantação da infraestrutura generativa de dados de AI nos sistemas de arquivos FSX para NetApp ONTAP e aproveite os recursos do ONTAP, como alta disponibilidade, snapshots para proteção e recuperação de dados locais, SnapMirror para recuperação de desastres e SnapVault para fazer backup da sua infraestrutura de dados.</block>
   <block id="258bfa564ea52ad2ae40702194995f18" category="list-text">Reduza os custos gerais de storage para uma infraestrutura de dados generativa de AI aproveitando os recursos de eficiência de dados da ONTAP, como deduplicação, compressão e compactação de dados, disposição em camadas e thin Provisioning.</block>
   <block id="a2313dfd4d2d5baef4999beaa742689c" category="section-title">Como o GenAI funciona</block>
-  <block id="69fc349b2f7bd62d0e7765c8cc066234" category="paragraph">O GenAI usa os dados privados da sua organização para complementar a inteligência do modelo (com base nos dados em que foi treinado) para fornecer respostas personalizadas às perguntas feitas pelos seus usuários em sua organização. Primeiro, você implanta a infraestrutura necessária para uma estrutura RAG e, em seguida, cria uma base de conhecimento usando as fontes de dados e os modelos de base da sua organização disponíveis via Amazon bedrock e, em seguida, coneta um aplicativo (como um chatbot de perguntas e respostas) à base de conhecimento.</block>
   <block id="d70bac99beb52d5e093b391d08e80174" category="inline-image-macro">Um diagrama mostrando os principais componentes do GenAI, sua função e como ele funciona.</block>
-  <block id="ce3b45a4624ee79213529a063f3abb8c" category="paragraph"><block ref="ce3b45a4624ee79213529a063f3abb8c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ade2c068f72325046c5312c72ad3b430" category="paragraph">O GenAI ajuda a criar aplicativos de IA generativos usando o RAG das seguintes maneiras:</block>
-  <block id="fda814900dea98d0023eb0ecf6f36448" category="list-text">Implanta a infraestrutura necessária para a estrutura de geração aumentada de recuperação (RAG) para trabalhar com fontes de dados no FSX para sistemas de arquivos ONTAP e Amazon bedrock. A infraestrutura inclui a instância do NetApp GenAI Engine para gerenciamento de dados, um banco de dados vetorial incorporado (LanceDB) e armazenamento no sistema de arquivos FSX for ONTAP para o banco de dados vetorial.</block>
-  <block id="cc56ccbbe7a4a4f1d99e1d08267a272b" category="list-text">Ajuda a conetar as fontes de dados a incorporações e modelos de linguagem disponíveis via Amazon bedrock para incorporar fontes de dados e recuperar as respostas para consultas de usuários. As fontes de dados, juntamente com os modelos e sua configuração, são apresentadas como bases de conhecimento do FSX for ONTAP.</block>
-  <block id="2ff04f7767fbbbb717b2d50acb89245d" category="list-text">Ingere dados de origem na base de conhecimento para incorporar arquivos de origem em compartilhamentos SMB e exportações de NFS nos sistemas de arquivos FSX for ONTAP, juntamente com o armazenamento de permissões de arquivos para arquivos em compartilhamentos SMB.</block>
-  <block id="80a4d47d289b6794b7af32bf0403d817" category="list-text">Cria automaticamente perguntas iniciais de conversação com base no conteúdo nas bases de conhecimento.</block>
-  <block id="d115eba24b3d1be73af7f0952b82dc13" category="list-text">Fornece um simulador de bate-papo para os administradores de dados testar o bate-papo com as bases de conhecimento.</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Custo</block>
-  <block id="ca4fec9e2b2e873ba73dde822ed0fd02" category="paragraph">No entanto, você precisará pagar pelos recursos da AWS que implantar para oferecer suporte à infraestrutura de IA generativa. Por exemplo, você pagará a AWS pelo serviço de IA da Amazon bedrock, pelo sistema de arquivos FSX for ONTAP e pela capacidade de armazenamento e pela instância do GenAI Engine EC2.</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">Licenciamento</block>
   <block id="a46c34e822b00eb49125943300225ec1" category="summary">Depois de criar sua base de conhecimento e testar seu chatbot, você estará pronto para configurar o aplicativo que permitirá que seus usuários consultem o chatbot.</block>
   <block id="53b343f4a880bcff3b258324a35744ff" category="doc">Crie um aplicativo de IA baseado em RAG</block>
@@ -85,7 +72,6 @@
   <block id="3bd4cddbc7a98f5c9632a455eca8c27e" category="section-title">Crie e configure a base de conhecimento</block>
   <block id="646df03c5fddafc8e9c4ed5aa7036edf" category="paragraph">A base de conhecimento define caraterísticas como os modelos de IA bedrock e o formato de incorporação que você deseja usar para criar sua base de conhecimento.</block>
   <block id="4d7ea1af041cca43906c5e490c0c1820" category="list-text">No bloco cargas de trabalho de IA, selecione *Deploy &amp; Manage*.</block>
-  <block id="5b20d7e96740200c428376cbb5e7fdb4" category="list-text">Na guia bases de conhecimento, selecione *Adicionar base de conhecimento*.</block>
   <block id="a97438cf1c94fe51248083c86ce591c5" category="list-text">Na página Definir base de conhecimento, configure as definições da base de conhecimento:</block>
   <block id="53bdd4ba55043d3b20fafbaeddced95e" category="list-text">*Nome*: Insira o nome que deseja usar para a base de conhecimento.</block>
   <block id="867a64928002194654eea40509536879" category="list-text">*Descrição*: Insira uma descrição detalhada para a base de conhecimento.</block>
@@ -113,12 +99,9 @@
   <block id="e0308d285e9bc5966f6ceb7008c87849" category="paragraph">Depois de adicionar uma única fonte de dados à base de conhecimento, você pode testá-la localmente na janela do simulador do chatbot e fazer as alterações necessárias antes de tornar o chatbot disponível para seus usuários. Você também pode seguir os mesmos passos para adicionar fontes de dados adicionais à base de conhecimento.</block>
   <block id="b9605cf748e4b8e1c97d786258a0be40" category="summary">Você precisa implantar a infraestrutura para a estrutura RAG em seu ambiente antes de criar bases de conhecimento e aplicativos do FSX for ONTAP para sua organização. Os principais componentes da infraestrutura são o serviço de IA da Amazon bedrock, uma instância de máquina virtual para o mecanismo NetApp GenAI e um sistema de arquivos FSX for ONTAP.</block>
   <block id="e379b913896cf9bdd4e2d6717212215a" category="doc">Implantar a infraestrutura do GenAI</block>
-  <block id="0cd805094b5dffd702d8e0faa10c927c" category="paragraph">Você precisa implantar a infraestrutura do GenAI para a estrutura RAG em seu ambiente antes de criar bases de conhecimento e aplicativos do FSX for ONTAP para sua organização. Os principais componentes da infraestrutura são o serviço Amazon bedrock, uma instância de máquina virtual para o mecanismo NetApp GenAI e um sistema de arquivos FSX for ONTAP.</block>
-  <block id="acc7a3fda0820287411e8fb0e8b801f2" category="paragraph">A infraestrutura implantada pode oferecer suporte a várias bases de conhecimento e chatbots, então você normalmente só precisará executar essa tarefa uma vez.</block>
   <block id="352b67da62e25a1a8f45636930053f08" category="section-title">Detalhes da infraestrutura</block>
   <block id="8428644910b49210b6312a1abb433a99" category="inline-link">Veja a lista de regiões suportadas</block>
   <block id="e295768e822c8bd83198042fbb470661" category="paragraph">Sua implantação do GenAI deve estar em uma região da AWS que tenha o Amazon bedrock habilitado.<block ref="25581c78bc5f676a9b9f4743abf4f06f" category="inline-link-rx"></block></block>
-  <block id="0d5fdb6bfaa1c5a89c4128c1a8bb5b6c" category="paragraph">A implantação consiste nos seguintes componentes.</block>
   <block id="12c3d12e41194b32453a96f3a7e15e48" category="list-text">Serviço Amazon bedrock</block>
   <block id="c79d103149669e7aa24ba1b487cccd34" category="list-text">O Amazon bedrock é um serviço totalmente gerenciado que permite que você use os modelos de base (FMS) das principais empresas de IA por meio de uma única API. Ele também fornece os recursos de que você precisa para criar aplicativos de IA generativos seguros.</block>
   <block id="8013da98e1db7396729f9e939983f21d" category="inline-link">Saiba mais sobre a Amazon bedrock</block>
@@ -131,11 +114,7 @@
   <block id="cd4ca8fe4f8028f11146f93e0f114879" category="paragraph">As fontes de dados que você integrará em sua base de conhecimento podem residir no mesmo sistema de arquivos FSX for ONTAP ou em um sistema diferente.</block>
   <block id="e9f04a38bc1df3695df7675463dfe7d2" category="paragraph">O mecanismo NetApp GenAI monitora e interage com ambos esses volumes.</block>
   <block id="cc573650532041ff5d41735ee141eab8" category="paragraph">A imagem a seguir mostra a infraestrutura do GenAI. Os componentes numerados 1, 2 e 3 são acionados durante este procedimento. Os outros elementos devem estar no lugar antes de iniciar a implantação.</block>
-  <block id="ce783b25723548b58b44d3dde715476f" category="inline-image-macro">Um diagrama dos componentes do chatbot da IA.</block>
-  <block id="b7cef2c498d21a11e9176de11360774c" category="paragraph"><block ref="b7cef2c498d21a11e9176de11360774c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Antes de começar</block>
-  <block id="567dcfd6302e5511c1b546a4df21a679" category="inline-link-macro">os requisitos</block>
-  <block id="48b1a64ea0f002f28680bb1b8a8c87b2" category="paragraph">Certifique-se de que o seu ambiente se encontra <block ref="b537f86d93b89f494a26572d1a60f4ef" category="inline-link-macro-rx"></block> antes de iniciar este procedimento.</block>
   <block id="6bb39c2a8e12d8e43ba94f5c10b515e3" category="list-text">Revise o diagrama de infraestrutura e selecione *Next*.</block>
   <block id="ea04a0c1437f4ebc45564d8545775b59" category="list-text">Preencha os itens na seção *AWS settings*:</block>
   <block id="d75b2624fb3d687436ab9e7b1df2356f" category="list-text">*Credenciais da AWS*: Selecione ou adicione as credenciais da AWS que fornecem permissões para implantar os recursos da AWS.</block>
@@ -167,7 +146,6 @@
   <block id="4fc1d0607a3fe50db5ef612a2c4a178e" category="list-text">Navegue até para<block ref="0e14f9ffc1d2673bd92f13a4ac79e32e" category="inline-link-rx"></block> para iniciar sessão na aplicação.</block>
   <block id="5f62c285aea87618ed1381c43c7ae2cf" category="paragraph">O exemplo de aplicativo chatbot é exibido.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="section-title">Saiba mais</block>
-  <block id="44f33186e2b6baa4a697e5604c0a3863" category="doc">Componentes para o motor NetApp GenAI</block>
   <block id="b7afd5ecab3ac597cbe300dd5827c445" category="list-text">Tipo de instância EC2</block>
   <block id="b592e89ca5722aab8bf77ae181e9fc0d" category="list-text">m5.large</block>
   <block id="759d9f0fdbf1b3fe124b8de48be0485b" category="list-text">Função do IAM</block>
@@ -255,11 +233,9 @@
   <block id="a07dd9fe7465f7ec7d15135a3cfab3a4" category="paragraph">Você pode adicionar várias fontes de dados a cada base de conhecimento, mas todas elas precisam residir nos sistemas de arquivos do FSX for ONTAP que estão acessíveis a partir da sua conta da AWS.</block>
   <block id="ffbef7cfe7a8524b59851c8a1389ebcc" category="paragraph">O tamanho máximo de arquivo para cada fonte de dados é de 50 MB.</block>
   <block id="c84d4278eb32c7a089aea86ebf95ad39" category="section-title">Protocolos compatíveis</block>
-  <block id="430170fe80b2fc2e8745819f3bf64b55" category="paragraph">A base de conhecimento dá suporte a dados de volumes que usam protocolos NFS ou SMB/CIFS. Ao selecionar arquivos armazenados usando o protocolo SMB, você precisará inserir as informações do ative Directory para que a base de conhecimento possa acessar os arquivos nesses volumes. Isso inclui o domínio do ative Directory, o endereço IP, o nome de usuário e a senha.</block>
   <block id="0c303dcbadd43e7fb595ff47ae13d713" category="paragraph">Ao armazenar sua fonte de dados em um compartilhamento (arquivo ou diretório) acessado pelo SMB, os dados só podem ser acessados por usuários ou grupos de chatbot que têm permissões para acessar esse compartilhamento. Quando esta "capacidade de reconhecimento de permissões" está ativada, o sistema de IA compara o e-mail do utilizador em auth0 com os utilizadores autorizados a visualizar ou utilizar os ficheiros na partilha SMB. O chatbot fornecerá respostas com base nas permissões do usuário para os arquivos incorporados.</block>
   <block id="ccb61f3b531c53a6536d4968042eea99" category="paragraph">Por exemplo, se você integrou arquivos 10 (fontes de dados) em sua base de conhecimento, e 2 dos arquivos são arquivos de recursos humanos que contêm informações restritas, apenas usuários de chatbot autenticados para acessar esses arquivos 2 receberão respostas do chatbot que incluem dados desses arquivos.</block>
   <block id="939bf2b00dbe77d4a65f4d265a755136" category="section-title">Formatos de arquivo de origem de dados suportados</block>
-  <block id="4a2c59aee6db61ec236539acdbc3b3e8" category="paragraph">Os seguintes formatos de arquivo de origem de dados são atualmente suportados.</block>
   <block id="1bd7f72decec9fb5b51a58447b152d38" category="cell">Formato do ficheiro</block>
   <block id="63e4e92bb7d207ca577b11c07f827279" category="cell">Extensão</block>
   <block id="01b1b6ebeb388697cca6712b58439069" category="cell">.csv</block>
@@ -292,14 +268,10 @@
   <block id="a76746a54be32982bbd6b113b4d88d95" category="summary">Depois de criar uma base de conhecimento usando fontes de dados no seu sistema de arquivos FSX for ONTAP, você pode visualizar os detalhes da fonte de dados, atualizar ou alterar o conteúdo da fonte de dados, editar configurações da fonte de dados ou excluir a fonte de dados.</block>
   <block id="a184e20ed5e6a5b8da09e0b40c163e0c" category="doc">Gerenciar fontes de dados</block>
   <block id="185887c3ad19744e76bc5a84165858d0" category="section-title">Exibir informações sobre uma fonte de dados</block>
-  <block id="f6060e0bb20c0eff7193a80ac27e3036" category="paragraph">Você pode exibir informações sobre o conteúdo de uma fonte de dados e pode visualizar seu status de incorporação com a base de conhecimento. Como uma fonte de dados faz parte de uma base de conhecimento, você precisará abrir a base de conhecimento primeiro para poder visualizar os detalhes da fonte de dados.</block>
-  <block id="2fb136b28c086b6b7bfc783f6e18f23b" category="list-text">Selecione a base de conhecimento onde reside a fonte de dados e, em seguida, <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Gerenciar base de conhecimento*.</block>
   <block id="b5d487e1e7e0dc1f35f129a112481d93" category="paragraph">A parte inferior da página lista as fontes de dados que fazem parte desta base de conhecimento.</block>
   <block id="8a68fc9773461f136961ee1d6821c3c8" category="inline-image-macro">o botão de seta para baixo</block>
   <block id="24908e355d451004c7525900e1599a1f" category="list-text">Expanda cada linha selecionando o <block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block> para exibir informações detalhadas sobre cada fonte de dados, como o sistema de arquivos FSX for ONTAP, o volume e o caminho onde reside a fonte de dados.</block>
-  <block id="e251df112fcfd5ceb227487e3e407e23" category="paragraph">Ele também lista as informações de incorporação e se essa fonte de dados está atualmente incorporada na base de conhecimento.</block>
   <block id="437e83696ee10276f1829979bc2001ee" category="section-title">Editar as definições da fonte de dados</block>
-  <block id="d2efa843fffdf7f0b1400f4edeb08081" category="paragraph">Você pode editar informações sobre uma fonte de dados integrada em uma base de conhecimento. A maioria das informações é corrigida depois que você adicionou uma fonte de dados a uma base de conhecimento, mas você pode fazer alterações na definição e configuração de agrupamento e no reconhecimento de permissões (ao usar o protocolo SMB no volume de origem de dados).</block>
   <block id="d2e5a465dda010b6df10e906f7ceebf7" category="list-text">Na página de inventário das bases de conhecimento, selecione a base de conhecimento onde reside a fonte de dados e, em seguida, <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Gerenciar base de conhecimento*.</block>
   <block id="16a3994ccc4796acb1b8e40635717ec3" category="list-text">Na linha da fonte de dados que você deseja editar, <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Editar fonte de dados*.</block>
   <block id="46f71814ee1d2e5bbe062c91635739cf" category="list-text">Na página Editar fonte de dados, <block ref="0722c4ff5aff83b42b3212ce6356e926" category="inline-image-macro-rx" type="image"></block> selecione para expandir a linha para definição de bloco.</block>
@@ -308,7 +280,6 @@
   <block id="f0c862596fc0a1dd30faa6b630a0d09b" category="section-title">Atualize o conteúdo de uma fonte de dados existente</block>
   <block id="d811eb8aad6aebc071695232fb58c5a5" category="paragraph">Você pode alterar o conteúdo de uma fonte de dados a qualquer momento para adicionar ou atualizar seus dados organizacionais. Se essa fonte de dados estiver sendo usada ativamente em uma base de conhecimento, você deve sincronizar a fonte de dados para que ela seja reindexada à base de conhecimento. A sincronização é incremental, portanto, o Amazon bedrock só processa os objetos no volume do FSX for ONTAP que foram adicionados, modificados ou excluídos desde a última sincronização.</block>
   <block id="24f189799b33f2d3f465d0658dcc69e1" category="inline-link-macro">execute uma sincronização sob demanda</block>
-  <block id="ef3d62d3a83e208fec16cf94a1c9ef8b" category="paragraph">As fontes de dados são sincronizadas automaticamente com a base de conhecimento uma vez por dia, para que quaisquer alterações na fonte de dados sejam refletidas no chatbot. Se você fizer alterações em uma fonte de dados e quiser sincronizar os dados imediatamente, poderá <block ref="a5f82761b74f2896160929ccd4ead00e" category="inline-link-macro-rx"></block>.</block>
   <block id="35198182831e3f9922e23822e3f2e2eb" category="section-title">Eliminar uma fonte de dados</block>
   <block id="19045c987301cc2ddb28f24761554946" category="paragraph">Se você não precisar mais de uma fonte de dados para fazer parte da sua base de conhecimento, você pode excluí-la.</block>
   <block id="7c25f02bbc30d711041ddd1cc4235dc3" category="list-text">Na página de inventário da base de conhecimento, selecione a base de conhecimento onde reside a fonte de dados e, em seguida, <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Gerenciar base de conhecimento*.</block>
@@ -414,21 +385,15 @@
   <block id="404b6a1003edac169b0788bb3fe37d9f" category="paragraph">Antes de poder usar esses endpoints, você precisa obter um token de usuário do seu provedor de autenticação.</block>
   <block id="5d8cae383bd52502a39a1612796fb31f" category="paragraph">Agora você tem uma base de conhecimento publicada e o endpoint exclusivo que você pode usar para integrar a base de conhecimento com um aplicativo de chatbot.</block>
   <block id="a0acd37c2eea374fd571fd7e5710e3ab" category="summary">Comece a criar uma base de conhecimento usando os dados da sua organização que existem nos sistemas de arquivos do Amazon FSX para NetApp ONTAP. Um aplicativo como um chatbot acessará essa base de conhecimento para fornecer respostas focadas na organização aos usuários finais.</block>
-  <block id="35f6f80cfc19636641dd85bbae19edee" category="doc">Início rápido para GenAI</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Um</block>
-  <block id="f48c3e82e3f3b9cc782fe1277e362ec5" category="paragraph">Você precisará de credenciais da AWS para implantar a infraestrutura da AWS, um sistema de arquivos FSX for ONTAP implantado e descoberto, a lista de fontes de dados que você deseja integrar na sua base de conhecimento, acesso ao serviço de AI da Amazon bedrock e muito mais.</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Dois</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Três</block>
   <block id="ad6f5ec13ed51e48bce763e25a9c69ce" category="inline-link-macro">Implantar a infraestrutura da base de conhecimento</block>
-  <block id="41c27d3fbdf0cdc6aab23df489fe4c94" category="paragraph">Inicie o assistente de implantação de infraestrutura para implantar a infraestrutura da base de dados de conhecimento em seu ambiente AWS. Esse processo implanta uma instância do EC2 para o mecanismo do NetApp GenAI e um volume em um sistema de arquivos FSX for ONTAP para conter os bancos de dados do NetApp AI Engine. O volume é usado para armazenar o banco de dados de vetor usado pela base de conhecimento.</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">O que vem a seguir</block>
   <block id="8d126cd06a65751189e95006c972e173" category="paragraph">Agora você pode criar uma base de conhecimento para fornecer respostas focadas na organização aos usuários finais.</block>
   <block id="43b842fd441ce1ce92d22fb0ca25a507" category="doc">Requisitos do GenAI</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="list-text">Credenciais e permissões da AWS</block>
-  <block id="b9696d94476cf594b0d0a85c749985c8" category="paragraph">As permissões do modo _Basic_ e do modo _Read_ não são suportadas neste momento.</block>
   <block id="6acb98cae81ff4c3d668ee23eaf475ea" category="paragraph">Ao configurar suas credenciais, selecionar permissões como mostrado abaixo fornece acesso total para gerenciar os sistemas de arquivos FSX for ONTAP e implantar e gerenciar a instância do GenAI EC2 e outros recursos da AWS necessários para sua base de conhecimento e chatbot.</block>
-  <block id="90971299f3c483d8dff23334303ec501" category="inline-image-macro">Uma captura de tela mostrando a configuração de permissões para o gerenciamento completo dos recursos de IA.</block>
-  <block id="b0508f9b3b98a787c9ffda5b7aec828c" category="paragraph"><block ref="b0508f9b3b98a787c9ffda5b7aec828c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="75925d950c87a7dc75f300f3d330e728" category="list-text">O Amazon bedrock permite que você use modelos de base e fornece os recursos para criar aplicativos de IA generativos.</block>
   <block id="42100945533643a01574ce6867f93337" category="inline-link">Documentação da AWS: Configurar o Amazon bedrock</block>
   <block id="c28dc65deb038c89921c82f97349e6b0" category="list-text"><block ref="c28dc65deb038c89921c82f97349e6b0" category="inline-link-rx"></block></block>
@@ -437,14 +402,7 @@
   <block id="e9d7e3888c0ecac6d332909618bf2a62" category="list-text">Modelo de incorporação</block>
   <block id="52e64b029bc109efaa2d9ddf8bf95697" category="list-text">Você deve habilitar o modelo de incorporação que você planeja usar antes de criar sua base de conhecimento. Os seguintes modelos de incorporação são suportados:</block>
   <block id="cffe100a2fafd4ed6df5c517d3a0c436" category="list-text">Modelo de chat</block>
-  <block id="91862a732427fcc9b0f3f7c7e8fd3ef1" category="list-text">Claude 3,5 Sonnet</block>
-  <block id="1ae4bf76ece2339f94382079fec8ea1b" category="list-text">Claude 3 Opus</block>
-  <block id="5cb902fc92ae2100fc949c459b29f2e0" category="list-text">Claude 3 Haiku</block>
-  <block id="dfd281025f82519d079a3bf3bfbabad2" category="list-text">Claude 3 Sonnet</block>
-  <block id="48a6d42b28f10b9387da7c0c33136030" category="list-text">Claude 2,1</block>
-  <block id="5e1e83b3913f32ce101decea051b2e89" category="list-text">Claude 2,0</block>
   <block id="c16810aa96ec44a060863610996db3f6" category="list-text">Você precisa de um mínimo de um sistema de arquivos FSX for ONTAP:</block>
-  <block id="ae0e1b2daa525e1e1109bf5c13627d7d" category="list-text">Um sistema de arquivos será usado pelo mecanismo NetApp GenAI para armazenar o banco de dados de vetores usado pela base de dados de conhecimento.</block>
   <block id="c076421513a5b28b674cdd0d818b4476" category="paragraph">Este sistema de arquivos FSX for ONTAP deve usar o FlexVol volumes. Os volumes FlexGroup não são compatíveis.</block>
   <block id="1f0befb829af39db4a0cbb499215915f" category="list-text">Um ou mais sistemas de arquivos conterá as fontes de dados que você estará integrando em sua base de conhecimento.</block>
   <block id="b56c72064b6e564dd0f3f703eff43db3" category="paragraph">Um sistema de arquivos FSX for ONTAP pode ser usado para ambos esses fins, ou você pode usar vários sistemas de arquivos FSX for ONTAP.</block>
@@ -542,25 +500,19 @@
   <block id="1995377d356d639f1a2e87a282280beb" category="sidebar">Integre dados de seus sistemas de arquivos FSX for ONTAP com suas plataformas MLOps e modelos de base GenAI para criar chatbots funcionais usando dados organizacionais.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Comece agora</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">Início rápido</block>
-  <block id="3c26a99b89e3c7e6133ab9da9015f277" category="sidebar">Construa uma base de conhecimento</block>
   <block id="d6fd7e92747512219eb7bcf3b47fcaf9" category="sidebar">Publique uma base de conhecimento</block>
   <block id="f2f80ac70883a1ae6f423f6eda663371" category="sidebar">Administrar o GenAI</block>
-  <block id="1e2d1b975cb59eff959e606ba60cffac" category="sidebar">Gerenciar a infraestrutura da base de conhecimento</block>
   <block id="c90fe540972fc3cdcef54526cc8386e2" category="sidebar">Documentos do GenAI</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notas de lançamento</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">O que há de novo</block>
-  <block id="acbf2b120f060c765cc5fbfef7779840" category="sidebar">Identifique fontes de dados para sua base de conhecimento</block>
-  <block id="3bd082f2a7c2961a682116b6ed9f43fc" category="sidebar">Use o GenAI para construir bases de conhecimento</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e apoio</block>
   <block id="17e908b1a02b6ec45f4e125877322d0f" category="doc">Mascarar informações pessoais identificáveis com guardrails de dados</block>
   <block id="0f21cd7bd10e747bca7894a609acc04b" category="paragraph">A carga de trabalho generativa de IA apresenta o recurso de guardrails de dados, alimentado pela classificação BlueXP . O recurso de guardrails de dados identifica e mascara informações pessoais identificáveis (PII) ajudando você a manter a conformidade e fortalecer a segurança de seus dados organizacionais confidenciais.</block>
-  <block id="8137174f639d391921dfeb8ca6d792d1" category="paragraph"><block ref="8137174f639d391921dfeb8ca6d792d1" category="inline-link-macro-rx"></block></block>
   <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="inline-link-macro">Saiba mais sobre a classificação BlueXP</block>
   <block id="384713a8a1d5a2dd365da2851c50ad93" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block></block>
   <block id="ee538d8e0203b8c3e9bdb95ebee1162c" category="paragraph">As bases de conhecimento têm duas modalidades de integração de dados - _public mode_ e _Enterprise mode_.</block>
   <block id="3b3458714be1e5c3f76dd200e4227588" category="list-text">Modo público</block>
   <block id="ab6bcff4b8fb91fe0c83c8ef83da1c6e" category="list-text">Modo empresarial</block>
-  <block id="e168133413009827e06cf1b52bf82d2e" category="paragraph">As fontes de dados da sua organização podem conter informações de identidade privada (PII). Para proteger essas informações confidenciais, você pode habilitar _data guardrails_ ao criar e configurar bases de conhecimento. Corrimões de dados, alimentados pela classificação BlueXP , identificam e mascara PII, tornando-os inacessíveis e irrecuperáveis.</block>
   <block id="2abf45f9ff5a74918b97267cd4e59d6a" category="paragraph"><block ref="384713a8a1d5a2dd365da2851c50ad93" category="inline-link-macro-rx"></block>.</block>
   <block id="1be907baab24daef236be08a55d381ce" category="inline-link-macro">Saiba mais sobre os corrimões de dados, alimentados pela classificação BlueXP </block>
   <block id="239980b6c377cd208cd4875dd11871a7" category="list-text">* Guardrails de dados*: Escolha se você deseja ativar ou desativar os guardrails de dados. <block ref="705e589dc60832aba1b9593eb1d26a9a" category="inline-link-macro-rx"></block>.</block>
@@ -579,16 +531,8 @@
   <block id="082d99c5d452c4b44edd8ec50926da9a" category="paragraph">O aplicativo de amostra GenAI de fábrica de carga de trabalho da NetApp permite testar a autenticação e a recuperação da sua base de conhecimento de fábrica de carga de trabalho da NetApp publicada interagindo diretamente com ela em um aplicativo de chatbot baseado na Web.</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">experiências de console</block>
   <block id="eb788a90862825cc147ed3f85612a8cc" category="list-text">Efetue login na fábrica da carga de trabalho usando um dos <block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>.</block>
-  <block id="ba069bdc38a1ce5022a1e6d8b69882b8" category="summary">A fábrica de carga de trabalho do GenAI permite que você integre o Amazon FSX para sistemas de arquivos NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI.</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">visão geral de fábrica do workload</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">Para obter mais informações sobre a fábrica da carga de trabalho, consulte o<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>.</block>
-  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">Ferramentas para usar o workload de fábrica</block>
-  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">Você pode usar a fábrica do workload do BlueXP  com as seguintes ferramentas:</block>
-  <block id="becd2c66a018e594b787abb509da2fcb" category="list-text">*Console de fábrica do Workload*: O console de fábrica do Workload fornece uma interface visual que oferece uma visão holística de seus aplicativos e projetos.</block>
-  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  console*: O console BlueXP  oferece uma experiência de interface híbrida para que você possa usar a carga de trabalho BlueXP  de fábrica junto com outros serviços BlueXP .</block>
-  <block id="3994718f6fdd9c0fd3f50884c4c05615" category="list-text">*API REST*: As APIs REST de fábrica de carga de trabalho permitem implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS.</block>
-  <block id="870c2713113a9cc14410aec5475c932f" category="list-text">*CloudFormation*: O código do AWS CloudFormation permite que você execute as ações definidas no console de fábrica de carga de trabalho para modelar, provisionar e gerenciar recursos da AWS e de terceiros a partir da pilha do CloudFormation em sua conta da AWS.</block>
-  <block id="531a2642b7c023ef8b4ec401d5c39c4b" category="list-text">*Fornecedor de fábrica de carga de trabalho do Terraform BlueXP *: O Terraform permite criar e gerenciar fluxos de trabalho de infraestrutura gerados no console de fábrica de carga de trabalho.</block>
   <block id="eb2d717e4f7003bece96a54d9bfcab8c" category="paragraph">Não há custo para usar a funcionalidade GenAI de fábrica de workloads.</block>
   <block id="fe25da415465509a9a69d606dab870c0" category="paragraph">Nenhuma licença especial é necessária da NetApp para usar os recursos de AI da fábrica de workloads.</block>
   <block id="f6a347d6bbcc84735a944fdcd256092f" category="summary">Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas em sua base de conhecimento a partir dos datastores do FSX for ONTAP, você estará pronto para criar a base de conhecimento usando a fábrica de cargas de trabalho. Como parte desta etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.</block>
@@ -606,7 +550,6 @@
   <block id="894106a56db6962222de989043e29e02" category="summary">O NetApp fornece suporte para a fábrica de workloads de várias maneiras. Amplas opções gratuitas de suporte autônomo estão disponíveis 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. O seu registo de suporte inclui suporte técnico remoto através de Bilheteira na Web.</block>
   <block id="e703cd6c7dd517a92f3648a2a1305e15" category="list-text">No menu de navegação de fábrica da carga de trabalho, selecione *AI*.</block>
   <block id="02c24f1607a88a7b66de312463a92ee0" category="paragraph">Se você não precisar mais da infraestrutura de chatbot implantada para um ou mais chatbots, poderá removê-la da fábrica de cargas de trabalho.</block>
-  <block id="e156182d12afe45e03e8d3deb27ba670" category="paragraph">Essa operação só remove os links para a infraestrutura de IA da fábrica de carga de trabalho - ela não remove todos os componentes da AWS. Você precisará excluir manualmente os seguintes componentes de infraestrutura da AWS:</block>
   <block id="62daa906a9333be93a5e975044f666a1" category="paragraph">Os componentes da infraestrutura do chatbot são removidos da fábrica de cargas de trabalho.</block>
   <block id="86dbd1b84518abb5c7347546b8844b7e" category="paragraph">Se você não precisar mais de uma base de conhecimento, você pode excluí-la. Quando você exclui uma base de conhecimento, ela é removida da fábrica da carga de trabalho e o volume que contém a base de conhecimento é excluído. Quaisquer aplicativos ou chatbots que estejam usando a base de conhecimento deixarão de funcionar. Excluir uma base de conhecimento não é reversível.</block>
   <block id="22f6a017871820df71fb38c6218efc2f" category="paragraph">A base de conhecimento é removida da fábrica da carga de trabalho e seu volume associado é excluído.</block>
@@ -618,17 +561,13 @@
   <block id="113933a0a6b3eb57d22f707e6384bd49" category="paragraph">Você precisará<block ref="5eb9de2715b74ed434f03d8a9fef9b70" category="inline-link-rx"></block> fazer login usando um dos<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>.</block>
   <block id="7c42a251218f29f59dd7dbf0987115c8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Configure seu ambiente para atender aos requisitos do GenAI</block>
   <block id="fca2fd00582f9c7c4a5a7f66db5c76d7" category="inline-link-macro">Saiba mais sobre os requisitos do GenAI</block>
-  <block id="0efa8e5eec015c7557fa0d66656108d5" category="paragraph"><block ref="048bf8a63d18514c61565bf7fbdd1a56" category="inline-link-macro-rx"></block>.</block>
   <block id="13a3df270bbff43d6e9a3cda00e93bf6" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Identifique o sistema de arquivos FSX for ONTAP que contém as fontes de dados</block>
   <block id="21d5bccbbe925613c0af5324543c58b1" category="inline-link-macro">Saiba como identificar fontes de dados</block>
-  <block id="70d15316e3e767964ed59c8ffa7502da" category="paragraph"><block ref="7388636e3703309ce48a47f5a2c06fbc" category="inline-link-macro-rx"></block>.</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Quatro</block>
-  <block id="67544fe024b8f9a36d65dad6756df3ae" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Implantar a infraestrutura da base de conhecimento</block>
   <block id="20ec4ab4fcf35b65157df141218adeb4" category="inline-link-macro">Saiba como implantar a infraestrutura da base de conhecimento</block>
   <block id="821dd0baa6265d27edc6fde0f7f8a2a7" category="paragraph"><block ref="cf103609479325827138f1030380ee71" category="inline-link-macro-rx"></block>.</block>
   <block id="7da236f1583acd597958e11defdd0aed" category="summary">Certifique-se de que a fábrica da carga de trabalho e a AWS estejam configuradas corretamente antes de criar sua base de conhecimento. Isso inclui ter suas credenciais de login da AWS, um sistema de arquivos FSX for ONTAP implantado que contém as fontes de dados que você deseja integrar em sua base de conhecimento, acesso ao serviço de IA da Amazon bedrock e muito mais.</block>
   <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">Login e conta de fábrica da carga de trabalho</block>
-  <block id="c3c0f7069bfe59c5a67dd6f1fd5d2301" category="list-text">Você precisa adicionar credenciais da AWS à fábrica de cargas de trabalho com permissões Automate, o que significa que você usará a fábrica de cargas de trabalho no modo _Automate_ para o GenAI.</block>
   <block id="5145374f219e1c177ab5588a5344aa6e" category="inline-link">Saiba como adicionar credenciais da AWS à fábrica de cargas de trabalho</block>
   <block id="ced1a4827b1ea3c1da0273c3d73fdd46" category="paragraph"><block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">Antes de poder abrir um caso de suporte com o suporte técnico da NetApp, você precisa adicionar uma conta do site de suporte da NetApp à fábrica de carga de trabalho e, em seguida, Registrar-se para suporte.</block>
@@ -641,7 +580,6 @@
   <block id="f8a21101d47aa852f29a4be35904736e" category="doc">Clonar uma base de conhecimento a partir de um instantâneo</block>
   <block id="c711d2f72cc16ad2c0919ebe70292834" category="paragraph">Agora, a fábrica de workloads da BlueXP  para o GenAI é compatível com a clonagem de uma base de conhecimento a partir de um snapshot. Isso permite a recuperação rápida de bases de conhecimento e a criação de novas bases de conhecimento com fontes de dados existentes, além de ajudar na recuperação e desenvolvimento de dados.</block>
   <block id="53ea9e78bbaa3e1c3ead030a954216c8" category="inline-link-macro">Clonar uma base de conhecimento</block>
-  <block id="23899d33da818933cc59017a222d3f1f" category="paragraph"><block ref="23899d33da818933cc59017a222d3f1f" category="inline-link-macro-rx"></block></block>
   <block id="aadb8a2a44b75c1333f5a52c2ceb1516" category="section-title">Detecção e replicação de clusters ONTAP no local</block>
   <block id="490a30e9496a9d55f2cfdb934812658b" category="paragraph">Descubra e replique dados de cluster do ONTAP no local para um sistema de arquivos FSX for ONTAP para que ele possa ser usado para enriquecer bases de conhecimento de IA. Todos os fluxos de trabalho de descoberta e replicação no local são possíveis a partir da nova guia *On-Premise ONTAP* no inventário de armazenamento.</block>
   <block id="c6f905e067bdaa7ba33a58a907e59477" category="inline-link-macro">Descubra um cluster ONTAP no local</block>
@@ -649,8 +587,6 @@
   <block id="b83113ab8d9d4c69dfb32e9034617513" category="summary">A fábrica de carga de trabalho do BlueXP  para o GenAI permite que você integre os sistemas de arquivos do Amazon FSX para NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI.</block>
   <block id="77c129bd3271a24d7bdf27f4904c52f4" category="doc">Saiba mais sobre a fábrica de cargas de trabalho da BlueXP  para o GenAI</block>
   <block id="766c4de0717e832db67cb7e35ee5df4b" category="section-title">O que é a fábrica de carga de trabalho da BlueXP  para o GenAI?</block>
-  <block id="847fc7565e14d8fa93f26cd789e29cb5" category="paragraph">A fábrica de carga de trabalho do BlueXP  para o GenAI permite que você use fontes de dados empresariais no Amazon FSX for NetApp ONTAP com aplicativos de IA generativos. Utilizando a estrutura de geração de aumento de recuperação (RAG), você pode conetar rapidamente fontes de dados aos modelos Foundation disponíveis via Amazon bedrock para desenvolver aplicativos geradores de IA, como assistentes virtuais, chatbots de Q&amp;A, sumarização de documentos, criação de conteúdo, etc.</block>
-  <block id="586d1c82027100a85b2c840e10585fd4" category="paragraph">A fábrica de cargas de trabalho da BlueXP  para o GenAI simplifica o processo de implantação da infraestrutura necessária para criar aplicativos de IA generativos usando a geração aumentada de recuperação (RAG). Especificamente, o GenAI oferece os seguintes benefícios:</block>
   <block id="daadd89cd1fba3fd8665e4d598faa29e" category="section-title">Como a fábrica de carga de trabalho do BlueXP  para o GenAI ajuda a criar aplicativos de IA generativos</block>
   <block id="6849617ada590bcd67ec5c42f527dbca" category="paragraph">Você precisará inserir suas credenciais da AWS e selecionar o sistema de arquivos FSX for ONTAP para implantar a infraestrutura de geração de recuperação aumentada (RAG).</block>
   <block id="29c02ba7cbd3c64fafa4c7eab2de837a" category="admonition">Se a implantação falhar com um erro de credenciais, você poderá obter mais detalhes de erro selecionando os hiperlinks dentro da mensagem de erro. Você pode ver uma lista de permissões ausentes ou bloqueadas, bem como uma lista de permissões que a carga de trabalho do GenAI precisa para que ela possa implantar a infraestrutura do GenAI.</block>
@@ -721,7 +657,6 @@
   <block id="16cb0b733a26e9afa11f388e6d83aec1" category="doc">Crie uma base de conhecimento do GenAI</block>
   <block id="e63e0ed616c63ed724e592b04e608826" category="doc">Use o aplicativo de chatbot de exemplo externo GenAI</block>
   <block id="52f26f0fff3bae61240c4b3a43f3624d" category="doc">Obtenha ajuda com a fábrica de workloads da BlueXP  para o GenAI</block>
-  <block id="e1cdd82a2918ba1a2c0ff51770aad51e" category="doc">Identifique as fontes de dados a serem integradas na sua base de conhecimento do GenAI</block>
   <block id="fe1e8231ce0909884a561100cafd30a8" category="doc">Fábrica de carga de trabalho da BlueXP  para avisos legais da GenAI</block>
   <block id="dd3ed9192bf4d0d55741ed48bf8a6695" category="doc">Gerenciar fontes de dados do GenAI</block>
   <block id="10f8936c8a58bcff3825995f8d31ea40" category="doc">Gerenciar bases de conhecimento do GenAI</block>
@@ -733,13 +668,10 @@
   <block id="988a487756dcb4e1605a4e07dc7dbd42" category="doc">O que você pode fazer a seguir com o GenAI</block>
   <block id="a117d99fd0597e840921767ec50fe791" category="doc">Nome do instantâneo personalizado</block>
   <block id="34df51ccce053f8aef051fe069f6004a" category="paragraph">Agora você pode fornecer um nome de instantâneo para um instantâneo ad-hoc.</block>
-  <block id="2cbaa1be80e354895c4d9e497cad82ad" category="paragraph"><block ref="2cbaa1be80e354895c4d9e497cad82ad" category="inline-link-macro-rx"></block></block>
   <block id="63713d130d6ced83e06b8a2f84ca4236" category="section-title">Nome de instância personalizado do mecanismo de AI</block>
   <block id="5a22f1756638135653917db715aeec43" category="paragraph">Agora você pode dar um nome personalizado à instância do mecanismo de AI durante a implantação.</block>
-  <block id="c3e29d6f9db8b5f89b548e4659ce60ad" category="paragraph"><block ref="c3e29d6f9db8b5f89b548e4659ce60ad" category="inline-link-macro-rx"></block></block>
   <block id="cc78f676d3193b6273b428bb17c26dd7" category="section-title">Reconstruir a infraestrutura do GenAI corrompida ou ausente</block>
   <block id="1691fa3a19bfaa3082dd2f6e01934960" category="paragraph">Se a instância do seu mecanismo de AI ficar corrompida ou for excluída, você pode deixar que a carga de trabalho reconstrua-a de fábrica para você. A fábrica de carga de trabalho reanexa automaticamente suas bases de conhecimento à infraestrutura após a conclusão da reconstrução, para que elas estejam prontas para uso.</block>
-  <block id="b23e4d787bd591292c1d5f10247e0e53" category="paragraph"><block ref="b23e4d787bd591292c1d5f10247e0e53" category="inline-link-macro-rx"></block></block>
   <block id="22d9005388d9e535daefed3f2e693f8c" category="inline-link-macro">tipos de dados pessoais sensíveis</block>
   <block id="9c5f697c48859cff8ee185f1b8ac3722" category="admonition">A fábrica de carga de trabalho do BlueXP  para o GenAI não mascara informações pessoais confidenciais (SPii). <block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>Consulte para obter mais informações sobre este tipo de dados.</block>
   <block id="634af6b3fd334eee66435e4f2e04ce47" category="admonition">Os corrimões de dados podem ser ativados ou desativados a qualquer momento. Se você alternar a habilitação dos corrimões de dados, a fábrica de carga de trabalho verifica toda a base de conhecimento do zero, o que incorre em um custo.</block>
@@ -780,12 +712,10 @@
   <block id="a036984d47253ddc828a04bc8ac85524" category="list-text">Na seção *reconhecimento de permissão*, que está disponível somente quando a fonte de dados selecionada estiver em um volume que usa o protocolo SMB, você pode ativar ou desativar respostas com reconhecimento de permissão:</block>
   <block id="77fd00559b8279b555e48d21e5e67c34" category="doc">Filtragem do tipo de arquivo para fontes de dados</block>
   <block id="47cf5538cc85b7acf0e24098fc5bbffd" category="paragraph">O GenAI agora suporta a seleção de tipos de arquivo específicos para incluir na digitalização da fonte de dados quando você adiciona uma fonte de dados.</block>
-  <block id="e57c1e86c82776cdcb9c50b4e82943f8" category="paragraph"><block ref="e57c1e86c82776cdcb9c50b4e82943f8" category="inline-link-macro-rx"></block></block>
   <block id="f191d5f0a123d62966b3617a9d8c752c" category="section-title">Filtragem de data de modificação de arquivo para fontes de dados</block>
   <block id="b1be3e2e5ab05373dbf3927507ea84d2" category="paragraph">O GenAI agora suporta arquivos de filtragem para incluir na verificação da fonte de dados por data de modificação quando você adiciona uma fonte de dados. Você pode escolher um intervalo de datas de modificação para os arquivos incluídos.</block>
   <block id="7a7ba68ff13813a8c9d7413b67a91e34" category="section-title">Suporte para arquivos de imagem e suporte aprimorado para arquivos PDF</block>
   <block id="b9a5ff8382cbb9f5609b8bff25344245" category="section-title">Pesquisa híbrida e suporte de reclassificação</block>
-  <block id="397adcec169a6ce17f0abfc941258c0f" category="paragraph"><block ref="397adcec169a6ce17f0abfc941258c0f" category="inline-link-macro-rx"></block></block>
   <block id="c009fe342f72cc06fe63760e2eaa701c" category="list-text">Obtenha resultados de alta qualidade a partir dos seus dados com os recursos de pesquisa híbrida e classificação fornecidos pelo GenAI. A busca híbrida combinada com a reclassificação melhoram significativamente a relevância dos resultados da pesquisa. Esses recursos estão disponíveis por meio da Amazon AWS e dependem da região.</block>
   <block id="e1201f675c705c74b856dba391a68602" category="paragraph">Algumas operações multimodais, como a digitalização de imagens para informações de texto, podem usar mais recursos e, portanto, incorrer em um custo mais alto. Algumas operações de configuração, como alterar as configurações de uma base de conhecimento, podem fazer com que as fontes de dados sejam digitalizadas novamente, e as verificações de origem de dados também podem incorrer em um custo mais alto.</block>
   <block id="0a2b76d9cf1a9ffdd3b88e030e038252" category="example-title">Permissões de função do IAM</block>
@@ -811,22 +741,13 @@
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">29 de setembro de 2024</block>
   <block id="9a7d43c72f0d1a35c2a2cdfb58c6cc0d" category="doc">Suporte para modelos de fundação Amazon Nova</block>
   <block id="ba0908c46e81d6dfcc41f1af42be123c" category="paragraph">O GenAI agora suporta os modelos de fundação Amazon Nova. São suportados Amazon Nova Micro, Amazon Nova Lite e Amazon Nova Pro.</block>
-  <block id="5ddfb412189af7bcce0a056c9fcef326" category="paragraph"><block ref="5ddfb412189af7bcce0a056c9fcef326" category="inline-link-macro-rx"></block></block>
   <block id="1b72fbdbed811fb02ab7310c71e79ab2" category="inline-link">A documentação da AWS</block>
   <block id="c3321626512a416bb22de0f62b8458bc" category="list-text">Você deve habilitar o modelo básico de bate-papo que planeja usar antes de criar sua base de conhecimento. Como o suporte ao modelo varia de acordo com a região da AWS,<block ref="0bd10fd36efa0fd68b9fc8a53401f764" category="inline-link-rx"></block> consulte para verificar quais modelos você pode usar nas regiões em que planeja implantar sua base de conhecimento.</block>
-  <block id="1c61d246c37b3dd7fcf1e2812799ee53" category="paragraph">O GenAI suporta os seguintes modelos Antropopicos Claude e Amazon Nova:</block>
-  <block id="e37cca905470582668e8cf006efd3557" category="list-text">Anthropologic Claude -</block>
-  <block id="22e20ffc2045bc3420e2cb94c47a29ce" category="list-text">Amazon Nova -</block>
-  <block id="39106736b72a09cf072c2dc73e847b86" category="list-text">Nova Micro</block>
-  <block id="5966dc23b01f7dbdf996a7a860ee9459" category="list-text">Nova Lite (suporta imagens e texto)</block>
-  <block id="d5c9ae773ceec77e2ca3ed0d6347bf9b" category="list-text">Nova Pro (suporta imagens e texto)</block>
-  <block id="ddbb727fa06553b8b9d4aab207332c7e" category="paragraph">Saiba mais sobre como usar esses modelos com o Amazon bedrock:</block>
   <block id="0dd1c2bf85c6e3f8ac28b8d5d343a230" category="list-text"><block ref="0dd1c2bf85c6e3f8ac28b8d5d343a230" category="inline-link-rx"></block></block>
   <block id="b6c678dfe5e31c8f081fa11ac56bff46" category="inline-link">Introdução ao Amazon Nova no console Amazon bedrock</block>
   <block id="cafb3db15a71932288c768a7beb404b4" category="list-text"><block ref="cafb3db15a71932288c768a7beb404b4" category="inline-link-rx"></block></block>
   <block id="ca5a05186a2f243eb84efcf08152a8f2" category="doc">Aprimoramentos de chatbot incorporados</block>
   <block id="362c473fe2757bda1e0d68b3c2cdfbc8" category="paragraph">Agora você pode copiar perguntas e respostas diretamente para a área de transferência, ajustar o tamanho da janela de bate-papo e alterar seu título. Além disso, as respostas de bate-papo agora podem incluir tabelas, que também são copiáveis.</block>
-  <block id="b7def3234606fc50e35ddaf4c351fbe6" category="paragraph"><block ref="b7def3234606fc50e35ddaf4c351fbe6" category="inline-link-macro-rx"></block></block>
   <block id="4842fdf5dae1e7a3fb7ea049a091be73" category="section-title">Suporte a citações de resposta de chat</block>
   <block id="c010ca64710d07e36327c27318c0303f" category="paragraph">As respostas de bate-papo agora incluem citações que listam os arquivos e blocos de dados que foram usados para gerar a resposta.</block>
   <block id="312fbafda6b72e176a3eb6272e48d799" category="section-title">Suporte aprimorado ao tipo de arquivo</block>
@@ -856,21 +777,252 @@
   <block id="fbc7eedf5c13a549330a0c3f52777db8" category="section-title">Suporte a peering VPC</block>
   <block id="52bc46202bc9013e258f32f66b8bf88a" category="inline-link-macro">Nuvens privadas virtuais (VPCs)</block>
   <block id="93dbde0ee04c36dce05b96f3551f8606" category="paragraph">Agora você pode implantar a infraestrutura do GenAI em toda a <block ref="f008838004ac43a2c4a5b39672df7daf" category="inline-link-macro-rx"></block>região e usar a mesma conta da AWS. Você pode implantar o mecanismo de AI em uma VPC e, em seguida, criar uma base de conhecimento em uma VPC com peered e selecionar sistemas de arquivos do Amazon FSX for NetApp ONTAP que residem em uma VPC com peered.</block>
-  <block id="b36fca5a6a45d6da3c01e23792f8a153" category="list-text">*Modelo de bate-papo*: Escolha entre os modelos de bate-papo Anthroic Claude ou Amazon Nova que estão integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.</block>
   <block id="7b64cb38404993f8db85b46fa460e3f1" category="paragraph">Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de dados.</block>
   <block id="b687386681bc74afd9f1f05a81484454" category="inline-link-macro">Endpoint da API do BlueXP </block>
   <block id="52840142bc9ae1cec5ab47f43451b7f2" category="list-text">O mecanismo de IA deve ter acesso ao <block ref="0d55c5152a345809ffefdd3a1a629e2a" category="inline-link-macro-rx"></block>.</block>
   <block id="b3e25fad7a8f45ec59f40a0eaf7b74ea" category="admonition">O recurso de guardrails de dados não é suportado ao inserir arquivos de dados estruturados, como CSV, JSON, JSONP ou Parquet.</block>
-  <block id="71e83c676c8b3aea9726262e97dd0c14" category="cell">Apache Parquetfootnote:disclaimer[o recurso de guardrails de dados não é suportado ao inserir arquivos de dados estruturados.]</block>
   <block id="230703a919b034364b970a5ee5c5ab76" category="cell">Valores separados por vírgulas filefootnote:disclaimer[]</block>
   <block id="33555d9ae9e8936cbd995ec23836ef0a" category="cell">JSON e JSONPnote:aviso de isenção de responsabilidade[]</block>
   <block id="cc8f0c0e5a5cef9b33f236a0a9c19ca0" category="cell">.json</block>
-  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">30 de março de 2025</block>
   <block id="0fcf305133bffed241e3ea17efbba5fc" category="inline-link-macro">Use a API de fábrica da carga de trabalho</block>
   <block id="a6efc6ca3aa5af2c7a8cad1239df17c0" category="paragraph"><block ref="a6efc6ca3aa5af2c7a8cad1239df17c0" category="inline-link-macro-rx"></block></block>
   <block id="fdd252a657eafa925fe82da2c74ab41c" category="paragraph">O GenAI agora oferece suporte ao aprimoramento de respostas a consultas de base de conhecimento com insights de imagens e descrições de gráficos, bem como texto de documentos, levando a respostas mais ricas e de maior qualidade. O GenAI agora pode digitalizar arquivos de imagem e imagens dentro de arquivos PDF (também conhecido como suporte a arquivos multimodais). Se você optar por digitalizar imagens ou arquivos PDF, o texto das imagens (incluindo imagens incorporadas em documentos PDF) é digitalizado na fonte de dados e os insights das digitalizações são incluídos nas respostas às consultas da base de conhecimento.</block>
   <block id="603e61783fa33cd04788f143e949760c" category="paragraph">O GenAI agora pode aumentar significativamente a relevância e a precisão dos resultados de pesquisa usando a pesquisa híbrida e reclassificando os resultados. A pesquisa híbrida combina os pontos fortes da pesquisa tradicional baseada em palavras-chave com técnicas avançadas de pesquisa semântica baseadas em vetores densos. Os resultados padrão de pesquisa de palavras-chave são aumentados com correspondências próximas e nuance linguística, aumentando a relevância. Em seguida, o GenAI refina esses resultados ainda mais usando modelos avançados de reclassificação, como cohere Rerank e Amazon Rerank, e retorna os resultados mais relevantes. Esta capacidade está disponível para bases de conhecimento recém-criadas.</block>
   <block id="7c6f7e444c5d96b670cdcd189e2ee43a" category="list-text">O GenAI agora suporta a introdução de arquivos DOCX do Microsoft Word que incluem imagens. As imagens incorporadas nos documentos DOCX são digitalizadas e os insights de texto das imagens incorporadas são incluídos nas respostas às consultas da base de conhecimento.</block>
   <block id="1013a9a62eb4667e6ae35cbe4e298de6" category="paragraph">As fontes de dados que você integrará em sua base de conhecimento podem estar localizadas em um único sistema de arquivos FSX for ONTAP ou em vários sistemas de arquivos FSX for ONTAP. Se esses sistemas estiverem em VPCs diferentes, eles devem estar acessíveis dentro da mesma rede ou os VPCs devem ser direcionados e usando a mesma região e conta da AWS que o mecanismo de IA.</block>
-  <block id="b70e34d229298faea8d481f1cfdd32a9" category="paragraph"><block ref="b70e34d229298faea8d481f1cfdd32a9" category="inline-link-macro-rx"></block></block>
+  <block id="3b0424c657d7f94d3576d4c275f58d4c" category="list-text">*Enabled*: Os usuários do chatbot que acessarem este conetor receberão apenas respostas a consultas de fontes de dados às quais tenham acesso.</block>
+  <block id="cc969578d5af5249aced30698622b541" category="admonition">As permissões de grupo do ative Directory não são suportadas para fontes de dados do Amazon Q Business Connector.</block>
+  <block id="8e7311e2a2a855dad7de8a56a0aa57d2" category="list-text">Selecione *Adicionar* para adicionar essa fonte de dados ao Amazon Q Business Connector.</block>
+  <block id="fa73e37938f52fcfcb0bf41200ec0ca8" category="paragraph">Você precisa implantar a infraestrutura do GenAI para a estrutura RAG em seu ambiente antes de criar bases de conhecimento, conetores e aplicativos do FSX for ONTAP para sua organização. Os principais componentes da infraestrutura são o serviço Amazon bedrock, uma instância de máquina virtual para o mecanismo NetApp GenAI e um sistema de arquivos FSX for ONTAP.</block>
+  <block id="7b69380b59ab25a52a3890c0b595dcdb" category="paragraph">A infraestrutura implantada pode oferecer suporte a várias bases de conhecimento, chatbots e conetores, portanto, você normalmente só precisará executar essa tarefa uma vez.</block>
+  <block id="f18154a9b9be40fcdf149ed96215b72f" category="paragraph">A infraestrutura consiste nos seguintes componentes.</block>
+  <block id="be233e7542a4cdfd8f4db815899ffe55" category="list-text">Amazon Q Business</block>
+  <block id="fb51d22afce66d807de9a5ec0e57bb1f" category="list-text">O Amazon Q baseia-se no Amazon bedrock para fornecer um assistente de IA generativa totalmente gerenciado que você pode usar para responder perguntas e gerar conteúdo com base em informações de suas fontes de dados.</block>
+  <block id="3cd04df71a92b57e7e0b649c25c86144" category="inline-link">Saiba mais sobre o Amazon Q Business</block>
+  <block id="7a0b82b29eab51c564d9f44ef3737aa4" category="paragraph"><block ref="7a0b82b29eab51c564d9f44ef3737aa4" category="inline-link-rx"></block></block>
+  <block id="0c6cf53f02bb16e6e4275c3b79966b50" category="inline-image-macro">Um diagrama dos componentes da infraestrutura do GenAI.</block>
+  <block id="6f326b36284a4f3ce3de66ffc6167fc9" category="paragraph"><block ref="6f326b36284a4f3ce3de66ffc6167fc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7759fb09c86e4287a63dc0f3aa2c871a" category="paragraph">Certifique-se de que seu ambiente atenda aos requisitos de bases de conhecimento ou conetores, dependendo do que você escolher, antes de iniciar este procedimento.</block>
+  <block id="138a61823952f938a9b70641d09cc13f" category="inline-link-macro">Requisitos da base de conhecimento</block>
+  <block id="86dc36560e41f1c1ea72ceefa534f5a2" category="list-text"><block ref="86dc36560e41f1c1ea72ceefa534f5a2" category="inline-link-macro-rx"></block></block>
+  <block id="608448c2576128ccc8c2f959d59e20b4" category="inline-link-macro">Requisitos do conetor</block>
+  <block id="030ca7db294f16d68e8fdcf05bbcec53" category="list-text"><block ref="030ca7db294f16d68e8fdcf05bbcec53" category="inline-link-macro-rx"></block></block>
+  <block id="4ddb48cac9158bd3754bbde2dac725a1" category="paragraph"><block ref="4ddb48cac9158bd3754bbde2dac725a1" category="inline-link-rx"></block></block>
+  <block id="66dcbffa464e42a5a70549da95a9fce8" category="paragraph"><block ref="66dcbffa464e42a5a70549da95a9fce8" category="inline-link-rx"></block></block>
+  <block id="6e81aa0aaa9f90d486d9b10971c77d5b" category="paragraph"><block ref="6e81aa0aaa9f90d486d9b10971c77d5b" category="inline-link-rx"></block></block>
+  <block id="20b70c955d7e2ae1d32abf7981fa778d" category="paragraph"><block ref="20b70c955d7e2ae1d32abf7981fa778d" category="inline-link-rx"></block></block>
+  <block id="71a6e13d9246eebc4c665bd6856ef62e" category="paragraph"><block ref="71a6e13d9246eebc4c665bd6856ef62e" category="inline-link-macro-rx"></block></block>
+  <block id="c8cb32544f3421770987153c7b2dbac8" category="paragraph"><block ref="c8cb32544f3421770987153c7b2dbac8" category="inline-link-macro-rx"></block></block>
+  <block id="9eda245a8d0fc28bfa9439a2eeab7bf6" category="paragraph"><block ref="9eda245a8d0fc28bfa9439a2eeab7bf6" category="inline-link-macro-rx"></block></block>
+  <block id="5ee94025ca317a5dcb596db977e1213d" category="paragraph"><block ref="5ee94025ca317a5dcb596db977e1213d" category="inline-link-macro-rx"></block></block>
+  <block id="7dd2d826a181ea2f9a3b31239bf46de3" category="paragraph"><block ref="7dd2d826a181ea2f9a3b31239bf46de3" category="inline-link-macro-rx"></block></block>
+  <block id="2e3901c216301ff20bf1108a16ffab23" category="paragraph"><block ref="2e3901c216301ff20bf1108a16ffab23" category="inline-link-macro-rx"></block></block>
+  <block id="efaf8eeadceb43309e642a115859e2a0" category="paragraph"><block ref="efaf8eeadceb43309e642a115859e2a0" category="inline-link-macro-rx"></block></block>
+  <block id="4ea5a8d3b0067bf5307eb05137bce817" category="paragraph"><block ref="4ea5a8d3b0067bf5307eb05137bce817" category="inline-link-macro-rx"></block></block>
+  <block id="77a89cd0e5a14d8b8709467f579b8edc" category="paragraph"><block ref="77a89cd0e5a14d8b8709467f579b8edc" category="inline-link-macro-rx"></block></block>
+  <block id="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="paragraph"><block ref="c9cbd1d1d65e3b0d2ec2922daec8bddf" category="inline-link-macro-rx"></block></block>
+  <block id="fa499afb5b0e71cede67d6430b479aad" category="doc">Suporte para NetApp ONTAP Connector para Amazon Q</block>
+  <block id="c77dd74f22a4c7346ab562d5eff0bc5a" category="paragraph">Esta versão do GenAI apresenta suporte para o NetApp ONTAP Connector para Amazon Q, permitindo que você crie conetores para o Amazon Q Business. Aproveite de forma rápida e fácil o assistente de IA do Amazon Q Business com menos configuração inicial do que criar uma base de conhecimento do GenAI para a Amazon bedrock.</block>
+  <block id="cf79fa4b0d1663f0ab76e8bc4b4e5ff3" category="inline-link-macro">Crie um GenAI Connector para Amazon Q Business</block>
+  <block id="9e4085aea7ddf49d777bc0d6415232d0" category="paragraph"><block ref="9e4085aea7ddf49d777bc0d6415232d0" category="inline-link-macro-rx"></block></block>
+  <block id="535baaac5969b3bd7fd10592a2cb8e22" category="section-title">Suporte aprimorado ao modelo de chat</block>
+  <block id="48ced6c80c0d41a7f68e3e9caece65d9" category="paragraph">O GenAI agora suporta os seguintes modelos de bate-papo adicionais para bases de conhecimento:</block>
+  <block id="ba7ee7dc8867588bd50d38f7762f4e93" category="inline-link-macro">Modelos Mistral AI</block>
+  <block id="fffe8738239ad19b2e24fda4b92d99f8" category="list-text"><block ref="fffe8738239ad19b2e24fda4b92d99f8" category="inline-link-macro-rx"></block></block>
+  <block id="ac4754b088e15ec23e2e33942607b0db" category="inline-link-macro">Modelos de texto Amazon Titan</block>
+  <block id="91b642108b49f539aef5f1e7e8429b9a" category="list-text"><block ref="91b642108b49f539aef5f1e7e8429b9a" category="inline-link-macro-rx"></block></block>
+  <block id="3e431ea8f1bf6f1b755d11be49ab7215" category="inline-link-macro">Modelos Meta Llama</block>
+  <block id="957aa19111afb49cbdb72a75c11a7824" category="list-text"><block ref="957aa19111afb49cbdb72a75c11a7824" category="inline-link-macro-rx"></block></block>
+  <block id="025fda77b8ffb8c9e7812b66f625dcdb" category="inline-link-macro">Jamba 1,5 modelos</block>
+  <block id="00be89811246b5f1554783fae811628a" category="list-text"><block ref="00be89811246b5f1554783fae811628a" category="inline-link-macro-rx"></block></block>
+  <block id="d5bedd5eb6b3c4a63a27527880abc5ae" category="inline-link-macro">Modelos Cohere Command</block>
+  <block id="01f2d137c910887f5780defdf71aa720" category="list-text"><block ref="01f2d137c910887f5780defdf71aa720" category="inline-link-macro-rx"></block></block>
+  <block id="7af238b1ae959fcc9ca0417cb2d5f9a7" category="inline-link-macro">Modelos Deepseek</block>
+  <block id="96734ae1eb62df22f906e39314369633" category="list-text"><block ref="96734ae1eb62df22f906e39314369633" category="inline-link-macro-rx"></block></block>
+  <block id="dbc68fe7976455ff2b6f2e5143dfd308" category="inline-link-macro">Modelos de base suportados na Amazon bedrock</block>
+  <block id="b198f4cca9409499187762bec5420672" category="paragraph">O GenAI suporta os modelos de cada provedor que a Amazon bedrock suporta: <block ref="9f10081366e85554159ed4dc640b95c7" category="inline-link-macro-rx"></block></block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">Terminologia de permissões atualizada</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">A interface do usuário e a documentação de fábrica da carga de trabalho agora usam "somente leitura" para se referir a permissões de leitura e "leitura-gravação" para se referir a permissões de automação.</block>
+  <block id="da1f9b1e0d45e28b599d8f40c855f668" category="summary">Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas ao Amazon Q Business, é possível definir um conetor.</block>
+  <block id="06576beecf0a3b501bd304361172e710" category="doc">Crie um conetor NetApp ONTAP para o Amazon Q</block>
+  <block id="eb56f84f8c7f39034f8b4f008276df54" category="paragraph">Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você usará em seus datastores do FSX for ONTAP, você estará pronto para definir um NetApp ONTAP Connector para Amazon Q.</block>
+  <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">requisitos</block>
+  <block id="c544ac4406a53e3d89f1f777f49bd9ab" category="paragraph">Certifique-se de que seu ambiente atenda ao <block ref="e9a731368b15c5c87437cf87756c4dd9" category="inline-link-macro-rx"></block> para Amazon Q Business antes de prosseguir.</block>
+  <block id="416b1ad25d5076e01c81a106a5183bb8" category="paragraph">As fontes de dados da sua organização podem conter informações de identificação pessoal (PII). Para proteger essas informações confidenciais, você pode habilitar _data guardrails_ ao definir um conetor. Corrimões de dados, alimentados pela classificação BlueXP , identificam e mascara PII, tornando-os inacessíveis e irrecuperáveis.</block>
+  <block id="32a3d08b7aad0fea19d07c320ae1572b" category="admonition">A fábrica de carga de trabalho do BlueXP  para o GenAI não mascara informações pessoais confidenciais (SPII). <block ref="0cdb750dab1dfb2fce5dd1cc6f558f0e" category="inline-link-macro-rx"></block>Consulte para obter mais informações sobre este tipo de dados.</block>
+  <block id="35c5b8334726059a903cf8e72acd6567" category="admonition">Os corrimões de dados podem ser ativados ou desativados a qualquer momento. Se você alternar a habilitação dos corrimões de dados, a fábrica de carga de trabalho verifica toda a fonte de dados do zero, o que pode incorrer em um custo.</block>
+  <block id="7110ae9aea43e2e00725933a5f626fa1" category="section-title">Defina um conetor</block>
+  <block id="587c0510bec4ca8fb8c5c828596d2bf3" category="paragraph">Criar um conetor NetApp ONTAP para Amazon Q. o conetor permite a comunicação de API e fonte de dados entre o GenAI e o Amazon Q Business.</block>
+  <block id="cef935b09c14a76911c2bc3b2878c1eb" category="list-text">Na guia bases de conhecimento e conetores, selecione o menu suspenso *criar novo* e escolha *Amazon Q Business Connector*.</block>
+  <block id="e90a1e1cd02488bfade2709b90f749fd" category="list-text">Na página Definir conetor, configure as definições do conetor:</block>
+  <block id="5e8ca8e597dc55a04039701d5dac2cf3" category="list-text">*Nome*: Insira o nome que deseja usar para o conetor.</block>
+  <block id="dffbc54d16e84507b04590e6d1c0c866" category="list-text">*Descrição*: Introduza uma descrição detalhada do conetor.</block>
+  <block id="c9feba567b8d3a8ba8747f88e19831cc" category="list-text">*Amazon Q*: A região e o nome do aplicativo para a instância do Amazon Q Business que você deseja integrar.</block>
+  <block id="bf5ee3ec2f3e4b65913ce148dc85d307" category="admonition">Quando você ativa o recurso de guardrails de dados, o GenAI processa arquivos .txt, .md, .csv, .docx e .pdf inserindo apenas texto simples (excluindo imagem incorporada ou texto de Mídia) e mascarando quaisquer dados privados ou confidenciais. Todos os outros tipos de arquivo são processados normalmente sem mascarar dados privados ou confidenciais.</block>
+  <block id="48ca727fe38026867b97dd4a2615a41f" category="list-text">*FSX for ONTAP file system*: Quando você define um novo NetApp ONTAP Connector para Amazon Q, a fábrica de carga de trabalho cria um novo volume do Amazon FSX for NetApp ONTAP para armazenar as informações do conetor. Escolher um sistema de arquivos existente e o SVM (também chamado de VM de storage) no qual o novo volume será criado.</block>
+  <block id="5449bd448d32094e1be238f48844c03e" category="list-text">*Política de snapshot*: Escolha uma política de snapshot na lista de políticas existentes definidas no inventário de armazenamento de carga de trabalho de fábrica. O GenAI cria automaticamente instantâneos recorrentes do volume, armazenando as informações do conetor em uma frequência com base na política de snapshot que você selecionar.</block>
+  <block id="c5639571aa9605e9474435556c2b9258" category="paragraph">Se a política de snapshot que você precisa não existir, você pode<block ref="446afe1ef4f3740a216a777a896ec27c" category="inline-link-rx"></block> na VM de armazenamento que contém o volume.</block>
+  <block id="c47b1f6ddc8b5b2b1c01ea580fdcbe2b" category="list-text">Selecione *Create Connector* para integrar o Amazon Q Business com o GenAI.</block>
+  <block id="0fd1c37214b672806d1b01aaa5e711ad" category="paragraph">Um indicador de progresso aparece enquanto o conetor é criado.</block>
+  <block id="b8f6d9f09bc1de45210a1757d02e6a64" category="paragraph">Depois que o conetor é criado, você tem a opção de adicionar uma fonte de dados ao conetor para que o Amazon Q Business ingere seus dados e os adicione ao seu índice. Recomendamos que você selecione *Adicionar fonte de dados* e adicione uma ou mais fontes de dados agora.</block>
+  <block id="aa8ac1310c7d9b19ce03d24b5fc56dd3" category="section-title">Adicione fontes de dados ao conetor</block>
+  <block id="494e9d7617b206e4728ee8d4e943c436" category="paragraph">Você pode adicionar uma ou mais fontes de dados para preencher o índice do Amazon Q Business com os dados da sua organização.</block>
+  <block id="38948212cb1298a9a87847d80aff8ca3" category="inline-link">Documentação do Amazon Q Business</block>
+  <block id="e9f9ee2b178e9240eb07268c9b4fe3d4" category="list-text">Consulte o<block ref="f859099ef55e8e981ddab6b409f06373" category="inline-link-rx"></block> para obter restrições de serviço específicas do índice Amazon Q Business.</block>
+  <block id="55fddc2bb52523580afe42caa9835fc7" category="paragraph">A fonte de dados está incorporada ao índice do Amazon Q Business. O status muda de "incorporação" para "incorporada" quando a fonte de dados está completamente incorporada.</block>
+  <block id="b6d85ca0ba60b5dd543710bc3ce9d8cf" category="paragraph">Depois de adicionar uma única fonte de dados ao conetor, você pode testá-la no ambiente de chatbot do Amazon Q Business e fazer as alterações necessárias antes de disponibilizar o serviço aos usuários. Você também pode seguir os mesmos passos para adicionar fontes de dados adicionais ao conetor.</block>
+  <block id="aa33bca1874e3db584536f0f66cd3301" category="doc">Identificar fontes de dados para adicionar a um conetor</block>
+  <block id="ee92c82f76148f0f7c42c7d8935a4737" category="paragraph">Identifique ou crie os documentos (fontes de dados) que residem no seu sistema de arquivos FSX for ONTAP que você integrará no seu conetor. Essas fontes de dados permitem que o Amazon Q Business forneça respostas precisas e personalizadas para consultas de usuários com base em dados relevantes para sua organização.</block>
+  <block id="3b932b7a96c1eee4b65c70c231bb6e60" category="paragraph">Você pode adicionar várias fontes de dados a cada conetor, mas todas elas precisam residir nos sistemas de arquivos do FSX for ONTAP que estão acessíveis a partir da sua conta da AWS.</block>
+  <block id="7072813121d82ae0d2bc05aaab425d4c" category="paragraph">Os conetores dão suporte a dados de volumes que usam protocolos NFS ou SMB/CIFS. Ao selecionar arquivos armazenados usando o protocolo SMB, você precisará inserir as informações do ative Directory para que o conetor possa acessar os arquivos nesses volumes. Isso inclui o domínio do ative Directory, o endereço IP, o nome de usuário e a senha.</block>
+  <block id="40ad80bd520fcb9c58d8bdf69bfeafe8" category="paragraph">Por exemplo, se você integrou arquivos 10 (fontes de dados) em seu conetor, e 2 dos arquivos são arquivos de recursos humanos que contêm informações restritas, apenas os usuários do chatbot que são autenticados para acessar esses arquivos 2 receberão respostas do chatbot que incluem dados desses arquivos.</block>
+  <block id="7be29227377788a5b12c7a7e7a66cd65" category="admonition">Quando você adiciona fontes de dados a um Amazon Q Business Connector, apenas as permissões de usuário se aplicam a arquivos de origem de dados. As permissões de grupo não são aplicadas.</block>
+  <block id="93e9aea370504a46b95b2ec1db56c76c" category="admonition">Se houver arquivos em sua fonte de dados que não contenham texto, o Amazon Q Business não indexará esses arquivos e, em vez disso, registrará uma entrada no Amazon CloudWatch Logs observando que os arquivos não contêm texto para indexar.</block>
+  <block id="5004434ec8c79db151dd6e0c18edd6b3" category="paragraph">Os seguintes formatos de arquivo de origem de dados são atualmente compatíveis com o NetApp ONTAP Connector para Amazon Q.</block>
+  <block id="68dfdbe39ab30356a21fe4db773d9589" category="cell">Arquivo de valores separados por vírgula</block>
+  <block id="67cddf56c0ff55c79aee7dfa01b3d310" category="cell">JSON e JSONP</block>
+  <block id="8c7a7a618a6d4acfe85b4b4b1048846d" category="cell">.docx</block>
+  <block id="121333faad7b59b7a995b890be1e3928" category="cell">Microsoft PowerPoint</block>
+  <block id="520b3f8c79416a683bc233eb9e9a7466" category="cell">.ppt ou .pptx</block>
+  <block id="4382267a4a500ad3c3689577cda2271a" category="cell">Hypertext Markup Language</block>
+  <block id="8ff6ba7aa2917af91edd5ace8896cba2" category="cell">.html</block>
+  <block id="632b65116d554008b76c3be3c8c37f4e" category="cell">Extensible Markup Language (linguagem de marcação extensível)</block>
+  <block id="4e9f6c7fdef327a6b0e08505dc57a694" category="cell">.xml</block>
+  <block id="139e293a7146f23cd247c6be049ebf26" category="cell">XSLT</block>
+  <block id="179b98294a9c7a64f9b40b9e9179e171" category="cell">.xslt</block>
+  <block id="28392dee72b88a917a72357aea20a3a5" category="cell">Microsoft Excel</block>
+  <block id="303e9d780912940ea6ade0981c37e23e" category="cell">.xls</block>
+  <block id="f74d675f930739888116a4559aa93a52" category="cell">Formato Rich Text</block>
+  <block id="9e653a3b0c5a3f4648036d4881e875cd" category="cell">.rtf</block>
+  <block id="61a6c15b1f4f2a575ac5f47d1fbfe6f2" category="doc">Gerencie os conetores do Amazon Q Business</block>
+  <block id="fe9c0e854bb75d8d0368615c8b433c6f" category="paragraph">Depois de criar um conetor para o Amazon Q Business, você pode exibir os detalhes do conetor, modificar o conetor, integrar fontes de dados adicionais ou excluir o conetor.</block>
+  <block id="23a31567db48e019d75bf325ea4fd33f" category="section-title">Exibir informações sobre um conetor</block>
+  <block id="ce678abc65f85cf934579388d70bdda3" category="paragraph">Pode visualizar informações sobre as definições de um conetor e as fontes de dados integradas.</block>
+  <block id="8f1455aac1b07c1a845480b659aeb292" category="list-text">Selecione o conetor que pretende visualizar.</block>
+  <block id="5cc101287966e66cd99c9c6c0764d04b" category="list-text">Para ver os detalhes do conetor, <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Manage Connector*.</block>
+  <block id="b0d4da1928debc3094d8b21648c0c3a3" category="paragraph">O menu *ações* permite gerenciar o conetor se você quiser fazer alterações.</block>
+  <block id="4f0c75d31e9e14362509657a4cc55a49" category="section-title">Edite um conetor</block>
+  <block id="2875bbbc39d9cabdc6add56e715a7c04" category="paragraph">Pode atualizar um conetor alterando algumas definições ou pode adicionar ou remover fontes de dados.</block>
+  <block id="20925e865e981be570599ec2328cd70a" category="paragraph">Sempre que você adicionar, modificar ou remover fontes de dados do conetor, o GenAI precisa enviar as informações de origem de dados para o Amazon Q Business para que elas sejam reindexadas. A sincronização é incremental, então o Amazon Q Business processa apenas os objetos no volume do FSX for ONTAP que foram adicionados, modificados ou excluídos desde a última sincronização.</block>
+  <block id="3648f00c53d2df063c5880b5d296acfb" category="list-text">Na página de inventário bases de conhecimento e conetores, selecione o conetor que pretende atualizar.</block>
+  <block id="7200168818502116f24fc9a2c9aa8107" category="list-text">Selecione <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> e selecione *Manage Connector*.</block>
+  <block id="470d464d67629b6ff919ea8c9aae93bf" category="list-text">Selecione o menu *ações* e selecione *Editar conetor*.</block>
+  <block id="aa946f0a678f73f74ff06250357c1799" category="list-text">Na página Editar conetor, você pode alterar o nome do conetor, a descrição, o modelo de incorporação, a habilitação dos corrimões de dados e a política de snapshot usada para o volume que contém o conetor.</block>
+  <block id="6e27ea0225699137ba2530c35a8f6d84" category="admonition">Toda varredura de fonte de dados, que inclui incorporação, incorre em um custo. Se você ativar os corrimões de dados depois que um conetor foi criado, a fonte de dados será digitalizada novamente e incorrerá em custos.</block>
+  <block id="a57c1dc973ddd436afe9fcbc15a22c93" category="list-text">Selecione *Salvar* depois de fazer alterações.</block>
+  <block id="4dc43722dfa1894b89c5e06558237389" category="section-title">Adicione fontes de dados adicionais a um conetor</block>
+  <block id="14c12befe24a457bafec00515aa0e29d" category="paragraph">Você pode incorporar fontes de dados adicionais no seu conetor para preenchê-lo com dados adicionais da organização.</block>
+  <block id="d424d9565a0a56283e14fcec720f7b6a" category="list-text">A partir da página de inventário bases de dados e conetores de conhecimento, selecione o conetor onde pretende adicionar a fonte de dados.</block>
+  <block id="bf90a209a79dde864f9804cf27edf4df" category="paragraph">A fonte de dados está integrada ao seu conetor.</block>
+  <block id="e7977875f2273c9165fd47c3d3c3aee8" category="section-title">Sincronize as fontes de dados com um conetor</block>
+  <block id="3517d2b8ddd9b09d923867695e150fbf" category="paragraph">As fontes de dados são sincronizadas automaticamente com o conetor associado uma vez por dia, de modo que quaisquer alterações na fonte de dados sejam refletidas no Amazon Q Business. Se você fizer alterações em qualquer uma de suas fontes de dados e quiser sincronizar (digitalizar) os dados imediatamente, poderá executar uma sincronização sob demanda.</block>
+  <block id="c023f0c37e2395dfbcb86599990b54ce" category="paragraph">A sincronização é incremental, portanto, o Amazon Q Business só processa os objetos em suas fontes de dados que foram adicionados, modificados ou excluídos desde a última sincronização.</block>
+  <block id="d486ec04a4ff263da9129c2a5580442f" category="list-text">No separador bases de conhecimento e conetores, selecione o conetor que pretende sincronizar.</block>
+  <block id="d93801edfaf0b3ede0db39f53d95cf40" category="paragraph">O conetor é sincronizado com as fontes de dados anexadas e o Amazon Q Business começará a usar as informações mais recentes de suas fontes de dados.</block>
+  <block id="6b67d2366cdfceb53aeea58819331958" category="section-title">Pausar ou retomar uma sincronização agendada</block>
+  <block id="113b98024868773b6f70f39a7ddd716d" category="paragraph">Se pretender pausar ou retomar a próxima sincronização (digitalização) das fontes de dados, pode fazê-lo a qualquer momento. Talvez seja necessário pausar a próxima sincronização agendada se você fizer alterações em uma fonte de dados e não quiser que a sincronização aconteça durante a janela de mudança.</block>
+  <block id="7f33995767e18921d242be1e1b3d4d92" category="list-text">Na página de inventário do conetor, selecione o conetor para o qual deseja pausar ou retomar exames.</block>
+  <block id="20fe7c74b98a61498f3b4cf9a0cedfe1" category="list-text">Selecione o menu *ações* e selecione *Digitalizar &gt; Pausar digitalização agendada* ou *Digitalizar &gt; Retomar digitalização agendada*.</block>
+  <block id="0d3742f512084e332df9cf3e01431604" category="paragraph">Você verá uma mensagem informando que a próxima digitalização agendada foi pausada ou retomada.</block>
+  <block id="bf5a484e29502a227f97ab9005183647" category="section-title">Eliminar um conetor</block>
+  <block id="523be0bf702b821a1ff0d32a0a447edb" category="paragraph">Se você não precisar mais de um conetor, você pode excluí-lo. Quando você exclui um conetor, ele é removido da fábrica da carga de trabalho e o volume que contém o conetor é excluído. Eliminar um conetor não é reversível.</block>
+  <block id="9c0f6136c0054738cd89f4434829341d" category="paragraph">Ao excluir um conetor, você também deve desassociar o conetor de qualquer agente ao qual está associado para excluir totalmente todos os recursos associados ao conetor.</block>
+  <block id="5f04e305e4afb373dd4222c101416421" category="list-text">Na página de inventário bases de conhecimento e conetores, selecione o conetor que pretende eliminar.</block>
+  <block id="49ca25cc293d8eaea5abbc997a98b766" category="list-text">Selecione o menu *ações* e selecione *Excluir conetor*.</block>
+  <block id="fe4e9f24fd3a3e4e128adbeb8b1e4f63" category="list-text">Na caixa de diálogo Excluir conetor, confirme se deseja excluí-lo e selecione *Excluir*.</block>
+  <block id="cd5654a62ac0ae4992fc556cbbfc385c" category="paragraph">O conetor é removido da fábrica da carga de trabalho e seu volume associado é excluído.</block>
+  <block id="182e3e33bf92b5fae899ae295398f967" category="summary">Comece a criar um conetor usando os dados da sua organização que existem nos sistemas de arquivos do Amazon FSX para NetApp ONTAP.</block>
+  <block id="450eb57f37211d072a7368e65c267a97" category="doc">Início rápido para conetores GenAI</block>
+  <block id="3327960afa4d33a42952d6c7d8ed56ec" category="paragraph">Comece a criar um conetor NetApp ONTAP para o Amazon Q usando os dados da sua organização que existem nos sistemas de arquivos do Amazon FSX para NetApp ONTAP. Depois de criar um conetor, os usuários finais podem acessar o assistente do Amazon Q Business para respostas focadas na organização para suas perguntas.</block>
+  <block id="473b0d4489afb6847b3528470c283f5e" category="paragraph">Você precisará de credenciais da AWS para implantar a infraestrutura da AWS, um sistema de arquivos FSX for ONTAP implantado e descoberto, a lista de fontes de dados que você deseja integrar no seu conetor, acesso ao aplicativo Amazon Q Business e muito mais.</block>
+  <block id="ecce7b5245e843c6ae115994088db5e2" category="paragraph"><block ref="a4570bff78b2af8a7e4a27bf4959db8d" category="inline-link-macro-rx"></block>.</block>
+  <block id="aa9cd94a01409a2e0db1cfbaa2ff5574" category="paragraph">As fontes de dados que você integrará em seu conetor podem estar localizadas em um único sistema de arquivos FSX for ONTAP ou em vários sistemas de arquivos FSX for ONTAP. Se esses sistemas estiverem em VPCs diferentes, eles devem estar acessíveis dentro da mesma rede ou os VPCs devem ser direcionados e usando a mesma região e conta da AWS que o mecanismo de IA.</block>
+  <block id="ef33a25234aa2ece6646cb5739f4fde9" category="paragraph"><block ref="29010d60a361a26e7cccd39eeacb5588" category="inline-link-macro-rx"></block>.</block>
+  <block id="4f2775ca378d5c35a4a98b0bd3989d31" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Implantar a infraestrutura do GenAI</block>
+  <block id="6b0e4831e3d99acb9ad23703e3360c01" category="paragraph">Inicie o assistente de implantação de infraestrutura para implantar a infraestrutura do GenAI em seu ambiente AWS. Esse processo implanta uma instância do EC2 para o mecanismo do NetApp GenAI e um volume em um sistema de arquivos FSX for ONTAP para conter os bancos de dados do NetApp AI Engine. O volume é utilizado para armazenar informações sobre o conetor.</block>
+  <block id="1c04a1a61ca2584ca8ea0e2661c59240" category="inline-link-macro">Saiba como implantar a infraestrutura do GenAI</block>
+  <block id="a052f63c8b3d79d0e865981102e38253" category="paragraph"><block ref="0d6818cfcf477d8cb9e6d8498d1a9d44" category="inline-link-macro-rx"></block>.</block>
+  <block id="136533d4992078df7d1f45db41363ffc" category="paragraph">Agora você pode criar um conetor para o Amazon Q Business para fornecer respostas focadas na organização aos usuários finais.</block>
+  <block id="69c3ca978f076b54fa2030f25d3332fc" category="doc">Requisitos do conetor GenAI</block>
+  <block id="a3b1269946165413b25e6bd3a003b6be" category="paragraph">Certifique-se de que a fábrica da carga de trabalho e a AWS estejam configuradas corretamente antes de criar um NetApp ONTAP Connector para o Amazon Q.</block>
+  <block id="a6390dd71ac213c8926f4e003361b1c7" category="section-title">Requisitos básicos do GenAI</block>
+  <block id="d94f906cc0b4e822ea4cc6f7282c6f3f" category="paragraph">A GenAI tem requisitos gerais que seu ambiente precisa atender antes de começar.</block>
+  <block id="5d077bd2e14c4e2191fcc692704a074c" category="list-text">Você precisa adicionar credenciais da AWS à fábrica de carga de trabalho com permissões de leitura/gravação, o que significa que você usará a fábrica de carga de trabalho no modo _leitura/gravação_ para o GenAI.</block>
+  <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">As permissões do modo _Basic_ e do modo _Read-Only_ não são suportadas neste momento.</block>
+  <block id="595f56efdb431edfb5c98924891aa631" category="section-title">Requisitos para o NetApp ONTAP Connector para Amazon Q</block>
+  <block id="dc24ca2a4507b8d4ffa56cd2f4ff7a5c" category="paragraph">Certifique-se de que seu ambiente atenda aos seguintes requisitos específicos para o Amazon Q Business Connectors.</block>
+  <block id="50a0042a7df9c6588a808141018da878" category="list-text">Aplicação Amazon Q Business</block>
+  <block id="89092e7ac04c4e6446bab5908228964d" category="list-text">Você precisa criar um aplicativo do Amazon Q Business ou usar um existente.</block>
+  <block id="1d5720aeac7e3539d6efaa01161dfd21" category="list-text">Verifique se o aplicativo existe em uma das regiões da AWS.</block>
+  <block id="a1147b567cbdd1f301a37ed87c2afed7" category="inline-link">criou um índice</block>
+  <block id="dfe5f26168740e575faf08b9a2ef1ee7" category="list-text">Certifique-se de que<block ref="799ce02f9fcc74379f6eaf3c0d15ae7c" category="inline-link-rx"></block> tem para a aplicação.</block>
+  <block id="dde2cb934f19cc6792ef4202facc9d52" category="list-text">Certifique-se de que a aplicação não está num estado com falha.</block>
+  <block id="5b7b71abf2920fafe6a621a8cd575f8c" category="list-text">Um sistema de arquivos será usado (ou criado, se não existir) pelo mecanismo NetApp GenAI para armazenar informações sobre o conetor.</block>
+  <block id="f06479e214120da53f991b1af4eb0097" category="list-text">Um ou mais sistemas de arquivos conterá as fontes de dados que você estará adicionando ao seu conetor.</block>
+  <block id="0d8ba413f648e51fef4fb209cc7b48a1" category="list-text">Você precisará conhecer a região, a VPC e a sub-rede da AWS onde reside o sistema de arquivos do AWS FSX for ONTAP.</block>
+  <block id="a6389fdd3aafc525ca961513074657c7" category="paragraph">A fábrica de cargas de trabalho do BlueXP  para o GenAI permite que você integre os sistemas de arquivos do Amazon FSX para NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI.</block>
+  <block id="60525997ca84017159be9ccc575fddc6" category="paragraph">A fábrica de carga de trabalho do BlueXP  para o GenAI permite que você use fontes de dados empresariais no Amazon FSX for NetApp ONTAP com aplicativos de IA generativos. Utilizando a geração de recuperação aumentada (RAG), você pode conetar rapidamente fontes de dados a modelos de base disponíveis via Amazon bedrock ou Amazon Q Business para desenvolver aplicativos geradores de IA, como assistentes virtuais, chatbots de Q&amp;A, sumarização de documentos, criação de conteúdo, etc.</block>
+  <block id="9eac267e04135210fd13de3d35bf966f" category="inline-link-macro">crie uma base de conhecimento</block>
+  <block id="7857532e4fb86ce943421b8f4c90279e" category="inline-link-macro">Defina um conetor NetApp ONTAP para o Amazon Q</block>
+  <block id="816eaa71f63bd8cfa450e3a6a6a4e21b" category="paragraph">Se <block ref="a1707f04689d949f85e4cb6db99b5c64" category="inline-link-macro-rx"></block>você , o GenAI ingere dados de suas fontes de dados, armazena os resultados vetorizados em um banco de dados e oferece controle total sobre como usar os dados ingeridos para responder a consultas. Essa abordagem requer uma configuração mais inicial, mas permite que você escolha diferentes modelos de bate-papo para resultados diferentes. Se <block ref="7e2e1fab0b17942f623c655a801494c8" category="inline-link-macro-rx"></block>você , os dados de suas fontes de dados serão ingeridos pelo Amazon Q Business e armazenados em um índice. Essa abordagem requer menos configuração inicial, mas oferece menos controle sobre os resultados.</block>
+  <block id="33ce7f647f173acb7ace68da57d0ad93" category="paragraph">A fábrica de cargas de trabalho do BlueXP  para o GenAI simplifica o processo de implantação da infraestrutura necessária para criar aplicativos de IA generativos usando a geração de recuperação aumentada (RAG). Especificamente, o GenAI oferece os seguintes benefícios:</block>
+  <block id="71aa508255eddc0938ca384c87a7c8a1" category="list-text">Acelere o desenvolvimento de aplicativos GenAI, como um chatbot de Q&amp;A, usando frameworks de código aberto, como o LangChain, utilizando a API GenAI para provisionar e gerenciar bases de conhecimento e conetores, conversar com uma base de conhecimento e armazenar e recuperar histórico de bate-papo.</block>
+  <block id="f0bdc00cfa448d8f15fa17aea3aee5fa" category="paragraph">O GenAI usa os dados privados da sua organização para complementar a inteligência do modelo (com base nos dados em que foi treinado) para fornecer respostas personalizadas às perguntas feitas pelos seus usuários em sua organização. Primeiro, você implanta a infraestrutura necessária para uma estrutura RAG, cria uma base de conhecimento ou define um conetor usando fontes de dados e modelos de base da sua organização disponíveis via Amazon bedrock ou Amazon Q Business e coneta um aplicativo (como um chatbot de perguntas e respostas) à base de conhecimento ou ao conetor.</block>
+  <block id="3c7cdfc68dac7c9c2821a868ef7397e3" category="paragraph"><block ref="3c7cdfc68dac7c9c2821a868ef7397e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b395d44923246b15b2cf6bbccefd488e" category="list-text">Implanta a infraestrutura necessária para a estrutura de geração aumentada de recuperação (RAG) para trabalhar com fontes de dados no FSX para sistemas de arquivos ONTAP e Amazon bedrock ou Amazon Q Business. A infraestrutura inclui a instância do NetApp GenAI Engine para gerenciamento de dados, um banco de dados vetorial incorporado (LanceDB) e armazenamento no sistema de arquivos FSX for ONTAP para o banco de dados vetorial.</block>
+  <block id="6b2235dca5c2e5796c1881c49bdc02e1" category="list-text">Ajuda a conetar as fontes de dados a incorporações e modelos de linguagem disponíveis via Amazon bedrock ou Amazon Q Business para incorporar fontes de dados e recuperar as respostas para consultas de usuários. As fontes de dados, juntamente com os modelos e sua configuração, são apresentadas como bases de conhecimento do FSX for ONTAP.</block>
+  <block id="bac5e556932e341a4b9de98f3f120a5c" category="list-text">Ingere dados de origem na base de conhecimento ou conetor para incorporar arquivos de origem em compartilhamentos SMB e exportações de NFS nos sistemas de arquivos FSX for ONTAP, juntamente com o armazenamento de permissões de arquivos para arquivos em compartilhamentos SMB.</block>
+  <block id="1e99c460cf537bae167f699f72f10783" category="list-text">Constrói automaticamente perguntas iniciais de conversação com base no conteúdo em bases de conhecimento.</block>
+  <block id="f7876b81c07b146c27fb7196bb0889f1" category="list-text">Fornece um simulador de bate-papo para os administradores de dados testar conversas com bases de conhecimento.</block>
+  <block id="183107db84b5d97e830561a02417467f" category="list-text">Fornece uma interface de conetor simples para que você possa conetar o GenAI com o Amazon Q Business, de forma rápida e fácil, utilizando os recursos deste assistente de IA.</block>
+  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
+  <block id="3e037b952ced7d9d3d5f755278df683d" category="paragraph">No entanto, você precisará pagar pelos recursos da AWS que implantar para oferecer suporte à infraestrutura de IA generativa. Por exemplo, você pagará a AWS pela Amazon bedrock ou Amazon Q Business, o FSX for ONTAP file system e a capacidade de armazenamento e a instância do GenAI Engine EC2.</block>
+  <block id="eb172a4ea0ca9b00dbcb16f6401ade8d" category="doc">Componentes do motor NetApp GenAI</block>
+  <block id="9f6ab331f6e1b93cd7720e3b01290dfe" category="paragraph">Depois de criar uma base de conhecimento ou um conetor usando fontes de dados no seu sistema de arquivos FSX for ONTAP, você pode visualizar os detalhes da fonte de dados, atualizar ou alterar o conteúdo da fonte de dados, editar configurações da fonte de dados ou excluir a fonte de dados.</block>
+  <block id="d1bd53c9c036a0a164289d39a5a4edea" category="paragraph">Você pode exibir informações sobre o conteúdo de uma fonte de dados e pode visualizar seu status de incorporação com a base de conhecimento ou o conetor. Como as fontes de dados estão associadas a uma base de conhecimento ou conetor, você precisará escolher primeiro a base de conhecimento ou o conetor antes de poder visualizar os detalhes da fonte de dados.</block>
+  <block id="11bdb1b485383914846d0ec01ecbf8da" category="list-text">Efetue login na fábrica da carga de trabalho usando um dos<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>.</block>
+  <block id="a4d7e53eade04c3be167cb91eb35875b" category="list-text">Selecione a base de conhecimento ou o conetor onde reside a fonte de dados e, em seguida, <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Gerenciar base de conhecimento* ou *Gerenciar conetor*.</block>
+  <block id="d18084c9cdad87027b728588d97de1d2" category="paragraph">A parte inferior da página lista as fontes de dados associadas.</block>
+  <block id="75b4e172ba31c79bb7c96549ff633102" category="paragraph">Ele também lista as informações de incorporação e se essa fonte de dados está atualmente incorporada na base de conhecimento ou no conetor.</block>
+  <block id="6a9319277b81fdcd682844204a1b8ddc" category="paragraph">Você pode editar informações sobre uma fonte de dados integrada a uma base de conhecimento ou conetor. A maioria das informações é corrigida depois que você adicionou uma fonte de dados, mas você pode fazer alterações em algumas das configurações (como definição de divisão ou reconhecimento de permissão).</block>
+  <block id="d9a5be1c6e2136c44531327606633c19" category="paragraph">As fontes de dados são sincronizadas automaticamente com a base de conhecimento uma vez por dia, para que quaisquer alterações na fonte de dados sejam refletidas no chatbot. Se você fizer alterações em uma fonte de dados e quiser sincronizar os dados imediatamente, poderá <block ref="0f5a728901202a758f49141d39e6d6c4" category="inline-link-macro-rx"></block>.</block>
+  <block id="8d1c283884ec2a2a9b912b6e070e8367" category="paragraph">Essa operação remove apenas os links para a infraestrutura de IA da fábrica de workloads; ela não remove todos os componentes da AWS. Você precisará excluir manualmente os seguintes componentes de infraestrutura da AWS:</block>
+  <block id="e1750bb502afd54b5058d245599b0178" category="paragraph">Certifique-se de que seu ambiente atenda <block ref="d4b380da98d3e217e1a1342547359af5" category="inline-link-macro-rx"></block>às bases de conhecimento para antes de prosseguir.</block>
+  <block id="67018b2f9b0f536ad3b15e35baf7848f" category="paragraph">As fontes de dados da sua organização podem conter informações de identificação pessoal (PII). Para proteger essas informações confidenciais, você pode habilitar _data guardrails_ ao criar e configurar bases de conhecimento. Corrimões de dados, alimentados pela classificação BlueXP , identificam e mascara PII, tornando-os inacessíveis e irrecuperáveis.</block>
+  <block id="1353892c3200d5ef34ea39aff734e6b8" category="list-text">Na guia bases de conhecimento e conetores, selecione o menu suspenso *criar novo* e escolha *base de conhecimento NetApp GenAI para bedrock*.</block>
+  <block id="4ecacb5c42fc3b13c2e7d2cc8f5b177c" category="list-text">Incorpore o inglês</block>
+  <block id="675aea0734aa7d33f5b87dd79fb596ea" category="list-text">Incorpore multilíngue</block>
+  <block id="f407f3d1164313838fd95c2ed0e3ea37" category="list-text">*Modelo de bate-papo*: Escolha entre vários modelos de bate-papo integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.</block>
+  <block id="088bdfcb190e7f5cbd74a7b7b0afc7ac" category="doc">Identificar fontes de dados para adicionar a uma base de conhecimento ou conetor</block>
+  <block id="22ae6b53af9d033c916e5ac98cafe398" category="paragraph">Os bancos de conhecimento dão suporte a dados de volumes que usam protocolos NFS ou SMB/CIFS. Ao selecionar arquivos armazenados usando o protocolo SMB, você precisará inserir as informações do ative Directory para que a base de conhecimento possa acessar os arquivos nesses volumes. Isso inclui o domínio do ative Directory, o endereço IP, o nome de usuário e a senha.</block>
+  <block id="144ed6dedc8fb9d6e8c267ed1b88f622" category="paragraph">Os seguintes formatos de arquivo de fonte de dados são compatíveis atualmente com bases de conhecimento GenAI de fábrica de carga de trabalho.</block>
+  <block id="bc288de0017ed79e5ddf41186d5a7bac" category="cell">Apache Parquetfootnote:disclaimer[o recurso de guardrails de dados não é suportado ao inserir arquivos de dados estruturados em bases de conhecimento.]</block>
+  <block id="b322ac739d190389142090c734961275" category="list-text">No separador bases de conhecimento e conetores, selecione a base de conhecimento para a qual pretende colocar em pausa ou retomar exames.</block>
+  <block id="bcb256cc8db5d05b70f038b36e876110" category="doc">Início rápido para bases de conhecimento GenAI</block>
+  <block id="d46ff87e524577f2d38bb349e94974b6" category="paragraph">Comece a criar uma base de conhecimento ou o Amazon Q Business Connector usando os dados da sua organização que existem nos sistemas de arquivos do Amazon FSX para NetApp ONTAP. Um aplicativo como um chatbot acessará essa base de conhecimento ou conetor para fornecer respostas focadas na organização aos usuários finais.</block>
+  <block id="cccf2c6ba0366b925d6b91882c267b34" category="paragraph">Você precisará de credenciais da AWS para implantar a infraestrutura da AWS, um sistema de arquivos FSX for ONTAP implantado e descoberto, a lista de fontes de dados que você deseja integrar em sua base de conhecimento ou conetor, acesso ao serviço de AI da Amazon bedrock ou ao aplicativo Amazon Q Business e muito mais.</block>
+  <block id="3e80efed95960189c2bbdd9f0dc01f65" category="paragraph"><block ref="1a5ee64d6d3db43ee72b882473d855ff" category="inline-link-macro-rx"></block>.</block>
+  <block id="976ae8ec2741e03587309f02abbe28d5" category="paragraph"><block ref="a3a2a716da35b02a285bb1f994ffa509" category="inline-link-macro-rx"></block>.</block>
+  <block id="d55d697bddbbc6a3065d07012cb084e6" category="paragraph">Inicie o assistente de implantação de infraestrutura para implantar a infraestrutura do GenAI em seu ambiente AWS. Esse processo implanta uma instância do EC2 para o mecanismo do NetApp GenAI e um volume em um sistema de arquivos FSX for ONTAP para conter os bancos de dados do NetApp AI Engine. O volume é usado para armazenar o banco de dados de vetor usado pela base de conhecimento.</block>
+  <block id="34dbaff8502e0c0b297561a24d1b6765" category="doc">Requisitos da base de conhecimento GenAI</block>
+  <block id="1c3f2d8f1a1781d6eacf4d82ed1ee08f" category="paragraph">Se você planeja trabalhar com bases de conhecimento, certifique-se de que seu ambiente atenda aos seguintes requisitos.</block>
+  <block id="2d4ef9af630dcc509532eda57cc638d4" category="paragraph">O GenAI suporta vários modelos de Antropometria, Amazon, Mistral AI, Meta, Jamba e cohere.</block>
+  <block id="95487d12af5aa12008b7fd4a9d240e39" category="paragraph">Saiba mais sobre como usar esses modelos no Amazon bedrock:</block>
+  <block id="8360fdbf930670a5295cc4e86b6f3a09" category="list-text"><block ref="8360fdbf930670a5295cc4e86b6f3a09" category="inline-link-rx"></block></block>
+  <block id="b53fdb129cf3a36c249bc3c5d2b830e7" category="list-text"><block ref="b53fdb129cf3a36c249bc3c5d2b830e7" category="inline-link-rx"></block></block>
+  <block id="c448390d73c1d6f4b375f397a804f135" category="list-text"><block ref="c448390d73c1d6f4b375f397a804f135" category="inline-link-rx"></block></block>
+  <block id="c8398186389d88b81b56c6c802a6967f" category="inline-link">Jamba modelos</block>
+  <block id="104808a77a288cf2cec8ed60264d5d99" category="list-text"><block ref="104808a77a288cf2cec8ed60264d5d99" category="inline-link-rx"></block></block>
+  <block id="deecfeaef90201c45d9c17ee5edf836d" category="list-text"><block ref="deecfeaef90201c45d9c17ee5edf836d" category="inline-link-rx"></block></block>
+  <block id="ccf0e0b5c1efe2dabb282d608ba593dd" category="list-text">Um sistema de arquivos será usado (ou criado, se não existir) pelo mecanismo NetApp GenAI para armazenar o banco de dados de vetor usado pela base de dados de conhecimento.</block>
+  <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">04 de maio de 2025</block>
+  <block id="95ab6a86600b31e05b001864adcc30f3" category="sidebar">Construa uma base de conhecimento para a Amazon bedrock</block>
+  <block id="bbe0643c4c2515d0e740168fae1ac3a3" category="sidebar">Início rápido para bases de conhecimento</block>
+  <block id="5c4a7a0d9d9ffc8363d3d3be4bfed390" category="sidebar">Crie um conetor para o Amazon Q Business</block>
+  <block id="4434db0ad858887dd143bcf9ca54f677" category="sidebar">Arranque rápido para conetores</block>
+  <block id="c1e122c06e6fbdba97be83b62420f066" category="sidebar">Gerenciar a infraestrutura do GenAI</block>
+  <block id="91e2b8d20f36e828f16fe4114f527899" category="sidebar">Gerenciar conetores</block>
+  <block id="5945e11d0d43ff54edbf52c73445991e" category="sidebar">Use o GenAI para criar bases de conhecimento para a Amazon bedrock</block>
+  <block id="04e72ad1a1f8c5d1bc6e9d9cd655d231" category="sidebar">Identificar fontes de dados para adicionar a uma base de conhecimento</block>
+  <block id="6d0922d38f508966c79ec8917c90f839" category="sidebar">Use o GenAI para criar conetores para o Amazon Q Business</block>
 </blocks>

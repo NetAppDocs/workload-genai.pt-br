@@ -1,34 +1,34 @@
 ---
 sidebar: sidebar 
-permalink: manage-data-source.html 
+permalink: general/manage-data-source.html 
 keywords: ai, chatbot, creating, knowledge base, data source 
 summary: Depois de criar uma base de conhecimento usando fontes de dados no seu sistema de arquivos FSX for ONTAP, você pode visualizar os detalhes da fonte de dados, atualizar ou alterar o conteúdo da fonte de dados, editar configurações da fonte de dados ou excluir a fonte de dados. 
 ---
 = Gerenciar fontes de dados do GenAI
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
-Depois de criar uma base de conhecimento usando fontes de dados no seu sistema de arquivos FSX for ONTAP, você pode visualizar os detalhes da fonte de dados, atualizar ou alterar o conteúdo da fonte de dados, editar configurações da fonte de dados ou excluir a fonte de dados.
+Depois de criar uma base de conhecimento ou um conetor usando fontes de dados no seu sistema de arquivos FSX for ONTAP, você pode visualizar os detalhes da fonte de dados, atualizar ou alterar o conteúdo da fonte de dados, editar configurações da fonte de dados ou excluir a fonte de dados.
 
 
 
 == Exibir informações sobre uma fonte de dados
 
-Você pode exibir informações sobre o conteúdo de uma fonte de dados e pode visualizar seu status de incorporação com a base de conhecimento. Como uma fonte de dados faz parte de uma base de conhecimento, você precisará abrir a base de conhecimento primeiro para poder visualizar os detalhes da fonte de dados.
+Você pode exibir informações sobre o conteúdo de uma fonte de dados e pode visualizar seu status de incorporação com a base de conhecimento ou o conetor. Como as fontes de dados estão associadas a uma base de conhecimento ou conetor, você precisará escolher primeiro a base de conhecimento ou o conetor antes de poder visualizar os detalhes da fonte de dados.
 
 .Passos
-. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Efetue login na fábrica da carga de trabalho usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
 . No menu de navegação de fábrica da carga de trabalho, selecione *AI*.
-. Selecione a base de conhecimento onde reside a fonte de dados e, em seguida, image:icon-action.png["o botão de opção"]selecione e selecione *Gerenciar base de conhecimento*.
+. Selecione a base de conhecimento ou o conetor onde reside a fonte de dados e, em seguida, image:icon-action.png["o botão de opção"]selecione e selecione *Gerenciar base de conhecimento* ou *Gerenciar conetor*.
 +
-A parte inferior da página lista as fontes de dados que fazem parte desta base de conhecimento.
+A parte inferior da página lista as fontes de dados associadas.
 
 . Expanda cada linha selecionando o image:button-down-caret.png["o botão de seta para baixo"] para exibir informações detalhadas sobre cada fonte de dados, como o sistema de arquivos FSX for ONTAP, o volume e o caminho onde reside a fonte de dados.
 +
-Ele também lista as informações de incorporação e se essa fonte de dados está atualmente incorporada na base de conhecimento.
+Ele também lista as informações de incorporação e se essa fonte de dados está atualmente incorporada na base de conhecimento ou no conetor.
 
 
 
@@ -36,7 +36,7 @@ Ele também lista as informações de incorporação e se essa fonte de dados es
 
 == Editar as definições da fonte de dados
 
-Você pode editar informações sobre uma fonte de dados integrada em uma base de conhecimento. A maioria das informações é corrigida depois que você adicionou uma fonte de dados a uma base de conhecimento, mas você pode fazer alterações na definição e configuração de agrupamento e no reconhecimento de permissões (ao usar o protocolo SMB no volume de origem de dados).
+Você pode editar informações sobre uma fonte de dados integrada a uma base de conhecimento ou conetor. A maioria das informações é corrigida depois que você adicionou uma fonte de dados, mas você pode fazer alterações em algumas das configurações (como definição de divisão ou reconhecimento de permissão).
 
 .Passos
 . Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
@@ -58,7 +58,7 @@ As configurações da fonte de dados são atualizadas e o sistema de AI sincroni
 
 Você pode alterar o conteúdo de uma fonte de dados a qualquer momento para adicionar ou atualizar seus dados organizacionais. Se essa fonte de dados estiver sendo usada ativamente em uma base de conhecimento, você deve sincronizar a fonte de dados para que ela seja reindexada à base de conhecimento. A sincronização é incremental, portanto, o Amazon bedrock só processa os objetos no volume do FSX for ONTAP que foram adicionados, modificados ou excluídos desde a última sincronização.
 
-As fontes de dados são sincronizadas automaticamente com a base de conhecimento uma vez por dia, para que quaisquer alterações na fonte de dados sejam refletidas no chatbot. Se você fizer alterações em uma fonte de dados e quiser sincronizar os dados imediatamente, poderá link:manage-knowledgebase.html#synchronize-your-data-sources-with-a-knowledge-base["execute uma sincronização sob demanda"].
+As fontes de dados são sincronizadas automaticamente com a base de conhecimento uma vez por dia, para que quaisquer alterações na fonte de dados sejam refletidas no chatbot. Se você fizer alterações em uma fonte de dados e quiser sincronizar os dados imediatamente, poderá link:../knowledge-base/manage-knowledgebase.html#synchronize-your-data-sources-with-a-knowledge-base["execute uma sincronização sob demanda"].
 
 
 
