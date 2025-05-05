@@ -45,7 +45,7 @@ Por exemplo, se você integrou arquivos 10 (fontes de dados) em seu conetor, e 2
 NOTE: Quando você adiciona fontes de dados a um Amazon Q Business Connector, apenas as permissões de usuário se aplicam a arquivos de origem de dados. As permissões de grupo não são aplicadas.
 
 
-NOTE: Se houver arquivos em sua fonte de dados que não contenham texto, o Amazon Q Business não indexará esses arquivos e, em vez disso, registrará uma entrada no Amazon CloudWatch Logs observando que os arquivos não contêm texto para indexar.
+NOTE: Se um arquivo em sua fonte de dados não tiver texto (por exemplo, uma imagem livre de texto), o Amazon Q Business não o indexa, mas Registra uma entrada no Amazon CloudWatch Logs observando a ausência de texto.
 
 
 
