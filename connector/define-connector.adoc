@@ -4,14 +4,14 @@ permalink: connector/define-connector.html
 keywords: ai, chatbot, connector, 
 summary: Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas ao Amazon Q Business, é possível definir um conetor. 
 ---
-= Crie um conetor NetApp ONTAP para o Amazon Q
+= Crie um conector NetApp para o Amazon Q Business
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você usará em seus datastores do FSX for ONTAP, você estará pronto para definir um NetApp ONTAP Connector para Amazon Q.
+Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você usará dos seus datastores do FSx para ONTAP, você estará pronto para definir um NetApp Connector para o Amazon Q Business.
 
 Certifique-se de que seu ambiente atenda ao link:requirements-connector.html["requisitos"] para Amazon Q Business antes de prosseguir.
 
@@ -30,7 +30,7 @@ NOTE: Os corrimões de dados podem ser ativados ou desativados a qualquer moment
 
 == Defina um conetor
 
-Criar um conetor NetApp ONTAP para Amazon Q. o conetor permite a comunicação de API e fonte de dados entre o GenAI e o Amazon Q Business.
+Crie um conector NetApp para o Amazon Q Business. O conector permite a comunicação de API e fonte de dados entre a GenAI e o Amazon Q Business.
 
 .Passos
 . Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
@@ -64,7 +64,7 @@ Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de 
 NOTE: Quando você ativa o recurso de guardrails de dados, o GenAI processa arquivos .txt, .md, .csv, .docx e .pdf inserindo apenas texto simples (excluindo imagem incorporada ou texto de Mídia) e mascarando quaisquer dados privados ou confidenciais. Todos os outros tipos de arquivo são processados normalmente sem mascarar dados privados ou confidenciais.
 
 +
-.. *FSX for ONTAP file system*: Quando você define um novo NetApp ONTAP Connector para Amazon Q, a fábrica de carga de trabalho cria um novo volume do Amazon FSX for NetApp ONTAP para armazenar as informações do conetor. Escolher um sistema de arquivos existente e o SVM (também chamado de VM de storage) no qual o novo volume será criado.
+.. *FSx para sistema de arquivos ONTAP*: quando você define um novo NetApp Connector para o Amazon Q Business, o Workload Factory cria um novo volume Amazon FSx para NetApp ONTAP para armazenar as informações do conector. Escolher um sistema de arquivos existente e o SVM (também chamado de VM de storage) no qual o novo volume será criado.
 .. *Política de snapshot*: Escolha uma política de snapshot na lista de políticas existentes definidas no inventário de armazenamento de carga de trabalho de fábrica. O GenAI cria automaticamente instantâneos recorrentes do volume, armazenando as informações do conetor em uma frequência com base na política de snapshot que você selecionar.
 +
 Se a política de snapshot que você precisa não existir, você pode https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["criar uma política de snapshot"^] na VM de armazenamento que contém o volume.

@@ -11,7 +11,7 @@ summary: Certifique-se de que a fábrica da carga de trabalho e a AWS estejam co
 
 
 [role="lead"]
-Certifique-se de que a fábrica da carga de trabalho e a AWS estejam configuradas corretamente antes de criar um NetApp ONTAP Connector para o Amazon Q.
+Certifique-se de que a fábrica de carga de trabalho e a AWS estejam configuradas corretamente antes de criar um NetApp Connector para o Amazon Q Business.
 
 
 
@@ -34,7 +34,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Saiba c
 
 
 
-== Requisitos para o NetApp ONTAP Connector para Amazon Q
+== Requisitos para o NetApp Connector para Amazon Q Business
 
 Certifique-se de que seu ambiente atenda aos seguintes requisitos específicos para o Amazon Q Business Connectors.
 

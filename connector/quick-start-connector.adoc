@@ -11,7 +11,7 @@ summary: Comece a criar um conetor usando os dados da sua organização que exis
 
 
 [role="lead"]
-Comece a criar um conetor NetApp ONTAP para o Amazon Q usando os dados da sua organização que existem nos sistemas de arquivos do Amazon FSX para NetApp ONTAP. Depois de criar um conetor, os usuários finais podem acessar o assistente do Amazon Q Business para respostas focadas na organização para suas perguntas.
+Comece a criar um NetApp Connector para o Amazon Q Business usando os dados da sua organização que existem no Amazon FSx para sistemas de arquivos NetApp ONTAP. Depois de criar um conetor, os usuários finais podem acessar o assistente do Amazon Q Business para respostas focadas na organização para suas perguntas.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] Faça login na fábrica da carga de trabalho
 [role="quick-margin-para"]
