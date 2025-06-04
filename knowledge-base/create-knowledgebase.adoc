@@ -65,6 +65,7 @@ https://aws.amazon.com/bedrock/titan/["Saiba mais sobre o Amazon Titan"^]
 
 
 .. *Modelo de bate-papo*: Escolha entre vários modelos de bate-papo integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.
+.. *Reclassificação*: ative ou desative a reclassificação, o que pode melhorar a relevância e a qualidade dos resultados da consulta. Escolha um modelo de chat padrão ou um modelo de reclassificação especializado para usar na reclassificação. As opções do modelo de reclassificação só serão exibidas se estiverem disponíveis na sua região.
 .. * Guardrails de dados*: Escolha se você deseja ativar ou desativar os guardrails de dados. link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre os corrimões de dados, alimentados pela classificação BlueXP "^].
 +
 Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de dados.

@@ -51,7 +51,7 @@ Cada vez que você adicionar, modificar ou remover fontes de dados da base de co
 Esta página exibe o status publicado, o status de incorporação das fontes de dados, o modo de incorporação, a lista de todas as fontes de dados incorporadas e muito mais.
 
 . Selecione o menu *ações* e selecione *Editar base de conhecimento*.
-. Na página Editar base de conhecimento, você pode alterar o nome da base de conhecimento, a descrição, o modelo de incorporação, o modelo de chat, a habilitação dos guardrails de dados, escolher se os iniciantes de conversação são criados automaticamente ou manualmente e a política de snapshot usada para o volume que contém a base de conhecimento.
+. Na página Editar base de conhecimento, você pode alterar o nome da base de conhecimento, a descrição, o modelo de incorporação, o modelo de bate-papo, a ativação de recursos, escolher se os iniciadores de conversas serão criados automaticamente ou manualmente e a política de instantâneo usada para o volume que contém a base de conhecimento.
 +
 Se você usar o modo Manual para iniciantes de conversação, você também pode alterar os iniciantes de conversação aqui.
 
