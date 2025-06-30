@@ -92,7 +92,7 @@ Você pode adicionar uma ou mais fontes de dados para preencher o índice do Ama
 
 
 .Passos
-. Depois de selecionar *Adicionar fonte de dados*, a página *Selecionar um sistema de arquivos* será exibida.
+. Depois de selecionar *Adicionar fonte de dados*, a página *Selecionar um sistema de arquivos* é exibida.
 . * Selecione um sistema de arquivos*: Selecione o sistema de arquivos FSX for ONTAP onde seus arquivos de origem de dados residem e selecione *Next*.
 . *Selecione um volume*: Selecione o volume no qual os arquivos de origem de dados residem e selecione *Next*.
 +

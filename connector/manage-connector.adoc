@@ -66,6 +66,18 @@ Você pode incorporar fontes de dados adicionais no seu conetor para preenchê-l
 . Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
 . A partir da página de inventário bases de dados e conetores de conhecimento, selecione o conetor onde pretende adicionar a fonte de dados.
 . Selecione image:icon-action.png["o botão de opção"] e selecione *Adicionar fonte de dados*.
+. Selecione o tipo de fonte de dados que você deseja adicionar:
++
+** Adicionar FSx para sistema de arquivos ONTAP (usar arquivos de um volume FSx para ONTAP existente)
+** Adicionar sistema de arquivos (usar arquivos de um compartilhamento SMB ou NFS genérico)
+
+
+
+
+[role="tabbed-block"]
+====
+.Adicionar um FSx para sistema de arquivos ONTAP
+--
 . * Selecione um sistema de arquivos*: Selecione o sistema de arquivos FSX for ONTAP onde seus arquivos de origem de dados residem e selecione *Next*.
 . *Selecione um volume*: Selecione o volume no qual os arquivos de origem de dados residem e selecione *Next*.
 +
@@ -115,6 +127,113 @@ NOTE: Se você incluir arquivos com base em um intervalo de datas de modificaç�
 . Selecione *Add* para adicionar esta fonte de dados à sua base de conhecimento.
 
 
+--
+.Adicionar um sistema de arquivos NFS genérico
+--
+. *Selecione um sistema de arquivos*: insira o endereço IP ou FQDN do host do sistema de arquivos onde seus arquivos de fonte de dados residem, escolha o protocolo NFS para o compartilhamento de rede e selecione *Avançar*.
+. *Selecione uma fonte de dados*: Selecione a localização da fonte de dados com base no local onde você salvou os arquivos. Este pode ser um volume inteiro, ou apenas uma pasta específica ou subpasta no volume, e selecione *Next*.
++
+
+NOTE: Em alguns casos, pode ser necessário inserir o nome da exportação NFS manualmente e selecionar *Recuperar diretórios* para exibir os diretórios disponíveis. Você pode optar por selecionar a exportação inteira ou apenas pastas específicas da exportação.
+
+. * Configurações*: Configure como a fonte de dados ingere informações de seus arquivos e quais arquivos ela inclui em varreduras:
++
+** *Definir fonte de dados*: Na seção *Estratégia de Chunking*, defina como o mecanismo GenAI divide o conteúdo da fonte de dados em blocos quando a fonte de dados é integrada a uma base de conhecimento. Você pode escolher uma das seguintes estratégias:
++
+*** * Agrupamento de frases múltiplas*: Organiza informações de sua fonte de dados em blocos definidos por sentença. Você pode escolher quantas frases compõem cada pedaço (até 100).
+*** * Agrupamento baseado em sobreposição*: Organiza informações de sua fonte de dados em blocos definidos por carateres que podem sobrepor blocos vizinhos. Você pode escolher o tamanho de cada pedaço em carateres, e quanto cada pedaço se sobrepõe com pedaços adjacentes. Você pode configurar um tamanho de bloco entre 50 e 3000 carateres e uma porcentagem de sobreposição entre 1 e 99%.
++
+
+NOTE: Escolher uma alta porcentagem de sobreposição pode aumentar significativamente os requisitos de armazenamento com apenas pequenas melhorias na precisão de recuperação.
+
+
+
+** * Filtragem de arquivos*: Configure quais arquivos estão incluídos nas digitalizações:
++
+*** Na seção *suporte a tipos de arquivo*, escolha incluir todos os tipos de arquivos ou selecionar tipos de arquivo individuais para inclusão nas verificações de origem de dados.
++
+Se você incluir imagens ou arquivos PDF, a fábrica de carga de trabalho do BlueXP  para o GenAI analisa o texto nas imagens (incluindo imagens em documentos PDF), e isso incorre em um custo mais alto.
+
++
+Ao incluir dados de texto de imagens, o GenAI não consegue mascarar informações de identificação pessoal (PII) da imagem à medida que os dados de texto digitalizados são enviados do seu ambiente para a AWS. No entanto, uma vez que os dados são armazenados, todas as PII são mascaradas no banco de dados do GenAI.
+
++
+
+NOTE: Sua escolha de incluir arquivos de imagem em digitalizações está relacionada ao modelo de bate-papo da base de conhecimento. Se você incluir arquivos de imagem em digitalizações, o modelo de bate-papo deve suportar imagens. Se os tipos de arquivo de imagem estiverem selecionados aqui, você não poderá alternar a base de conhecimento para um modelo de chat que não suporte arquivos de imagem.
+
+*** Na seção *filtro de tempo de modificação de arquivo*, escolha ativar ou desativar a inclusão de arquivos com base em seu tempo de modificação. Se ativar a filtragem de hora de modificação, selecione um intervalo de datas na lista.
++
+
+NOTE: Se você incluir arquivos com base em um intervalo de datas de modificação, assim que o intervalo de datas não for satisfeito (os arquivos não foram modificados dentro do intervalo de datas especificado), os arquivos serão excluídos da verificação periódica e a fonte de dados não incluirá esses arquivos.
+
+
+
+
+
+. Selecione *Adicionar fonte de dados* para adicionar esta fonte de dados à sua base de conhecimento.
+
+
+--
+.Adicionar um sistema de arquivos SMB genérico
+--
+. *Selecione o sistema de arquivos*:
++
+.. Digite o endereço IP ou FQDN do host do sistema de arquivos onde seus arquivos de fonte de dados residem.
+.. Escolha o protocolo SMB para o compartilhamento de rede.
+.. Insira as informações do Active Directory, que incluem o domínio, endereço IP, nome de usuário e senha.
+.. Selecione *seguinte*.
+
+
+. *Selecione uma fonte de dados*: Selecione a localização da fonte de dados com base no local onde você salvou os arquivos. Este pode ser um volume inteiro, ou apenas uma pasta específica ou subpasta no volume, e selecione *Next*.
++
+
+NOTE: Em alguns casos, pode ser necessário inserir o nome do compartilhamento SMB manualmente e selecionar *Recuperar diretórios* para exibir os diretórios disponíveis. Você pode optar por selecionar o compartilhamento inteiro ou apenas pastas específicas do compartilhamento.
+
+. * Configurações*: Configure como a fonte de dados ingere informações de seus arquivos e quais arquivos ela inclui em varreduras:
++
+** *Definir fonte de dados*: Na seção *Estratégia de Chunking*, defina como o mecanismo GenAI divide o conteúdo da fonte de dados em blocos quando a fonte de dados é integrada a uma base de conhecimento. Você pode escolher uma das seguintes estratégias:
++
+*** * Agrupamento de frases múltiplas*: Organiza informações de sua fonte de dados em blocos definidos por sentença. Você pode escolher quantas frases compõem cada pedaço (até 100).
+*** * Agrupamento baseado em sobreposição*: Organiza informações de sua fonte de dados em blocos definidos por carateres que podem sobrepor blocos vizinhos. Você pode escolher o tamanho de cada pedaço em carateres, e quanto cada pedaço se sobrepõe com pedaços adjacentes. Você pode configurar um tamanho de bloco entre 50 e 3000 carateres e uma porcentagem de sobreposição entre 1 e 99%.
++
+
+NOTE: Escolher uma alta porcentagem de sobreposição pode aumentar significativamente os requisitos de armazenamento com apenas pequenas melhorias na precisão de recuperação.
+
+
+
+** *Consciente de permissão*: Habilita ou desabilita respostas cientes de permissão:
++
+*** *Habilitado*: Os usuários do chatbot que acessam essa base de conhecimento só receberão respostas a consultas de fontes de dados às quais têm acesso.
+*** *Disabled*: Os usuários do chatbot receberão respostas usando conteúdo de todas as fontes de dados integradas.
+
+
+** * Filtragem de arquivos*: Configure quais arquivos estão incluídos nas digitalizações:
++
+*** Na seção *suporte a tipos de arquivo*, escolha incluir todos os tipos de arquivos ou selecionar tipos de arquivo individuais para inclusão nas verificações de origem de dados.
++
+Se você incluir imagens ou arquivos PDF, a fábrica de carga de trabalho do BlueXP  para o GenAI analisa o texto nas imagens (incluindo imagens em documentos PDF), e isso incorre em um custo mais alto.
+
++
+Ao incluir dados de texto de imagens, o GenAI não consegue mascarar informações de identificação pessoal (PII) da imagem à medida que os dados de texto digitalizados são enviados do seu ambiente para a AWS. No entanto, uma vez que os dados são armazenados, todas as PII são mascaradas no banco de dados do GenAI.
+
++
+
+NOTE: Sua escolha de incluir arquivos de imagem em digitalizações está relacionada ao modelo de bate-papo da base de conhecimento. Se você incluir arquivos de imagem em digitalizações, o modelo de bate-papo deve suportar imagens. Se os tipos de arquivo de imagem estiverem selecionados aqui, você não poderá alternar a base de conhecimento para um modelo de chat que não suporte arquivos de imagem.
+
+*** Na seção *filtro de tempo de modificação de arquivo*, escolha ativar ou desativar a inclusão de arquivos com base em seu tempo de modificação. Se ativar a filtragem de hora de modificação, selecione um intervalo de datas na lista.
++
+
+NOTE: Se você incluir arquivos com base em um intervalo de datas de modificação, assim que o intervalo de datas não for satisfeito (os arquivos não foram modificados dentro do intervalo de datas especificado), os arquivos serão excluídos da verificação periódica e a fonte de dados não incluirá esses arquivos.
+
+
+
+
+
+. Selecione *Adicionar fonte de dados* para adicionar esta fonte de dados à sua base de conhecimento.
+
+
+--
+====
 .Resultado
 A fonte de dados está integrada ao seu conetor.
 

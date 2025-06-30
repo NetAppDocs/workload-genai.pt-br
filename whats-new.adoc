@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, genai' 
 summary: Saiba o que há de novo com a funcionalidade de workloads de IA da fábrica de workloads. 
 ---
 = Novidades na fábrica de workloads da BlueXP  para a GenAI
@@ -12,6 +12,20 @@ summary: Saiba o que há de novo com a funcionalidade de workloads de IA da fáb
 
 [role="lead"]
 Saiba o que há de novo com a capacidade generativa de cargas de trabalho de IA da fábrica de cargas de trabalho.
+
+
+
+== 29 de junho de 2025
+
+
+
+=== Suporte para fontes de dados hospedadas em sistemas de arquivos NFS/SMB genéricos
+
+Agora você pode adicionar uma fonte de dados de um compartilhamento SMB ou NFS genérico. Isso permite incluir arquivos armazenados em volumes hospedados por sistemas de arquivos diferentes do Amazon FSx para NetApp ONTAP.
+
+https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html#add-data-sources-to-the-knowledge-base["Adicionar fontes de dados a uma base de conhecimento"]
+
+https://docs.netapp.com/us-en/workload-genai/connector/define-connector.html#add-data-sources-to-the-connector["Adicionar fontes de dados a um conector"]
 
 
 
@@ -67,11 +81,7 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledg
 
 === Terminologia de permissões atualizada
 
-A interface do usuário e a documentação do Workload Factory agora usam "somente leitura" para se referir às permissões de leitura e "leitura/gravação" para se referir às permissões de automação.
-
-
-
-== 02 de março de 2025
+A interface do usuário e a documentação do Workload Factory agora usam "somente leitura" para se referir às permissões de leitura e "leitura/gravação" para se referir às permissões de automação. == 02 de março de 2025
 
 
 

@@ -94,7 +94,6 @@
   <block id="831e8ddab4c3e70bcfe67a3e58aaf8cc" category="paragraph">Você pode adicionar uma ou mais fontes de dados para preencher a base de conhecimento com os dados da sua organização.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">Sobre esta tarefa</block>
   <block id="443fa995d0ec899357a7e519e2055b98" category="paragraph">O número máximo de fontes de dados suportadas é 10.</block>
-  <block id="10031d73287aadb6c5f8b3dae7b23860" category="list-text">Depois de selecionar *Adicionar fonte de dados*, a página *Selecionar um sistema de arquivos* será exibida.</block>
   <block id="8817d70d4163473468fa1b2b6e498321" category="paragraph">A fonte de dados começa a ser incorporada na sua base de conhecimento. O status muda de "incorporação" para "incorporada" quando a fonte de dados está completamente incorporada.</block>
   <block id="e0308d285e9bc5966f6ceb7008c87849" category="paragraph">Depois de adicionar uma única fonte de dados à base de conhecimento, você pode testá-la localmente na janela do simulador do chatbot e fazer as alterações necessárias antes de tornar o chatbot disponível para seus usuários. Você também pode seguir os mesmos passos para adicionar fontes de dados adicionais à base de conhecimento.</block>
   <block id="b9605cf748e4b8e1c97d786258a0be40" category="summary">Você precisa implantar a infraestrutura para a estrutura RAG em seu ambiente antes de criar bases de conhecimento e aplicativos do FSX for ONTAP para sua organização. Os principais componentes da infraestrutura são o serviço de IA da Amazon bedrock, uma instância de máquina virtual para o mecanismo NetApp GenAI e um sistema de arquivos FSX for ONTAP.</block>
@@ -757,7 +756,6 @@
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">Você pode redimensionar e renomear a janela do simulador do chatbot e copiar perguntas e respostas para a área de transferência.</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">Você pode ver as fontes usadas para produzir a resposta expandindo a lista *fontes* sob a resposta. Isso fornece uma lista de arquivos usados para gerar a resposta. Você pode exibir e copiar os blocos de dados usados de cada arquivo e caminho de volume para cada arquivo passando o Mouse sobre o nome do arquivo.</block>
   <block id="8e08c9e7067a8bc5d8828ba0b5a8a5b2" category="list-text">Se as tabelas forem incluídas na resposta, você poderá classificar os dados em cada coluna e copiar cada tabela para a área de transferência.</block>
-  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">02 de março de 2025</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs &amp; comunidade</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidade NetApp</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP  blogs</block>
@@ -1077,4 +1075,30 @@
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">A interface do usuário e a documentação do Workload Factory agora usam "somente leitura" para se referir às permissões de leitura e "leitura/gravação" para se referir às permissões de automação.</block>
   <block id="2285d955a18bdde3d5780d04f48d58cd" category="list-text">Você precisa adicionar credenciais da AWS ao Workload Factory com permissões de leitura/gravação, o que significa que você usará o Workload Factory no modo _leitura/gravação_ para o GenAI.</block>
   <block id="c45d86a4185cef0bc3cadb7e6e9b46f4" category="paragraph">As permissões dos modos _básico_ e _somente leitura_ não são suportadas no momento.</block>
+  <block id="7d906e58a1354072160e6ed36352865a" category="open-title">Adicionar um FSx para sistema de arquivos ONTAP</block>
+  <block id="6d74c0f67ca2ffc7e802992699848ce7" category="open-title">Adicionar um sistema de arquivos NFS genérico</block>
+  <block id="47f6d5704c1ced6391a6f696c9715d6f" category="list-text">*Selecione um sistema de arquivos*: insira o endereço IP ou FQDN do host do sistema de arquivos onde seus arquivos de fonte de dados residem, escolha o protocolo NFS para o compartilhamento de rede e selecione *Avançar*.</block>
+  <block id="f877eadc66897f3228392ce8c7190a3b" category="admonition">Em alguns casos, pode ser necessário inserir o nome da exportação NFS manualmente e selecionar *Recuperar diretórios* para exibir os diretórios disponíveis. Você pode optar por selecionar a exportação inteira ou apenas pastas específicas da exportação.</block>
+  <block id="d6cc21a7239c70140c4fe9e5d219835f" category="list-text">Selecione *Adicionar fonte de dados* para adicionar esta fonte de dados à sua base de conhecimento.</block>
+  <block id="72d08830496d7cb22679d7006ceb540d" category="open-title">Adicionar um sistema de arquivos SMB genérico</block>
+  <block id="8dc6eb4b595b0f73bfb84bc0ff3bbe68" category="list-text">*Selecione o sistema de arquivos*:</block>
+  <block id="cff886b73f836ffbb81637a1582026d6" category="list-text">Digite o endereço IP ou FQDN do host do sistema de arquivos onde seus arquivos de fonte de dados residem.</block>
+  <block id="097fffee0ff7b9dc84809630d58d9921" category="list-text">Escolha o protocolo SMB para o compartilhamento de rede.</block>
+  <block id="3a38971888a2c2f134ec4c4fe6164859" category="list-text">Insira as informações do Active Directory, que incluem o domínio, endereço IP, nome de usuário e senha.</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">Selecione *seguinte*.</block>
+  <block id="50e87b511edc21ffba5ebba81a768f04" category="admonition">Em alguns casos, pode ser necessário inserir o nome do compartilhamento SMB manualmente e selecionar *Recuperar diretórios* para exibir os diretórios disponíveis. Você pode optar por selecionar o compartilhamento inteiro ou apenas pastas específicas do compartilhamento.</block>
+  <block id="0065452defb4a4481c8fe8db6f74a038" category="list-text">*Consciente de permissão*: Habilita ou desabilita respostas cientes de permissão:</block>
+  <block id="944ee388209d33a3bf1b309c6acdf693" category="doc">Suporte para fontes de dados hospedadas em sistemas de arquivos NFS/SMB genéricos</block>
+  <block id="9a7d241f00b55d0e00761313cced5dd8" category="paragraph">Agora você pode adicionar uma fonte de dados de um compartilhamento SMB ou NFS genérico. Isso permite incluir arquivos armazenados em volumes hospedados por sistemas de arquivos diferentes do Amazon FSx para NetApp ONTAP.</block>
+  <block id="5cba57d460e5683815517b44a7811760" category="inline-link">Adicionar fontes de dados a uma base de conhecimento</block>
+  <block id="b37629096d44c6fda917848365c84ebe" category="paragraph"><block ref="b37629096d44c6fda917848365c84ebe" category="inline-link-rx"></block></block>
+  <block id="6320af7d92cd5d357460c5cbc5f642a9" category="inline-link">Adicionar fontes de dados a um conector</block>
+  <block id="5cd676bef1867c904c092c33ad4a8f2d" category="paragraph"><block ref="5cd676bef1867c904c092c33ad4a8f2d" category="inline-link-rx"></block></block>
+  <block id="68548c26cece20bcf93105ea4fe89e88" category="list-text">Depois de selecionar *Adicionar fonte de dados*, a página *Selecionar um sistema de arquivos* é exibida.</block>
+  <block id="cf398eb273d2634893193d0e955a4fa2" category="list-text">Selecione o tipo de fonte de dados que você deseja adicionar:</block>
+  <block id="c0f70038820005956aaf78b931d681c4" category="list-text">Adicionar FSx para sistema de arquivos ONTAP (usar arquivos de um volume FSx para ONTAP existente)</block>
+  <block id="63e19fdc4a09680278ff2270264b3005" category="list-text">Adicionar sistema de arquivos (usar arquivos de um compartilhamento SMB ou NFS genérico)</block>
+  <block id="438852e39ff5e2c7366e67dde7cfdab4" category="list-text">Depois de selecionar *Adicionar fonte de dados*, selecione o tipo de fonte de dados que deseja adicionar:</block>
+  <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">29 de junho de 2025</block>
+  <block id="84cd46ec8d4d2d63881ed3e5d98fe218" category="paragraph">A interface do usuário e a documentação do Workload Factory agora usam "somente leitura" para se referir às permissões de leitura e "leitura/gravação" para se referir às permissões de automação. == 02 de março de 2025</block>
 </blocks>
