@@ -755,7 +755,6 @@
   <block id="2041784b912a2b2e72827a5e9c656f5f" category="cell">.parquet</block>
   <block id="f1776184cd873aef06fc869138b3b776" category="admonition">Você pode redimensionar e renomear a janela do simulador do chatbot e copiar perguntas e respostas para a área de transferência.</block>
   <block id="e27f142520976de0e091895abd1a2b45" category="list-text">Você pode ver as fontes usadas para produzir a resposta expandindo a lista *fontes* sob a resposta. Isso fornece uma lista de arquivos usados para gerar a resposta. Você pode exibir e copiar os blocos de dados usados de cada arquivo e caminho de volume para cada arquivo passando o Mouse sobre o nome do arquivo.</block>
-  <block id="8e08c9e7067a8bc5d8828ba0b5a8a5b2" category="list-text">Se as tabelas forem incluídas na resposta, você poderá classificar os dados em cada coluna e copiar cada tabela para a área de transferência.</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs &amp; comunidade</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidade NetApp</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP  blogs</block>
@@ -1100,5 +1099,15 @@
   <block id="63e19fdc4a09680278ff2270264b3005" category="list-text">Adicionar sistema de arquivos (usar arquivos de um compartilhamento SMB ou NFS genérico)</block>
   <block id="438852e39ff5e2c7366e67dde7cfdab4" category="list-text">Depois de selecionar *Adicionar fonte de dados*, selecione o tipo de fonte de dados que deseja adicionar:</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">29 de junho de 2025</block>
-  <block id="84cd46ec8d4d2d63881ed3e5d98fe218" category="paragraph">A interface do usuário e a documentação do Workload Factory agora usam "somente leitura" para se referir às permissões de leitura e "leitura/gravação" para se referir às permissões de automação. == 02 de março de 2025</block>
+  <block id="1d92da78b598707dec3df4d7281f1ec3" category="doc">Armazenamento seguro para resultados de dados estruturados</block>
+  <block id="c4b4739fe392b8cae69417a08008577b" category="paragraph">Se os resultados da consulta do chatbot contiverem dados estruturados, o GenAI poderá armazenar os resultados em um bucket do Amazon S3.  Quando esses resultados são armazenados em um bucket S3, você pode baixá-los usando o link de download na sessão de bate-papo.</block>
+  <block id="9a0737b14158e601f99b4265c5bd3e5a" category="section-title">Disponibilidade do servidor MCP</block>
+  <block id="7577ac9e07061812bfe5cec74bafd782" category="paragraph">A NetApp agora fornece um servidor Model Context Protocol (MCP) com BlueXP workload factory para GenAI.  Você pode instalar o servidor localmente para permitir que clientes MCP externos descubram e recuperem resultados de consultas de uma base de conhecimento do GenAI.</block>
+  <block id="6ce9fdd00e9870d205a0b965e8d376fd" category="inline-link-macro">Servidor GenAI MCP da fábrica de carga de trabalho da NetApp</block>
+  <block id="499a63951a1faf063a1d481e63ba0fd9" category="paragraph"><block ref="499a63951a1faf063a1d481e63ba0fd9" category="inline-link-macro-rx"></block></block>
+  <block id="c88eb449e8388152b30e0d6f5c7fd191" category="list-text">*S3 Bucket*: Se os resultados da consulta do chatbot contiverem dados estruturados, o GenAI pode armazenar os resultados em um bucket S3.  Para usar esse recurso, ative a configuração *Ativar bucket S3* e escolha um bucket S3 associado à sua conta na lista.  Quando esses resultados são armazenados em um bucket S3, você pode baixá-los usando o link de download na sessão de bate-papo.</block>
+  <block id="c56ce0bea3e69444b0c0078136e9b7ce" category="list-text">Se tabelas estiverem incluídas na resposta, você poderá classificar os dados em cada coluna e copiar cada tabela para a área de transferência.</block>
+  <block id="689b99dcda35ffe2433b85248726142a" category="list-text">Se os resultados das respostas contiverem dados estruturados e o recurso *S3 Bucket* estiver habilitado para a base de conhecimento, o GenAI armazenará os resultados em um bucket S3.  Você pode baixar os resultados do bucket usando o link *Baixar resultados* na sessão de bate-papo.</block>
+  <block id="613abd0d9da6f7ee37d283174e11fcaf" category="section-title">03 de agosto de 2025</block>
+  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">02 de março de 2025</block>
 </blocks>

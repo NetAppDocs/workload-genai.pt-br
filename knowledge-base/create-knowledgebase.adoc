@@ -88,13 +88,15 @@ Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de 
 
 NOTE: O recurso de guardrails de dados não é suportado ao inserir arquivos de dados estruturados, como CSV, JSON, JSONP ou Parquet.
 
-+
-.. *Entradas de conversação*: Escolha se você deseja fornecer até quatro prompts iniciais de conversação que são exibidos para usuários que interagem com um chatbot que usa essa base de conhecimento. Recomendamos que ative esta definição.
+
+
+. *Entradas de conversação*: Escolha se você deseja fornecer até quatro prompts iniciais de conversação que são exibidos para usuários que interagem com um chatbot que usa essa base de conhecimento. Recomendamos que ative esta definição.
 +
 Se você ativar os iniciantes de conversação, "modo automático" é selecionado por padrão. O "modo manual" só pode ser ativado depois de adicionar fontes de dados à sua base de conhecimento. link:manage-knowledgebase.html["Saiba como modificar as configurações da base de conhecimento"].
 
-.. *FSX for ONTAP file system*: Quando você define uma nova base de conhecimento, a fábrica de carga de trabalho cria um novo volume do Amazon FSX for NetApp ONTAP para armazená-lo. Escolher o nome do sistema de arquivos e o SVM (também chamado de VM de storage) existentes no local em que o novo volume será criado.
-.. *Política de snapshot*: Escolha uma política de snapshot na lista de políticas existentes definidas no inventário de armazenamento de carga de trabalho de fábrica. Os instantâneos recorrentes da base de conhecimento serão criados automaticamente a uma frequência com base na política de instantâneos selecionada.
+. *FSX for ONTAP file system*: Quando você define uma nova base de conhecimento, a fábrica de carga de trabalho cria um novo volume do Amazon FSX for NetApp ONTAP para armazená-lo. Escolher o nome do sistema de arquivos e o SVM (também chamado de VM de storage) existentes no local em que o novo volume será criado.
+. *Política de snapshot*: Escolha uma política de snapshot na lista de políticas existentes definidas no inventário de armazenamento de carga de trabalho de fábrica. Os instantâneos recorrentes da base de conhecimento serão criados automaticamente a uma frequência com base na política de instantâneos selecionada.
+. *S3 Bucket*: Se os resultados da consulta do chatbot contiverem dados estruturados, o GenAI pode armazenar os resultados em um bucket S3.  Para usar esse recurso, ative a configuração *Ativar bucket S3* e escolha um bucket S3 associado à sua conta na lista.  Quando esses resultados são armazenados em um bucket S3, você pode baixá-los usando o link de download na sessão de bate-papo.
 +
 Se a política de snapshot que você precisa não existir, você pode https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["criar uma política de snapshot"] na VM de armazenamento que contém o volume.
 
