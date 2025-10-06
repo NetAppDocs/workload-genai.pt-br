@@ -58,7 +58,7 @@ Certifique-se de que seu ambiente atenda aos requisitos de bases de conhecimento
 
 
 .Passos
-. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Faça login no Workload Factory usando um doslink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
 . No bloco cargas de trabalho de IA, selecione *Deploy & Manage*.
 . Revise o diagrama de infraestrutura e selecione *Next*.
 . Preencha os itens na seção *AWS settings*:
@@ -72,7 +72,7 @@ A implantação do GenAI deve estar em uma região da AWS que tenha o Amazon bed
 
 . Preencha os itens na seção *Configurações de infra-estrutura*:
 +
-.. *Tags*: Insira quaisquer pares de chave/valor de tag que você deseja aplicar a todos os recursos da AWS que fazem parte dessa implantação. Essas tags são visíveis no Console de Gerenciamento da AWS e na área de informações de infraestrutura na fábrica de carga de trabalho e podem ajudá-lo a acompanhar os recursos de fábrica da carga de trabalho.
+.. *Tags*: insira quaisquer pares de chave/valor de tag que você deseja aplicar a todos os recursos da AWS que fazem parte desta implantação.  Essas tags são visíveis no AWS Management Console e na área de informações de infraestrutura do Workload Factory e podem ajudar você a controlar os recursos do Workload Factory.
 
 
 . Preencha a seção *conetividade*:
@@ -82,7 +82,7 @@ A implantação do GenAI deve estar em uma região da AWS que tenha o Amazon bed
 
 . Complete a seção *AI Engine*:
 +
-.. *Nome da instância*: Opcionalmente, selecione *Definir nome da instância* e insira um nome personalizado para a instância do mecanismo de IA. O nome da instância aparece no Console de Gerenciamento da AWS e na área de informações da infraestrutura na fábrica da carga de trabalho e pode ajudá-lo a acompanhar os recursos de fábrica da carga de trabalho.
+.. *Nome da instância*: Opcionalmente, selecione *Definir nome da instância* e insira um nome personalizado para a instância do mecanismo de IA.  O nome da instância aparece no AWS Management Console e na área de informações de infraestrutura do Workload Factory e pode ajudar você a controlar os recursos do Workload Factory.
 
 
 . Selecione *Deploy* para iniciar a implantação.
@@ -93,7 +93,7 @@ NOTE: Se a implantação falhar com um erro de credenciais, você poderá obter 
 
 
 .Resultado
-A fábrica de carga de trabalho começa a implantar a infraestrutura do chatbot. Este processo pode demorar até 10 minutos.
+A Workload Factory começa a implantar a infraestrutura do chatbot. Esse processo pode levar até 10 minutos.
 
 Durante o processo de implantação, os seguintes itens são configurados:
 
@@ -101,5 +101,5 @@ Durante o processo de implantação, os seguintes itens são configurados:
 * A função do IAM, o perfil da instância e o grupo de segurança são criados.
 * A instância de máquina virtual para o mecanismo GenAI é implantada.
 * O Amazon bedrock está configurado para enviar logs para o Amazon CloudWatch Logs, usando um grupo de log com o prefixo `/aws/bedrock/`.
-* O mecanismo GenAI está configurado para enviar logs para o Amazon CloudWatch Logs, usando um grupo de log com o nome `/netapp/wlmai/<tenancyAccountId>/randomId`, onde `<tenancyAccountID>` é o https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-account-identifier["ID da conta BlueXP "^] para o usuário atual.
+* O mecanismo GenAI está configurado para enviar logs para o Amazon CloudWatch Logs, usando um grupo de logs com o nome `/netapp/wlmai/<tenancyAccountId>/randomId` , onde `<tenancyAccountID>` é o https://docs.netapp.com/us-en/console-automation/platform/get_identifiers.html#get-the-account-identifier["ID da conta do console NetApp"^] para o usuário atual.
 

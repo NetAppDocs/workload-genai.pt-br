@@ -8,7 +8,7 @@
 
 O recurso de monitoramento do Tracker agora está disponível no GenAI. Você pode usar o Tracker para monitorar e acompanhar o progresso e o status de operações pendentes, em andamento e concluídas, revisar detalhes de tarefas e subtarefas operacionais, diagnosticar problemas ou falhas, editar parâmetros de operações com falha e repetir operações com falha.
 
-link:https://docs.netapp.com/us-en/workload-genai/general/monitor-operations.html["Monitore as operações de carga de trabalho com o Tracker na fábrica de carga de trabalho BlueXP"]
+link:https://docs.netapp.com/us-en/workload-genai/general/monitor-operations.html["Monitore as operações de carga de trabalho com o Tracker no NetApp Workload Factory"]
 
 
 

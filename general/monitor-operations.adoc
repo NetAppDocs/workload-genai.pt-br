@@ -2,19 +2,19 @@
 sidebar: sidebar 
 permalink: general/monitor-operations.html 
 keywords: monitor genai, monitor jobs, track jobs, tracker 
-summary: Rastreie as operações de carga de trabalho e monitore o progresso do trabalho com o Tracker na fábrica de carga de trabalho BlueXP para GenAI. 
+summary: Acompanhe as operações de carga de trabalho e monitore o progresso do trabalho com o Tracker no NetApp Workload Factory para GenAI. 
 ---
-= Monitore as operações de carga de trabalho com o Tracker na fábrica de carga de trabalho BlueXP
+= Monitore as operações de carga de trabalho com o Tracker no NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Monitore e acompanhe a execução de operações de carga de trabalho e monitore o progresso das tarefas com o Rastreador na fábrica de carga de trabalho do BlueXP .
+Monitore e acompanhe a execução de operações de carga de trabalho e monitore o progresso das tarefas com o Tracker no NetApp Workload Factory.
 
 .Sobre esta tarefa
-A fábrica de carga de trabalho fornece o Tracker, um recurso de monitoramento, para que você possa monitorar e acompanhar o andamento e o status das operações de carga de trabalho, analisar detalhes de tarefas e subtarefas operacionais e diagnosticar problemas ou falhas.
+O NetApp Workload Factory fornece o Tracker, um recurso de monitoramento, para que você possa monitorar e rastrear o progresso e o status das operações de carga de trabalho, revisar detalhes de tarefas e subtarefas de operação e diagnosticar quaisquer problemas ou falhas.
 
 Várias ações estão disponíveis no Tracker. Você pode filtrar tarefas por período de tempo (últimas 24 horas, 7 dias, 14 dias ou 30 dias), carga de trabalho, status e usuário; encontrar trabalhos usando a função de pesquisa; e fazer download da tabela de tarefas como um arquivo CSV. Você pode atualizar o Rastreador a qualquer momento e tentar novamente rapidamente uma operação com falha ou editar parâmetros para uma operação com falha e tentar a operação novamente.
 
@@ -42,15 +42,12 @@ Retenção de eventos:: Os eventos são mantidos na interface do usuário por 30
 
 == Monitorizar e monitorizar as operações
 
-Acompanhe e monitore operações no BlueXP  com o Rastreador.
+Rastreie e monitore operações no console do Workload Factory com o Tracker.
 
 .Passos
 . Inicie sessão utilizando uma das link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
-. Na carga de trabalho, selecione o menu Configurações da conta e, em seguida, selecione *Rastreador*.
-+
-image:screenshot-menu-tracker-option.png["Uma captura de tela do menu de configurações da conta com a opção Rastreador realçada."]
-
-. Na guia Rastreador, use os filtros ou a pesquisa para restringir os resultados do trabalho. Também pode transferir um relatório de trabalhos.
+. No menu de carga de trabalho, selecione *Administração* e depois selecione *Rastreador*.
+. No Tracker, use os filtros ou pesquise para restringir os resultados dos trabalhos. Você também pode baixar um relatório de empregos.
 
 
 
@@ -61,7 +58,7 @@ Visualize a solicitação de API na caixa de código para uma tarefa no Tracker.
 
 .Passos
 . No Rastreador, selecione uma tarefa.
-. Selecione o menu de três pontos e, em seguida, selecione *View API Request*.
+. Selecione o menu de ações e depois selecione *Exibir solicitação de API*.
 
 
 
@@ -75,7 +72,7 @@ NOTE: Você pode tentar novamente uma operação com falha até 10 vezes.
 
 .Passos
 . No Rastreador, selecione uma operação com falha.
-. Selecione o menu de três pontos e, em seguida, selecione *Repetir*.
+. Selecione o menu de ações e depois selecione *Repetir*.
 
 
 .Resultado
@@ -89,7 +86,7 @@ Edite os parâmetros da operação com falha e tente novamente a operação fora
 
 .Passos
 . No Rastreador, selecione uma operação com falha.
-. Selecione o menu de três pontos e, em seguida, selecione *Editar e tentar novamente*.
+. Selecione o menu de ações e depois selecione *Editar e tentar novamente*.
 +
 Você é redirecionado para a página de operação, onde você pode editar os parâmetros e tentar novamente a operação.
 

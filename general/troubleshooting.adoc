@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: general/troubleshooting.html 
 keywords: support registration, register for support, support, nss account, add nss account, 
-summary: Antes de poder abrir um caso de suporte com o suporte técnico da NetApp, você precisa adicionar uma conta do site de suporte da NetApp à fábrica de carga de trabalho e, em seguida, Registrar-se para suporte. 
+summary: Antes de abrir um caso de suporte com o suporte técnico da NetApp , você precisa adicionar uma conta do Site de Suporte da NetApp ao Workload Factory e então se registrar para obter suporte. 
 ---
 = Solução de problemas do GenAI
 :allow-uri-read: 
@@ -24,10 +24,10 @@ Se você tiver um desses problemas, use as etapas na coluna solução alternativ
 | Área | Problema | Causa | Solução alternativa 
 
 
-| Implantação | A implantação falha porque o volume já existe. | A fábrica de carga de trabalho do BlueXP  para o GenAI precisa criar um novo volume durante o processo de implantação, mas já existe um volume usando o nome especificado. | Especifique um nome exclusivo a ser usado para o novo volume e tente implantar novamente. 
+| Implantação | A implantação falha porque o volume já existe. | O NetApp Workload Factory for GenAI precisa criar um novo volume durante o processo de implantação, mas já existe um volume usando o nome que você especificou. | Especifique um nome exclusivo a ser usado para o novo volume e tente implantar novamente. 
 
 
-| Implantação | A implantação falha porque a fábrica de carga de trabalho do BlueXP  para o GenAI não consegue montar o volume. | Uma ou mais portas de entrada necessárias para o FSX for NetApp ONTAP são fechadas ou filtradas.  a| 
+| Implantação | A implantação falha porque o NetApp Workload Factory para GenAI não consegue montar o volume. | Uma ou mais portas de entrada necessárias para o FSX for NetApp ONTAP são fechadas ou filtradas.  a| 
 Abra as seguintes portas de entrada:
 
 [cols="10,10,80"]
@@ -105,7 +105,7 @@ Abra as seguintes portas de entrada:
 |===
 
 
-| Manutenção | O mecanismo de IA falha ao iniciar e você vê o erro "erro de instância do mecanismo de IA" na página *bases de conhecimento*. | A instância do mecanismo de IA foi corrompida ou não existe. | Selecione o botão *Rebuild*. A fábrica de workloads do BlueXP  para o GenAI reconstrói a infraestrutura e exibe o progresso da reconstrução. Quando concluído, suas bases de conhecimento são reconetadas à infraestrutura reconstruída e a lista de bases de conhecimento é exibida. 
+| Manutenção | O mecanismo de IA falha ao iniciar e você vê o erro "erro de instância do mecanismo de IA" na página *bases de conhecimento*. | A instância do mecanismo de IA foi corrompida ou não existe. | Selecione o botão *Reconstruir*.  O NetApp Workload Factory para GenAI reconstrói a infraestrutura e exibe o progresso da reconstrução.  Quando concluído, suas bases de conhecimento serão reconectadas à infraestrutura reconstruída e a lista de bases de conhecimento será exibida. 
 
 
 | Manutenção | O mecanismo de IA falha ao iniciar, e você vê o erro "a instância do mecanismo GenAI está parada" na página *bases de conhecimento*. | A instância do mecanismo de IA não está em execução. | Use o Console de Gerenciamento da AWS ou a CLI da AWS para iniciar a instância do mecanismo de IA. 
@@ -127,7 +127,7 @@ docker-compose up
 
 
 
-| Manutenção | A instância do Docker de back-end usada pela fábrica de carga de trabalho do BlueXP  para o GenAI não foi iniciada. | O volume foi excluído e a instância EC2 foi reiniciada.  a| 
+| Manutenção | A instância do Docker de backend usada pelo NetApp Workload Factory para GenAI falhou ao iniciar. | O volume foi excluído e a instância EC2 foi reiniciada.  a| 
 Use as seguintes etapas de recuperação:
 
 .Passos
@@ -163,8 +163,8 @@ volumes:
 
 
 
-| Manutenção | A instância do Docker de back-end usada pela fábrica de carga de trabalho do BlueXP  para o GenAI não foi iniciada. | O volume raiz foi excluído. | Crie um volume com um nome e um caminho e reinicie a instância do Docker de back-end do Amazon EC2. 
+| Manutenção | A instância do Docker de backend usada pelo NetApp Workload Factory para GenAI falhou ao iniciar. | O volume raiz foi excluído. | Crie um volume com um nome e um caminho e reinicie a instância do Docker de back-end do Amazon EC2. 
 
 
-| Manutenção | A instância do Docker de back-end usada pela fábrica de carga de trabalho do BlueXP  para o GenAI não foi iniciada. | O volume raiz foi excluído. | Crie um volume com um nome e um caminho e reinicie a instância do Docker de back-end do Amazon EC2. 
+| Manutenção | A instância do Docker de backend usada pelo NetApp Workload Factory para GenAI falhou ao iniciar. | O volume raiz foi excluído. | Crie um volume com um nome e um caminho e reinicie a instância do Docker de back-end do Amazon EC2. 
 |===

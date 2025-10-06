@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: general/genai-engine-instance.html 
 keywords: genai engine, instance, ec2, role, iam role, permissions, security group, inbound, outbound, private endpoints 
-summary: Ao implantar a infraestrutura do GenAI, a fábrica de carga de trabalho cria uma instância do EC2 para o mecanismo GenAI. Ele também cria uma função do IAM, grupo de segurança e endpoints privados para essa instância. Você pode querer entender mais detalhes sobre esses componentes que a fábrica de workloads cria no seu ambiente AWS. 
+summary: Ao implantar a infraestrutura GenAI, o Workload Factory cria uma instância EC2 para o mecanismo GenAI.  Ele também cria uma função do IAM, um grupo de segurança e endpoints privados para esta instância.  Talvez você queira entender mais detalhes sobre esses componentes que o Workload Factory cria no seu ambiente AWS. 
 ---
 = Componentes do motor NetApp GenAI
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Ao implantar a infraestrutura do GenAI, a fábrica de carga de trabalho
 
 
 [role="lead"]
-Ao implantar a infraestrutura do GenAI, a fábrica de carga de trabalho cria uma instância do EC2 para o mecanismo GenAI. Ele também cria uma função do IAM, grupo de segurança e endpoints privados para essa instância. Você pode querer entender mais detalhes sobre esses componentes que a fábrica de workloads cria no seu ambiente AWS.
+Ao implantar a infraestrutura GenAI, o Workload Factory cria uma instância EC2 para o mecanismo GenAI.  Ele também cria uma função do IAM, um grupo de segurança e endpoints privados para esta instância.  Talvez você queira entender mais detalhes sobre esses componentes que o Workload Factory cria no seu ambiente AWS.
 
 Tipo de instância EC2:: m5.large
 Função do IAM:: A instância do mecanismo GenAI precisa de permissões para enviar partes de dados para o modelo de incorporação na Amazon bedrock e para se comunicar com o back-end do Serviço de IA da NetApp. A função do IAM inclui as seguintes permissões:
@@ -25,6 +25,16 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
 {
   "Version": "2012-10-17",
   "Statement": [
+    {
+      "Action": [
+        "iam:CreateRole",
+        "iam:CreatePolicy",
+        "iam:AttachRolePolicy",
+        "iam:PassRole"
+      ],
+      "Resource": "*",
+      "Effect": "Allow"
+    },
     {
       "Action": [
         "ssm:DescribeDocument",
@@ -87,7 +97,7 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai:<id>:kbId": "*"
         }
       },
       "Action": "fsx:DeleteVolume",
@@ -100,7 +110,7 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:qConnectorId": "*"
+          "aws:ResourceTag/netapp:wlmai:<id>:qConnectorId": "*"
         }
       },
       "Action": "fsx:DeleteVolume",
@@ -113,7 +123,7 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>": "*"
+          "aws:ResourceTag/netapp:wlmai:<id>": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -123,7 +133,7 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:kbId": "*"
+          "aws:ResourceTag/netapp:wlmai:<id>:kbId": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -133,7 +143,7 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
     {
       "Condition": {
         "StringLike": {
-          "aws:ResourceTag/netapp:wlmai: <ai-engine-id>:qConnectorId": "*"
+          "aws:ResourceTag/netapp:wlmai:<id>:qConnectorId": "*"
         }
       },
       "Action": "fsx:UntagResource",
@@ -145,7 +155,9 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
         "bedrock:InvokeModel",
         "bedrock:Rerank",
         "bedrock:GetFoundationModel",
-        "bedrock:GetInferenceProfile"
+        "bedrock:GetInferenceProfile",
+        "bedrock:GetModelInvocationLoggingConfiguration",
+        "bedrock:PutModelInvocationLoggingConfiguration"
       ],
       "Resource": "*",
       "Effect": "Allow"
@@ -165,6 +177,7 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
     {
       "Action": [
         "qbusiness:ListWebExperiences",
+        "qbusiness:ListApplications",
         "qbusiness:GetApplication",
         "qbusiness:CreateDataSource",
         "qbusiness:DeleteDataSource",
@@ -193,6 +206,7 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
         "logs:CreateLogGroup"
       ],
       "Resource": [
+        "arn:aws:logs:*:*:log-group:/aws/bedrock*",
         "arn:aws:logs:*:*:log-group:/netapp/wlmai/*:log-stream:*",
         "arn:aws:logs:*:*:log-group:/netapp/wlmai/*"
       ],
@@ -220,7 +234,7 @@ Função do IAM:: A instância do mecanismo GenAI precisa de permissões para en
 ====
 --
 Grupo de segurança:: As regras de saída estão abertas a todo o tráfego, enquanto as regras de entrada são completamente fechadas.
-Endpoints privados:: Se a VPC de destino ainda não os tiver, a fábrica de carga de trabalho criará endpoints privados para a instância do GenAI Engine EC2 para que ela possa se comunicar com os seguintes serviços da AWS:
+Endpoints privados:: Se a VPC de destino ainda não os tiver, o Workload Factory criará endpoints privados para a instância EC2 do mecanismo GenAI para que ele possa se comunicar com os seguintes serviços da AWS:
 +
 --
 * Amazon bedrock

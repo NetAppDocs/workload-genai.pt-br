@@ -6,8 +6,8 @@
 
 === Mascarar informações pessoais identificáveis com guardrails de dados
 
-A carga de trabalho generativa de IA apresenta o recurso de guardrails de dados, alimentado pela classificação BlueXP . O recurso de guardrails de dados identifica e mascara informações pessoais identificáveis (PII) ajudando você a manter a conformidade e fortalecer a segurança de seus dados organizacionais confidenciais.
+A carga de trabalho de IA generativa apresenta o recurso de proteção de dados, alimentado pela classificação do NetApp Console.  O recurso de proteção de dados identifica e mascara Informações Pessoais Identificáveis ​​(PII), ajudando você a manter a conformidade e fortalecer a segurança dos seus dados organizacionais confidenciais.
 
 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledgebase.html["Crie uma base de conhecimento do GenAI"]
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^]
+link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação do NetApp Console"^]

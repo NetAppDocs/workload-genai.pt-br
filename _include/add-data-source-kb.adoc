@@ -28,7 +28,7 @@ NOTE: Escolher uma alta porcentagem de sobreposição pode aumentar significativ
 +
 *** Na seção *suporte a tipos de arquivo*, escolha incluir todos os tipos de arquivos ou selecionar tipos de arquivo individuais para inclusão nas verificações de origem de dados.
 +
-Se você incluir imagens ou arquivos PDF, a fábrica de carga de trabalho do BlueXP  para o GenAI analisa o texto nas imagens (incluindo imagens em documentos PDF), e isso incorre em um custo mais alto.
+Se você incluir imagens ou arquivos PDF, o NetApp Workload Factory for GenAI analisará o texto nas imagens (incluindo imagens em documentos PDF), e isso incorrerá em um custo mais alto.
 
 +
 Ao incluir dados de texto de imagens, o GenAI não consegue mascarar informações de identificação pessoal (PII) da imagem à medida que os dados de texto digitalizados são enviados do seu ambiente para a AWS. No entanto, uma vez que os dados são armazenados, todas as PII são mascaradas no banco de dados do GenAI.
@@ -80,7 +80,7 @@ NOTE: Escolher uma alta porcentagem de sobreposição pode aumentar significativ
 +
 *** Na seção *suporte a tipos de arquivo*, escolha incluir todos os tipos de arquivos ou selecionar tipos de arquivo individuais para inclusão nas verificações de origem de dados.
 +
-Se você incluir imagens ou arquivos PDF, a fábrica de carga de trabalho do BlueXP  para o GenAI analisa o texto nas imagens (incluindo imagens em documentos PDF), e isso incorre em um custo mais alto.
+Se você incluir imagens ou arquivos PDF, o NetApp Workload Factory for GenAI analisará o texto nas imagens (incluindo imagens em documentos PDF), e isso incorrerá em um custo mais alto.
 
 +
 Ao incluir dados de texto de imagens, o GenAI não consegue mascarar informações de identificação pessoal (PII) da imagem à medida que os dados de texto digitalizados são enviados do seu ambiente para a AWS. No entanto, uma vez que os dados são armazenados, todas as PII são mascaradas no banco de dados do GenAI.
@@ -139,7 +139,7 @@ NOTE: Escolher uma alta porcentagem de sobreposição pode aumentar significativ
 +
 *** Na seção *suporte a tipos de arquivo*, escolha incluir todos os tipos de arquivos ou selecionar tipos de arquivo individuais para inclusão nas verificações de origem de dados.
 +
-Se você incluir imagens ou arquivos PDF, a fábrica de carga de trabalho do BlueXP  para o GenAI analisa o texto nas imagens (incluindo imagens em documentos PDF), e isso incorre em um custo mais alto.
+Se você incluir imagens ou arquivos PDF, o NetApp Workload Factory for GenAI analisará o texto nas imagens (incluindo imagens em documentos PDF), e isso incorrerá em um custo mais alto.
 
 +
 Ao incluir dados de texto de imagens, o GenAI não consegue mascarar informações de identificação pessoal (PII) da imagem à medida que os dados de texto digitalizados são enviados do seu ambiente para a AWS. No entanto, uma vez que os dados são armazenados, todas as PII são mascaradas no banco de dados do GenAI.

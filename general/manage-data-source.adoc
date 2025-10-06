@@ -20,8 +20,8 @@ Depois de criar uma base de conhecimento ou um conetor usando fontes de dados no
 Você pode exibir informações sobre o conteúdo de uma fonte de dados e pode visualizar seu status de incorporação com a base de conhecimento ou o conetor. Como as fontes de dados estão associadas a uma base de conhecimento ou conetor, você precisará escolher primeiro a base de conhecimento ou o conetor antes de poder visualizar os detalhes da fonte de dados.
 
 .Passos
-. Efetue login na fábrica da carga de trabalho usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
-. No menu de navegação de fábrica da carga de trabalho, selecione *AI*.
+. Faça login no Workload Factory usando um dos https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
+. No bloco cargas de trabalho de IA, selecione *Deploy & Manage*.
 . Selecione a base de conhecimento ou o conetor onde reside a fonte de dados e, em seguida, image:icon-action.png["o botão de opção"]selecione e selecione *Gerenciar base de conhecimento* ou *Gerenciar conetor*.
 +
 A parte inferior da página lista as fontes de dados associadas.
@@ -39,7 +39,8 @@ Ele também lista as informações de incorporação e se essa fonte de dados es
 Você pode editar informações sobre uma fonte de dados integrada a uma base de conhecimento ou conetor. A maioria das informações é corrigida depois que você adicionou uma fonte de dados, mas você pode fazer alterações em algumas das configurações (como definição de divisão ou reconhecimento de permissão).
 
 .Passos
-. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Faça login no Workload Factory usando um doslink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
+. No bloco cargas de trabalho de IA, selecione *Deploy & Manage*.
 . Na página de inventário das bases de conhecimento, selecione a base de conhecimento onde reside a fonte de dados e, em seguida, image:icon-action.png["o botão de opção"]selecione e selecione *Gerenciar base de conhecimento*.
 +
 A parte inferior da página lista as fontes de dados que fazem parte desta base de conhecimento.
@@ -67,7 +68,8 @@ As fontes de dados são sincronizadas automaticamente com a base de conhecimento
 Se você não precisar mais de uma fonte de dados para fazer parte da sua base de conhecimento, você pode excluí-la.
 
 .Passos
-. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Faça login no Workload Factory usando um doslink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
+. No bloco cargas de trabalho de IA, selecione *Deploy & Manage*.
 . Na página de inventário da base de conhecimento, selecione a base de conhecimento onde reside a fonte de dados e, em seguida, image:icon-action.png["o botão de opção"]selecione e selecione *Gerenciar base de conhecimento*.
 +
 A parte inferior da página lista as fontes de dados que fazem parte desta base de conhecimento.

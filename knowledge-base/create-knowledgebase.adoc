@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: knowledge-base/create-knowledgebase.html 
 keywords: ai, chatbot, creating, knowledge base 
-summary: Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas em sua base de conhecimento a partir dos datastores do FSX for ONTAP, você estará pronto para criar a base de conhecimento usando a fábrica de cargas de trabalho. Como parte desta etapa, você também definirá as caraterísticas da IA e criará entradas de conversa. 
+summary: Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você integrará em sua base de conhecimento a partir dos seus armazenamentos de dados do FSx for ONTAP , você estará pronto para criar a base de conhecimento usando o Workload Factory.  Como parte desta etapa, você também definirá as características da IA ​​e criará iniciadores de conversas. 
 ---
 = Crie uma base de conhecimento do GenAI
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Depois de implantar a infraestrutura de IA e identificar as fontes de d
 
 
 [role="lead"]
-Depois de implantar a infraestrutura de IA e identificar as fontes de dados que serão integradas em sua base de conhecimento a partir dos datastores do FSX for ONTAP, você estará pronto para criar a base de conhecimento usando a fábrica de cargas de trabalho. Como parte dessa etapa, você também definirá as caraterísticas da IA e criará entradas de conversa.
+Depois de implantar a infraestrutura de IA e identificar as fontes de dados que você integrará em sua base de conhecimento a partir dos seus armazenamentos de dados do FSx for ONTAP , você estará pronto para criar a base de conhecimento usando o Workload Factory.  Como parte desta etapa, você também definirá as características da IA ​​e criará iniciadores de conversas.
 
 Certifique-se de que seu ambiente atenda link:requirements-knowledge-base.html["requisitos"]às bases de conhecimento para antes de prosseguir.
 
@@ -22,15 +22,15 @@ Modo público:: Uma base de conhecimento pode ser usada sem integrar fontes de d
 Modo empresarial:: Na maioria dos casos, você vai querer integrar fontes de dados da sua organização na base de conhecimento. Isso é conhecido como integração _Enterprise mode_ porque fornece conhecimento da sua empresa.
 +
 --
-As fontes de dados da sua organização podem conter informações de identificação pessoal (PII). Para proteger essas informações confidenciais, você pode habilitar _data guardrails_ ao criar e configurar bases de conhecimento. Corrimões de dados, alimentados pela classificação BlueXP , identificam e mascara PII, tornando-os inacessíveis e irrecuperáveis.
+Fontes de dados da sua organização podem conter Informações de Identificação Pessoal (PII).  Para proteger essas informações confidenciais, você pode habilitar _guardrails de dados_ ao criar e configurar bases de conhecimento.  Os guardrails de dados, alimentados pela NetApp Data Classification, identificam e mascaram PII, tornando-os inacessíveis e irrecuperáveis.
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^].
-
-
-NOTE: A fábrica de carga de trabalho do BlueXP  para o GenAI não mascara informações pessoais confidenciais (SPii). link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["tipos de dados pessoais sensíveis"^]Consulte para obter mais informações sobre este tipo de dados.
+link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação de dados da NetApp"^] .
 
 
-NOTE: Os corrimões de dados podem ser ativados ou desativados a qualquer momento. Se você alternar a habilitação dos corrimões de dados, a fábrica de carga de trabalho verifica toda a base de conhecimento do zero, o que incorre em um custo.
+NOTE: O NetApp Workload Factory para GenAI não mascara informações pessoais confidenciais (SPii).  Consultelink:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["tipos de dados pessoais sensíveis"^] para mais informações sobre esse tipo de dados.
+
+
+NOTE: Os guardrails de dados podem ser ativados ou desativados a qualquer momento.  Se você alternar a ativação dos guardrails de dados, o Workload Factory verificará toda a base de conhecimento do zero, o que gerará um custo.
 
 --
 
@@ -42,44 +42,52 @@ NOTE: Os corrimões de dados podem ser ativados ou desativados a qualquer moment
 A base de conhecimento define caraterísticas como os modelos de IA bedrock e o formato de incorporação que você deseja usar para criar sua base de conhecimento.
 
 .Passos
-. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Faça login no Workload Factory usando um doslink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
 . No bloco cargas de trabalho de IA, selecione *Deploy & Manage*.
-. Na guia bases de conhecimento e conetores, selecione o menu suspenso *criar novo* e escolha *base de conhecimento NetApp GenAI para bedrock*.
-. Na página Definir base de conhecimento, configure as definições da base de conhecimento:
+. No menu Bases de conhecimento e conectores, selecione o menu suspenso *Criar novo* e escolha *Base de conhecimento NetApp GenAI para Bedrock*.
+. Na página Criar base de conhecimento do NetApp GenAI, configure as definições da base de conhecimento:
+
+
+[discrete]
+===== Detalhes da base de conhecimento
+
+. *Nome*: Insira o nome que deseja usar para a base de conhecimento.
+. *Descrição*: Insira uma descrição detalhada para a base de conhecimento.
+. *Bedrock*: Escolha a região onde o Amazon Bedrock está disponível para sua conta da AWS.
+
+
+[discrete]
+===== Ingestão
+
+. *Modelo de incorporação*:
 +
-.. *Nome*: Insira o nome que deseja usar para a base de conhecimento.
-.. *Descrição*: Insira uma descrição detalhada para a base de conhecimento.
-.. *Modelo de incorporação*: O modelo de incorporação define como seus dados serão convertidos em elementos vetoriais para a base de conhecimento. O Workload de fábrica é compatível com os seguintes modelos:
-+
-*** Titãs incorporações G1 - texto
-*** Texto de incorporação Titan v2
-*** Incorporações multimodais Titan G1
-*** Incorpore o inglês
-*** Incorpore multilíngue
+** Escolha um modelo de incorporação para usar na base de conhecimento.  O modelo de incorporação define como seus dados serão convertidos em incorporações vetoriais para a base de conhecimento.  O Workload Factory oferece suporte aos seguintes modelos:
+** Titãs incorporações G1 - texto
+** Texto de incorporação Titan v2
+** Incorporações multimodais Titan G1
+** Incorpore o inglês
+** Incorpore multilíngue
 +
 Observe que você já deve ter habilitado o modelo de incorporação da Amazon bedrock.
 
 +
 https://aws.amazon.com/bedrock/titan/["Saiba mais sobre o Amazon Titan"^]
 
+** Se aplicável, selecione o tipo de inferência que corresponde à configuração do modelo de incorporação selecionado.
 
 
-.. *Modelo de bate-papo*: Escolha entre vários modelos de bate-papo integrados na Amazon bedrock. Observe que você já deve ter habilitado o modelo de chat da Amazon bedrock.
-.. *Reclassificação*: ative ou desative a reclassificação, o que pode melhorar a relevância e a qualidade dos resultados da consulta. Escolha um modelo de chat padrão ou um modelo de reclassificação especializado para usar na reclassificação. As opções do modelo de reclassificação só serão exibidas se estiverem disponíveis na sua região.
-.. * Guardrails de dados*: Escolha se você deseja ativar ou desativar os guardrails de dados. link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre os corrimões de dados, alimentados pela classificação BlueXP "^].
+. *Guardrails de dados*: escolha se deseja habilitar ou desabilitar os guardrails de dados. link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Saiba mais sobre guardrails de dados, com tecnologia da NetApp Data Classification"^] .
 +
 Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de dados.
 
 +
-*** É necessária uma conta de serviço para comunicar com a classificação BlueXP . Você deve ter a função _administrador da organização_ na sua conta de locação do BlueXP  para a criação de conta de serviço. Um membro que tenha a função de administrador da Organização pode concluir todas as ações no BlueXP . link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["Saiba como adicionar uma função a um membro no BlueXP "^]
-*** O mecanismo de IA deve ter acesso ao link:https://api.bluexp.netapp.com["Endpoint da API do BlueXP "^].
-*** Você precisará fazer o seguinte, conforme descrito em link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["Documentação de classificação BlueXP"^]:
+** Uma conta de serviço é necessária para se comunicar com o NetApp Data Classification.  Você deve ter a função _Administrador da organização_ na sua conta de locação do NetApp Console para criar uma conta de serviço.  Um membro que tem a função de administrador da organização pode concluir todas as ações no .link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["Aprenda como adicionar uma função a um membro no NetApp Console"^]
+** O mecanismo de IA deve ter acesso aolink:https://api.bluexp.netapp.com["Ponto de extremidade da API do console NetApp"^] .
+** Você precisará fazer o seguinte conforme descrito emlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html#quick-start["Documentação de classificação de dados da NetApp"^] :
 +
-.... Crie um conetor BlueXP
-.... Certifique-se de que seu ambiente atenda aos pré-requisitos
-.... Implantar a classificação BlueXP
-
-
+... Criar um agente de console
+... Certifique-se de que seu ambiente atenda aos pré-requisitos
+... Implantar classificação de dados do NetApp
 
 
 
@@ -90,12 +98,34 @@ NOTE: O recurso de guardrails de dados não é suportado ao inserir arquivos de 
 
 
 
+[discrete]
+===== Configurações de bate-papo e recuperação
+
+. *Modelo de bate-papo*:
++
+** Escolha entre vários modelos de bate-papo integrados ao Amazon Bedrock.  Observe que você já deve ter habilitado o modelo de bate-papo do Amazon Bedrock.
+** Se aplicável, selecione o tipo de inferência que corresponde à configuração do modelo selecionado.
+
+
+. *Configurações de bate-papo*:
++
+** Escolha uma temperatura para o chatbot para configurar a aleatoriedade e a criatividade das respostas.  Uma temperatura mais baixa resulta em respostas mais previsíveis, e uma temperatura mais alta resulta em respostas mais variadas.
+** Escolha um comprimento máximo de resposta para configurar o quão detalhadas as respostas serão.  Respostas mais longas usam mais tokens de resposta e podem gerar custos mais altos.
+
+
+. *Modo de pensamento*: Quando o modo de pensamento está ativado, o chatbot levará mais tempo para processar as consultas e os resultados geralmente serão mais precisos.  Ao ativar o modo de raciocínio, você pode controlar quantos tokens de raciocínio são usados ao gerar resultados.  Usar mais fichas de raciocínio pode levar a respostas mais precisas, mas pode incorrer em um custo mais alto.
+. *Reclassificação*: habilite ou desabilite a reclassificação, o que pode melhorar a relevância e a qualidade dos resultados da consulta.  Escolha um modelo de bate-papo padrão ou um modelo de reclassificação especializado para usar na reclassificação.  As opções do modelo Reranker só serão exibidas se estiverem disponíveis na sua região.  Selecione o tipo de inferência que corresponde à configuração do modelo selecionado.
 . *Entradas de conversação*: Escolha se você deseja fornecer até quatro prompts iniciais de conversação que são exibidos para usuários que interagem com um chatbot que usa essa base de conhecimento. Recomendamos que ative esta definição.
 +
 Se você ativar os iniciantes de conversação, "modo automático" é selecionado por padrão. O "modo manual" só pode ser ativado depois de adicionar fontes de dados à sua base de conhecimento. link:manage-knowledgebase.html["Saiba como modificar as configurações da base de conhecimento"].
 
-. *FSX for ONTAP file system*: Quando você define uma nova base de conhecimento, a fábrica de carga de trabalho cria um novo volume do Amazon FSX for NetApp ONTAP para armazená-lo. Escolher o nome do sistema de arquivos e o SVM (também chamado de VM de storage) existentes no local em que o novo volume será criado.
-. *Política de snapshot*: Escolha uma política de snapshot na lista de políticas existentes definidas no inventário de armazenamento de carga de trabalho de fábrica. Os instantâneos recorrentes da base de conhecimento serão criados automaticamente a uma frequência com base na política de instantâneos selecionada.
+
+
+[discrete]
+===== Definições de armazenamento
+
+. *Sistema de arquivos FSx para ONTAP *: quando você define uma nova base de conhecimento, o Workload Factory cria um novo volume Amazon FSx for NetApp ONTAP para armazená-la.  Escolha um nome de sistema de arquivos existente e SVM (também chamado de VM de armazenamento) onde o novo volume será criado.
+. *Política de snapshot*: escolha uma política de snapshot na lista de políticas existentes definidas no inventário de armazenamento do Workload Factory.  Snapshots recorrentes da base de conhecimento serão criados automaticamente com uma frequência baseada na política de snapshot selecionada.
 . *S3 Bucket*: Se os resultados da consulta do chatbot contiverem dados estruturados, o GenAI pode armazenar os resultados em um bucket S3.  Para usar esse recurso, ative a configuração *Ativar bucket S3* e escolha um bucket S3 associado à sua conta na lista.  Quando esses resultados são armazenados em um bucket S3, você pode baixá-los usando o link de download na sessão de bate-papo.
 +
 Se a política de snapshot que você precisa não existir, você pode https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["criar uma política de snapshot"] na VM de armazenamento que contém o volume.
@@ -155,7 +185,7 @@ NOTE: Escolher uma alta porcentagem de sobreposição pode aumentar significativ
 +
 *** Na seção *suporte a tipos de arquivo*, escolha incluir todos os tipos de arquivos ou selecionar tipos de arquivo individuais para inclusão nas verificações de origem de dados.
 +
-Se você incluir imagens ou arquivos PDF, a fábrica de carga de trabalho do BlueXP  para o GenAI analisa o texto nas imagens (incluindo imagens em documentos PDF), e isso incorre em um custo mais alto.
+Se você incluir imagens ou arquivos PDF, o NetApp Workload Factory for GenAI analisará o texto nas imagens (incluindo imagens em documentos PDF), e isso incorrerá em um custo mais alto.
 
 +
 Ao incluir dados de texto de imagens, o GenAI não consegue mascarar informações de identificação pessoal (PII) da imagem à medida que os dados de texto digitalizados são enviados do seu ambiente para a AWS. No entanto, uma vez que os dados são armazenados, todas as PII são mascaradas no banco de dados do GenAI.
@@ -207,7 +237,7 @@ NOTE: Escolher uma alta porcentagem de sobreposição pode aumentar significativ
 +
 *** Na seção *suporte a tipos de arquivo*, escolha incluir todos os tipos de arquivos ou selecionar tipos de arquivo individuais para inclusão nas verificações de origem de dados.
 +
-Se você incluir imagens ou arquivos PDF, a fábrica de carga de trabalho do BlueXP  para o GenAI analisa o texto nas imagens (incluindo imagens em documentos PDF), e isso incorre em um custo mais alto.
+Se você incluir imagens ou arquivos PDF, o NetApp Workload Factory for GenAI analisará o texto nas imagens (incluindo imagens em documentos PDF), e isso incorrerá em um custo mais alto.
 
 +
 Ao incluir dados de texto de imagens, o GenAI não consegue mascarar informações de identificação pessoal (PII) da imagem à medida que os dados de texto digitalizados são enviados do seu ambiente para a AWS. No entanto, uma vez que os dados são armazenados, todas as PII são mascaradas no banco de dados do GenAI.
@@ -266,7 +296,7 @@ NOTE: Escolher uma alta porcentagem de sobreposição pode aumentar significativ
 +
 *** Na seção *suporte a tipos de arquivo*, escolha incluir todos os tipos de arquivos ou selecionar tipos de arquivo individuais para inclusão nas verificações de origem de dados.
 +
-Se você incluir imagens ou arquivos PDF, a fábrica de carga de trabalho do BlueXP  para o GenAI analisa o texto nas imagens (incluindo imagens em documentos PDF), e isso incorre em um custo mais alto.
+Se você incluir imagens ou arquivos PDF, o NetApp Workload Factory for GenAI analisará o texto nas imagens (incluindo imagens em documentos PDF), e isso incorrerá em um custo mais alto.
 
 +
 Ao incluir dados de texto de imagens, o GenAI não consegue mascarar informações de identificação pessoal (PII) da imagem à medida que os dados de texto digitalizados são enviados do seu ambiente para a AWS. No entanto, uma vez que os dados são armazenados, todas as PII são mascaradas no banco de dados do GenAI.

@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: general/ai-workloads-overview.html 
 keywords: overview, concepts, features, use case, workloads, AI, Bedrock, knowledge base, chatbot 
-summary: A fábrica de carga de trabalho do BlueXP  para o GenAI permite que você integre os sistemas de arquivos do Amazon FSX para NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI. 
+summary: O NetApp Workload Factory para GenAI permite que você integre os sistemas de arquivos Amazon FSx for NetApp ONTAP com os modelos de base do GenAI.  Isso fornece armazenamento de alto desempenho com um rico conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de IA. 
 ---
-= Saiba mais sobre a fábrica de cargas de trabalho da BlueXP  para o GenAI
+= Saiba mais sobre o NetApp Workload Factory para GenAI
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-A fábrica de cargas de trabalho do BlueXP  para o GenAI permite que você integre os sistemas de arquivos do Amazon FSX para NetApp ONTAP com os modelos de base do GenAI. Com isso, você tem um storage de alta performance com um amplo conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de AI.
+O NetApp Workload Factory para GenAI permite que você integre os sistemas de arquivos Amazon FSx for NetApp ONTAP com os modelos de base do GenAI.  Isso fornece armazenamento de alto desempenho com um rico conjunto de recursos de proteção, segurança e otimização de custos para seus conjuntos de dados de IA.
 
 
 
-== O que é a fábrica de carga de trabalho da BlueXP  para o GenAI?
+== O que é o NetApp Workload Factory para GenAI?
 
-A fábrica de carga de trabalho do BlueXP  para o GenAI permite que você use fontes de dados empresariais no Amazon FSX for NetApp ONTAP com aplicativos de IA generativos. Utilizando a geração de recuperação aumentada (RAG), você pode conetar rapidamente fontes de dados a modelos de base disponíveis via Amazon bedrock ou Amazon Q Business para desenvolver aplicativos geradores de IA, como assistentes virtuais, chatbots de Q&A, sumarização de documentos, criação de conteúdo, etc.
+O NetApp Workload Factory para GenAI permite que você use suas fontes de dados empresariais no Amazon FSx for NetApp ONTAP com aplicativos Generative AI.  Utilizando a geração aumentada de recuperação (RAG), você pode conectar rapidamente fontes de dados a modelos básicos disponíveis via Amazon Bedrock ou Amazon Q Business para desenvolver aplicativos com tecnologia de IA generativa, como assistentes virtuais, chatbots de perguntas e respostas, sumarização de documentos, criação de conteúdo, etc.
 
 O uso de IA generativa com seus dados organizacionais permite que você aproveite seu próprio conhecimento e experiência, e não confie apenas na inteligência do modelo com base em dados públicos nos quais os modelos foram treinados. O uso do RAG para personalizar os modelos garante respostas precisas e relevantes a perguntas específicas da organização, aumentando a produtividade e a eficiência para os usuários de seus aplicativos usando IA generativa.
 
@@ -25,13 +25,13 @@ Desenvolver um aplicativo GenAI que é adaptado aos dados da sua organização p
 
 Se link:../knowledge-base/create-knowledgebase.html["crie uma base de conhecimento"^]você , o GenAI ingere dados de suas fontes de dados, armazena os resultados vetorizados em um banco de dados e oferece controle total sobre como usar os dados ingeridos para responder a consultas. Essa abordagem requer uma configuração mais inicial, mas permite que você escolha diferentes modelos de bate-papo para resultados diferentes. Se link:../connector/define-connector.html["definir um conector NetApp para Amazon Q Business"]você , os dados de suas fontes de dados serão ingeridos pelo Amazon Q Business e armazenados em um índice. Essa abordagem requer menos configuração inicial, mas oferece menos controle sobre os resultados.
 
-Para obter mais informações sobre a fábrica da carga de trabalho, consulte o https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["visão geral de fábrica do workload"^].
+Para obter mais informações sobre o Workload Factory, consulte o https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["Visão geral da Workload Factory"^] .
 
 
 
 == Benefícios de usar o GenAI para criar aplicativos de IA generativos
 
-A fábrica de cargas de trabalho do BlueXP  para o GenAI simplifica o processo de implantação da infraestrutura necessária para criar aplicativos de IA generativos usando a geração de recuperação aumentada (RAG). Especificamente, o GenAI oferece os seguintes benefícios:
+O NetApp Workload Factory para GenAI simplifica o processo de implantação da infraestrutura necessária para criar aplicativos de IA generativa usando geração aumentada de recuperação (RAG).  Especificamente, o GenAI oferece os seguintes benefícios:
 
 * Sem a necessidade de um conhecimento profundo da infraestrutura de dados, base e modelos de linguagem, os administradores e desenvolvedores DE TI podem acelerar o desenvolvimento de aplicações utilizando a automação fornecida pelo GenAI. Os administradores e desenvolvedores de dados podem criar bases de conhecimento empresariais de forma fácil e rápida que incorporam dados não estruturados da sua organização para serem usados por aplicativos de IA generativos.
 * Melhore a segurança preservando as permissões do usuário em arquivos incorporados nas bases de conhecimento para garantir que a segurança e a privacidade dos dados sejam mantidas. Um aplicativo, como um chatbot, pode ser desenvolvido para fornecer apenas aos usuários autenticados respostas com base nos dados aos quais os usuários têm acesso.
@@ -52,7 +52,7 @@ image:genai-infrastructure-diagram.png["Um diagrama mostrando os principais comp
 
 
 
-== Como a fábrica de carga de trabalho do BlueXP  para o GenAI ajuda a criar aplicativos de IA generativos
+== Como o NetApp Workload Factory para GenAI ajuda a criar aplicativos de IA generativa
 
 O GenAI ajuda a criar aplicativos de IA generativos usando o RAG das seguintes maneiras:
 
@@ -66,24 +66,24 @@ O GenAI ajuda a criar aplicativos de IA generativos usando o RAG das seguintes m
 
 
 
-== Ferramentas para usar o workload de fábrica
+== Ferramentas para usar o NetApp Workload Factory
 
-Você pode usar a fábrica do workload do BlueXP  com as seguintes ferramentas:
+Você pode usar o NetApp Workload Factory com as seguintes ferramentas:
 
-* * Console de fábrica de carga de trabalho*: O console de fábrica de carga de trabalho fornece uma visão visual e holística de seus aplicativos e projetos.
-* * BlueXP  console*: O console BlueXP  oferece uma experiência de interface híbrida para que você possa usar a carga de trabalho BlueXP  de fábrica junto com outros serviços BlueXP .
-* *Pergunte-me*: Use o assistente de inteligência artificial perguntar-me para fazer perguntas e saber mais sobre a fábrica de carga de trabalho sem sair da interface web da fábrica de carga de trabalho. Acesse Pergunte-me no menu de ajuda de fábrica da carga de trabalho.
-* *CLI do CloudShell*: A fábrica de carga de trabalho inclui uma CLI do CloudShell para gerenciar e operar ambientes AWS e NetApp em contas a partir de uma única CLI baseada em navegador. Acesse o CloudShell a partir da barra superior do console de fábrica de carga de trabalho.
-* *API REST*: Use as APIs REST de fábrica de carga de trabalho para implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS.
-* *CloudFormation*: Use o código do AWS CloudFormation para executar as ações definidas no console de fábrica de carga de trabalho para modelar, provisionar e gerenciar recursos da AWS e de terceiros a partir da pilha do CloudFormation em sua conta da AWS.
-* *Fornecedor de fábrica de carga de trabalho do Terraform BlueXP *: Use o Terraform para criar e gerenciar fluxos de trabalho de infraestrutura gerados no console de fábrica de carga de trabalho.
+* *Console do Workload Factory*: O console do Workload Factory fornece uma visão visual e holística de seus aplicativos e projetos.
+* * NetApp Console*: O NetApp Console oferece uma experiência de interface híbrida para que você possa usar o Workload Factory junto com outros serviços de dados do NetApp .
+* *Pergunte-me*: use o assistente de IA Ask me para fazer perguntas e saber mais sobre o Workload Factory sem sair do console do Workload Factory. Acesse Pergunte-me no menu de ajuda do Workload Factory.
+* *CloudShell CLI*: O Workload Factory inclui um CloudShell CLI para gerenciar e operar ambientes AWS e NetApp em todas as contas a partir de um único CLI baseado em navegador. Acesse o CloudShell na barra superior do console do Workload Factory.
+* *API REST*: Use as APIs REST do Workload Factory para implantar e gerenciar seu FSx para sistemas de arquivos ONTAP e outros recursos da AWS.
+* *CloudFormation*: use o código do AWS CloudFormation para executar as ações definidas no console do Workload Factory para modelar, provisionar e gerenciar recursos da AWS e de terceiros da pilha do CloudFormation na sua conta da AWS.
+* *Provedor do Terraform NetApp Workload Factory*: use o Terraform para criar e gerenciar fluxos de trabalho de infraestrutura gerados no console do Workload Factory.
 
 
 
 
 == Custo
 
-Não há custo para usar a funcionalidade GenAI de fábrica de workloads.
+Não há custo para usar o recurso GenAI do Workload Factory.
 
 No entanto, você precisará pagar pelos recursos da AWS que implantar para oferecer suporte à infraestrutura de IA generativa. Por exemplo, você pagará a AWS pela Amazon bedrock ou Amazon Q Business, o FSX for ONTAP file system e a capacidade de armazenamento e a instância do GenAI Engine EC2.
 
@@ -93,4 +93,18 @@ Algumas operações multimodais, como a digitalização de imagens para informa�
 
 == Licenciamento
 
-Nenhuma licença especial é necessária da NetApp para usar os recursos de AI da fábrica de workloads.
+Não são necessárias licenças especiais da NetApp para usar os recursos de IA do Workload Factory.
+
+
+
+== Regiões
+
+O Workload Factory é suportado em todas as regiões comerciais onde o FSx for ONTAP é suportado.link:https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["Veja as regiões da Amazon suportadas."^]
+
+As seguintes regiões da AWS não são suportadas:
+
+* Regiões da China
+* Regiões GovCloud (EUA)
+* Nuvem Secreta
+* Nuvem Top Secret
+

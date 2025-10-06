@@ -22,4 +22,4 @@ Algumas das tarefas que você pode executar para gerenciar seus componentes da b
 * Faça backup e proteja os dados importantes no seu sistema de arquivos FSX for ONTAP para garantir que seus dados da base de conhecimento e outros componentes de infraestrutura estejam sempre disponíveis.
 
 
-Para obter informações sobre como gerenciar seu sistema de arquivos FSX for ONTAP, acesse https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Fábrica de carga de trabalho para documentação do Amazon FSX for NetApp ONTAP"^] para ver os recursos de backup e proteção que você pode usar.
+Para obter informações sobre como gerenciar seu sistema de arquivos FSx for ONTAP , acesse o https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Documentação do Workload Factory para Amazon FSx for NetApp ONTAP"^] para visualizar os recursos de backup e proteção que você pode usar.

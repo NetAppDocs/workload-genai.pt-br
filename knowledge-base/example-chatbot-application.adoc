@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: knowledge-base/example-chatbot-application.html 
 keywords: ai, example, sample, chatbot, app, application, local 
-summary: Você pode instalar e executar um aplicativo de chatbot de exemplo para testar suas bases de conhecimento e aprender como usar a API de fábrica de carga de trabalho para criar seu próprio aplicativo de IA generativo. 
+summary: Você pode instalar e executar um aplicativo de chatbot de exemplo para testar suas bases de conhecimento e aprender a usar a API do Workload Factory para criar seu próprio aplicativo de IA generativa. 
 ---
 = Use o aplicativo de chatbot de exemplo externo GenAI
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Você pode instalar e executar um aplicativo de chatbot de exemplo para
 
 
 [role="lead"]
-Depois de configurar, ativar e publicar uma base de conhecimento, os desenvolvedores de aplicativos externos podem configurar e executar o aplicativo de chatbot de exemplo de código aberto fornecido pelo NetApp para interagir com sua base de conhecimento e aprender a usar a API de fábrica de carga de trabalho para criar seus próprios aplicativos de IA generativos.
+Depois de configurar, ativar e publicar uma base de conhecimento, os desenvolvedores de aplicativos externos podem configurar e executar o aplicativo de chatbot de exemplo de código aberto fornecido pela NetApp para interagir com sua base de conhecimento e aprender como usar a API do Workload Factory para criar seus próprios aplicativos de IA generativos.
 
 .Passos
 . link:create-knowledgebase.html["Crie uma base de conhecimento"].
@@ -39,4 +39,4 @@ O exemplo de aplicativo chatbot é exibido.
 
 == Saiba mais
 
-https://console.workloads.netapp.com/api-doc["Documentação da API de fábrica do workload"]
+https://console.workloads.netapp.com/api-doc["Documentação da API do Workload Factory"]

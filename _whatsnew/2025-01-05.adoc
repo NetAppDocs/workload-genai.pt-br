@@ -22,6 +22,6 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/deploy-infrastr
 
 === Reconstruir a infraestrutura do GenAI corrompida ou ausente
 
-Se a instância do seu mecanismo de AI ficar corrompida ou for excluída, você pode deixar que a carga de trabalho reconstrua-a de fábrica para você. A fábrica de carga de trabalho reanexa automaticamente suas bases de conhecimento à infraestrutura após a conclusão da reconstrução, para que elas estejam prontas para uso.
+Se a instância do seu mecanismo de IA for corrompida ou excluída de alguma forma, você pode deixar o Workload Factory reconstruí-la para você.  O Workload Factory reconecta automaticamente suas bases de conhecimento à infraestrutura após a reconstrução ser concluída, para que elas estejam prontas para uso.
 
 link:https://docs.netapp.com/us-en/workload-genai/general/troubleshooting.html["Solução de problemas"]

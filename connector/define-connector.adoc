@@ -16,15 +16,15 @@ Depois de implantar a infraestrutura de IA e identificar as fontes de dados que 
 Certifique-se de que seu ambiente atenda ao link:requirements-connector.html["requisitos"] para Amazon Q Business antes de prosseguir.
 
 .Sobre esta tarefa
-As fontes de dados da sua organização podem conter informações de identificação pessoal (PII). Para proteger essas informações confidenciais, você pode habilitar _data guardrails_ ao definir um conetor. Corrimões de dados, alimentados pela classificação BlueXP , identificam e mascara PII, tornando-os inacessíveis e irrecuperáveis.
+Fontes de dados da sua organização podem conter Informações de Identificação Pessoal (PII).  Para proteger essas informações confidenciais, você pode habilitar _guardrails de dados_ ao definir um conector.  Os guardrails de dados, alimentados pela NetApp Data Classification, identificam e mascaram PII, tornando-os inacessíveis e irrecuperáveis.
 
-link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^].
-
-
-NOTE: A fábrica de carga de trabalho do BlueXP  para o GenAI não mascara informações pessoais confidenciais (SPII). link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["tipos de dados pessoais sensíveis"^]Consulte para obter mais informações sobre este tipo de dados.
+link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação de dados da NetApp"^] .
 
 
-NOTE: Os corrimões de dados podem ser ativados ou desativados a qualquer momento. Se você alternar a habilitação dos corrimões de dados, a fábrica de carga de trabalho verifica toda a fonte de dados do zero, o que pode incorrer em um custo.
+NOTE: O NetApp Workload Factory para GenAI não mascara informações pessoais confidenciais (SPII).  Consultelink:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-data["tipos de dados pessoais sensíveis"^] para mais informações sobre esse tipo de dados.
+
+
+NOTE: Os guardrails de dados podem ser ativados ou desativados a qualquer momento.  Se você alternar a ativação dos guardrails de dados, o Workload Factory verificará toda a fonte de dados do zero, o que pode gerar um custo.
 
 
 
@@ -33,26 +33,26 @@ NOTE: Os corrimões de dados podem ser ativados ou desativados a qualquer moment
 Crie um conector NetApp para o Amazon Q Business. O conector permite a comunicação de API e fonte de dados entre a GenAI e o Amazon Q Business.
 
 .Passos
-. Efetue login na fábrica da carga de trabalho usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Faça login no Workload Factory usando um doslink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^] .
 . No bloco cargas de trabalho de IA, selecione *Deploy & Manage*.
-. Na guia bases de conhecimento e conetores, selecione o menu suspenso *criar novo* e escolha *Amazon Q Business Connector*.
+. No menu Bases de conhecimento e conectores, selecione o menu suspenso *Criar novo* e escolha *Conector Amazon Q Business*.
 . Na página Definir conetor, configure as definições do conetor:
 +
 .. *Nome*: Insira o nome que deseja usar para o conetor.
 .. *Descrição*: Introduza uma descrição detalhada do conetor.
 .. *Amazon Q*: A região e o nome do aplicativo para a instância do Amazon Q Business que você deseja integrar.
-.. * Guardrails de dados*: Escolha se você deseja ativar ou desativar os guardrails de dados. link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre os corrimões de dados, alimentados pela classificação BlueXP "^].
+.. *Guardrails de dados*: escolha se deseja habilitar ou desabilitar os guardrails de dados. link:https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Saiba mais sobre guardrails de dados, com tecnologia da NetApp Data Classification"^] .
 +
 Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de dados.
 
 +
-*** É necessária uma conta de serviço para comunicar com a classificação BlueXP . Você deve ter a função _administrador da organização_ na sua conta de locação do BlueXP  para a criação de conta de serviço. Um membro que tenha a função de administrador da Organização pode concluir todas as ações no BlueXP . link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["Saiba como adicionar uma função a um membro no BlueXP "^]
-*** O mecanismo de IA deve ter acesso ao link:https://api.bluexp.netapp.com["Endpoint da API do BlueXP "^].
-*** Você precisará fazer o seguinte, conforme descrito em link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html#quick-start["Documentação de classificação BlueXP"^]:
+*** Uma conta de serviço é necessária para se comunicar com o NetApp Data Classification.  Você deve ter a função _Administrador da organização_ na sua conta de locação do NetApp Console para criar uma conta de serviço.  Um membro que tem a função de administrador da organização pode concluir todas as ações no NetApp Console.link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["Aprenda como adicionar uma função a um membro no NetApp Console"^]
+*** O mecanismo de IA deve ter acesso aolink:https://api.bluexp.netapp.com["Ponto de extremidade da API do console NetApp"^] .
+*** Você precisará fazer o seguinte conforme descrito emlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html#quick-start["Documentação de classificação de dados da NetApp"^] :
 +
-.... Crie um conetor BlueXP
+.... Criar um agente de console
 .... Certifique-se de que seu ambiente atenda aos pré-requisitos
-.... Implantar a classificação BlueXP
+.... Implantar classificação de dados do NetApp
 
 
 
@@ -64,8 +64,8 @@ Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de 
 NOTE: Quando você ativa o recurso de guardrails de dados, o GenAI processa arquivos .txt, .md, .csv, .docx e .pdf inserindo apenas texto simples (excluindo imagem incorporada ou texto de Mídia) e mascarando quaisquer dados privados ou confidenciais. Todos os outros tipos de arquivo são processados normalmente sem mascarar dados privados ou confidenciais.
 
 +
-.. *FSx para sistema de arquivos ONTAP*: quando você define um novo NetApp Connector para o Amazon Q Business, o Workload Factory cria um novo volume Amazon FSx para NetApp ONTAP para armazenar as informações do conector. Escolher um sistema de arquivos existente e o SVM (também chamado de VM de storage) no qual o novo volume será criado.
-.. *Política de snapshot*: Escolha uma política de snapshot na lista de políticas existentes definidas no inventário de armazenamento de carga de trabalho de fábrica. O GenAI cria automaticamente instantâneos recorrentes do volume, armazenando as informações do conetor em uma frequência com base na política de snapshot que você selecionar.
+.. *FSx para sistema de arquivos ONTAP *: quando você define um novo NetApp Connector para o Amazon Q Business, o Workload Factory cria um novo volume Amazon FSx for NetApp ONTAP para armazenar as informações do conector.  Escolha um sistema de arquivos existente e uma SVM (também chamada de VM de armazenamento) onde o novo volume será criado.
+.. *Política de snapshot*: escolha uma política de snapshot na lista de políticas existentes definidas no inventário de armazenamento do Workload Factory.  O GenAI cria automaticamente snapshots recorrentes do volume que armazena as informações do conector em uma frequência baseada na política de snapshot selecionada.
 +
 Se a política de snapshot que você precisa não existir, você pode https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["criar uma política de snapshot"^] na VM de armazenamento que contém o volume.
 

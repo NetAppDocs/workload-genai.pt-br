@@ -30,9 +30,9 @@ link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/create-knowledg
 
 === Suporte para adicionar fontes de dados de compartilhamentos genéricos NFS/SMB
 
-Usando a API de fábrica de carga de trabalho, agora você pode adicionar uma fonte de dados de um compartilhamento genérico NFSv3, NFSv4 ou SMB. Quando você adiciona uma fonte de dados de um compartilhamento NFS ou SMB, o volume da base de conhecimento permanece em um volume do Amazon FSX for NetApp ONTAP. A IU da Web de fábrica da carga de trabalho suportará esse recurso em uma versão futura.
+Usando a API do Workload Factory, agora você pode adicionar uma fonte de dados de um compartilhamento genérico NFSv3, NFSv4 ou SMB.  Quando você adiciona uma fonte de dados de um compartilhamento NFS ou SMB, o volume da base de conhecimento permanece em um volume Amazon FSx for NetApp ONTAP .  A interface de usuário da Web do Workload Factory oferecerá suporte a esse recurso em uma versão futura.
 
-link:https://console.workloads.netapp.com/api-doc["Use a API de fábrica da carga de trabalho"^]
+link:https://console.workloads.netapp.com/api-doc["Use a API do Workload Factory"^]
 
 
 

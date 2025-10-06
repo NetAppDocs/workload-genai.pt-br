@@ -45,7 +45,7 @@ Por exemplo, se você integrou arquivos 10 (fontes de dados) em sua base de conh
 
 == Formatos de arquivo de origem de dados suportados
 
-Os seguintes formatos de arquivo de fonte de dados são compatíveis atualmente com bases de conhecimento GenAI de fábrica de carga de trabalho.
+Os seguintes formatos de arquivo de fonte de dados são atualmente suportados pelas bases de conhecimento do Workload Factory GenAI.
 
 [cols="2*"]
 |===
