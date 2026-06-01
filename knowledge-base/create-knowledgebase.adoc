@@ -82,7 +82,7 @@ Os pré-requisitos a seguir devem ser atendidos para habilitar os corrimões de 
 
 +
 ** Uma conta de serviço é necessária para se comunicar com o NetApp Data Classification.  Você deve ter a função _Administrador da organização_ na sua conta de locação do NetApp Console para criar uma conta de serviço.  Um membro que tem a função de administrador da organização pode concluir todas as ações no .link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html#add-a-role-to-a-member["Aprenda como adicionar uma função a um membro no NetApp Console"^]
-** O mecanismo de IA deve ter acesso aolink:https://api.bluexp.netapp.com["Ponto de extremidade da API do console NetApp"^] .
+** O mecanismo de IA deve ter acesso ao link:https://docs.netapp.com/us-en/console-automation/index.html["Ponto de extremidade da API do console NetApp"^].
 ** Você precisará fazer o seguinte conforme descrito emlink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html#quick-start["Documentação de classificação de dados da NetApp"^] :
 +
 ... Criar um agente de console

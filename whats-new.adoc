@@ -15,6 +15,16 @@ Saiba o que há de novo com o recurso de cargas de trabalho de IA generativa do 
 
 
 
+== 31 de maio de 2026
+
+
+
+=== Suporte para AWS GovCloud (US) no NetApp Workload Factory
+
+NetApp Workload Factory é compatível com contas da AWS GovCloud (EUA). Usando uma conta GovCloud, você pode implantar e gerenciar cargas de trabalho GenAI nas regiões AWS GovCloud (EUA).
+
+
+
 == 05 de outubro de 2025
 
 

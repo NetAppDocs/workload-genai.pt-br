@@ -40,12 +40,6 @@ sidebar:
       url: "/knowledge-base/create-knowledgebase.html"
     - title: Teste uma base de conhecimento
       url: "/knowledge-base/test-knowledgebase.html"
-    - title: Ative a autenticação
-      url: "/knowledge-base/activate-authentication.html"
-    - title: Publique uma base de conhecimento
-      url: "/knowledge-base/publish-knowledgebase.html"
-    - title: Use o aplicativo de exemplo de chatbot externo
-      url: "/knowledge-base/example-chatbot-application.html"
     - title: Crie um aplicativo de IA baseado em RAG
       url: "/knowledge-base/create-application.html"
     - title: O que você pode fazer a seguir
